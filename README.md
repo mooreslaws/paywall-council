@@ -80,6 +80,12 @@ the same pipeline on an OpenAI model; the model ids live in
   anonymised screens.
 - Screenshots of third-party products used in AppLaw's own evaluations.
 
+## Authors
+
+- [Alexey Vorobey](https://www.linkedin.com/in/alexey-vorobey/): product and engineering
+- [Mikhail Makarov](https://www.linkedin.com/in/mikhail-makarov-6a1090283): co-author, legal norms
+- [Vitaly Bolataev](https://www.linkedin.com/in/%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9-%D0%B1%D0%BE%D0%BB%D0%B0%D1%82%D0%B0%D0%B5%D0%B2-33798210a): co-author, UX patterns
+
 ## Not legal advice
 
 What the engine produces is automated analysis for information. It is not

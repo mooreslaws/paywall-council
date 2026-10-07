@@ -3,6 +3,20 @@
   "version": "0.1.0",
   "description": "The review engine behind AppLaw: reads a subscription paywall screenshot and writes a consumer-protection review against US, EU and UK rules.",
   "license": "MIT",
+  "author": {
+    "name": "Alexey Vorobey",
+    "url": "https://www.linkedin.com/in/alexey-vorobey/"
+  },
+  "contributors": [
+    {
+      "name": "Mikhail Makarov",
+      "url": "https://www.linkedin.com/in/mikhail-makarov-6a1090283"
+    },
+    {
+      "name": "Vitaly Bolataev",
+      "url": "https://www.linkedin.com/in/%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9-%D0%B1%D0%BE%D0%BB%D0%B0%D1%82%D0%B0%D0%B5%D0%B2-33798210a"
+    }
+  ],
   "private": true,
   "engines": {
     "node": ">=22"

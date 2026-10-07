@@ -2,7 +2,9 @@
 // Rate limits are env-overridable per §7.5; parse overrides where consumed.
 
 export const LIMITS = {
-  hooks: { min: 2, max: 3, maxChars: 300 },
+  // Optional since 2026-10-07: the hooks step has Skip, and a review with no
+  // hooks says it had none rather than refusing to run.
+  hooks: { max: 3, maxChars: 300 },
   descriptionMaxChars: 3000,
   // An app name, not a legal entity: long enough for "Calm: Sleep & Meditation".
   brandNameMaxChars: 80,
@@ -91,7 +93,10 @@ export const LIMITS = {
     perTesterDailyUsd: 2.0,
     globalDailyUsd: 50.0,
   },
-  rounds: { newUser: 1, promoDefault: 5 },
+  // What a new account starts with: five since 2026-10-07 (decision 35),
+  // so a founder can review a paywall, change it and review it again before
+  // deciding anything. The copy that names the grant spells this number.
+  rounds: { newUser: 5, promoDefault: 5 },
 
   // Re-issues of one report. Answering its open question re-runs the whole
   // council and costs no round, so both numbers are what keeps a free action
