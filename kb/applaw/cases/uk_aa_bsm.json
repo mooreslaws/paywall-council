@@ -1,0 +1,672 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/uk_aa_bsm.json",
+  "case_id": "uk-aa-bsm",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "counts": [
+          "DMCC Act 2024 Section 225(1)",
+          "DMCC Act 2024 Section 230",
+          "DMCC Act 2024 direct consumer enforcement"
+        ],
+        "court": "UK Competition and Markets Authority, Case No. 51667",
+        "filed": "2026-04-15",
+        "odds_notes": "Strong authority posture: the respondent admitted the conduct in settlement; the FIN identifies multiple invitations to purchase and ties the omitted mandatory booking fee to Sections 225 and 230.",
+        "outcome": "final infringement notice and settlement",
+        "penalty": "GBP 4,200,000 penalty after settlement discount; mandatory booking fees refunded as redress",
+        "procedural_posture": "CMA Final Infringement Notice",
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "title": "CMA v. Automobile Association Developments Limited - Final Infringement Notice"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/uk_aa_bsm/_case.md",
+      "semantic_sha256": "24cab8556bac97e066a1c8f9067c561ac29c45b97cd2926e209c438c3a6b4d8c"
+    },
+    {
+      "body": "",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 20,
+        "cards": 20,
+        "case_id": "uk-aa-bsm",
+        "evidence_anchor_count": 20,
+        "figures": [
+          "A1.1-38",
+          "A1.2-39",
+          "A1.3-39",
+          "A1.4-40",
+          "A1.5-41",
+          "A1.6-41",
+          "A1.7-42",
+          "A1.8-43",
+          "A2.1-44",
+          "A2.2-45",
+          "A2.3-45",
+          "A2.4-46",
+          "A2.5-47",
+          "A2.6-47",
+          "A2.7-48",
+          "A2.8-49",
+          "A3.1-50",
+          "booking-summary-42",
+          "lesson-package-selection-40",
+          "payment-total-43"
+        ],
+        "norms": 3,
+        "optional_visual_evidence_count": 20,
+        "pattern_ids_provisional": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/uk_aa_bsm/_coverage.json",
+      "semantic_sha256": "81222579cb62384946db55398e97eb8d29e6cae7aff8aaa8a8cb35a845933026"
+    },
+    {
+      "body": "EVIDENCE. Period 1 begins on the AA driving-school home page, with a call to get lesson prices and move into the booking journey.\nLEGAL REASONING. This frame is sequencing evidence only. The CMA identifies the first invitation to purchase later, at lesson-package selection, so no standalone pattern is assigned here.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A1.1-38",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "home_page",
+        "source_anchor_ids": [
+          "anc-0685a180adda6ae4"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "38",
+        "source_ref": "FIN Annex A1, Page 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.1-38.md",
+      "semantic_sha256": "a4653559578566cd22af1bec8b6b1730d70df9f6c1ee46110d2dce2f4ef8d345"
+    },
+    {
+      "body": "EVIDENCE. The postcode step collects location information before prices and package options are shown.\nLEGAL REASONING. This is a funnel-context frame. It helps establish the path to the later price invitations, but the FIN does not treat this screen itself as the omitted-total-price invitation.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A1.2-39",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "postcode_entry",
+        "source_anchor_ids": [
+          "anc-e6654b8f2978fddb"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "39",
+        "source_ref": "FIN Annex A1, Page 2"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.2-39.md",
+      "semantic_sha256": "239a954cf8562cb301031ba94539f93597fc0cadd1dbb63c2eeb50624adb5ab7"
+    },
+    {
+      "body": "EVIDENCE. The lesson-type selection step precedes the package-price screen in the Period 1 consumer journey.\nLEGAL REASONING. This frame is included for complete funnel sequencing. The legal price-omission analysis starts when the flow presents lesson package characteristics and price.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A1.3-39",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "lesson_type_selection",
+        "source_anchor_ids": [
+          "anc-ef87b1a44c0c3f48"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "39",
+        "source_ref": "FIN Annex A1, Page 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.3-39.md",
+      "semantic_sha256": "6cab7949749a5a9e88192b2ac237ccb7ccf68b539491e16f6fae08bd7b62eca4"
+    },
+    {
+      "body": "EVIDENCE. Period 1 lesson-package selection shows package prices for two, six, and ten hours. The FIN states that this first invitation to purchase omitted both the total price and information about the mandatory booking fee.\nLEGAL REASONING. The mandatory booking fee was reasonably calculable from the outset, so omitting it from the first price invitation is the core drip-pricing violation.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "A1.4-40",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "package_selector",
+        "source_anchor_ids": [
+          "anc-9e59027f18b0d4e8"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "40",
+        "source_ref": "FIN Annex A1, Page 4"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.4-40.md",
+      "semantic_sha256": "c347e082b1453158d1a4c1a9ae88ad04753bb83208990fc8daa4bae798649f16"
+    },
+    {
+      "body": "EVIDENCE. The lesson-time selection frame appears after the Period 1 package-price step and before the booking-summary step.\nLEGAL REASONING. This screen is preserved as sequencing evidence. The FIN's named omitted-total-price invitations are the package selection and booking summary screens.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7, 2.32(a)",
+        "figure_id": "A1.5-41",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "lesson_time_selection",
+        "source_anchor_ids": [
+          "anc-4603cf76f31ea6bb"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "41",
+        "source_ref": "FIN Annex A1, Page 5"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.5-41.md",
+      "semantic_sha256": "3bac67289ca7edc0b0929a5e1bafa7da424bfeb2e6c1e1ab2099d0f2d2e5831d"
+    },
+    {
+      "body": "EVIDENCE. The contact-details frame sits between the earlier package selection and the later booking summary in the Period 1 journey.\nLEGAL REASONING. This frame shows user progression through the funnel before the total price is shown, but the card does not assign a standalone legal pattern beyond that sequence.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7, 2.32(a)",
+        "figure_id": "A1.6-41",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "contact_details",
+        "source_anchor_ids": [
+          "anc-64ae5844ad9f1510"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "41",
+        "source_ref": "FIN Annex A1, Page 6"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.6-41.md",
+      "semantic_sha256": "2714fc37823bb95070e1b47662c651278cf75c68f9ad97120c7c7a10a71362e2"
+    },
+    {
+      "body": "EVIDENCE. The Period 1 booking-summary page is the second invitation to purchase. The CMA states that the total price including the mandatory booking fee was still omitted here.\nLEGAL REASONING. This screen demonstrates the drip-pricing progression: even after package selection and user details, the unavoidable booking fee is still absent from the total price presented to the consumer.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "A1.7-42",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "booking_summary",
+        "source_anchor_ids": [
+          "anc-a69d64dfb3f4c143"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "42",
+        "source_ref": "FIN Annex A1, Page 7"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.7-42.md",
+      "semantic_sha256": "aa9134951a9de6edef0093d7431299635a63771a4084133ec545bb8cabcfb204"
+    },
+    {
+      "body": "EVIDENCE. The final payment page is the third Period 1 invitation to purchase and the first point at which the total price inclusive of the mandatory booking fee was provided.\nLEGAL REASONING. This is the late-reveal comparison frame: it confirms that the total price was available and calculable, but appeared only after the earlier price invitations.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "A1.8-43",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "final_payment",
+        "source_anchor_ids": [
+          "anc-354eae038e7ace18"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "43",
+        "source_ref": "FIN Annex A1, Page 8"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A1.8-43.md",
+      "semantic_sha256": "eb1c70ab009c17ed68d5e7d839fc966ebc07d812deda4d910ddf1bc45330aa8d"
+    },
+    {
+      "body": "EVIDENCE. Period 2 begins with the AA driving-school home page before the consumer proceeds into the lesson-booking journey.\nLEGAL REASONING. This is included to make the Period 2 funnel complete. The omitted-total-price analysis attaches to the later invitations to purchase.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A2.1-44",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "home_page",
+        "source_anchor_ids": [
+          "anc-5f06a771e26ddb82"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "44",
+        "source_ref": "FIN Annex A2, Page 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.1-44.md",
+      "semantic_sha256": "302b48b0209285405cb7c226ae77a9bda2bf3274d21e55c2634fdf3d09b64593"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 postcode entry step collects location information before package prices are presented.\nLEGAL REASONING. This is a context frame, not a standalone price-omission frame under the FIN.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A2.2-45",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "postcode_entry",
+        "source_anchor_ids": [
+          "anc-d3eae0b85e729875"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "45",
+        "source_ref": "FIN Annex A2, Page 2"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.2-45.md",
+      "semantic_sha256": "1d01a24bda9781c67cd965704cc37bf7366cf332635038f117b75ea457296cc6"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 lesson-type selection step precedes the first price invitation in the booking journey.\nLEGAL REASONING. This card preserves the funnel sequence without overclaiming a standalone dark pattern at this screen.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7",
+        "figure_id": "A2.3-45",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "lesson_type_selection",
+        "source_anchor_ids": [
+          "anc-fb7bca01d92a7a07"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "45",
+        "source_ref": "FIN Annex A2, Page 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.3-45.md",
+      "semantic_sha256": "1171166b8e0904d21a90586778f812bed6fd5ff6bdd17db7a3971030f24e1b72"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 package-selection screen is the first invitation to purchase. The FIN states that the mandatory booking fee was disclosed separately, but not included in the price shown.\nLEGAL REASONING. A mandatory fee disclosed separately from the displayed price can still omit the total price where the total was reasonably calculable and should have been provided clearly and timely.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(b), 2.32(b)-2.33, 2.41-2.42",
+        "figure_id": "A2.4-46",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "package_selector",
+        "source_anchor_ids": [
+          "anc-def96ab25fc4262e"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "46",
+        "source_ref": "FIN Annex A2, Page 4"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.4-46.md",
+      "semantic_sha256": "c613d541d48674ba5c96d636e7c9df7afd3207f65bc6f68deb00538a47feb6ad"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 lesson-time selection page appears after the first price invitation and before the booking summary.\nLEGAL REASONING. This frame is retained as sequence evidence, while the FIN's price-omission findings focus on the first and second invitations to purchase.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7, 2.32(b)",
+        "figure_id": "A2.5-47",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "lesson_time_selection",
+        "source_anchor_ids": [
+          "anc-5de255bac74d0cd5"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "47",
+        "source_ref": "FIN Annex A2, Page 5"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.5-47.md",
+      "semantic_sha256": "68a98ecbda93973a5afff290fa6b93228b740bd148d1d36866f648a42ae6015c"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 contact-details page sits between lesson-time selection and the booking summary.\nLEGAL REASONING. The screen supports the chronology of the funnel but is not independently mapped to the total-price omission.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.5-2.7, 2.32(b)",
+        "figure_id": "A2.6-47",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "contact_details",
+        "source_anchor_ids": [
+          "anc-8cc9606b778cac7e"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "47",
+        "source_ref": "FIN Annex A2, Page 6"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.6-47.md",
+      "semantic_sha256": "68774214edc107a893010eab494cb26ec285b329e7e2e66ca89f72cd8099a0f0"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 booking-summary page is the second invitation to purchase. The FIN states that the mandatory booking fee was still not included in the price shown.\nLEGAL REASONING. Even after the fee was separately mentioned in Period 2, the CMA found that omitting it from the total price at this invitation remained a material pricing omission.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(b), 2.32(b)-2.33, 2.41-2.42",
+        "figure_id": "A2.7-48",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "booking_summary",
+        "source_anchor_ids": [
+          "anc-331418ccfba2f3bb"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "48",
+        "source_ref": "FIN Annex A2, Page 7"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.7-48.md",
+      "semantic_sha256": "e71e6af4c4fbe4e948f348c570cc4083fb31ae6eba09d4310174026803ff049b"
+    },
+    {
+      "body": "EVIDENCE. The Period 2 final payment page is where the total price inclusive of the mandatory booking fee was finally provided.\nLEGAL REASONING. This frame confirms the late reveal: the total price appeared only after earlier invitations to purchase showed the lesson-package price without incorporating the mandatory fee.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(b), 2.32(b)-2.33, 2.41-2.42",
+        "figure_id": "A2.8-49",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "final_payment",
+        "source_anchor_ids": [
+          "anc-b7bca3c9a9f8edce"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "49",
+        "source_ref": "FIN Annex A2, Page 8"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A2.8-49.md",
+      "semantic_sha256": "55a76b0bb261e29cc21f5d1e285528e12aefe35a9d0686c5cc62d71ea14b4e63"
+    },
+    {
+      "body": "EVIDENCE. The existing-customer top-up page shows the selected lesson-hour price and states that a booking fee will be added at checkout, rather than including that mandatory fee in the displayed total.\nLEGAL REASONING. The FIN states that the total price for existing customers was reasonably calculable from the outset and was provided only at checkout, so the first top-up invitation omitted material total-price information.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(c), 2.34-2.35, 2.41-2.42",
+        "figure_id": "A3.1-50",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "existing_customer_top_up",
+        "source_anchor_ids": [
+          "anc-aacc93a95aea4d46"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "50",
+        "source_ref": "FIN Annex A3"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/A3.1-50.md",
+      "semantic_sha256": "707df8ac457ffe0f7403cfebd5cc9670b9ae3c3487b3f558a39cb087229c16cf"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Annex A1 Page 7: the booking summary is the second invitation to purchase, and the FIN states the total price still omitted the mandatory booking fee.\nLEGAL REASONING. The screen shows the drip-pricing sequence after user progression through the funnel but before the final payment page reveals the full total.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "booking-summary-42",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "booking_summary",
+        "source_anchor_ids": [
+          "anc-a0e272a26f6d3b61"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "42",
+        "source_ref": "FIN Annex A1, Page 7 duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/booking-summary-42.md",
+      "semantic_sha256": "b498dabf8609937d4aa927b1db1198a98a153bb742d1a820cf154baa2123c7d0"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Annex A1 Page 4: lesson-package prices are shown while the FIN states the mandatory booking fee was not included or explained.\nLEGAL REASONING. The FIN treats this first invitation to purchase as omitting material total-price information because the mandatory booking fee was reasonably calculable from the outset.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "lesson-package-selection-40",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "package_selector",
+        "source_anchor_ids": [
+          "anc-69eb0df65a01297b"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "40",
+        "source_ref": "FIN Annex A1, Page 4 duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/lesson-package-selection-40.md",
+      "semantic_sha256": "9bcfeeceef2ba5481f56e304890c048b64b2d1026383caf63174bbee44e7060d"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Annex A1 Page 8: the final payment page is where the total price inclusive of the mandatory booking fee was finally shown.\nLEGAL REASONING. The card is late-reveal evidence, showing that the total price appeared only after earlier invitations to purchase omitted the mandatory fee.\nSTATED LAW. DMCC Act 2024 Sections 225(1) and 230; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_aa_bsm.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "figure_id": "payment-total-43",
+        "norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "mandatory-fee-drip-pricing"
+        ],
+        "product": "AA / BSM driving lessons",
+        "screen_type": "final_payment",
+        "source_anchor_ids": [
+          "anc-9310f3f9dffde653"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_page": "43",
+        "source_ref": "FIN Annex A1, Page 8 duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_aa_bsm/payment-total-43.md",
+      "semantic_sha256": "36ff012ef5de71a934525ee0a99b8e963858285148e4120ceec18bf14d96f2c0"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 20,
+    "anchor_reference_count": 20,
+    "case_cards": 20,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 22,
+    "semantic_sha256": "8618dbe4a148e3f91af680180590c87e7142060d35da32760cfb201322a83ce0"
+  }
+}

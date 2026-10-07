@@ -1,0 +1,404 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/amazon_prime.json",
+  "case_id": "amazon-prime",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "counts": [
+          "FTC Section 5(a)",
+          "ROSCA Section 4(1)/(2)/(3)"
+        ],
+        "court": "W.D. Wash., Case No. 2:23-cv-00932-JHC",
+        "filed": "2023-09-20",
+        "odds_notes": "The amended complaint pleads dark-pattern Prime enrollment and cancellation practices, supported by UI attachments and internal-knowledge allegations.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed",
+        "procedural_posture": "FTC amended complaint, federal court",
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "title": "FTC v. Amazon.com, Inc. et al. - Prime negative-option enrollment and cancellation"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/amazon_prime/_case.md",
+      "semantic_sha256": "c30cc0b2d9c6d43b01abeb19e19ac0372d8a48d69f1fbfabf0be3b97179660c9"
+    },
+    {
+      "body": "",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 10,
+        "cards": 10,
+        "case_id": "amazon-prime",
+        "evidence_anchor_count": 9,
+        "figures": [
+          "attachment-g",
+          "attachment-h-1",
+          "attachment-h-2",
+          "attachment-l-1",
+          "attachment-o-3",
+          "attachment-o-7",
+          "attachment-q-3",
+          "attachment-q-7",
+          "attachment-u-2",
+          "attachment-u-3"
+        ],
+        "norms": 4,
+        "optional_visual_evidence_count": 10,
+        "pattern_ids_provisional": [
+          "asymmetric-cancellation-path",
+          "discount-pressure",
+          "hard-cancellation",
+          "missing-express-consent",
+          "obstruction-to-decline",
+          "payment-without-renewal-disclosure",
+          "preselected-plan",
+          "refund-obstruction",
+          "single-option-cta",
+          "small-print-renewal",
+          "trial-framing"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/amazon_prime/_coverage.json",
+      "semantic_sha256": "29df30c44fde4d869d2da490988ec52f6542bbc562b204a06dd2bf718e824d92"
+    },
+    {
+      "body": "EVIDENCE. Attachment G shows a delivery-option path where Prime trial enrollment is tied to choosing delivery, followed by a payment-method page that the complaint says made no mention of Prime.\nLEGAL REASONING. The complaint treats this as nonconsensual enrollment risk because the consumer can move through shipping and payment while Prime price and auto-renewal terms are not clearly tied to the payment decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "49-50",
+        "figure_id": "attachment-g",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "single-option-cta",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "delivery_option_prime_trial",
+        "source_anchor_ids": [
+          "anc-aa234ab345dc735e"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "17",
+        "source_ref": "Attachment G"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-g.md",
+      "semantic_sha256": "6b109269f26c92270274f33f250b418887a8fedbb7aac39575fa8f495356be13"
+    },
+    {
+      "body": "EVIDENCE. The single-page checkout frame includes a fast free delivery option tied to Prime, while the complaint says the page did not include Prime's price or monthly auto-renewal feature.\nLEGAL REASONING. The legal issue is the mismatch between a shipping-selection interface and the actual recurring-subscription consequence of choosing the Prime delivery option.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "58-60",
+        "figure_id": "attachment-h-1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "single_page_checkout_shipping",
+        "source_anchor_ids": [
+          "anc-228e3912f5f3fda7"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "20",
+        "source_ref": "Attachment H"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-h-1.md",
+      "semantic_sha256": "aec22f1ce604ca089050b1ebd3a645056dbe8d58229819768f37b2b45dd7fdd4"
+    },
+    {
+      "body": "EVIDENCE. This follow-up checkout render is part of Attachment H's single-page checkout flow, which the complaint says enrolled consumers when they selected the Prime-linked delivery option and placed the order.\nLEGAL REASONING. The card supports the same enrollment theory as Attachment H-1: Prime enrollment is embedded in order completion without clear recurring-price and renewal disclosures at the decision point.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "58-60",
+        "figure_id": "attachment-h-2",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "single_page_checkout_followup",
+        "source_anchor_ids": [
+          "anc-228e3912f5f3fda7"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "20",
+        "source_ref": "Attachment H"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-h-2.md",
+      "semantic_sha256": "3c355af5f50c1a7cbab2d6000aca4f82f38aa1f87c4baf4d02ac923dfc23e909"
+    },
+    {
+      "body": "EVIDENCE. The mobile shipping-option screen shows a Prime delivery choice in the mobile checkout sequence. The complaint states that the first preselected option enrolled consumers in Prime and that later payment-method pages did not mention Prime.\nLEGAL REASONING. The mobile flow allegedly converts a shipping preference into a recurring membership enrollment without clear consent or clear recurring-charge disclosure before payment information is used.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "79-81",
+        "figure_id": "attachment-l-1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "mobile_shipping_option",
+        "source_anchor_ids": [
+          "anc-01b3553d40644f47"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "29",
+        "source_ref": "Attachment L"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-l-1.md",
+      "semantic_sha256": "64aab00657e6bce2a296cfd65264ad2de258c46a774be9e6e06bcc3f39da003d"
+    },
+    {
+      "body": "EVIDENCE. The mobile UPDP frame emphasizes a free Prime period while the complaint says smaller text below states the later monthly price and does not reference auto-renewal.\nLEGAL REASONING. The complaint treats the free-trial framing and weaker paid-renewal information as insufficient to obtain express informed consent for recurring Prime charges.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "97-98",
+        "figure_id": "attachment-o-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "trial-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "single-option-cta"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "mobile_updp_trial_headline",
+        "source_anchor_ids": [
+          "anc-7c1d5ef38bf03bcb"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "35",
+        "source_ref": "Attachment O"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-o-3.md",
+      "semantic_sha256": "047f3af0d7caa15639ab03e82297ad90adc51b11d7e65ba2152d61b9ce65e2dc"
+    },
+    {
+      "body": "EVIDENCE. The sticky-footer arrow appears adjacent to a Prime enrollment button. The complaint alleges consumers could enroll while attempting to reveal hidden footer text, and could enroll without scrolling to full disclosures.\nLEGAL REASONING. The legal issue is both disclosure and consent: the interface allegedly lets a dominant enrollment control operate before the consumer sees the full recurring-subscription context.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "101-103",
+        "figure_id": "attachment-o-7",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "single-option-cta",
+          "obstruction-to-decline",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "mobile_sticky_footer",
+        "source_anchor_ids": [
+          "anc-d162ec2d08a77d28"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "38",
+        "source_ref": "Attachment O"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-o-7.md",
+      "semantic_sha256": "2ef1635e0f7aff76dc4bed5b9622d9851c9eda7af140d8c5520b556f8e403d7c"
+    },
+    {
+      "body": "EVIDENCE. The cancellation flow presents discounted or alternative Prime pricing and warnings about losing Prime benefits; the complaint says clicking the offer paths took consumers out of the cancellation flow without cancelling.\nLEGAL REASONING. The legal problem is obstruction: instead of a simple cancellation mechanism, the flow interposes retention offers and exit paths that divert the consumer away from cancellation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "143-145",
+        "figure_id": "attachment-q-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path",
+          "obstruction-to-decline",
+          "discount-pressure"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "cancellation_retention_offer",
+        "source_anchor_ids": [
+          "anc-9abc23c77e402e5b"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "52",
+        "source_ref": "Attachment Q"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-q-3.md",
+      "semantic_sha256": "2542f5f02f346dc5c903fa62f35219a4663812d94f32e4ddde2b37f810d552de"
+    },
+    {
+      "body": "EVIDENCE. The final cancellation screen presents several choices, but the complaint states that only the fifth option, \"End Now,\" immediately cancelled Prime and that completion required at least six clicks from Amazon.com.\nLEGAL REASONING. This supports the claim that cancellation was not simple: the consumer reaches actual cancellation only after multiple pages and competing choices, with limited online refund availability.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "153-155",
+        "figure_id": "attachment-q-7",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path",
+          "refund-obstruction"
+        ],
+        "product": "Amazon Prime",
+        "screen_type": "cancellation_final_choice",
+        "source_anchor_ids": [
+          "anc-6ace928a9b83c7bf"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "55",
+        "source_ref": "Attachment Q"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-q-7.md",
+      "semantic_sha256": "a8174acd6d862c3c92fc311805199a59fbf693d63b357c026bd49e8c5a902986"
+    },
+    {
+      "body": "EVIDENCE. The Prime Video path confirmation screen identifies a Prime plan and includes payment, billing, and Prime terms in the flow.\nLEGAL REASONING. The complaint alleges that a consumer seeking Prime Video had to change the plan away from Prime; otherwise the prominent start-trial action enrolled the consumer in full Prime.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "123-126",
+        "figure_id": "attachment-u-2",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime / Prime Video",
+        "screen_type": "prime_video_confirm_details",
+        "source_anchor_ids": [
+          "anc-e01334b4e46dbe20"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "45",
+        "source_ref": "Attachment U"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-u-2.md",
+      "semantic_sha256": "f9b7cd3f8adf898ef790b8fdba970955db62bef0e4e729627db813225ecced96"
+    },
+    {
+      "body": "EVIDENCE. The plan-change screen is part of the Prime Video path. The complaint says consumers had to click plan information, change the plan, and navigate back to avoid Prime enrollment.\nLEGAL REASONING. The interface allegedly defaults consumers into a broader Prime membership unless they take extra steps to select the narrower Prime Video plan, undermining express informed consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/amazon_prime.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "amazon-prime",
+        "complaint_paras": "125-126",
+        "figure_id": "attachment-u-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "obstruction-to-decline",
+          "missing-express-consent"
+        ],
+        "product": "Amazon Prime / Prime Video",
+        "screen_type": "prime_video_plan_change",
+        "source_anchor_ids": [
+          "anc-6dbb4b0db60b1249"
+        ],
+        "source_file": "amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_page": "46",
+        "source_ref": "Attachment U"
+      },
+      "kind": "case",
+      "logical_path": "cases/amazon_prime/attachment-u-3.md",
+      "semantic_sha256": "920497d7958fc2c2f657373688119a608d30073fcafc42887713f37620cc3195"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 9,
+    "anchor_reference_count": 10,
+    "case_cards": 10,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 12,
+    "semantic_sha256": "0db6b024b0b90a4877507fc4ad30fdc9feb51a57101fca23193dce2ed561d0f2"
+  }
+}

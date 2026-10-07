@@ -1,0 +1,334 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/shutterstock.json",
+  "case_id": "shutterstock",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "counts": [
+          "FTC Section 5(a)",
+          "ROSCA Section 4(1)/(2)/(3)"
+        ],
+        "court": "S.D.N.Y., Case No. 26-cv-03955",
+        "filed": "2026-05-13",
+        "odds_notes": "The complaint pleads annual paid-monthly plans, automatic refill/renewal packs, free-trial conversion, cancellation-fee disclosure, and an eight-page cancellation flow.",
+        "outcome": "pending",
+        "penalty": "not yet applicable",
+        "procedural_posture": "FTC complaint, federal court",
+        "source_file": "ShutterStock-Complaint.pdf",
+        "title": "FTC v. Shutterstock, Inc."
+      },
+      "kind": "case_header",
+      "logical_path": "cases/shutterstock/_case.md",
+      "semantic_sha256": "734040fa2fb102b4de13bea164a3fb6e012ca20ff86a5a6170113596da628d79"
+    },
+    {
+      "body": "",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 8,
+        "cards": 8,
+        "case_id": "shutterstock",
+        "evidence_anchor_count": 8,
+        "figures": [
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "figure-4",
+          "figure-7",
+          "figure-8",
+          "figure-11",
+          "figure-13"
+        ],
+        "norms": 4,
+        "optional_visual_evidence_count": 8,
+        "pattern_ids_provisional": [
+          "asymmetric-cancellation-path",
+          "hard-cancellation",
+          "hidden-renewal",
+          "missing-express-consent",
+          "one-time-price-framing",
+          "obstruction-to-decline",
+          "payment-without-clear-disclosure",
+          "preselected-plan",
+          "refund-obstruction",
+          "small-print-renewal",
+          "trial-framing"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/shutterstock/_coverage.json",
+      "semantic_sha256": "adf16fe21d38a21ed1b9ab3d57ce0189d23b8f1fd9d6f2f8d99201e963bfc516"
+    },
+    {
+      "body": "EVIDENCE. The annual paid-monthly plan selector emphasizes monthly downloads and monthly price, while the complaint alleges material annual-renewal and cancellation-fee terms were not clearly and conspicuously disclosed.\nLEGAL REASONING. The legal issue is that the plan is presented as a monthly-priced choice even though annual commitment, renewal, and cancellation-fee terms materially affect the purchase decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "18-20",
+        "figure_id": "figure-1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "apm_plan_selection",
+        "source_anchor_ids": [
+          "anc-54de0b5219ea343d"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "6",
+        "source_ref": "Figure 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-1.md",
+      "semantic_sha256": "660a093adde347ef6b712ad2303d99e6d09289d16f23c60bbf2747d1c0404a03"
+    },
+    {
+      "body": "EVIDENCE. The cancellation flow requires consumers to answer a survey question and select additional choices before they can continue toward cancellation.\nLEGAL REASONING. The complaint alleges the \"Cancel plan\" action does not cancel anything and instead starts a multi-step process with unnecessary friction before recurring charges can be stopped.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "69-71",
+        "figure_id": "figure-11",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline",
+          "asymmetric-cancellation-path"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "cancellation_survey",
+        "source_anchor_ids": [
+          "anc-531ec143d550413e"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "25",
+        "source_ref": "Figure 11"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-11.md",
+      "semantic_sha256": "896442c2da52ac14dd0bc288d509d435e743ce7d69ba5a3624c0110015750b7b"
+    },
+    {
+      "body": "EVIDENCE. The cancellation page reveals the early cancellation fee and offers no way to dispute it within the self-cancellation flow.\nLEGAL REASONING. The complaint alleges many consumers learned the cancellation fee only on the seventh page of the cancellation flow, forcing them to abandon cancellation, continue paying, or contact customer service.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "75-80",
+        "figure_id": "figure-13",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "refund-obstruction",
+          "asymmetric-cancellation-path",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "cancellation_fee_page",
+        "source_anchor_ids": [
+          "anc-368ae0831a16b5cd"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "28",
+        "source_ref": "Figure 13"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-13.md",
+      "semantic_sha256": "24b4a494e118ad47e6bb5fee27522ea7972bd8bb9f0fc9700757956560213e79"
+    },
+    {
+      "body": "EVIDENCE. The plan page sets the annual paid-monthly plan as the default and presents the cancellation-fee disclosure only as a weak line of text and terms hyperlink.\nLEGAL REASONING. The complaint alleges the default plan and bright purchase button outweighed the small disclosure, leaving automatic renewal and cancellation-fee terms insufficiently clear.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "23-24",
+        "figure_id": "figure-2",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "hidden-renewal",
+          "small-print-renewal",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "plan_selection_default",
+        "source_anchor_ids": [
+          "anc-6ce91a0b6652fbee"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "8",
+        "source_ref": "Figure 2"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-2.md",
+      "semantic_sha256": "d35b1549c7fb5a5bdd67f54b8bde142ae0f02093ea05e9343d8941a94cd8bc9a"
+    },
+    {
+      "body": "EVIDENCE. The final checkout page collects card information and uses bright checkout buttons while cancellation-fee and auto-renewal disclosures appear only in smaller text below the payment path.\nLEGAL REASONING. The complaint alleges Shutterstock obtained billing information before clearly and conspicuously disclosing material negative-option terms, defeating express informed consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "28-29",
+        "figure_id": "figure-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "payment-without-clear-disclosure",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "checkout_payment",
+        "source_anchor_ids": [
+          "anc-cd814fa3b7c1faa7"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "10",
+        "source_ref": "Figure 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-3.md",
+      "semantic_sha256": "b9520139b3e42f0c3c6907122b685b7c86e7745af9fb493d2ad29d448e712f70"
+    },
+    {
+      "body": "EVIDENCE. The marketing email promotes packs as best for a one-time project with no commitment, while the complaint alleges these packs automatically renewed after one year before February 2024.\nLEGAL REASONING. The one-time/no-commitment framing contradicts the alleged automatic renewal term, making the omitted renewal information material to the consumer's decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "39-40",
+        "figure_id": "figure-4",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "one-time-price-framing",
+          "hidden-renewal",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "pack_marketing_email",
+        "source_anchor_ids": [
+          "anc-32d097831f6ef71e"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "14",
+        "source_ref": "Figure 4"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-4.md",
+      "semantic_sha256": "03938e7b310284cf42e41a85b551849a32d056a6ae432a6748f6f9f3fb27c909"
+    },
+    {
+      "body": "EVIDENCE. The final pack checkout collects payment information and completes purchase while automatic refill, expiration, additional charge amount, and avoidance terms are not disclosed before billing information is obtained.\nLEGAL REASONING. The complaint alleges that pack refill and expiration terms were material negative-option terms and were not clearly presented before the consumer entered the transaction.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "47-48",
+        "figure_id": "figure-7",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "payment-without-clear-disclosure",
+          "hidden-renewal",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "pack_checkout",
+        "source_anchor_ids": [
+          "anc-c01bbc867233acf4"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "18",
+        "source_ref": "Figure 7"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-7.md",
+      "semantic_sha256": "f897612299aafa8b89487469193623a74c18355d55ef993d59ed06f075cfcdc1"
+    },
+    {
+      "body": "EVIDENCE. The free-trial offer invites consumers to get free images, while the complaint alleges the trial converted into an automatically renewing annual plan with a cancellation fee.\nLEGAL REASONING. The free-trial framing is legally material because the consumer is not clearly told before enrollment that the trial converts to an annual recurring plan with a fee to cancel early.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/shutterstock.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "shutterstock",
+        "complaint_paras": "54-59",
+        "figure_id": "figure-8",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "trial-framing",
+          "hidden-renewal",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Shutterstock",
+        "screen_type": "free_trial_offer",
+        "source_anchor_ids": [
+          "anc-be87877c5097902d"
+        ],
+        "source_file": "ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_page": "21",
+        "source_ref": "Figure 8"
+      },
+      "kind": "case",
+      "logical_path": "cases/shutterstock/figure-8.md",
+      "semantic_sha256": "a9ad5a5a39beed306161b6879d59a943b0d0fc4b6bf966a37218b63e13bb21c9"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 8,
+    "anchor_reference_count": 8,
+    "case_cards": 8,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 10,
+    "semantic_sha256": "960aeafa1649805080c0acd432d7416443a1457b2458a5b3e3c4eae8acfca469"
+  }
+}

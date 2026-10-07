@@ -1,0 +1,167 @@
+{
+ "artifact_storage": "compact-json-v1",
+ "bundle_path": "cases/adobe.json",
+ "case_id": "adobe",
+ "records": [
+  {
+   "body": "",
+   "container_path": "cases/adobe.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "adobe",
+    "counts": [
+     "FTC Section 5(a)",
+     "ROSCA Section 4(1)/(2)/(3)"
+    ],
+    "court": "N.D. Cal., Case No. 5:24-cv-03630-BLF",
+    "filed": "2024-07-03",
+    "odds_notes": "Strong disclosure and consent case: the complaint ties Adobe's enrollment screens to annual paid monthly subscriptions, early termination fees, and ROSCA material-term disclosure requirements.",
+    "outcome": "source complaint card set",
+    "penalty": "not assessed in complaint",
+    "procedural_posture": "United States complaint after FTC referral, federal court",
+    "source_file": "adobe-032-RedactedComplaint-REPLACEMENT.pdf",
+    "title": "United States v. Adobe Inc. - subscription enrollment and early termination fee disclosures"
+   },
+   "kind": "case_header",
+   "logical_path": "cases/adobe/_case.md",
+   "semantic_sha256": "d3a061cfc6316da9fcc97f518b1026224965b76eff3dc2d44fecee8087cea5ad"
+  },
+  {
+   "body": "",
+   "container_path": "cases/adobe.json",
+   "frontmatter": {
+    "assets": 0,
+    "bundled_asset_count": 0,
+    "card_count": 3,
+    "cards": 3,
+    "case_id": "adobe",
+    "evidence_anchor_count": 3,
+    "figures": [
+     "plan-selection-08",
+     "tooltip-disclosure-09",
+     "payment-entry-10"
+    ],
+    "norms": 3,
+    "optional_visual_evidence_count": 3,
+    "pattern_ids_provisional": [
+     "delayed-price-disclosure",
+     "missing-express-consent",
+     "payment-without-clear-disclosure",
+     "payment-without-renewal-disclosure",
+     "preselected-plan",
+     "small-print-renewal",
+     "trial-framing"
+    ]
+   },
+   "kind": "case_coverage",
+   "logical_path": "cases/adobe/_coverage.json",
+   "semantic_sha256": "346bb1c18ae99ff9abbc04e3d48acda7cb14c7145a854102f2534bd1c68ad140"
+  },
+  {
+   "body": "EVIDENCE. The payment-entry screenshot asks for payment information and emphasizes the free-trial due-now amount while the annual commitment and early termination fee amount are not clearly shown.\nLEGAL REASONING. The complaint treats this as a ROSCA disclosure and consent failure because Adobe obtained billing information without clearly tying the charge authorization to all material subscription and cancellation-fee terms.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+   "container_path": "cases/adobe.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "adobe",
+    "complaint_paras": "46-52, 121-125",
+    "figure_id": "payment-entry-10",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "payment-without-clear-disclosure",
+     "payment-without-renewal-disclosure",
+     "missing-express-consent"
+    ],
+    "product": "Adobe",
+    "screen_type": "payment_entry",
+    "source_anchor_ids": [
+     "anc-b00367fe5f26b8a8"
+    ],
+    "source_file": "adobe-032-RedactedComplaint-REPLACEMENT.pdf",
+    "source_id": "src-83c0b22f96823734",
+    "source_page": "10",
+    "source_ref": "Enrollment Flow Example 3"
+   },
+   "kind": "case",
+   "logical_path": "cases/adobe/payment-entry-10.md",
+   "semantic_sha256": "e20ee1095877398717ba53aa8edc73966d35bfe5af7a1c8d542b2b7be65dac3c"
+  },
+  {
+   "body": "EVIDENCE. The plan-selection screenshot presents a free trial and monthly price while the annual-paid-monthly plan carries only a lower-weight fee note.\nLEGAL REASONING. The complaint alleges Adobe frequently preselected or defaulted consumers into the annual paid monthly plan and did not clearly disclose the annual commitment or early termination fee before billing information was collected.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/adobe.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "adobe",
+    "complaint_paras": "35-38, 121-122",
+    "figure_id": "plan-selection-08",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "preselected-plan",
+     "trial-framing",
+     "small-print-renewal",
+     "delayed-price-disclosure",
+     "renewal-price-mismatch"
+    ],
+    "product": "Adobe",
+    "screen_type": "plan_selection",
+    "source_anchor_ids": [
+     "anc-2929214b448c8ee5"
+    ],
+    "source_file": "adobe-032-RedactedComplaint-REPLACEMENT.pdf",
+    "source_id": "src-83c0b22f96823734",
+    "source_page": "8",
+    "source_ref": "Enrollment Flow Example 1"
+   },
+   "kind": "case",
+   "logical_path": "cases/adobe/plan-selection-08.md",
+   "semantic_sha256": "2627736b9799a73761c6b520a67399cb70e773f6e7c97f0978db2a9b01a76509"
+  },
+  {
+   "body": "EVIDENCE. The tooltip screenshot shows early-termination information appearing only after the consumer interacts with a small information icon.\nLEGAL REASONING. The complaint states that even the tooltip failed to disclose the concrete early-termination fee amount, how it was calculated, or the annual term to which it applied.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/adobe.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "adobe",
+    "complaint_paras": "39-44, 121-122",
+    "figure_id": "tooltip-disclosure-09",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "small-print-renewal",
+     "delayed-price-disclosure"
+    ],
+    "product": "Adobe",
+    "screen_type": "plan_tooltip",
+    "source_anchor_ids": [
+     "anc-904b3fbbc65ff5e7"
+    ],
+    "source_file": "adobe-032-RedactedComplaint-REPLACEMENT.pdf",
+    "source_id": "src-83c0b22f96823734",
+    "source_page": "9",
+    "source_ref": "Enrollment Flow Example 2"
+   },
+   "kind": "case",
+   "logical_path": "cases/adobe/tooltip-disclosure-09.md",
+   "semantic_sha256": "e6ff4619836153be44b95d840b5d1a3ec522f8c2094c1395f67cec70a8bbab3b"
+  }
+ ],
+ "release_version": "0.5.0",
+ "schema_version": "1.0",
+ "summary": {
+  "anchor_count": 3,
+  "anchor_reference_count": 3,
+  "case_cards": 3,
+  "case_headers": 1,
+  "coverage_records": 1,
+  "semantic_records": 5,
+  "semantic_sha256": "f437be41f37f130d01e27b35c5569efdbc0f3969af71c7f77f0094c3bd49fd03"
+ }
+}

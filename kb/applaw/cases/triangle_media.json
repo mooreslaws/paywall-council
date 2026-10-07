@@ -1,0 +1,206 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/triangle_media.json",
+  "case_id": "triangle-media",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "triangle-media",
+        "counts": [
+          "FTC Section 5(a)",
+          "ROSCA Section 4",
+          "EFTA"
+        ],
+        "court": "S.D. Cal., Case No. 3:18-cv-01388-LAB-LL",
+        "filed": "2018-12-11",
+        "odds_notes": "The amended complaint pleads trial and continuity-plan funnels for supplements and related upsells, with screenshots showing low shipping-only totals and post-order upsell screens.",
+        "outcome": "source amended complaint card set",
+        "penalty": "not assessed",
+        "procedural_posture": "FTC first amended complaint, federal court",
+        "source_file": "172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "title": "FTC v. Triangle Media Corporation et al."
+      },
+      "kind": "case_header",
+      "logical_path": "cases/triangle_media/_case.md",
+      "semantic_sha256": "018e740e8bd1854b23994e73ba820adea2ad116e94f4b59f7d571cce40bc134c"
+    },
+    {
+      "body": "",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 4,
+        "cards": 4,
+        "case_id": "triangle-media",
+        "evidence_anchor_count": 4,
+        "figures": [
+          "figure-1",
+          "figure-2a",
+          "figure-2b",
+          "figure-3"
+        ],
+        "norms": 3,
+        "optional_visual_evidence_count": 4,
+        "pattern_ids_provisional": [
+          "hidden-upsell-subscription",
+          "no-price-upsell",
+          "one-click-upsell",
+          "one-time-price-framing",
+          "payment-without-renewal-disclosure",
+          "small-print-renewal",
+          "trial-framing",
+          "unauthorized-add-on"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/triangle_media/_coverage.json",
+      "semantic_sha256": "d775868acfed2a6b6ec0b1ea858404e2307f7f9fc3b4f27398e0fce2f8914c97"
+    },
+    {
+      "body": "EVIDENCE. The trial checkout shows product price as trial or zero and emphasizes a low shipping total, while collecting card data and offering an add-on package.\nLEGAL REASONING. The complaint alleges consumers were later charged full product price and enrolled into a continuity program, making the low shipping-only total and weak renewal disclosure material.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "triangle-media",
+        "complaint_paras": "18-21",
+        "figure_id": "figure-1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "trial-framing",
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "unauthorized-add-on"
+        ],
+        "product": "Cerebral X / Garcinia Clean XT",
+        "screen_type": "trial_checkout",
+        "source_anchor_ids": [
+          "anc-1ebc12f13dc467c0"
+        ],
+        "source_file": "172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_page": "10",
+        "source_ref": "Figure 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/triangle_media/figure-1.md",
+      "semantic_sha256": "f9a84f7786ff675ecefc2d75f7dfffb83a6568ea66bd426d47935018650c8266"
+    },
+    {
+      "body": "EVIDENCE. The mobile shipping screen says \"Almost done\" and \"Just Pay for Shipping,\" with a zero product price and a low total.\nLEGAL REASONING. The complaint alleges the trial was followed by full-price charges and continuity-program enrollment, so the mobile shipping-only framing obscures the actual negative-option consequence.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "triangle-media",
+        "complaint_paras": "18-21",
+        "figure_id": "figure-2a",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "trial-framing",
+          "one-time-price-framing",
+          "payment-without-renewal-disclosure"
+        ],
+        "product": "Garcinia Clean XT",
+        "screen_type": "mobile_trial_shipping",
+        "source_anchor_ids": [
+          "anc-3fb319dcb6662772"
+        ],
+        "source_file": "172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_page": "11",
+        "source_ref": "Figure 2A"
+      },
+      "kind": "case",
+      "logical_path": "cases/triangle_media/figure-2a.md",
+      "semantic_sha256": "51dee903f8f0e7a1bba1262adacfe7df4b3cebcc0db9759dd9a17141ccd7d315"
+    },
+    {
+      "body": "EVIDENCE. The mobile billing screen collects card details, includes an add-on package checkbox, and places terms in small linked text near the continue action.\nLEGAL REASONING. The complaint alleges consumers who continued were charged full product prices and enrolled in recurring shipments, so the payment screen lacked clear negative-option disclosure and consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "triangle-media",
+        "complaint_paras": "18-21",
+        "figure_id": "figure-2b",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "trial-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "unauthorized-add-on"
+        ],
+        "product": "Garcinia Clean XT",
+        "screen_type": "mobile_billing",
+        "source_anchor_ids": [
+          "anc-483ed0c7d2463483"
+        ],
+        "source_file": "172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_page": "11",
+        "source_ref": "Figure 2B"
+      },
+      "kind": "case",
+      "logical_path": "cases/triangle_media/figure-2b.md",
+      "semantic_sha256": "5ff8a2da1cb89a3881f72f0e8917cbdbd9ea5eca0ef351e4036de8edb0f44e49"
+    },
+    {
+      "body": "EVIDENCE. The upsell page tells the consumer the order is not complete and offers an additional free trial bottle with a prominent \"Complete checkout\" path and additional package option.\nLEGAL REASONING. This screen is legally relevant as an add-on and continuity-risk upsell layered onto the original trial funnel, where the complaint alleges consumers were charged later and enrolled in recurring shipments.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/triangle_media.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "triangle-media",
+        "complaint_paras": "18-21",
+        "figure_id": "figure-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "hidden-upsell-subscription",
+          "one-click-upsell",
+          "unauthorized-add-on",
+          "no-price-upsell"
+        ],
+        "product": "Vitamood+ upsell",
+        "screen_type": "post_checkout_upsell",
+        "source_anchor_ids": [
+          "anc-bd36225d4361bc2d"
+        ],
+        "source_file": "172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_page": "14",
+        "source_ref": "Figure 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/triangle_media/figure-3.md",
+      "semantic_sha256": "5d6656ecc02d39c95d8c14c6afd3d17fd7646d0b5bd81e7a0b184f4d8f0bbe55"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 4,
+    "anchor_reference_count": 4,
+    "case_cards": 4,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 6,
+    "semantic_sha256": "65af713c323658f575a7506e6ff811a91b5f053ce6d4d7c95e28160db7ebece5"
+  }
+}

@@ -1,0 +1,1750 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "logical_path_index": {
+    "eval/gold/gold-amazon-prime-attachment-g.md": 0,
+    "eval/gold/gold-amazon-prime-attachment-h-1.md": 1,
+    "eval/gold/gold-amazon-prime-attachment-h-2.md": 2,
+    "eval/gold/gold-amazon-prime-attachment-l-1.md": 3,
+    "eval/gold/gold-amazon-prime-attachment-o-3.md": 4,
+    "eval/gold/gold-amazon-prime-attachment-o-7.md": 5,
+    "eval/gold/gold-amazon-prime-attachment-q-3.md": 6,
+    "eval/gold/gold-amazon-prime-attachment-q-7.md": 7,
+    "eval/gold/gold-amazon-prime-attachment-u-2.md": 8,
+    "eval/gold/gold-amazon-prime-attachment-u-3.md": 9,
+    "eval/gold/gold-cleo-ai-screen-1.md": 10,
+    "eval/gold/gold-cleo-ai-screen-3.md": 11,
+    "eval/gold/gold-cleo-ai-screen-4.md": 12,
+    "eval/gold/gold-cleo-ai-screen-7a.md": 13,
+    "eval/gold/gold-cleo-ai-screen-8b.md": 14,
+    "eval/gold/gold-genesis-a-6.md": 15,
+    "eval/gold/gold-genesis-a-7.md": 16,
+    "eval/gold/gold-genesis-a-8.md": 17,
+    "eval/gold/gold-genesis-a-9.md": 18,
+    "eval/gold/gold-genesis-b-5.md": 19,
+    "eval/gold/gold-genesis-b-6.md": 20,
+    "eval/gold/gold-genesis-c-6.md": 21,
+    "eval/gold/gold-genesis-c-8.md": 22,
+    "eval/gold/gold-genesis-d-5.md": 23,
+    "eval/gold/gold-genesis-d-6.md": 24,
+    "eval/gold/gold-genesis-e-14.md": 25,
+    "eval/gold/gold-genesis-e-9.md": 26,
+    "eval/gold/gold-paddle-pcvark-p43-img1.md": 27,
+    "eval/gold/gold-paddle-pcvark-p44-img1.md": 28,
+    "eval/gold/gold-paddle-pcvark-p46-img1.md": 29,
+    "eval/gold/gold-paddle-pcvark-p48-img2.md": 30,
+    "eval/gold/gold-shutterstock-figure-1.md": 31,
+    "eval/gold/gold-shutterstock-figure-11.md": 32,
+    "eval/gold/gold-shutterstock-figure-13.md": 33,
+    "eval/gold/gold-shutterstock-figure-2.md": 34,
+    "eval/gold/gold-shutterstock-figure-3.md": 35,
+    "eval/gold/gold-shutterstock-figure-4.md": 36,
+    "eval/gold/gold-shutterstock-figure-7.md": 37,
+    "eval/gold/gold-shutterstock-figure-8.md": 38,
+    "eval/gold/gold-triangle-media-figure-1.md": 39,
+    "eval/gold/gold-triangle-media-figure-2a.md": 40,
+    "eval/gold/gold-triangle-media-figure-2b.md": 41,
+    "eval/gold/gold-triangle-media-figure-3.md": 42,
+    "eval/gold/gold-uk-aa-bsm-lesson-package.md": 43,
+    "eval/gold/gold-uk-marks-electrical-added-to-basket.md": 44
+  },
+  "record_count": 45,
+  "records": [
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The delivery selection embeds a Prime trial in the checkout decision and makes the enrollment path salient. The expected answer should flag bundled consent and hidden subscription terms inside a shipping choice.\n\nEXPECTED FLAGS.\n- preselected-plan: The delivery selection embeds a Prime trial in the checkout decision and makes the enrollment path salient.\n- bundled-consent: The delivery selection embeds a Prime trial in the checkout decision and makes the enrollment path salient.\n- hidden-renewal: The delivery selection embeds a Prime trial in the checkout decision and makes the enrollment path salient.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment G, source page 17.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "preselected-plan",
+          "bundled-consent",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-g",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment G",
+        "screen_title": "Fastest delivery option preselects Prime trial",
+        "source_anchor_ids": [
+          "anc-30724fb7c53c2e71"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "17",
+        "source_ref": "Attachment G, source page 17",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-g.md",
+      "semantic_sha256": "5b2199196c044d93e169e7660dbe1accbbd56e325b7daa0e263fd114dfa000d6"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The single-page checkout combines Prime trial enrollment with order flow choices. The model should recognize a subscription-enrollment decision inside a broader checkout step.\n\nEXPECTED FLAGS.\n- bundled-consent: The single-page checkout combines Prime trial enrollment with order flow choices.\n- payment-without-renewal-disclosure: The single-page checkout combines Prime trial enrollment with order flow choices.\n- hidden-renewal: The single-page checkout combines Prime trial enrollment with order flow choices.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment H-1, source page 20.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "bundled-consent",
+          "payment-without-renewal-disclosure",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-h-1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment H-1",
+        "screen_title": "Single page checkout combines Prime trial with order flow",
+        "source_anchor_ids": [
+          "anc-ee841e20fb35f65b"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "20",
+        "source_ref": "Attachment H-1, source page 20",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-h-1.md",
+      "semantic_sha256": "9524acdd82346e753d529954e5803ef7b24d735fa6fac82320ef4691c1a62a97"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The post-selection page gives subscription context only after the consumer has already followed the enrollment path. The expected answer should penalize after-the-fact disclosure of material recurring terms.\n\nEXPECTED FLAGS.\n- delayed-price-disclosure: The post-selection page gives subscription context only after the consumer has already followed the enrollment path.\n- hidden-renewal: The post-selection page gives subscription context only after the consumer has already followed the enrollment path.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment H-2, source page 20.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "delayed-price-disclosure",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-h-2",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment H-2",
+        "screen_title": "Post-selection page gives after-the-fact disclosures",
+        "source_anchor_ids": [
+          "anc-d8b8c2af1a852f5b"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "20",
+        "source_ref": "Attachment H-2, source page 20",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-h-2.md",
+      "semantic_sha256": "7e4c698eb68b641209c90ae9ffde0868167985ca9f79a706dfe8ba33bfde88d5"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The mobile shipping options omit or de-emphasize price and auto-renewal while promoting Prime. The screen tests mobile disclosure sufficiency at the point of enrollment.\n\nEXPECTED FLAGS.\n- payment-without-renewal-disclosure: The mobile shipping options omit or de-emphasize price and auto-renewal while promoting Prime.\n- hidden-renewal: The mobile shipping options omit or de-emphasize price and auto-renewal while promoting Prime.\n- trial-framing: The mobile shipping options omit or de-emphasize price and auto-renewal while promoting Prime.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment L-1, source page 29.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "payment-without-renewal-disclosure",
+          "hidden-renewal",
+          "trial-framing"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-l-1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment L-1",
+        "screen_title": "Mobile shipping options omit price and auto-renewal",
+        "source_anchor_ids": [
+          "anc-4009050a824368a8"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "29",
+        "source_ref": "Attachment L-1, source page 29",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-l-1.md",
+      "semantic_sha256": "33fcac32dd57aaf6ed8336c2d1b9bc01ab5b85933444a9a36c996ef3ab112f65"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The free-trial headline is prominent while the recurring terms require attention to weaker text. The expected answer should flag the visual hierarchy problem around trial-to-paid conversion.\n\nEXPECTED FLAGS.\n- trial-framing: The free-trial headline is prominent while the recurring terms require attention to weaker text.\n- small-print-renewal: The free-trial headline is prominent while the recurring terms require attention to weaker text.\n- hidden-renewal: The free-trial headline is prominent while the recurring terms require attention to weaker text.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment O-3, source page 35.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "trial-framing",
+          "small-print-renewal",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-o-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment O-3",
+        "screen_title": "Mobile disclosure appears below free trial headline",
+        "source_anchor_ids": [
+          "anc-0bc800c5b112d91a"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "35",
+        "source_ref": "Attachment O-3, source page 35",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-o-3.md",
+      "semantic_sha256": "5d6ebdb1bf1f35e53cd910821894f66831b4408c50a5a1e92fd3222277776fa1"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The sticky footer places the Prime enrollment action in a more forceful position than the decline path. The screen tests whether CTA salience and decline friction are treated as consent-design risks.\n\nEXPECTED FLAGS.\n- single-option-cta: The sticky footer places the Prime enrollment action in a more forceful position than the decline path.\n- obstruction-to-decline: The sticky footer places the Prime enrollment action in a more forceful position than the decline path.\n- hidden-renewal: The sticky footer places the Prime enrollment action in a more forceful position than the decline path.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment O-7, source page 38.\n- Complaint paras. 37-107, 263-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "37-107, 263-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "single-option-cta",
+          "obstruction-to-decline",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-o-7",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment O-7",
+        "screen_title": "Sticky footer arrow sits next to Prime enrollment button",
+        "source_anchor_ids": [
+          "anc-081073ba93342c9b"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "38",
+        "source_ref": "Attachment O-7, source page 38",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-o-7.md",
+      "semantic_sha256": "c353dcde931dbfda76af8a6d5caf5f2ea0b412e6af659314ffa1dc0a8dae6eea"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The cancellation flow promotes a discounted alternative instead of simply stopping the membership. The expected answer should treat retention offers as cancellation friction when they are part of the required path.\n\nEXPECTED FLAGS.\n- hard-cancellation: The cancellation flow promotes a discounted alternative instead of simply stopping the membership.\n- discount-pressure: The cancellation flow promotes a discounted alternative instead of simply stopping the membership.\n- asymmetric-cancellation-path: The cancellation flow promotes a discounted alternative instead of simply stopping the membership.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment Q-3, source page 52.\n- Complaint paras. 132-161, 278-280.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-3.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "132-161, 278-280",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hard-cancellation",
+          "discount-pressure",
+          "asymmetric-cancellation-path"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-q-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment Q-3",
+        "screen_title": "Second cancellation page promotes discounted alternative",
+        "source_anchor_ids": [
+          "anc-47c9dc60811a6d57"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "52",
+        "source_ref": "Attachment Q-3, source page 52",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-q-3.md",
+      "semantic_sha256": "c5f7d6fc01835b094cd7bbd7014defc2f4581c8f23d691484f4359e3ad832596"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The final cancellation choice appears only after repeated steps and competes with multiple non-cancel choices. The expected answer should identify a non-simple cancellation mechanism and cite ROSCA cancellation requirements.\n\nEXPECTED FLAGS.\n- hard-cancellation: The final cancellation choice appears only after repeated steps and competes with multiple non-cancel choices.\n- obstruction-to-decline: The final cancellation choice appears only after repeated steps and competes with multiple non-cancel choices.\n- asymmetric-cancellation-path: The final cancellation choice appears only after repeated steps and competes with multiple non-cancel choices.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment Q-7, source page 55.\n- Complaint paras. 132-161, 278-280.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-3.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "132-161, 278-280",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline",
+          "asymmetric-cancellation-path"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-q-7",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment Q-7",
+        "screen_title": "End Now appears last among five cancellation choices",
+        "source_anchor_ids": [
+          "anc-f684da294e6fc9b3"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "55",
+        "source_ref": "Attachment Q-7, source page 55",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-q-7.md",
+      "semantic_sha256": "512c6efa0e5a5b3e9e4252ec2553695c052f53a500729a7c7fdd7aeebaeee229"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The Prime Video confirmation path defaults or routes the consumer into full Prime membership. The expected answer should identify the difference between Prime Video framing and full Prime enrollment.\n\nEXPECTED FLAGS.\n- preselected-plan: The Prime Video confirmation path defaults or routes the consumer into full Prime membership.\n- bundled-consent: The Prime Video confirmation path defaults or routes the consumer into full Prime membership.\n- hidden-renewal: The Prime Video confirmation path defaults or routes the consumer into full Prime membership.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment U-2, source page 45.\n- Complaint paras. 114-126, 272-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "114-126, 272-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "preselected-plan",
+          "bundled-consent",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-u-2",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment U-2",
+        "screen_title": "Confirm details screen defaults to Prime membership",
+        "source_anchor_ids": [
+          "anc-30a17d4a34b73707"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "45",
+        "source_ref": "Attachment U-2, source page 45",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-u-2.md",
+      "semantic_sha256": "3458d696b2e994663cc6f10d3f8f0156f46b58cfc03abd6c838379005c4600f7"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The Prime Video path requires the consumer to change away from Prime membership rather than clearly choosing it. The expected answer should flag default enrollment and plan-substitution risk.\n\nEXPECTED FLAGS.\n- obstruction-to-decline: The Prime Video path requires the consumer to change away from Prime membership rather than clearly choosing it.\n- preselected-plan: The Prime Video path requires the consumer to change away from Prime membership rather than clearly choosing it.\n- hidden-renewal: The Prime Video path requires the consumer to change away from Prime membership rather than clearly choosing it.\n\nEXPECTED CITATIONS.\n- case_law/amazon-rosca-AmendedComplaint(redacted).pdf, Attachment U-3, source page 46.\n- Complaint paras. 114-126, 272-277.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "amazon-prime",
+        "complaint_paras": "114-126, 272-277",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "obstruction-to-decline",
+          "preselected-plan",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-amazon-prime-attachment-u-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Attachment U-3",
+        "screen_title": "Prime Video requires changing plan away from Prime",
+        "source_anchor_ids": [
+          "anc-27964b4ff7682c76"
+        ],
+        "source_file": "case_law/amazon-rosca-AmendedComplaint(redacted).pdf",
+        "source_id": "src-9a472f30b866cd71",
+        "source_kind": "complaint_allegation",
+        "source_page": "46",
+        "source_ref": "Attachment U-3, source page 46",
+        "source_title": "FTC v. Amazon Prime"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-amazon-prime-attachment-u-3.md",
+      "semantic_sha256": "00147382be122ecf3182a18e615cc39a7323ec17e6ae99812458068f5aa78dbc"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The ad emphasizes an up-to-$250 cash advance before typical eligibility limits are clear. The expected answer should flag an amount/timing representation risk while staying anchored to the complaint allegation.\n\nEXPECTED FLAGS.\n- outcome-promise: The ad emphasizes an up-to-$250 cash advance before typical eligibility limits are clear.\n- delayed-price-disclosure: The ad emphasizes an up-to-$250 cash advance before typical eligibility limits are clear.\n\nEXPECTED CITATIONS.\n- case_law/cleo_ai_redacted_complaint_2025.03.27.pdf, Screen 1, source page 4.\n- Complaint paras. 11-22, 49-53.\n- Norm ids: us-ftc-5a.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "cleo-ai",
+        "complaint_paras": "11-22, 49-53",
+        "expected_norms": [
+          "us-ftc-5a"
+        ],
+        "expected_patterns": [
+          "outcome-promise",
+          "delayed-price-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-cleo-ai-screen-1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Screen 1",
+        "screen_title": "Cash advance marketing emphasizes up to $250",
+        "source_anchor_ids": [
+          "anc-3a7ade3a8775c431"
+        ],
+        "source_file": "case_law/cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_kind": "complaint_allegation",
+        "source_page": "4",
+        "source_ref": "Screen 1, source page 4",
+        "source_title": "FTC v. Cleo AI"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-cleo-ai-screen-1.md",
+      "semantic_sha256": "8cdeef160c125188878a8efed40ab51124acb70efbf0169db203956adbd41474"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The plan selection step links access to advances with paid subscription signup. The screen tests whether the model separates advertised cash access from subscription consent.\n\nEXPECTED FLAGS.\n- payment-without-renewal-disclosure: The plan selection step links access to advances with paid subscription signup.\n- hidden-renewal: The plan selection step links access to advances with paid subscription signup.\n- missing-express-consent: The plan selection step links access to advances with paid subscription signup.\n\nEXPECTED CITATIONS.\n- case_law/cleo_ai_redacted_complaint_2025.03.27.pdf, Screen 3, source page 6.\n- Complaint paras. 11-22, 49-53.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "cleo-ai",
+        "complaint_paras": "11-22, 49-53",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "payment-without-renewal-disclosure",
+          "hidden-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-cleo-ai-screen-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Screen 3",
+        "screen_title": "Plan selection requires paid subscription for advance access",
+        "source_anchor_ids": [
+          "anc-9760ef74160cbfe9"
+        ],
+        "source_file": "case_law/cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_kind": "complaint_allegation",
+        "source_page": "6",
+        "source_ref": "Screen 3, source page 6",
+        "source_title": "FTC v. Cleo AI"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-cleo-ai-screen-3.md",
+      "semantic_sha256": "c2b092d37d5e881fbb9a4c9c6234901b79658c39b8ee847df65adb1c59c3f849"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. Subscription pricing appears before advance eligibility limits and material cash-advance details are clear. The expected answer should identify material-term sequencing and negative-option disclosure issues.\n\nEXPECTED FLAGS.\n- delayed-price-disclosure: Subscription pricing appears before advance eligibility limits and material cash-advance details are clear.\n- hidden-renewal: Subscription pricing appears before advance eligibility limits and material cash-advance details are clear.\n- payment-without-renewal-disclosure: Subscription pricing appears before advance eligibility limits and material cash-advance details are clear.\n\nEXPECTED CITATIONS.\n- case_law/cleo_ai_redacted_complaint_2025.03.27.pdf, Screen 4, source page 7.\n- Complaint paras. 23-47, 55-60.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "cleo-ai",
+        "complaint_paras": "23-47, 55-60",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "delayed-price-disclosure",
+          "hidden-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-cleo-ai-screen-4",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Screen 4",
+        "screen_title": "Subscription price precedes cash-advance eligibility details",
+        "source_anchor_ids": [
+          "anc-dfd880ef182c8f9e"
+        ],
+        "source_file": "case_law/cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_kind": "complaint_allegation",
+        "source_page": "7",
+        "source_ref": "Screen 4, source page 7",
+        "source_title": "FTC v. Cleo AI"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-cleo-ai-screen-4.md",
+      "semantic_sha256": "8c94a5cb2cc3c9c47e0e3ed4bfa9d35f6240f4ee6ea3106a2160c488f8685723"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The express-delivery fee changes the same-day cash-advance promise. The screen tests whether a fee-gated speed claim is treated as a material disclosure issue.\n\nEXPECTED FLAGS.\n- payment-without-clear-disclosure: The express-delivery fee changes the same-day cash-advance promise.\n- delayed-price-disclosure: The express-delivery fee changes the same-day cash-advance promise.\n\nEXPECTED CITATIONS.\n- case_law/cleo_ai_redacted_complaint_2025.03.27.pdf, Screen 7A, source page 10.\n- Complaint paras. 23-47, 55-60.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "cleo-ai",
+        "complaint_paras": "23-47, 55-60",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "payment-without-clear-disclosure",
+          "delayed-price-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-cleo-ai-screen-7a",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Screen 7A",
+        "screen_title": "Express delivery fee changes same-day claim",
+        "source_anchor_ids": [
+          "anc-b7ee35d91014a0c8"
+        ],
+        "source_file": "case_law/cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_kind": "complaint_allegation",
+        "source_page": "10",
+        "source_ref": "Screen 7A, source page 10",
+        "source_title": "FTC v. Cleo AI"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-cleo-ai-screen-7a.md",
+      "semantic_sha256": "11d3a0247b2af295608720e9bafecc6a4424b191abfdc0653c6fb009f453a90c"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The subscription management or support screen delays or complicates stopping recurring charges. The expected answer should flag cancellation friction and simple-mechanism risk.\n\nEXPECTED FLAGS.\n- hard-cancellation: The subscription management or support screen delays or complicates stopping recurring charges.\n- obstruction-to-decline: The subscription management or support screen delays or complicates stopping recurring charges.\n\nEXPECTED CITATIONS.\n- case_law/cleo_ai_redacted_complaint_2025.03.27.pdf, Screen 8B, source page 11.\n- Complaint paras. 55-62.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-3.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "cleo-ai",
+        "complaint_paras": "55-62",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-cleo-ai-screen-8b",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Screen 8B",
+        "screen_title": "Retention or support screen delays stopping recurring charges",
+        "source_anchor_ids": [
+          "anc-ab30117924ea0e94"
+        ],
+        "source_file": "case_law/cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_kind": "complaint_allegation",
+        "source_page": "11",
+        "source_ref": "Screen 8B, source page 11",
+        "source_title": "FTC v. Cleo AI"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-cleo-ai-screen-8b.md",
+      "semantic_sha256": "c6dbc4f1ecdc1de7811f770f6a05cf6ef0d8b7068322160ac694cf29bd6afcb6"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. Countdown timer, daily prices, a highlighted plan, a money-back guarantee, and fine print disclosing $59.99/month renewal. LEGAL REASONING. The legal problem is not that renewal language exists somewhere, but that it is visually subordinated to stronger one-time-price, urgency, and low-risk signals. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- urgency-timer: expected from existing Genesis case-card labeling.\n- daily-price-framing: expected from existing Genesis case-card labeling.\n- preselected-plan: expected from existing Genesis case-card labeling.\n- money-back-misdirection: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure A.6, p. 43.\n- Complaint paras. 59-64, 170-171.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "59-64, 170-171",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "urgency-timer",
+          "daily-price-framing",
+          "preselected-plan",
+          "money-back-misdirection"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-a-6",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "A.6",
+        "screen_title": "Genesis A.6: plan selector",
+        "source_anchor_ids": [
+          "anc-46f5ccd1db1d3d66"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "43",
+        "source_ref": "Attachment B, Figure A.6",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-a-6.md",
+      "semantic_sha256": "aa528e401bb27759bf365c40e968330ecb9248b6cfa91c22a3967abdf977f492"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The payment overlay shows the selected plan price and payment methods but does not disclose the auto-renewing subscription. LEGAL REASONING. Because billing information can be submitted from this window, the complaint frames the missing renewal terms as both a disclosure failure and an informed-consent failure. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- payment-without-renewal-disclosure: expected from existing Genesis case-card labeling.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure A.7, p. 44.\n- Complaint paras. 65-67, 170-173.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "65-67, 170-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "payment-without-renewal-disclosure",
+          "hidden-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-a-7",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "A.7",
+        "screen_title": "Genesis A.7: payment overlay",
+        "source_anchor_ids": [
+          "anc-dee3aed1bb963571"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "44",
+        "source_ref": "Attachment B, Figure A.7",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-a-7.md",
+      "semantic_sha256": "1521380673d1b8baace7544d4b39bbfa97ed9498add50e59b5d362950ff8c968"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The e-book add-on is promoted with discount language while the $45/month renewal term appears in small gray text. LEGAL REASONING. The upsell allegedly adds a second recurring charge without a clear and informed purchase decision. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- hidden-upsell-subscription: expected from existing Genesis case-card labeling.\n- discount-anchoring: expected from existing Genesis case-card labeling.\n- small-print-renewal: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure A.8, p. 44.\n- Complaint paras. 68-70, 161-163, 172-173.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "68-70, 161-163, 172-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "hidden-upsell-subscription",
+          "discount-anchoring",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-a-8",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "A.8",
+        "screen_title": "Genesis A.8: post purchase upsell",
+        "source_anchor_ids": [
+          "anc-31c98492ce7b6151"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "44",
+        "source_ref": "Attachment B, Figure A.8",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-a-8.md",
+      "semantic_sha256": "3168b7d4349628cf6925c65c08bebafaad0edd2460d475b3212a9f8d7a6246f9"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The dashboard promotes another paid feature through an \"Unlock Training\" button. LEGAL REASONING. The complaint alleges that users who clicked the button were charged another fee without knowledge or consent and then faced obstacles to cancellation and refunds. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2); ROSCA Section 4(3), 15 U.S.C. 8403(3).\n\nEXPECTED FLAGS.\n- one-click-upsell: expected from existing Genesis case-card labeling.\n- unauthorized-add-on: expected from existing Genesis case-card labeling.\n- hard-cancellation: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure A.9, p. 45.\n- Complaint paras. 71-75, 161-163, 174-175.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-2, us-rosca-4-3.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "71-75, 161-163, 174-175",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-2",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "one-click-upsell",
+          "unauthorized-add-on",
+          "hard-cancellation"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-a-9",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "A.9",
+        "screen_title": "Genesis A.9: dashboard upsell",
+        "source_anchor_ids": [
+          "anc-395fa8b3b799f12e"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "45",
+        "source_ref": "Attachment B, Figure A.9",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-a-9.md",
+      "semantic_sha256": "52fee00f2cb6c6df54e7f38094802c907cc3d1d2d1921f61100859565d338030"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The page highlights a nominal one-time access price while the $49.99/month renewal appears in small text below the main content. LEGAL REASONING. Under ROSCA, renewal amount, timing, and cancellation deadline must be clear and conspicuous before billing information is collected. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- nominal-price-framing: expected from existing Genesis case-card labeling.\n- small-print-renewal: expected from existing Genesis case-card labeling.\n- below-fold-disclosure: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure B.5, p. 48.\n- Complaint paras. 82-84, 170-171.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "82-84, 170-171",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "nominal-price-framing",
+          "small-print-renewal",
+          "below-fold-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-b-5",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "B.5",
+        "screen_title": "Genesis B.5: payment page",
+        "source_anchor_ids": [
+          "anc-e2b750b07a9a5773"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "48",
+        "source_ref": "Attachment B, Figure B.5",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-b-5.md",
+      "semantic_sha256": "5cbd6128004e96c143489e7ed60a2bc9dd029bb6a786c2a6117f8fc021bcf1b8"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The payment page repeats fine print below colorful express-checkout fields and other payment options. LEGAL REASONING. The complaint alleges that the fine print contradicts the one-document purchase framing and that consumers later discovered recurring charges and cancellation problems. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2); ROSCA Section 4(3), 15 U.S.C. 8403(3).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- payment-without-clear-disclosure: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n- hard-cancellation: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure B.6, p. 49.\n- Complaint paras. 85-91, 170-175.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2, us-rosca-4-3.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "85-91, 170-175",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "payment-without-clear-disclosure",
+          "missing-express-consent",
+          "hard-cancellation"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-b-6",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "B.6",
+        "screen_title": "Genesis B.6: checkout",
+        "source_anchor_ids": [
+          "anc-444e99abcc1162b4"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "49",
+        "source_ref": "Attachment B, Figure B.6",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-b-6.md",
+      "semantic_sha256": "6d0f79582d823d48d8f455f341d48f8e0435cf3f0adad8384232dde1027f67cd"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. A 10-minute countdown timer and a \"GET MY OUTFITS\" call to action appear before payment. LEGAL REASONING. Urgency and a dominant CTA allegedly distract from subscription terms and interfere with informed consent. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- urgency-timer: expected from existing Genesis case-card labeling.\n- single-option-cta: expected from existing Genesis case-card labeling.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure C.6, p. 52.\n- Complaint paras. 100-102, 170-173.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "100-102, 170-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "urgency-timer",
+          "single-option-cta",
+          "hidden-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-c-6",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "C.6",
+        "screen_title": "Genesis C.6: urgency offer",
+        "source_anchor_ids": [
+          "anc-726d8abfed57168d"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "52",
+        "source_ref": "Attachment B, Figure C.6",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-c-6.md",
+      "semantic_sha256": "0e80f964768432c7af60d656845490f65f007f49bc0ed764d6c76e3ad36d9cdd"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. Daily prices appear above the button while renewal terms appear lower on the page and require scrolling. LEGAL REASONING. The FTC alleges the terms are not clear and conspicuous and that the 28-day framing is misleading because cancellation is required 24 hours earlier. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- daily-price-framing: expected from existing Genesis case-card labeling.\n- below-fold-disclosure: expected from existing Genesis case-card labeling.\n- misleading-trial-period: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure C.8, p. 53.\n- Complaint paras. 103-106, 170-171.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "103-106, 170-171",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "daily-price-framing",
+          "below-fold-disclosure",
+          "misleading-trial-period"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-c-8",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "C.8",
+        "screen_title": "Genesis C.8: plan selector",
+        "source_anchor_ids": [
+          "anc-12d5bab85cbd96ef"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "53",
+        "source_ref": "Attachment B, Figure C.8",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-c-8.md",
+      "semantic_sha256": "be11ff69b93c7e9b7a4b450c1deaceaffb07e6fb848fb4df93d72c62bd562cde"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The purchase page offers a personalized reading for the chosen price while subscription terms sit in fine print. LEGAL REASONING. Large price and urgency signals allegedly conflict with small disclosures and undermine clear disclosure and informed consent. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- urgency-timer: expected from existing Genesis case-card labeling.\n- small-print-renewal: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure D.5, p. 56.\n- Complaint paras. 118-119, 170-173.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "118-119, 170-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "urgency-timer",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-d-5",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "D.5",
+        "screen_title": "Genesis D.5: payment page",
+        "source_anchor_ids": [
+          "anc-6bfec17699905a66"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "56",
+        "source_ref": "Attachment B, Figure D.5",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-d-5.md",
+      "semantic_sha256": "b6ff593ece55d4a6cc901e18dfd5b4b95f36c8c0356982593c26ac2b34b8cebb"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. The payment form mentions only the amount selected by the consumer and not recurring fees. LEGAL REASONING. The complaint alleges that this confirms the consumer's belief in a one-time purchase and supports the hidden-billing theory. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- one-time-price-framing: expected from existing Genesis case-card labeling.\n- payment-without-renewal-disclosure: expected from existing Genesis case-card labeling.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure D.6, p. 56.\n- Complaint paras. 120-123, 170-173.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "120-123, 170-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "one-time-price-framing",
+          "payment-without-renewal-disclosure",
+          "hidden-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-d-6",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "D.6",
+        "screen_title": "Genesis D.6: payment confirmation",
+        "source_anchor_ids": [
+          "anc-983cd1f454d9b5af"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "56",
+        "source_ref": "Attachment B, Figure D.6",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-d-6.md",
+      "semantic_sha256": "92671c4d58ace0c60698c95246dba3e2870392f4319884a72190e523f4694f18"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. A later upsell screen contains no pricing terms even though the complaint alleges it is another recurring subscription. LEGAL REASONING. The absence of pricing terms defeats informed consent and supports the unauthorized add-on charge theory. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2).\n\nEXPECTED FLAGS.\n- no-price-upsell: expected from existing Genesis case-card labeling.\n- hidden-upsell-subscription: expected from existing Genesis case-card labeling.\n- missing-express-consent: expected from existing Genesis case-card labeling.\n- unauthorized-add-on: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure E.14, p. 63.\n- Complaint paras. 147-148, 161-163, 172-173.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "147-148, 161-163, 172-173",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "no-price-upsell",
+          "hidden-upsell-subscription",
+          "missing-express-consent",
+          "unauthorized-add-on"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-e-14",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "E.14",
+        "screen_title": "Genesis E.14: no price upsell",
+        "source_anchor_ids": [
+          "anc-049c50e302721406"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "63",
+        "source_ref": "Attachment B, Figure E.14",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-e-14.md",
+      "semantic_sha256": "c9248bf7420de400429a2b84abbb27705f292104a9b3a12b84dbf8f83e029b9f"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this as a likely subscription-funnel risk. EVIDENCE. Fine print states that the plan auto-renews at $39.99 per month unless canceled in settings. LEGAL REASONING. The subscription term appears in the smallest text below the price; the complaint alleges that consumers believed they were buying one plan for the displayed price. STATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).\n\nEXPECTED FLAGS.\n- hidden-renewal: expected from existing Genesis case-card labeling.\n- below-fold-disclosure: expected from existing Genesis case-card labeling.\n- small-print-renewal: expected from existing Genesis case-card labeling.\n\nEXPECTED CITATIONS.\n- case_law/Growthmind-Wisey-Complaint.pdf, Attachment B, Figure E.9, p. 61.\n- Complaint paras. 141-143, 170-171.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May group closely related disclosure or consent patterns if all expected legal hooks remain cited.\n- May phrase risk as alleged or potential rather than as a final court finding.\n\nREJECTION CRITERIA.\n- Fails if it invents a case, source, paragraph, or statute not present in the card.\n- Fails if it treats the FTC complaint allegations as adjudicated facts.\n- Fails if it omits citation support for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "genesis-wisey",
+        "complaint_paras": "141-143, 170-171",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "below-fold-disclosure",
+          "small-print-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-genesis-e-9",
+        "jurisdiction": "US",
+        "review_status": "converted_from_case_card",
+        "screen_id": "E.9",
+        "screen_title": "Genesis E.9: renewal terms",
+        "source_anchor_ids": [
+          "anc-6fbff9de82b71028"
+        ],
+        "source_file": "case_law/Growthmind-Wisey-Complaint.pdf",
+        "source_id": "src-6285f7d23d866c20",
+        "source_kind": "complaint_allegation",
+        "source_page": "61",
+        "source_ref": "Attachment B, Figure E.9",
+        "source_title": "FTC v. GM UniverseApps / Growthmind-Wisey"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-genesis-e-9.md",
+      "semantic_sha256": "df0cecf299bb62923e8023ef7bf9e3810b235460bb0456274d370df8df9fa915"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk complaint-allegation item. Figure 3 presents one-year plans, while paragraphs 150-151 allege that auto-renewal language was buried in a lengthy Terms of Use page and did not identify which packages renewed or the renewal charges.\n\nEXPECTED FLAGS.\n- hidden-renewal: The plan-selection screen does not itself explain which packages auto-renew or the applicable renewal amount.\n- small-print-renewal: The complaint alleges that the operative auto-renewal statement was buried in a lengthy Terms of Use page.\n- payment-without-renewal-disclosure: Paragraph 151 alleges that selecting a plan routed the consumer into Paddle's checkout without a complete renewal disclosure at selection.\n\nEXPECTED CITATIONS.\n- case_law/paddle_complaint.pdf, Figure 3, source page 43.\n- Complaint paragraphs 150-151.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May combine the hidden and small-print renewal issues if paragraphs 150-151 and Figure 3 remain explicit.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May describe the visible plan as a one-year plan without inferring a separate preselection or discount violation.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it requires discount anchoring or plan preselection as an expected legal finding without source support.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "paddle-pcvark",
+        "complaint_paras": "150-151",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-paddle-pcvark-p43-img1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "p43_img1",
+        "screen_title": "Plan selection / pricing screen",
+        "source_anchor_ids": [
+          "anc-e3a0beb3a308daf5"
+        ],
+        "source_file": "case_law/paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_kind": "complaint_allegation",
+        "source_page": "43",
+        "source_ref": "Figure 3, source page 43",
+        "source_title": "FTC v. Paddle / PC Vark"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-paddle-pcvark-p43-img1.md",
+      "semantic_sha256": "52fead0ae7ec477c3df1b9eec93fd26eb0835cfa2672c6ef3f69489290279f0d"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk complaint-allegation item. Paragraphs 152-154 allege that the first Paddle checkout window said \"Purchase Restoro 1 Year,\" placed the later yearly charge in smaller text, supplied no subscription-plan explanation, and required no affirmative authorization of auto-renewal.\n\nEXPECTED FLAGS.\n- one-time-price-framing: The checkout title and current total foreground a one-year purchase rather than the recurring plan.\n- small-print-renewal: The follow-on yearly charge appears below the current total in smaller text.\n- payment-without-renewal-disclosure: The complaint alleges that the checkout window did not explain the negative-option plan terms.\n- missing-express-consent: Paragraph 152 alleges that the window did not require affirmative authorization of an auto-renewing subscription.\n\nEXPECTED CITATIONS.\n- case_law/paddle_complaint.pdf, Figure 4, source page 44.\n- Complaint paragraphs 152-154.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May combine the disclosure patterns if the smaller yearly charge, absent plan explanation, and affirmative-authorization allegation remain covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from treating the window as an upsell because the source identifies it as the first checkout step.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it labels Figure 4 a post-purchase upsell or requires discount-pressure findings unsupported by paragraphs 152-154.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "paddle-pcvark",
+        "complaint_paras": "152-154",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-paddle-pcvark-p44-img1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "p44_img1",
+        "screen_title": "First Paddle checkout window",
+        "source_anchor_ids": [
+          "anc-f9f6f0b74b4ed92a"
+        ],
+        "source_file": "case_law/paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_kind": "complaint_allegation",
+        "source_page": "44",
+        "source_ref": "Figure 4, source page 44",
+        "source_title": "FTC v. Paddle / PC Vark"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-paddle-pcvark-p44-img1.md",
+      "semantic_sha256": "4d9db4b392f3614d27890475b579e237bd052f755715becd0e4e373643a4adb9"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk complaint-allegation item. Paragraphs 155-158 allege that the payment path showed a smaller yearly charge but supplied no plan terms or affirmative enrollment choice, and that selecting \"Subscribe Now\" enrolled consumers in annual recurring billing.\n\nEXPECTED FLAGS.\n- one-time-price-framing: The window is titled as a one-year purchase and foregrounds the current total.\n- small-print-renewal: The yearly follow-on amount is visually secondary to the current total and payment controls.\n- payment-without-renewal-disclosure: Paragraphs 155-157 allege that the complete negative-option plan terms were not provided through the payment and confirmation sequence.\n- missing-express-consent: Paragraphs 155-156 allege no affirmative enrollment option before the \"Subscribe Now\" charge and recurring-plan enrollment.\n\nEXPECTED CITATIONS.\n- case_law/paddle_complaint.pdf, Figure 6, source page 46.\n- Complaint paragraphs 155-158.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nACCEPTABLE VARIANTS.\n- May combine the disclosure patterns if the current total, secondary yearly amount, plan-term omission, and consent allegation remain explicit.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May note that \"Subscribe Now\" is visible while still preserving the complaint's allegation that the affirmative enrollment choice was inadequate.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it claims the yearly amount was wholly absent when Figure 6 visibly shows it.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "paddle-pcvark",
+        "complaint_paras": "155-158",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-paddle-pcvark-p46-img1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "p46_img1",
+        "screen_title": "Checkout payment-details window",
+        "source_anchor_ids": [
+          "anc-31b7b16ba9350b3b"
+        ],
+        "source_file": "case_law/paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_kind": "complaint_allegation",
+        "source_page": "46",
+        "source_ref": "Figure 6, source page 46",
+        "source_title": "FTC v. Paddle / PC Vark"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-paddle-pcvark-p46-img1.md",
+      "semantic_sha256": "d136f6b32a2fa770ff348d2b4f840e6cb1a049319e37b3e6b3cd0283b9b07c56"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nTreat this as a moderate-risk complaint-allegation and citation-context item. Paragraphs 161-162 allege that the receipt said \"Restoro 1 Year\" without disclosing automatic annual charges and that many consumers first learned of recurring billing in a later renewal reminder.\n\nEXPECTED FLAGS.\n- one-time-price-framing: The receipt identifies a one-year purchase and billing period without saying that the plan renews automatically.\n- hidden-renewal: Paragraph 161 alleges that the receipt did not disclose the automatic annual charges.\n- payment-without-renewal-disclosure: The receipt is post-purchase evidence and does not cure the complaint's alleged pre-payment disclosure gap.\n\nEXPECTED CITATIONS.\n- case_law/paddle_complaint.pdf, Figure 8, source page 48.\n- Complaint paragraphs 161-162.\n- Norm ids: us-ftc-5a, us-rosca-4-1.\n\nACCEPTABLE VARIANTS.\n- May treat the receipt mainly as corroborating context rather than a standalone pre-payment interface violation.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May note that a post-purchase receipt is not problematic by itself when material terms were clearly disclosed before authorization.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it treats this post-purchase receipt alone as proof that pre-payment disclosure was inadequate.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "paddle-pcvark",
+        "complaint_paras": "161-162",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "expected_patterns": [
+          "one-time-price-framing",
+          "hidden-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "expected_risk_band": "yellow",
+        "expected_score_band": "31-60",
+        "id": "gold-paddle-pcvark-p48-img2",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "p48_img2",
+        "screen_title": "Receipt / order evidence screen",
+        "source_anchor_ids": [
+          "anc-ba1b023855f26696"
+        ],
+        "source_file": "case_law/paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_kind": "complaint_allegation",
+        "source_page": "48",
+        "source_ref": "Figure 8, source page 48",
+        "source_title": "FTC v. Paddle / PC Vark"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-paddle-pcvark-p48-img2.md",
+      "semantic_sha256": "650ae7113cec00939079f8034f337c1cfc91cc6e3773a34640dcfae1cd930557"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The annual-paid-monthly page emphasizes monthly pricing while renewal and cancellation-fee economics are not clearly presented. The screen tests whether the model identifies missing material terms behind a monthly-price frame.\n\nEXPECTED FLAGS.\n- hidden-renewal: The annual-paid-monthly page emphasizes monthly pricing while renewal and cancellation-fee economics are not clearly presented.\n- small-print-renewal: The annual-paid-monthly page emphasizes monthly pricing while renewal and cancellation-fee economics are not clearly presented.\n- delayed-price-disclosure: The annual-paid-monthly page emphasizes monthly pricing while renewal and cancellation-fee economics are not clearly presented.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 1, source page 6.\n- Complaint paras. 18-31, 95-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "18-31, 95-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "delayed-price-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 1",
+        "screen_title": "Annual paid monthly plan page omits renewal and fee terms",
+        "source_anchor_ids": [
+          "anc-9be63530d1d916f6"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "6",
+        "source_ref": "Figure 1, source page 6",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-1.md",
+      "semantic_sha256": "ff0bfa51c1eb99ad29af0b4176d86026a9b42c62223ebd2babd899c2c49f259d"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The cancellation path requires a survey or extra decision before the user can proceed. The expected answer should flag cancellation friction and avoid treating a survey gate as a simple stop mechanism.\n\nEXPECTED FLAGS.\n- hard-cancellation: The cancellation path requires a survey or extra decision before the user can proceed.\n- asymmetric-cancellation-path: The cancellation path requires a survey or extra decision before the user can proceed.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 11, source page 25.\n- Complaint paras. 68-80, 99-100.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-3.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "68-80, 99-100",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-11",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 11",
+        "screen_title": "Cancellation flow requires survey before proceeding",
+        "source_anchor_ids": [
+          "anc-9120256a31f08d68"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "25",
+        "source_ref": "Figure 11, source page 25",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-11.md",
+      "semantic_sha256": "d3dbb775f24721e3decfd8ba94f4d49cd0e6278bf7409109b8aebe40da9e95e0"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The late cancellation screen reveals or enforces a fee and makes dispute or escape paths difficult. The screen tests whether the model connects cancellation design to economic surprise and simple-cancellation requirements.\n\nEXPECTED FLAGS.\n- hard-cancellation: The late cancellation screen reveals or enforces a fee and makes dispute or escape paths difficult.\n- refund-obstruction: The late cancellation screen reveals or enforces a fee and makes dispute or escape paths difficult.\n- hidden-renewal: The late cancellation screen reveals or enforces a fee and makes dispute or escape paths difficult.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 13, source page 28.\n- Complaint paras. 68-80, 99-100.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-3.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "68-80, 99-100",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-3"
+        ],
+        "expected_patterns": [
+          "hard-cancellation",
+          "refund-obstruction",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-13",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 13",
+        "screen_title": "Late cancellation page reveals fee and blocks dispute",
+        "source_anchor_ids": [
+          "anc-db6d8ee7470a5fc9"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "28",
+        "source_ref": "Figure 13, source page 28",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-13.md",
+      "semantic_sha256": "3d9ac31966958fb505b45be72e1a2422309bc446ac1d6908bac3d2c0f2efd5a3"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The default annual-paid-monthly offer uses muted or secondary disclosure for cancellation-fee information. The alleged risk is that a default or highlighted plan masks the economic consequences of choosing it.\n\nEXPECTED FLAGS.\n- hidden-renewal: The default annual-paid-monthly offer uses muted or secondary disclosure for cancellation-fee information.\n- small-print-renewal: The default annual-paid-monthly offer uses muted or secondary disclosure for cancellation-fee information.\n- preselected-plan: The default annual-paid-monthly offer uses muted or secondary disclosure for cancellation-fee information.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 2, source page 8.\n- Complaint paras. 18-31, 95-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "18-31, 95-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "preselected-plan"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-2",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 2",
+        "screen_title": "Default APM offer uses muted cancellation-fee disclosure",
+        "source_anchor_ids": [
+          "anc-1c194b6a972f6d2f"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "8",
+        "source_ref": "Figure 2, source page 8",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-2.md",
+      "semantic_sha256": "1d4326620a7f74caa0ec8cfd6111d45df4c8c2a8e5368c615102de654cada9ea"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The payment page places disclosure text below or away from the checkout prompt and billing controls. The expected answer should flag the timing and placement of material terms before billing submission.\n\nEXPECTED FLAGS.\n- payment-without-renewal-disclosure: The payment page places disclosure text below or away from the checkout prompt and billing controls.\n- below-fold-disclosure: The payment page places disclosure text below or away from the checkout prompt and billing controls.\n- hidden-renewal: The payment page places disclosure text below or away from the checkout prompt and billing controls.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 3, source page 10.\n- Complaint paras. 18-31, 95-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "18-31, 95-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "payment-without-renewal-disclosure",
+          "below-fold-disclosure",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 3",
+        "screen_title": "Payment page places disclosures below checkout prompts",
+        "source_anchor_ids": [
+          "anc-aa2c69baf697b1db"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "10",
+        "source_ref": "Figure 3, source page 10",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-3.md",
+      "semantic_sha256": "36dca9a3ec0b98c4c5a73a6c6f84ffa60933e4e48768086cdc6ca4df87e0b643"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The marketing creative suggests a one-time project or no-commitment offer while the complaint alleges negative-option behavior. The card tests whether the model notices mismatch between acquisition copy and recurring/refill economics.\n\nEXPECTED FLAGS.\n- one-time-price-framing: The marketing creative suggests a one-time project or no-commitment offer while the complaint alleges negative-option behavior.\n- free-claim: The marketing creative suggests a one-time project or no-commitment offer while the complaint alleges negative-option behavior.\n- hidden-renewal: The marketing creative suggests a one-time project or no-commitment offer while the complaint alleges negative-option behavior.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 4, source page 14.\n- Complaint paras. 39-50, 87-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "39-50, 87-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "one-time-price-framing",
+          "free-claim",
+          "hidden-renewal"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-4",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 4",
+        "screen_title": "Marketing email promises one-time project and no commitment",
+        "source_anchor_ids": [
+          "anc-2b722be0daecf0b1"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "14",
+        "source_ref": "Figure 4, source page 14",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-4.md",
+      "semantic_sha256": "6f5724b7df3d358b0e8f6d19a0338339029592c1b08e6489abcf7e4e72e22b07"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The final checkout for packs omits or weakens refill, renewal, and expiration terms near the payment action. The expected answer should treat the checkout as a consent point, not just a product-selection screen.\n\nEXPECTED FLAGS.\n- payment-without-renewal-disclosure: The final checkout for packs omits or weakens refill, renewal, and expiration terms near the payment action.\n- hidden-renewal: The final checkout for packs omits or weakens refill, renewal, and expiration terms near the payment action.\n- missing-express-consent: The final checkout for packs omits or weakens refill, renewal, and expiration terms near the payment action.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 7, source page 18.\n- Complaint paras. 39-50, 87-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "39-50, 87-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "payment-without-renewal-disclosure",
+          "hidden-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-7",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 7",
+        "screen_title": "Pack final checkout omits refill and expiration terms",
+        "source_anchor_ids": [
+          "anc-4d46edcfaa3ac7e3"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "18",
+        "source_ref": "Figure 7, source page 18",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-7.md",
+      "semantic_sha256": "eb4b8237c261cd0c71c06ef793ce986964a4c399d797aec0ad1275c2f1189cc4"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The free-trial screen advertises free images while the complaint alleges conversion into an annual recurring plan with a cancellation fee. The screen is useful for testing whether free-trial framing is connected to post-trial material terms.\n\nEXPECTED FLAGS.\n- trial-framing: The free-trial screen advertises free images while the complaint alleges conversion into an annual recurring plan with a cancellation fee.\n- hidden-renewal: The free-trial screen advertises free images while the complaint alleges conversion into an annual recurring plan with a cancellation fee.\n- small-print-renewal: The free-trial screen advertises free images while the complaint alleges conversion into an annual recurring plan with a cancellation fee.\n- missing-express-consent: The free-trial screen advertises free images while the complaint alleges conversion into an annual recurring plan with a cancellation fee.\n\nEXPECTED CITATIONS.\n- case_law/ShutterStock-Complaint.pdf, Figure 8, source page 21.\n- Complaint paras. 53-59, 95-98.\n- Norm ids: us-ftc-5a, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- TSR negative-option definition may be relevant, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "shutterstock",
+        "complaint_paras": "53-59, 95-98",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "trial-framing",
+          "hidden-renewal",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-shutterstock-figure-8",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 8",
+        "screen_title": "Free trial converts to annual plan with cancellation fee",
+        "source_anchor_ids": [
+          "anc-34dc5272972b787d"
+        ],
+        "source_file": "case_law/ShutterStock-Complaint.pdf",
+        "source_id": "src-b6acfc8d7f4ec1bf",
+        "source_kind": "complaint_allegation",
+        "source_page": "21",
+        "source_ref": "Figure 8, source page 21",
+        "source_title": "FTC v. Shutterstock"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-shutterstock-figure-8.md",
+      "semantic_sha256": "472788626160ae4002cc41da729334064741e85c4a33edd36dcfd35ccb5c59a7"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The checkout highlights a shipping-only total while payment fields are collected and recurring continuity terms are visually secondary. The alleged risk is that consumers understand the offer as a low-cost trial, not a full-price recurring continuity program.\n\nEXPECTED FLAGS.\n- nominal-price-framing: The checkout highlights a shipping-only total while payment fields are collected and recurring continuity terms are visually secondary.\n- hidden-renewal: The checkout highlights a shipping-only total while payment fields are collected and recurring continuity terms are visually secondary.\n- small-print-renewal: The checkout highlights a shipping-only total while payment fields are collected and recurring continuity terms are visually secondary.\n- payment-without-renewal-disclosure: The checkout highlights a shipping-only total while payment fields are collected and recurring continuity terms are visually secondary.\n\nEXPECTED CITATIONS.\n- case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf, Figure 1, source page 10.\n- Complaint paras. 17-25, 40-48, 57-58.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- EFTA/Regulation E may also be relevant for recurring debit authorization, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "triangle-media",
+        "complaint_paras": "17-25, 40-48, 57-58",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "nominal-price-framing",
+          "hidden-renewal",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-triangle-media-figure-1",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 1",
+        "screen_title": "Desktop trial checkout shows total as shipping only",
+        "source_anchor_ids": [
+          "anc-77b818187838a29d"
+        ],
+        "source_file": "case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_kind": "complaint_allegation",
+        "source_page": "10",
+        "source_ref": "Figure 1, source page 10",
+        "source_title": "FTC v. Triangle Media"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-triangle-media-figure-1.md",
+      "semantic_sha256": "a30c3aeadfeec46390f5880c97610a4a04343063106375a24ecd20e6bb5876eb"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The mobile shipping screen emphasizes a $4.95 total before the consumer reaches billing and continuity terms. The screen tests whether the model catches shipping-only framing when material renewal terms are not equally prominent.\n\nEXPECTED FLAGS.\n- nominal-price-framing: The mobile shipping screen emphasizes a $4.95 total before the consumer reaches billing and continuity terms.\n- hidden-renewal: The mobile shipping screen emphasizes a $4.95 total before the consumer reaches billing and continuity terms.\n- payment-without-renewal-disclosure: The mobile shipping screen emphasizes a $4.95 total before the consumer reaches billing and continuity terms.\n\nEXPECTED CITATIONS.\n- case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf, Figure 2A, source page 11.\n- Complaint paras. 17-25, 40-48, 57-58.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- EFTA/Regulation E may also be relevant for recurring debit authorization, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "triangle-media",
+        "complaint_paras": "17-25, 40-48, 57-58",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "nominal-price-framing",
+          "hidden-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-triangle-media-figure-2a",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 2A",
+        "screen_title": "Mobile shipping screen emphasizes only $4.95 total",
+        "source_anchor_ids": [
+          "anc-3cfce68c2ae09e8f"
+        ],
+        "source_file": "case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_kind": "complaint_allegation",
+        "source_page": "11",
+        "source_ref": "Figure 2A, source page 11",
+        "source_title": "FTC v. Triangle Media"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-triangle-media-figure-2a.md",
+      "semantic_sha256": "a6fc119c7055f5b855ee045e7fd8f43055f34738295605878ef09bd3c80ed940"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The mobile billing screen collects payment information while material terms are buried in hyperlink or fine-print copy. The alleged risk is that payment is authorized before clear, conspicuous disclosure and express informed consent.\n\nEXPECTED FLAGS.\n- hidden-renewal: The mobile billing screen collects payment information while material terms are buried in hyperlink or fine-print copy.\n- small-print-renewal: The mobile billing screen collects payment information while material terms are buried in hyperlink or fine-print copy.\n- missing-express-consent: The mobile billing screen collects payment information while material terms are buried in hyperlink or fine-print copy.\n\nEXPECTED CITATIONS.\n- case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf, Figure 2B, source page 11.\n- Complaint paras. 17-25, 40-48, 57-58.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- EFTA/Regulation E may also be relevant for recurring debit authorization, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "triangle-media",
+        "complaint_paras": "17-25, 40-48, 57-58",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "missing-express-consent"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-triangle-media-figure-2b",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 2B",
+        "screen_title": "Mobile billing screen buries terms in hyperlink text",
+        "source_anchor_ids": [
+          "anc-deb5a29b301e66e8"
+        ],
+        "source_file": "case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_kind": "complaint_allegation",
+        "source_page": "11",
+        "source_ref": "Figure 2B, source page 11",
+        "source_title": "FTC v. Triangle Media"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-triangle-media-figure-2b.md",
+      "semantic_sha256": "268c688d2ed91bccbc74ebbacd49210e6de720dcf54ed2af30654ccafe5a4ad4"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item. The upsell tells consumers their order is not complete and presents another free trial through a prominent complete-checkout action. The complaint theory is that the second offer is a separate continuity program that needs its own clear disclosure and consent.\n\nEXPECTED FLAGS.\n- no-price-upsell: The upsell tells consumers their order is not complete and presents another free trial through a prominent complete-checkout action.\n- hidden-upsell-subscription: The upsell tells consumers their order is not complete and presents another free trial through a prominent complete-checkout action.\n- obstruction-to-decline: The upsell tells consumers their order is not complete and presents another free trial through a prominent complete-checkout action.\n- unauthorized-add-on: The upsell tells consumers their order is not complete and presents another free trial through a prominent complete-checkout action.\n\nEXPECTED CITATIONS.\n- case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf, Figure 3, source page 14.\n- Complaint paras. 27-30, 43-48, 57-58.\n- Norm ids: us-ftc-5a, us-ftc-5n, us-rosca-4-1, us-rosca-4-2.\n\nEXTRA CITATION NOTES.\n- EFTA/Regulation E may also be relevant for recurring debit authorization, but this repo currently has no norm id for it.\n\nACCEPTABLE VARIANTS.\n- May combine related patterns into one explanation if each expected risk remains covered.\n- May call the issue alleged, potential, or likely based on complaint status.\n- May abstain from unsupported statutes beyond expected_norms and extra citation notes.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a paragraph anchor.\n- Fails if it presents allegations as final adjudicated findings.\n- Fails if it flags unrelated patterns without explaining evidence from the screen.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "triangle-media",
+        "complaint_paras": "27-30, 43-48, 57-58",
+        "expected_norms": [
+          "us-ftc-5a",
+          "us-ftc-5n",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "expected_patterns": [
+          "no-price-upsell",
+          "hidden-upsell-subscription",
+          "obstruction-to-decline",
+          "unauthorized-add-on"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-triangle-media-figure-3",
+        "jurisdiction": "US",
+        "review_status": "source_mapped",
+        "screen_id": "Figure 3",
+        "screen_title": "Upsell says order is not complete until add-on checkout",
+        "source_anchor_ids": [
+          "anc-e8277b9996841b5f"
+        ],
+        "source_file": "case_law/172_3108_triangle_media_amended_complaint_12-11-18.pdf",
+        "source_id": "src-38cc663150d1496d",
+        "source_kind": "complaint_allegation",
+        "source_page": "14",
+        "source_ref": "Figure 3, source page 14",
+        "source_title": "FTC v. Triangle Media"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-triangle-media-figure-3.md",
+      "semantic_sha256": "73a3b4c05b525e25a11877eecc6680ec3ec15cadf355772e833d0747f94a8c7a"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag this screen as a likely high-risk item under the stated UK scope. The package selector presents lesson prices before the mandatory booking fee is included or explained. The expected answer should identify omitted total-price information at the first invitation to purchase.\n\nEXPECTED FLAGS.\n- mandatory-fee-drip-pricing: The package selector presents lesson prices before the mandatory booking fee is included or explained.\n- payment-without-clear-disclosure: The package selector presents lesson prices before the mandatory booking fee is included or explained.\n\nEXPECTED CITATIONS.\n- uk_aa_bsm_final_infringement_notice.pdf, FIN Annex A1, Page 4 duplicate render.\n- FIN paras. 2.6(a), 2.32(a), 2.41-2.42.\n- Norms: DMCC Act 2024 Sections 225 and 230.\n\nACCEPTABLE VARIANTS.\n- May describe the booking fee as an omitted or late-revealed mandatory charge if the first invitation-to-purchase issue remains covered.\n- May call the issue alleged, potential, or likely only when the source posture is preserved.\n- May abstain from unsupported UK provisions beyond the expected norms.\n\nREJECTION CRITERIA.\n- Fails if it cites a non-existent source or makes up a page anchor.\n- Fails if it treats the final infringement notice as a universal result for every trader.\n- Fails if it selects a norm from another jurisdiction merely because the screen uses a price or checkout convention.\n- Fails if it omits the screen/source citation for the main risk finding.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "uk-aa-bsm",
+        "complaint_paras": "FIN paras 2.6(a), 2.32(a), 2.41-2.42",
+        "expected_norms": [
+          "uk-dmcc-225",
+          "uk-dmcc-230"
+        ],
+        "expected_patterns": [
+          "mandatory-fee-drip-pricing",
+          "payment-without-clear-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-uk-aa-bsm-lesson-package",
+        "jurisdiction": "UK",
+        "review_status": "source_mapped",
+        "screen_id": "lesson-package-selection-40",
+        "screen_title": "Lesson package selector omits mandatory booking fee",
+        "source_anchor_ids": [
+          "anc-69eb0df65a01297b"
+        ],
+        "source_file": "uk_aa_bsm_final_infringement_notice.pdf",
+        "source_id": "src-197bb74930fddc2d",
+        "source_kind": "final_infringement_notice",
+        "source_page": "40",
+        "source_ref": "FIN Annex A1, Page 4 duplicate render",
+        "source_title": "CMA v. Automobile Association Developments Limited"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-uk-aa-bsm-lesson-package.md",
+      "semantic_sha256": "2ecd551034b3b7ea2a51dcc09c26f903688708dee3f7927d3f6fa47ba39d0de6"
+    },
+    {
+      "body": "EXPECTED ANSWER.\nFlag the paid-service default as a high-risk UK additional-payment issue. The final infringement notice records that recycling or packaging services were preselected and automatically added, required manual removal, and were charged without express consent during the relevant period.\n\nEXPECTED FLAGS.\n- prechecked-paid-option: The additional paid services were selected by default before the consumer acted.\n- unauthorized-add-on: The basket total included one or both services unless the consumer removed them.\n- bundled-consent: Proceeding with the main appliance purchase also carried the default additional services.\n- payment-without-clear-disclosure: The pop-up total included optional services without a separate affirmative selection.\n\nEXPECTED CITATIONS.\n- uk_marks_electrical_final_infringement_notice.pdf, Annex A Figure 2, source page 37.\n- FIN paragraphs 1.4, 2.6-2.10, and 2.22-2.29.\n- Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013, Regulation 40.\n\nACCEPTABLE VARIANTS.\n- May focus on preselection and lack of express consent if the paid-service and basket facts remain explicit.\n- May describe the source as a CMA final infringement notice resolved through settlement and admissions.\n- May separate the review panel visible behind the pop-up from the paid-service finding; the notice does not make a fake-review finding.\n\nREJECTION CRITERIA.\n- Fails if it treats a named third-party review panel as fabricated without separate evidence.\n- Fails if it cites a US or EU authority for this UK fixture.\n- Fails if it treats Regulation 40 as a general rule for the main product price rather than an additional-payment rule.\n- Fails if it omits the final-notice posture or invents a different paragraph or figure anchor.",
+      "container_path": "eval/gold.json",
+      "frontmatter": {
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 1.4, 2.6-2.10, 2.22-2.29",
+        "expected_norms": [
+          "uk-ccr-40"
+        ],
+        "expected_patterns": [
+          "prechecked-paid-option",
+          "unauthorized-add-on",
+          "bundled-consent",
+          "payment-without-clear-disclosure"
+        ],
+        "expected_risk_band": "red",
+        "expected_score_band": "61-100",
+        "id": "gold-uk-marks-electrical-added-to-basket",
+        "jurisdiction": "UK",
+        "review_status": "source_mapped",
+        "screen_id": "2-37",
+        "screen_title": "Added-to-basket pop-up includes preselected paid services",
+        "source_anchor_ids": [
+          "anc-2e6267b38dbfcb28"
+        ],
+        "source_file": "case_law/uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_kind": "final_infringement_notice",
+        "source_page": "37",
+        "source_ref": "FIN Annex A, Figure 2",
+        "source_title": "CMA v. Marks Electrical Limited"
+      },
+      "kind": "gold",
+      "logical_path": "eval/gold/gold-uk-marks-electrical-added-to-basket.md",
+      "semantic_sha256": "ae3c49dddd151b79e3873ad3a504048b07d2e83ea80752f415c55fc30cc8d209"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "by_case": {
+      "amazon-prime": 10,
+      "cleo-ai": 5,
+      "genesis-wisey": 12,
+      "paddle-pcvark": 4,
+      "shutterstock": 8,
+      "triangle-media": 4,
+      "uk-aa-bsm": 1,
+      "uk-marks-electrical": 1
+    },
+    "card_count": 45,
+    "review_status_counts": {
+      "converted_from_case_card": 12,
+      "source_mapped": 33
+    },
+    "semantic_sha256": "f679135ec7c0119bb18cc0049b703739b7d6689016395346627947ecd1d96d62"
+  }
+}

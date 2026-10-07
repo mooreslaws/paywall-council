@@ -1,0 +1,227 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/uk_marks_electrical.json",
+  "case_id": "uk-marks-electrical",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "counts": [
+          "CCR Regulation 40",
+          "DMCC Act 2024 Sections 148-150",
+          "DMCC Act 2024 direct consumer enforcement"
+        ],
+        "court": "UK Competition and Markets Authority, Case No. 51652",
+        "filed": "2026-06-15",
+        "odds_notes": "Strong authority posture: the respondent admitted the conduct in settlement; the FIN includes Annex A screenshots, consumer-harm calculations, directions, redress, and a monetary penalty.",
+        "outcome": "final infringement notice and settlement",
+        "penalty": "GBP 720,000 penalty after settlement discount; redress of approximately GBP 579,500",
+        "procedural_posture": "CMA Final Infringement Notice",
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "title": "CMA v. Marks Electrical Limited - Final Infringement Notice"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/uk_marks_electrical/_case.md",
+      "semantic_sha256": "8e43214a7170101c635e8dd0e344f00bfed162fe6077d2c560c7f0e67ae0b0e3"
+    },
+    {
+      "body": "",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 5,
+        "cards": 5,
+        "case_id": "uk-marks-electrical",
+        "evidence_anchor_count": 5,
+        "figures": [
+          "1-36",
+          "2-37",
+          "3-38",
+          "added-to-basket-popup-37",
+          "shopping-basket-38"
+        ],
+        "norms": 2,
+        "optional_visual_evidence_count": 5,
+        "pattern_ids_provisional": [
+          "bundled-consent",
+          "payment-without-clear-disclosure",
+          "prechecked-paid-option",
+          "unauthorized-add-on"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/uk_marks_electrical/_coverage.json",
+      "semantic_sha256": "ad0d4a479cbcd916b7cf95b4a1bd6544300db02d403bf5728515dce920701c14"
+    },
+    {
+      "body": "EVIDENCE. The product page shows the LG washing machine, the main product price, and the add-to-basket step before the later basket states.\nLEGAL REASONING. This is sequencing evidence, not the standalone infringement screen: it establishes the main product purchase before the paid additional services are automatically added in the following basket frames.\nSTATED LAW. Consumer Contracts Regulations 2013 Regulation 40; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 2.3-2.10",
+        "figure_id": "1-36",
+        "norms": [
+          "uk-ccr-40",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [],
+        "product": "Marks Electrical",
+        "screen_type": "product_page",
+        "source_anchor_ids": [
+          "anc-daadaa70040cf7a4"
+        ],
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_page": "36",
+        "source_ref": "FIN Annex A, Figure 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_marks_electrical/1-36.md",
+      "semantic_sha256": "7e842c974d720e27d813b6ecd11280ced0b0190b2c0ac8c838195c0f27c418ed"
+    },
+    {
+      "body": "EVIDENCE. The added-to-basket pop-up shows the product price and a higher basket total including optional services; the FIN states that one or both paid services were pre-selected and automatically added to baskets unless consumers manually removed them.\nLEGAL REASONING. Regulation 40 treats this as an express-consent problem: consent to an additional payment cannot be inferred from a consumer failing to change a default option.\nSTATED LAW. Consumer Contracts Regulations 2013 Regulation 40; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 2.6-2.10, 2.22-2.28",
+        "figure_id": "2-37",
+        "norms": [
+          "uk-ccr-40",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "prechecked-paid-option",
+          "unauthorized-add-on",
+          "bundled-consent",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Marks Electrical",
+        "screen_type": "basket_popup",
+        "source_anchor_ids": [
+          "anc-672c550b5daf7f85"
+        ],
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_page": "37",
+        "source_ref": "FIN Annex A, Figure 2"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_marks_electrical/2-37.md",
+      "semantic_sha256": "f576c5fcd1f4b430d5344bdc34e236d870d9dc0637ca631254dab3bc6e08a070"
+    },
+    {
+      "body": "EVIDENCE. The shopping-basket page shows recycling and packaging services selected in the product-services section and added to the order total.\nLEGAL REASONING. The basket state matters because the additional services are already part of the price path unless the consumer opts out; the FIN concludes that this default structure lacks express consent for additional payments.\nSTATED LAW. Consumer Contracts Regulations 2013 Regulation 40; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 2.6-2.10, 2.23-2.29",
+        "figure_id": "3-38",
+        "norms": [
+          "uk-ccr-40",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "prechecked-paid-option",
+          "unauthorized-add-on",
+          "bundled-consent",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Marks Electrical",
+        "screen_type": "shopping_basket",
+        "source_anchor_ids": [
+          "anc-8b59781c68c76136"
+        ],
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_page": "38",
+        "source_ref": "FIN Annex A, Figure 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_marks_electrical/3-38.md",
+      "semantic_sha256": "e57fd5654ff27cb14f3c8e692024293b9e14069b43f5f8dedfffd0ff0c121cbb"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Figure 2: the added-to-basket pop-up shows a basket total including optional services that the FIN says were preselected and automatically added.\nLEGAL REASONING. The FIN treats the default inclusion of paid services as an express-consent failure because consent cannot be inferred from not changing a preselected option.\nSTATED LAW. Consumer Contracts Regulations 2013 Regulation 40; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 2.6-2.10, 2.22-2.28",
+        "figure_id": "added-to-basket-popup-37",
+        "norms": [
+          "uk-ccr-40",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "prechecked-paid-option",
+          "unauthorized-add-on",
+          "bundled-consent",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Marks Electrical",
+        "screen_type": "basket_popup",
+        "source_anchor_ids": [
+          "anc-2c22854f8f0dba0c"
+        ],
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_page": "37",
+        "source_ref": "FIN Annex A, Figure 2 duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_marks_electrical/added-to-basket-popup-37.md",
+      "semantic_sha256": "a8f987d8f456c101037d5540c90236758e72ac9f78ca5fb7cc8c91632bdb63d4"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Figure 3: the basket page shows paid recycling and packaging services selected and included in the order total.\nLEGAL REASONING. The FIN concludes that automatically adding paid services to the basket and requiring manual deselection does not obtain express consent for additional payments.\nSTATED LAW. Consumer Contracts Regulations 2013 Regulation 40; DMCC Act 2024 direct consumer-enforcement powers.",
+      "container_path": "cases/uk_marks_electrical.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "uk-marks-electrical",
+        "complaint_paras": "FIN paras 2.6-2.10, 2.23-2.29",
+        "figure_id": "shopping-basket-38",
+        "norms": [
+          "uk-ccr-40",
+          "uk-dmcc-direct-enforcement"
+        ],
+        "patterns": [
+          "prechecked-paid-option",
+          "unauthorized-add-on",
+          "bundled-consent",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Marks Electrical",
+        "screen_type": "shopping_basket",
+        "source_anchor_ids": [
+          "anc-5e1877daa311d1eb"
+        ],
+        "source_file": "uk_marks_electrical_final_infringement_notice.pdf",
+        "source_id": "src-908cd1849ef554d0",
+        "source_page": "38",
+        "source_ref": "FIN Annex A, Figure 3 duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/uk_marks_electrical/shopping-basket-38.md",
+      "semantic_sha256": "3c99dc1bd901d3b1d4b2f880c8d6083575a84f88d7bc4a913355e05e77adb4d7"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 5,
+    "anchor_reference_count": 5,
+    "case_cards": 5,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 7,
+    "semantic_sha256": "6f76417a784af48aca0d67626963278ea65fadebd514dc973fb883f0fb126e13"
+  }
+}

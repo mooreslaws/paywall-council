@@ -1,0 +1,2279 @@
+[
+ {
+  "id": "us-hidden-renewal",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-rosca-4-1",
+   "us-ca-arl",
+   "us-ny-gbl-349"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-hidden-renewal",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-hidden-renewal",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-france-name-colon-hidden-renewal",
+  "alias_group": "eu-france",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU:France"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "EU",
+    "sub_jurisdiction": "FR",
+    "status": "candidates",
+    "expected_material_norms": [
+     "eu-ucpd-5-9",
+     "eu-crd-6"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-france-code-colon-hidden-renewal",
+  "alias_group": "eu-france",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU:FR"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-france-name-hyphen-hidden-renewal",
+  "alias_group": "eu-france",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU-France"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-france-code-hyphen-hidden-renewal",
+  "alias_group": "eu-france",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU-FR"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-netherlands-name-colon-hidden-renewal",
+  "alias_group": "eu-netherlands",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU:Netherlands"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-netherlands-code-colon-hidden-renewal",
+  "alias_group": "eu-netherlands",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU:NL"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-netherlands-name-hyphen-hidden-renewal",
+  "alias_group": "eu-netherlands",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU-Netherlands"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-netherlands-code-hyphen-hidden-renewal",
+  "alias_group": "eu-netherlands",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU-NL"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-prechecked-paid-option",
+  "pattern_id": "prechecked-paid-option",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "uk-ccr-40"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-unauthorized-add-on",
+  "pattern_id": "unauthorized-add-on",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-crd-22"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-payment-disclosure",
+  "pattern_id": "payment-without-clear-disclosure",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6",
+   "eu-crd-8-2"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-mandatory-fee",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-pressure",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "missing-jurisdiction",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [],
+  "expected_status": "abstain",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-daily-price-supported",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "invitation-to-purchase",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-230",
+   "uk-dmcc-225"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-225",
+   "norm:uk-dmcc-230",
+   "outcome:uk-cma-aa-bsm-2026",
+   "case:uk_aa_bsm/lesson-package-selection-40"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "uk-dmcc-225",
+     "uk-dmcc-230"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-daily-price-clean-abstention",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "invitation-to-purchase",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality",
+   "full-charge-and-cadence-equally-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-daily-price-supported",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-crd-6",
+   "eu-ucpd-5-9"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "norm:eu-crd-6",
+   "outcome:eu-cjeu-canal-digital-2016"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "EU",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "eu-ucpd-5-9",
+     "eu-crd-6"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-daily-price-clean-abstention",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality",
+   "full-charge-and-cadence-equally-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-nominal-price-supported",
+  "pattern_id": "nominal-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "invitation-to-purchase",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-nominal-price-clear-abstention",
+  "pattern_id": "nominal-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "invitation-to-purchase",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality",
+   "full-charge-and-cadence-equally-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-nominal-price-supported",
+  "pattern_id": "nominal-price-framing",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-nominal-price-clear-abstention",
+  "pattern_id": "nominal-price-framing",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "recurring-or-total-price-less-prominent",
+   "transactional-decision-materiality",
+   "full-charge-and-cadence-equally-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-hard-cancellation-supported",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "outcome:eu-cpc-amazon-prime-commitment-2022"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "EU",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "eu-ucpd-5-9"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-hard-cancellation-comparable-abstention",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality",
+   "cancellation-comparable-to-signup"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-asymmetric-cancellation-supported",
+  "pattern_id": "asymmetric-cancellation-path",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-asymmetric-cancellation-identity-check-abstention",
+  "pattern_id": "asymmetric-cancellation-path",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality",
+   "ordinary-identity-or-fraud-check-only"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-hard-cancellation-aggressive-practice-supported",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "trader-to-consumer-contract",
+   "existing-consumer-cancellation-right",
+   "post-contract-cancellation-stage",
+   "onerous-or-disproportionate-action-to-exercise-right",
+   "harassment-coercion-or-undue-influence",
+   "likely-different-transactional-decision"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-228"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-228"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "uk-dmcc-228"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-hard-cancellation-missing-facts-conditional",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-228"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-hard-cancellation-comparable-path-abstention",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "trader-to-consumer-contract",
+   "existing-consumer-cancellation-right",
+   "post-contract-cancellation-stage",
+   "onerous-or-disproportionate-action-to-exercise-right",
+   "harassment-coercion-or-undue-influence",
+   "likely-different-transactional-decision",
+   "cancellation-comparable-to-signup"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-asymmetric-cancellation-aggressive-practice-supported",
+  "pattern_id": "asymmetric-cancellation-path",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "trader-to-consumer-contract",
+   "existing-consumer-cancellation-right",
+   "post-contract-cancellation-stage",
+   "onerous-or-disproportionate-action-to-exercise-right",
+   "harassment-coercion-or-undue-influence",
+   "likely-different-transactional-decision"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-228"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-228"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "uk-dmcc-228"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-asymmetric-cancellation-missing-facts-conditional",
+  "pattern_id": "asymmetric-cancellation-path",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-228"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-asymmetric-cancellation-identity-check-abstention",
+  "pattern_id": "asymmetric-cancellation-path",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "trader-to-consumer-contract",
+   "existing-consumer-cancellation-right",
+   "post-contract-cancellation-stage",
+   "onerous-or-disproportionate-action-to-exercise-right",
+   "harassment-coercion-or-undue-influence",
+   "likely-different-transactional-decision",
+   "ordinary-identity-or-fraud-check-only"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-eu-unverified-social-proof-intentional-abstentions",
+  "pattern_id": "fake-social-proof",
+  "target_jurisdictions": [
+   "UK",
+   "EU"
+  ],
+  "facts": [
+   "source-information-absent",
+   "social-proof-material-to-transactional-decision"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "abstain",
+    "classification": "intentional_abstention",
+    "expected_material_norms": []
+   },
+   {
+    "jurisdiction": "EU",
+    "status": "abstain",
+    "classification": "intentional_abstention",
+    "expected_material_norms": []
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-eu-likely-fabricated-social-proof-legal-abstentions",
+  "pattern_id": "fake-external-reviews",
+  "target_jurisdictions": [
+   "UK",
+   "EU"
+  ],
+  "facts": [
+   "concrete-contradictory-or-duplicated-identity-evidence",
+   "reviewed-evidence-supports-qualified-inference",
+   "suspicious-but-not-determined",
+   "social-proof-material-to-transactional-decision"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "abstain",
+    "classification": "intentional_abstention",
+    "expected_material_norms": []
+   },
+   {
+    "jurisdiction": "EU",
+    "status": "abstain",
+    "classification": "intentional_abstention",
+    "expected_material_norms": []
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-eu-confirmed-fabricated-social-proof-missing-facts-conditional",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "UK",
+   "EU"
+  ],
+  "facts": [
+   "local-authoritative-source-establishes-fabrication",
+   "social-proof-material-to-transactional-decision"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-sch20-13",
+   "eu-ucpd-5-9"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "uk-dmcc-sch20-13"
+    ]
+   },
+   {
+    "jurisdiction": "EU",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "eu-ucpd-5-9"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-confirmed-fabricated-social-proof-supported",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "consumer-review-or-review-information",
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-sch20-13"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-sch20-13"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "uk-dmcc-sch20-13"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-eu-confirmed-fabricated-social-proof-mixed",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "UK",
+   "EU"
+  ],
+  "facts": [
+   "uk-directed-consumer-commercial-practice",
+   "consumer-review-or-review-information",
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "mixed",
+  "expected_material_norms": [
+   "uk-dmcc-sch20-13",
+   "eu-ucpd-5-9"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-sch20-13",
+   "norm:eu-ucpd-5-9"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "supported_route",
+    "expected_material_norms": [
+     "uk-dmcc-sch20-13"
+    ]
+   },
+   {
+    "jurisdiction": "EU",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "eu-ucpd-5-9"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-candidate-keeps-uk-cancellation-conditional",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "US",
+   "UK"
+  ],
+  "facts": [
+   "consumer-subscription",
+   "post-contract-cancellation",
+   "material-cancellation-obstruction",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5n",
+   "us-ftc-5a",
+   "us-rosca-4-3",
+   "us-ca-arl",
+   "uk-dmcc-228"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "US",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "us-ftc-5n",
+     "us-ftc-5a",
+     "us-rosca-4-3",
+     "us-ca-arl"
+    ]
+   },
+   {
+    "jurisdiction": "UK",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "uk-dmcc-228"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-fr-country-specific-candidate-selection",
+  "candidate_norm_ids": [
+   "eu-ucpd-5-9",
+   "eu-fr-eprivacy-cookie-consent",
+   "uk-dmcc-225"
+  ],
+  "target_jurisdictions": [
+   "EU-FR"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-fr-eprivacy-cookie-consent"
+  ],
+  "expected_jurisdiction_results": [
+   {
+    "jurisdiction": "EU",
+    "sub_jurisdiction": "FR",
+    "status": "candidates",
+    "classification": "conditional_candidate",
+    "expected_material_norms": [
+     "eu-ucpd-5-9",
+     "eu-fr-eprivacy-cookie-consent"
+    ]
+   }
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-nl-incorrect-country-exclusion",
+  "candidate_norm_ids": [
+   "eu-ucpd-5-9",
+   "eu-fr-eprivacy-cookie-consent"
+  ],
+  "target_jurisdictions": [
+   "EU:NL"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-regional-scope-excludes-country-specific-norm",
+  "candidate_norm_ids": [
+   "eu-ucpd-5-9",
+   "eu-fr-eprivacy-cookie-consent"
+  ],
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "procedural-only-primary-rejected",
+  "candidate_norm_ids": [
+   "us-rosca-5"
+  ],
+  "target_jurisdictions": [
+   "US"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "expected_invalid_primary_procedural_norms": [
+   "us-rosca-5"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "procedural-companion-after-material",
+  "candidate_norm_ids": [
+   "us-rosca-4-1",
+   "us-rosca-5"
+  ],
+  "target_jurisdictions": [
+   "US"
+  ],
+  "expected_status": "candidates",
+  "expected_material_norms": [
+   "us-rosca-4-1"
+  ],
+  "expected_procedural_norms": [
+   "us-rosca-5"
+  ],
+  "expected_invalid_primary_procedural_norms": [
+   "us-rosca-5"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "different-jurisdiction-material-rejected",
+  "candidate_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "expected_status": "abstain",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "unstated-jurisdiction-material-abstention",
+  "candidate_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "target_jurisdictions": [],
+  "expected_status": "abstain",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "unsupported-jurisdiction-rejected",
+  "candidate_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "target_jurisdictions": [
+   "CA"
+  ],
+  "expected_error_contains": "unsupported jurisdiction"
+ },
+ {
+  "id": "us-rosca-disclosure-supported",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "billing-information-requested-in-flow",
+   "negative-option-terms-omitted-or-subordinated-at-billing-point"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-rosca-4-1",
+   "us-ca-arl",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [
+   "us-rosca-4-1"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:us-rosca-4-1",
+   "norm:us-ca-arl",
+   "norm:us-ny-gbl-349"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-rosca-required-fact-rejected",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "billing-information-requested-in-flow",
+   "negative-option-terms-omitted-or-subordinated-at-billing-point"
+  ],
+  "rejected_facts": [
+   "covered-online-negative-option-transaction"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-rosca-required-fact-unknown",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "billing-information-requested-in-flow",
+   "negative-option-terms-omitted-or-subordinated-at-billing-point"
+  ],
+  "unknown_facts": [
+   "covered-online-negative-option-transaction"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-rosca-4-1",
+   "us-ca-arl",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-general-free-claim-excludes-reviews-rule",
+  "pattern_id": "free-claim",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-covered-ticket-fee-supported",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-live-event-ticket-or-short-term-lodging-offer"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "us-ftc-fees-rule"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-fees-rule"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:us-ftc-fees-rule"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-general-processing-fee-excludes-narrow-rule",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "rejected_facts": [
+   "covered-live-event-ticket-or-short-term-lodging-offer"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-fee-sector-unknown-remains-conditional",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "unknown_facts": [
+   "covered-live-event-ticket-or-short-term-lodging-offer"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-fees-rule"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-confirmed-review-conduct-supported",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "consumer-review-or-review-information",
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-reviews-rule",
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-reviews-rule"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:us-ftc-reviews-rule"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-review-conduct-unknown-remains-conditional",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "consumer-review-or-review-information"
+  ],
+  "unknown_facts": [
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-reviews-rule",
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pricing-one-confirmed-fact-remains-conditional",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pricing-required-fact-rejected",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "rejected_facts": [
+   "recurring-or-total-price-less-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pricing-natural-language-cannot-satisfy-token",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation to purchase"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [],
+  "expected_fact_warning_contains": "unrecognized factual-gate",
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pricing-unknown-token-is-safe",
+  "pattern_id": "daily-price-framing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "not-a-real-gate"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [],
+  "expected_fact_warning_contains": "unrecognized factual-gate",
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-cancellation-partial-facts-remain-conditional",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "consumer-subscription"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-rosca-clear-disclosure-keeps-baseline-conditional",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "billing-information-requested-in-flow",
+   "negative-option-terms-clearly-and-conspicuously-disclosed-before-billing"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-disclosure-price-supported",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-225",
+   "norm:uk-dmcc-230",
+   "outcome:uk-cma-aa-bsm-2026"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-disclosure-price-fully-disclosed-abstention",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality",
+   "full-charge-and-cadence-equally-prominent"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-disclosure-price-supported",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "norm:eu-crd-6",
+   "outcome:eu-cjeu-canal-digital-2016"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-disclosure-price-partial-facts-conditional",
+  "pattern_id": "hidden-renewal",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_supported_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-payment-disclosure-supported",
+  "pattern_id": "payment-without-clear-disclosure",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "payment-commitment-requested",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230",
+   "uk-ccr-14"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-225",
+   "norm:uk-dmcc-230",
+   "norm:uk-ccr-14"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-payment-disclosure-supported",
+  "pattern_id": "payment-without-clear-disclosure",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "payment-commitment-requested",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6",
+   "eu-crd-8-2"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6",
+   "eu-crd-8-2"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "norm:eu-crd-6",
+   "norm:eu-crd-8-2",
+   "outcome:eu-cjeu-fuhrmann-2022"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-payment-disclosure-covered-contract-rejected-abstention",
+  "pattern_id": "payment-without-clear-disclosure",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "payment-commitment-requested",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "rejected_facts": [
+   "covered-distance-or-off-premises-contract"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-additional-payment-supported",
+  "pattern_id": "bundled-consent",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "trader-to-consumer-contract",
+   "additional-charge-beyond-main-obligation",
+   "consent-inferred-from-default-or-inaction"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-ccr-40"
+  ],
+  "expected_supported_material_norms": [
+   "uk-ccr-40"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-ccr-40",
+   "outcome:uk-cma-marks-electrical-2026"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-additional-payment-express-opt-in-abstention",
+  "pattern_id": "bundled-consent",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "trader-to-consumer-contract",
+   "additional-charge-beyond-main-obligation",
+   "express-opt-in-action-required"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-additional-payment-supported",
+  "pattern_id": "prechecked-paid-option",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "additional-charge-beyond-main-obligation",
+   "consent-inferred-from-default-or-inaction"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-crd-22"
+  ],
+  "expected_supported_material_norms": [
+   "eu-crd-22"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-crd-22",
+   "outcome:eu-cjeu-ebookers-2012"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-mandatory-fee-supported",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "mandatory-fee-revealed-after-headline-price",
+   "total-price-reasonably-calculable-upfront"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-225",
+   "norm:uk-dmcc-230",
+   "outcome:uk-cma-aa-bsm-2026"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-mandatory-fee-included-total-abstention",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "mandatory-fee-revealed-after-headline-price",
+   "total-price-reasonably-calculable-upfront",
+   "headline-price-already-includes-mandatory-fee"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-mandatory-fee-supported",
+  "pattern_id": "mandatory-fee-drip-pricing",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "mandatory-fee-revealed-after-headline-price",
+   "total-price-reasonably-calculable-upfront"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "norm:eu-crd-6",
+   "outcome:eu-cjeu-canal-digital-2016"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pressure-supported",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:uk-dmcc-225",
+   "outcome:uk-cma-emma-sleep-2026"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-pressure-supported",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "pre-contract-stage",
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:eu-ucpd-5-9",
+   "outcome:eu-cpc-booking-commitment-2020"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-pressure-genuine-offer-abstention",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "pre-contract-stage",
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality",
+   "genuine-time-limited-offer-substantiated"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-first-party-claim-supported",
+  "pattern_id": "outcome-promise",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-first-party-claim-supported",
+  "pattern_id": "health-adjacent-claim",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-first-party-claim-substantiated-abstention",
+  "pattern_id": "outcome-promise",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "objective-claim-presented-as-fact",
+   "transactional-decision-materiality",
+   "claim-substantiation-or-source-shown"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-default-selection-supported",
+  "pattern_id": "preselected-plan",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "default-selection-favors-paid-or-costlier-option",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-default-selection-changeable-abstention",
+  "pattern_id": "preselected-plan",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "default-selection-favors-paid-or-costlier-option",
+   "transactional-decision-materiality",
+   "options-equally-prominent-and-freely-changeable"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-post-purchase-obstruction-comparable-exit-abstention",
+  "pattern_id": "refund-obstruction",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "consumer-subscription",
+   "post-purchase-exit-or-refund-obstructed",
+   "transactional-decision-materiality",
+   "exit-path-comparable-to-entry-path"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-eu-social-proof-unreached-by-claim-routes",
+  "pattern_id": "fake-social-proof",
+  "target_jurisdictions": [
+   "UK",
+   "EU"
+  ],
+  "confirmed_facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality",
+   "uk-directed-consumer-commercial-practice"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-pressure-supported",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-ny-gbl-349"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-pressure-genuine-offer-abstention",
+  "pattern_id": "urgency-timer",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality",
+   "genuine-time-limited-offer-substantiated"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-default-selection-supported",
+  "pattern_id": "preselected-plan",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "default-selection-favors-paid-or-costlier-option",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-rosca-4-2",
+   "us-ca-arl"
+  ],
+  "expected_supported_material_norms": [
+   "us-rosca-4-2"
+  ],
+  "expected_source_anchor_ids": [
+   "norm:us-rosca-4-2",
+   "outcome:us-ftc-amazon-prime-2025",
+   "norm:us-ca-arl"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-default-selection-express-optin-drops-rosca",
+  "pattern_id": "preselected-plan",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "default-selection-favors-paid-or-costlier-option",
+   "transactional-decision-materiality",
+   "express-opt-in-action-required"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5a",
+   "us-ca-arl"
+  ],
+  "must_not_use_analogue": true,
+  "expected_supported_material_norms": []
+ },
+ {
+  "id": "us-cancellation-obstruction-supported",
+  "pattern_id": "cancellation-contact-channel-mismatch",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "post-purchase-exit-or-refund-obstructed",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5n",
+   "us-rosca-4-3",
+   "us-ca-arl"
+  ],
+  "expected_supported_material_norms": [
+   "us-rosca-4-3"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-cancellation-comparable-exit-drops-rosca",
+  "pattern_id": "hard-cancellation",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "covered-online-negative-option-transaction",
+   "post-purchase-exit-or-refund-obstructed",
+   "transactional-decision-materiality",
+   "exit-path-comparable-to-entry-path"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "conditional_candidate",
+  "expected_material_norms": [
+   "us-ftc-5n",
+   "us-ftc-5a",
+   "us-ca-arl"
+  ],
+  "must_not_use_analogue": true,
+  "expected_supported_material_norms": []
+ },
+ {
+  "id": "uk-claim-reaches-misleading-action-head",
+  "pattern_id": "outcome-promise",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-pressure-demand-counter-supported",
+  "pattern_id": "fake-installs-purchases",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-pressure-demand-counter-supported",
+  "pattern_id": "fake-installs-purchases",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "pre-contract-stage",
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-pressure-demand-counter-supported",
+  "pattern_id": "fake-installs-purchases",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "false-or-unverifiable-scarcity-or-time-claim",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-pressure-sourced-demand-counter-abstention",
+  "pattern_id": "fake-installs-purchases",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "facts": [
+   "transactional-decision-materiality",
+   "genuine-time-limited-offer-substantiated"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-forced-win-discount-supported",
+  "pattern_id": "forced-discount",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "chance-or-exclusivity-representation-unsupported-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-forced-win-discount-terms-disclosed-abstention",
+  "pattern_id": "forced-discount",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "facts": [
+   "chance-or-exclusivity-representation-unsupported-on-screen",
+   "transactional-decision-materiality",
+   "gamified-discount-terms-disclosed"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-confirmed-fabricated-social-proof-supported",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "pre-contract-stage",
+   "consumer-review-or-review-information",
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-suspicious-reviews-not-determined-abstention",
+  "pattern_id": "fake-social-media-reviews",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "facts": [
+   "pre-contract-stage",
+   "consumer-review-or-review-information",
+   "trader-submitted-commissioned-or-published-review",
+   "local-authoritative-source-establishes-fabrication",
+   "transactional-decision-materiality",
+   "suspicious-but-not-determined"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-upsell-after-purchase-supported",
+  "pattern_id": "hidden-upsell-subscription",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "invitation-to-purchase",
+   "material-pricing-term-omitted-or-subordinated-at-invitation",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-230"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-bare-media-masthead-supported",
+  "pattern_id": "fake-media-features",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-sourced-award-badge-abstention",
+  "pattern_id": "fake-awards",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality",
+   "claim-substantiation-or-source-shown"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "uk-bare-university-crest-supported",
+  "pattern_id": "fake-university-endorsement",
+  "target_jurisdictions": [
+   "UK"
+  ],
+  "confirmed_facts": [
+   "uk-directed-consumer-commercial-practice",
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "expected_supported_material_norms": [
+   "uk-dmcc-225",
+   "uk-dmcc-226"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-credential-byline-supported",
+  "pattern_id": "authority-claim",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "confirmed_facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "us-ftc-5a"
+  ],
+  "expected_supported_material_norms": [
+   "us-ftc-5a"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "eu-before-after-supported",
+  "pattern_id": "before-after-social-proof",
+  "target_jurisdictions": [
+   "EU"
+  ],
+  "confirmed_facts": [
+   "covered-distance-or-off-premises-contract",
+   "pre-contract-stage",
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality"
+  ],
+  "expected_status": "candidates",
+  "expected_classification": "supported_route",
+  "expected_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "expected_supported_material_norms": [
+   "eu-ucpd-5-9"
+  ],
+  "must_not_use_analogue": true
+ },
+ {
+  "id": "us-before-after-quoted-testimonial-abstention",
+  "pattern_id": "before-after-social-proof",
+  "target_jurisdictions": [
+   "US"
+  ],
+  "facts": [
+   "objective-claim-presented-as-fact",
+   "claim-substantiation-absent-on-screen",
+   "transactional-decision-materiality",
+   "claim-framed-as-individual-experience-or-opinion"
+  ],
+  "expected_status": "abstain",
+  "expected_classification": "intentional_abstention",
+  "expected_material_norms": [],
+  "must_not_use_analogue": true
+ }
+]

@@ -1,0 +1,473 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/justanswer.json",
+  "case_id": "justanswer",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "counts": [
+          "FTC Section 5(a)",
+          "ROSCA Section 4(1)/(2)/(3)"
+        ],
+        "court": "N.D. Cal., Case No. 3:26-cv-00333",
+        "filed": "2026-01-13",
+        "odds_notes": "Strong regulator posture: the complaint pleads a low-price expert-answer funnel, a payment form with smaller subscription text, consumer complaints, and long-running negative-option knowledge.",
+        "outcome": "pending",
+        "penalty": "not yet applicable",
+        "procedural_posture": "DOJ/FTC complaint, federal court",
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "title": "United States v. JustAnswer LLC and Andy Kurtzig"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/justanswer/_case.md",
+      "semantic_sha256": "4590ab007f76b1a847118f38b12465a5db5e82b6990b913418146c68d27610c2"
+    },
+    {
+      "body": "",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 12,
+        "cards": 12,
+        "case_id": "justanswer",
+        "evidence_anchor_count": 12,
+        "figures": [
+          "A-06",
+          "B-07",
+          "C-07",
+          "D-08",
+          "E-09",
+          "F-11",
+          "G-12",
+          "H-22",
+          "I-22",
+          "payment-comparison-22",
+          "payment-desktop-11",
+          "payment-mobile-12"
+        ],
+        "norms": 3,
+        "optional_visual_evidence_count": 12,
+        "pattern_ids_provisional": [
+          "authority-claim",
+          "delayed-price-disclosure",
+          "hidden-renewal",
+          "missing-express-consent",
+          "money-back-misdirection",
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "payment-without-renewal-disclosure",
+          "personalization-lure",
+          "small-print-renewal"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/justanswer/_coverage.json",
+      "semantic_sha256": "2435c0c7d4ed89500f9b213cb895c34f568e0948bf62bb5f997ad6b077d06d45"
+    },
+    {
+      "body": "EVIDENCE. Sponsored search ads offer access to veterinarians and online answers while the complaint states that the search ads do not disclose the fee structure or required monthly subscription.\nLEGAL REASONING. This frame is the paid-search entry point: it routes consumers into the expert-answer flow while material subscription economics are deferred to later screens.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "22-23",
+        "figure_id": "A-06",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "authority-claim",
+          "delayed-price-disclosure"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "search_ad_results",
+        "source_anchor_ids": [
+          "anc-030526438ebfcb86"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "6",
+        "source_ref": "Figure A"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/A-06.md",
+      "semantic_sha256": "2a6cd0ae3134b15899abef4ab5f70a57d5131e3ac5a91fd1e38f42cd87fbb6c5"
+    },
+    {
+      "body": "EVIDENCE. The second sponsored ad example is part of the same search-ad purchase flow and precedes the category landing pages.\nLEGAL REASONING. The card is mainly sequencing evidence: it shows that the consumer begins from an expert-answer ad, before price and renewal terms are shown in the funnel.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "22-25",
+        "figure_id": "B-07",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "authority-claim",
+          "delayed-price-disclosure"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "search_ad",
+        "source_anchor_ids": [
+          "anc-9d625b5560fb617e"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "7",
+        "source_ref": "Figure B"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/B-07.md",
+      "semantic_sha256": "c3dff0232d5219689d264ee0c8687d65114f518be593bd314e06b1aa1153f729"
+    },
+    {
+      "body": "EVIDENCE. The desktop landing page presents a category-specific expert-service page and a chatbot assistant that gathers information before the payment step.\nLEGAL REASONING. The landing page builds relevance and expert authority before the recurring subscription price is clearly presented, making later price disclosure material to the consumer's decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "24-26",
+        "figure_id": "C-07",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "authority-claim",
+          "personalization-lure",
+          "delayed-price-disclosure"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "desktop_landing_page",
+        "source_anchor_ids": [
+          "anc-64e7697043e6e5ad"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "7",
+        "source_ref": "Figure C"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/C-07.md",
+      "semantic_sha256": "e8e434b5e0fba0960fef2e8f2104a660671ec45887227429714042a0d8bccbe6"
+    },
+    {
+      "body": "EVIDENCE. The mobile landing page is dominated by the Pearl assistant chat rather than a price or subscription summary.\nLEGAL REASONING. This frame supports the same sequencing theory as the desktop landing page: consumer engagement and expert framing occur before the recurring-billing terms are made clear.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "26-27",
+        "figure_id": "D-08",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "authority-claim",
+          "personalization-lure",
+          "delayed-price-disclosure"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "mobile_landing_page",
+        "source_anchor_ids": [
+          "anc-57f03f39a26f403c"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "8",
+        "source_ref": "Figure D"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/D-08.md",
+      "semantic_sha256": "f16afa700a534be3a280c18f6819185397fd2f94ad9e23266892d9503a9222a9"
+    },
+    {
+      "body": "EVIDENCE. Pearl tells the consumer that the next form will let them join JustAnswer for a low refundable amount, while the complaint alleges the service actually includes an immediate and continuing monthly subscription fee.\nLEGAL REASONING. The low refundable join-fee message is the core contradiction: it creates a one-time, low-cost impression before the consumer reaches the subscription-payment form.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "28-30",
+        "figure_id": "E-09",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "money-back-misdirection",
+          "hidden-renewal"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "join_message",
+        "source_anchor_ids": [
+          "anc-db0e832503982aea"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "9",
+        "source_ref": "Figure E"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/E-09.md",
+      "semantic_sha256": "754b58d94a385fd3d3fef45c6fc97061dc02fd89f0f4e69a04a16a3fafd6e498"
+    },
+    {
+      "body": "EVIDENCE. The desktop payment form leaves the low refundable join-fee message visible next to card-entry fields, while recurring membership terms sit in a smaller text block above a large \"Confirm now\" button.\nLEGAL REASONING. The recurring subscription disclosure is allegedly too visually weak to cure the stronger low-price payment impression, especially because the payment action is framed around confirming the transaction.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "36-38",
+        "figure_id": "F-11",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "desktop_payment_form",
+        "source_anchor_ids": [
+          "anc-e1f0fec2c2f161c7"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "11",
+        "source_ref": "Figure F"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/F-11.md",
+      "semantic_sha256": "fbcb69379e937acdce00863e27160d5899d132e7e24fadc611d94df1692df64e"
+    },
+    {
+      "body": "EVIDENCE. The mobile payment form appears directly below the chat's low-price join message, with recurring-fee language placed between card fields and the dominant red \"Confirm now\" button.\nLEGAL REASONING. The complaint treats the mobile layout as a continuation of the same deception theory: the paid subscription term exists, but is not clear and conspicuous in the payment context created by the low join-price representation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "39",
+        "figure_id": "G-12",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "mobile_payment_form",
+        "source_anchor_ids": [
+          "anc-28274c22151c110f"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "12",
+        "source_ref": "Figure G"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/G-12.md",
+      "semantic_sha256": "b44386ecbc1b651ed483143eeeb87c3a294aca04e4b682ce50fd58e9dc007fc5"
+    },
+    {
+      "body": "EVIDENCE. The complaint presents the October 2022 payment form as part of the history of subscription disclosures and consumer complaints.\nLEGAL REASONING. This frame is useful as comparative legal reasoning evidence: the complaint alleges that disclosure placement and prominence remained insufficient even across changed payment-form iterations.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "79-81",
+        "figure_id": "H-22",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "payment_form_2022",
+        "source_anchor_ids": [
+          "anc-2c3f5f859929634e"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "22",
+        "source_ref": "Figure H"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/H-22.md",
+      "semantic_sha256": "c3f051a93eaf9ff9717a57ee09d910475628829c53bda435068323ba33201e5c"
+    },
+    {
+      "body": "EVIDENCE. The complaint pairs the March 2025 payment form with the older form and alleges continuing consumer complaints that users did not know they would be enrolled in a subscription.\nLEGAL REASONING. The legal theory is that incremental disclosure changes did not overcome the contradictory low-price \"join\" claim and did not make the negative-option terms sufficiently clear.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "79-81",
+        "figure_id": "I-22",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "payment_form_2025",
+        "source_anchor_ids": [
+          "anc-b031d14e59672659"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "22",
+        "source_ref": "Figure I"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/I-22.md",
+      "semantic_sha256": "bcf8750cf528bfcffdf78676843b86cea7d721a1b7961a9dc74898f9179f0961"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of the page containing Figures H and I, which the complaint uses to compare older and newer payment-form disclosures.\nLEGAL REASONING. The complaint alleges that consumer complaints persisted even where subscription fee information appeared on the landing page or in larger print, because the low \"join\" claim still contradicted the subscription reality.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "79-81",
+        "figure_id": "payment-comparison-22",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "payment_form_comparison",
+        "source_anchor_ids": [
+          "anc-45f91fbac8696681"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "22",
+        "source_ref": "Figures H-I duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/payment-comparison-22.md",
+      "semantic_sha256": "86e5041b7134f95776694ab531abcb9e7e00f9795d1910591e3388b224186ac8"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Figure F: the desktop payment form keeps the low refundable join-fee message visible while recurring membership terms appear in smaller text above \"Confirm now.\"\nLEGAL REASONING. The complaint alleges the subscription disclosure is visually weaker than the low-price representation and therefore does not cure the recurring-charge deception at payment.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "36-38",
+        "figure_id": "payment-desktop-11",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "desktop_payment_form",
+        "source_anchor_ids": [
+          "anc-1cf86d1a50800591"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "11",
+        "source_ref": "Figure F duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/payment-desktop-11.md",
+      "semantic_sha256": "e2fdb25b47d5bed5e36988057f76abd40ff127fd1f71047732a63579270306af"
+    },
+    {
+      "body": "EVIDENCE. This asset is a duplicate render of Figure G: the mobile payment form appears below the Pearl chat, with recurring-fee language between card fields and the large red confirmation button.\nLEGAL REASONING. The complaint alleges the mobile layout carries forward the same misleading low-price impression because the only fee information appears as fine print near the payment action.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/justanswer.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "justanswer",
+        "complaint_paras": "39",
+        "figure_id": "payment-mobile-12",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "nominal-price-framing",
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "JustAnswer",
+        "screen_type": "mobile_payment_form",
+        "source_anchor_ids": [
+          "anc-568fa12ebde249a9"
+        ],
+        "source_file": "JustAnswerComplaint_FILED.pdf",
+        "source_id": "src-2da3e82c5ed0f18e",
+        "source_page": "12",
+        "source_ref": "Figure G duplicate render"
+      },
+      "kind": "case",
+      "logical_path": "cases/justanswer/payment-mobile-12.md",
+      "semantic_sha256": "f1c206e1a7e70a6fe5f4d98517e1afbafaa90004ebe126f92a75decd50ec3866"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 12,
+    "anchor_reference_count": 12,
+    "case_cards": 12,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 14,
+    "semantic_sha256": "7a03192b6d3e4d9897f16d18defbcad87d48542d1996db3609c68e1f80ebd1ab"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/paddle.json",
+  "case_id": "paddle",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "paddle",
+        "counts": [
+          "FTC Section 5(a)",
+          "TSR",
+          "ROSCA Section 4"
+        ],
+        "court": "D.D.C., Case No. 1:25-cv-01886",
+        "filed": "2025-06-16",
+        "odds_notes": "The complaint pleads payment processing for tech-support schemes and alleges Paddle charged consumers for auto-renewing subscriptions without clear negative-option disclosures.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed",
+        "procedural_posture": "FTC complaint, federal court",
+        "source_file": "paddle_complaint.pdf",
+        "title": "FTC v. Paddle.com Market Limited et al."
+      },
+      "kind": "case_header",
+      "logical_path": "cases/paddle/_case.md",
+      "semantic_sha256": "237a769e146a8a205b0541f550f0415d4e0907d6e6fbfb7d1f94ecea780830cd"
+    },
+    {
+      "body": "",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 4,
+        "cards": 4,
+        "case_id": "paddle",
+        "evidence_anchor_count": 4,
+        "figures": [
+          "p43-img1",
+          "p44-img1",
+          "p46-img1",
+          "p48-img2"
+        ],
+        "norms": 3,
+        "optional_visual_evidence_count": 4,
+        "pattern_ids_provisional": [
+          "hidden-renewal",
+          "missing-express-consent",
+          "one-time-price-framing",
+          "payment-without-renewal-disclosure",
+          "small-print-renewal"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/paddle/_coverage.json",
+      "semantic_sha256": "9b8a8732fc1ee7fa540f802f352018353ac8186d46ff9812f67fb9fdfed23258"
+    },
+    {
+      "body": "EVIDENCE. Reimage's plan-selection page presents one-year product plans, while the complaint says auto-renewal language was buried in a lengthy Terms of Use page and did not specify which packages renewed or the renewal charges.\nLEGAL REASONING. The legal problem is that annual recurring-payment terms were not clearly and conspicuously disclosed at the plan-selection point, before Paddle routed consumers into checkout.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "paddle",
+        "complaint_paras": "150-151",
+        "figure_id": "p43-img1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "hidden-renewal",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "product": "Restoro / Paddle checkout",
+        "screen_type": "product_plan_selection",
+        "source_anchor_ids": [
+          "anc-c38b73321b8cba08"
+        ],
+        "source_file": "paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_page": "43",
+        "source_ref": "Figure 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/paddle/p43-img1.md",
+      "semantic_sha256": "c2e63a5e9cc8b538afa11405a89ed8c1ce64fc3a6a76ff830529d2d107442ebc"
+    },
+    {
+      "body": "EVIDENCE. Paddle's first checkout pop-up says \"Purchase Restoro 1 Year,\" shows the current total, and places \"Then $41.95/year\" in smaller text without explaining the subscription terms.\nLEGAL REASONING. The complaint alleges the pop-up did not require affirmative authorization of an auto-renewing subscription and did not explain the negative-option plan terms.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "paddle",
+        "complaint_paras": "152-154",
+        "figure_id": "p44-img1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Restoro / Paddle checkout",
+        "screen_type": "checkout_window_1",
+        "source_anchor_ids": [
+          "anc-50fd07a67f38ed0d"
+        ],
+        "source_file": "paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_page": "44",
+        "source_ref": "Figure 4"
+      },
+      "kind": "case",
+      "logical_path": "cases/paddle/p44-img1.md",
+      "semantic_sha256": "f6b428a7f9fd4ef5a19ba9ad7c8096c2da29e36be2f85c79f57a7cde243bc6f0"
+    },
+    {
+      "body": "EVIDENCE. The checkout payment window states the total and a yearly follow-on charge near the card fields and \"Subscribe Now\" button, with Paddle branding and merchant-of-record text below.\nLEGAL REASONING. The complaint alleges consumers were not given a clear opt-in to recurring billing and that the final confirmation flow still failed to disclose the negative-option plan terms clearly.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "paddle",
+        "complaint_paras": "155-158",
+        "figure_id": "p46-img1",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "one-time-price-framing",
+          "small-print-renewal",
+          "payment-without-renewal-disclosure",
+          "missing-express-consent"
+        ],
+        "product": "Restoro / Paddle checkout",
+        "screen_type": "checkout_payment_confirmation",
+        "source_anchor_ids": [
+          "anc-54591f777306593e"
+        ],
+        "source_file": "paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_page": "46",
+        "source_ref": "Figure 6"
+      },
+      "kind": "case",
+      "logical_path": "cases/paddle/p46-img1.md",
+      "semantic_sha256": "63c9d18087ec540d98e0e298979abc144e6b80f8e197e1f8d9cf123c8a543d19"
+    },
+    {
+      "body": "EVIDENCE. The receipt detail identifies a \"Restoro 1 Year\" purchase and a billing period, while the complaint says many consumers first learned of automatic annual charges only from later renewal-reminder emails.\nLEGAL REASONING. The receipt reinforces the one-year purchase impression rather than clearly informing consumers that they were enrolled in a negative-option billing plan.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/paddle.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "paddle",
+        "complaint_paras": "161-162",
+        "figure_id": "p48-img2",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "one-time-price-framing",
+          "hidden-renewal",
+          "payment-without-renewal-disclosure"
+        ],
+        "product": "Restoro / Paddle receipt",
+        "screen_type": "receipt_detail",
+        "source_anchor_ids": [
+          "anc-dfb43b4442438297"
+        ],
+        "source_file": "paddle_complaint.pdf",
+        "source_id": "src-dd4735f1f5bb88cc",
+        "source_page": "48",
+        "source_ref": "Figure 8"
+      },
+      "kind": "case",
+      "logical_path": "cases/paddle/p48-img2.md",
+      "semantic_sha256": "d6127cae12eb02c59ab18653d98c593fb574468f795bd7de677303e2c11e6ff5"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 4,
+    "anchor_reference_count": 4,
+    "case_cards": 4,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 6,
+    "semantic_sha256": "e74f083232e7bdee2fa852c894c309436d527a4bf52a0758caa697298b75e5b1"
+  }
+}

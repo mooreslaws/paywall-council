@@ -1,0 +1,445 @@
+# Factual gates: what each routing fact means, in observable terms.
+#
+# jurisdiction_routes.yml decides whether a norm is CITABLE by asking whether
+# these facts are established. The Examiner returns them, so it has to know
+# what each one means. Until this file existed it received only the bare token
+# names and inferred the meaning from the slug; on the first live run it left
+# `billing-information-requested-in-flow` unconfirmed on an obvious payment
+# screen, no authority reached "established", every finding had to be written
+# under the conditional discipline, and the report was rejected twice.
+#
+# `detect` and `avoid` mirror the pattern catalog in patterns.yml: what counts
+# as established, and the false-positive trap. They are written in English
+# because they are rendered into the Examiner's instructions verbatim.
+#
+# Three standing rules, decided 2026-09-03:
+#
+#   1. Observable, not argued. These describe what is visible. The legal test
+#      stays in each route's `condition`; nothing here decides a norm applies.
+#   2. Materiality is presumed from the omission itself. Routes already require
+#      the omission or practice as a separate fact, so demanding separate proof
+#      that it "would affect a decision" counts the same thing twice and leaves
+#      every EU/UK route unestablished.
+#   3. A flow-level fact may be established by an explicit on-screen indicator
+#      (a named step in a progress bar, an order summary, a section heading),
+#      not only by seeing the whole action. Submissions are screenshots; a
+#      "Payment" step in a stepper is evidence of what the flow does.
+#
+# Two pairs are the same observable fact named twice by different regimes, and
+# carry deliberately identical `detect` text so the Examiner cannot confirm one
+# and miss the other: payment-commitment-requested / billing-information-
+# requested-in-flow, and post-contract-cancellation / post-contract-
+# cancellation-stage.
+
+- id: likely-different-transactional-decision
+  name: "The obstruction is capable of altering retention or withdrawal"
+  detect:
+    - "Confirm whenever you have recorded an obstruction, retention offer or repeated confirmation standing between the consumer and cancelling, withdrawing, or exercising a right."
+  avoid:
+    - "A single neutral confirmation, or an exit that is as direct as the way in."
+
+- id: covered-distance-or-off-premises-contract
+  name: "Distance or off-premises consumer contract"
+  detect:
+    - "The offer is concluded online without the trader and consumer meeting: a web or in-app paywall, checkout, or subscription sign-up aimed at consumers."
+  avoid:
+    - "An in-store or in-person purchase, and an offer directed at businesses."
+
+- id: uk-directed-consumer-commercial-practice
+  name: "Practice directed at UK consumers"
+  detect:
+    - "The flow is offered to UK consumers: prices in GBP, a UK address, VAT or company number, a .uk domain, or UK terms. An unrestricted English-language offer with no geographic exclusion counts."
+  avoid:
+    - "An offer that visibly excludes the UK, or is confined to another market by its currency, language and terms together."
+
+- id: business-to-business-transaction
+  name: "Business-to-business offer"
+  detect:
+    - "The screen shows the offer is for businesses: prices stated excluding VAT for business buyers, a required company or VAT number, or an enterprise or team-only plan with no consumer plan alongside it."
+  avoid:
+    - "A consumer offer that merely mentions professional use, or a plan named 'Pro' or 'Business' that any consumer can buy."
+
+- id: consumer-subscription
+  name: "Consumer subscription"
+  detect:
+    - "The purchase recurs: a billing cadence (weekly, monthly, annual), a renewal statement, a trial that converts, or a plan chooser priced per period."
+  avoid:
+    - "A single purchase with no renewal language, and lifetime access sold once."
+
+- id: trader-to-consumer-contract
+  name: "Trader-to-consumer contract"
+  detect:
+    - "A business is selling to an individual: consumer pricing, consumer terms, or a consumer sign-up flow."
+  avoid:
+    - "A peer-to-peer sale, and a business-to-business offer."
+
+- id: pre-contract-stage
+  name: "Before the contract is concluded"
+  detect:
+    - "The screen sits before the purchase completes: a plan chooser, a paywall, a checkout with the pay action still ahead, or a progress indicator whose current step precedes confirmation."
+  avoid:
+    - "A receipt, an order-confirmation screen, or an account page reached after the purchase."
+
+- id: post-contract-cancellation
+  name: "Cancellation after the contract exists"
+  detect:
+    - "The screen concerns ending an existing subscription: a cancel flow, a retention or downgrade offer, a manage-subscription page, or a confirmation that the plan is active."
+  avoid:
+    - "A pre-purchase screen, and a refund request for a one-off purchase with no subscription behind it."
+
+- id: post-contract-cancellation-stage
+  name: "Cancellation after the contract exists"
+  detect:
+    - "The screen concerns ending an existing subscription: a cancel flow, a retention or downgrade offer, a manage-subscription page, or a confirmation that the plan is active."
+  avoid:
+    - "A pre-purchase screen, and a refund request for a one-off purchase with no subscription behind it."
+
+- id: invitation-to-purchase
+  name: "Invitation to purchase"
+  detect:
+    - "The screen names the product and a price and offers a way to buy it: a paywall, plan chooser or checkout with a purchase button."
+  avoid:
+    - "Brand or feature pages with no price, and a price list with no way to act on it."
+
+- id: billing-information-requested-in-flow
+  name: "Billing information requested in the flow"
+  detect:
+    - "The flow asks for payment credentials, a payment method, or a pay-now or subscribe commitment: card fields, a wallet button, a stored-method selector, a billing address. A named payment step, or an order summary, also suffices."
+  avoid:
+    - "A bare email or account capture with no payment step in sight, and a page that only links onward to payment without asking for anything itself."
+
+- id: payment-commitment-requested
+  name: "Payment commitment requested"
+  detect:
+    - "The flow asks for payment credentials, a payment method, or a pay-now or subscribe commitment: card fields, a wallet button, a stored-method selector, a billing address. A named payment step, or an order summary, also suffices."
+  avoid:
+    - "A bare email or account capture with no payment step in sight, and a page that only links onward to payment without asking for anything itself."
+
+- id: covered-online-negative-option-transaction
+  name: "Covered online negative-option transaction"
+  detect:
+    - "An online purchase where silence keeps the consumer paying: a subscription that renews automatically, or a trial that converts unless cancelled. Renewal wording anywhere on screen, including fine print, establishes it."
+  avoid:
+    - "A one-off purchase, and a plan whose price is merely shown per day or per month for comparison without any renewal or conversion."
+
+- id: negative-option-terms-omitted-or-subordinated-at-billing-point
+  name: "Renewal terms missing or subordinated where billing is taken"
+  detect:
+    - "At or before the point payment is requested, the renewal price, the billing cadence, or the trial-conversion timing is absent, below the fold, behind a link, or materially less prominent than the promoted price."
+  avoid:
+    - "Renewal price and cadence shown next to the total, in comparable type, at the point the consumer commits."
+
+- id: negative-option-terms-clearly-and-conspicuously-disclosed-before-billing
+  name: "Renewal terms clearly disclosed before billing"
+  detect:
+    - "The renewal price, the cadence and any trial-conversion timing all appear before the payment action, unobscured and in type comparable to the promoted price."
+  avoid:
+    - "Any of those terms behind a link, below the fold, in markedly smaller type, or shown only after payment."
+
+- id: material-pricing-term-omitted-or-subordinated-at-invitation
+  name: "Material pricing term missing or subordinated at the offer"
+  detect:
+    - "The total price, the renewal price, the billing cadence or the trial-conversion terms are absent, below the fold, behind a link, or materially less prominent than the promoted price on the screen that invites the purchase."
+  avoid:
+    - "All of those terms present and legible next to the promoted price."
+
+- id: recurring-or-total-price-less-prominent
+  name: "Total or recurring price subordinated to a smaller unit price"
+  detect:
+    - "A per-day, per-week or introductory price is the visually dominant figure while the amount actually charged, or the recurring price, is smaller, greyed, below the fold, or absent."
+  avoid:
+    - "The charged total and its cadence presented at least as prominently as any per-unit figure."
+
+- id: full-charge-and-cadence-equally-prominent
+  name: "Full charge and cadence shown as prominently as the promoted price"
+  detect:
+    - "The amount that will be charged and how often appear in the same visual weight and position as the promoted or per-unit price."
+  avoid:
+    - "A dominant per-day or introductory figure with the real charge in smaller, lighter or later text."
+
+- id: total-price-reasonably-calculable-upfront
+  name: "Total was calculable when the offer was made"
+  detect:
+    - "Nothing about the offer prevents stating the full amount at the outset: a fixed plan price plus a fixed mandatory fee, with no consumer-specific variable still unknown."
+  avoid:
+    - "A total that genuinely depends on a later consumer choice, on usage, or on a third-party charge that cannot be known at the offer stage."
+
+- id: mandatory-fee-revealed-after-headline-price
+  name: "Mandatory fee added after the headline price"
+  detect:
+    - "An unavoidable charge, processing, service, booking, platform, appears later in the flow, or in an order summary, after a headline price that did not include it."
+  avoid:
+    - "A genuinely optional add-on the consumer selects, and a fee already inside the advertised price."
+
+- id: headline-price-already-includes-mandatory-fee
+  name: "Headline price already includes every mandatory fee"
+  detect:
+    - "The advertised price and the amount charged match, with any unavoidable fee already inside the headline figure."
+  avoid:
+    - "An order summary whose total exceeds the advertised price by a mandatory line item."
+
+- id: additional-charge-beyond-main-obligation
+  name: "Charge additional to the main obligation"
+  detect:
+    - "A separately priced extra rides alongside the main purchase: insurance, protection, priority handling, an add-on subscription, a donation, or a bundled service with its own price."
+  avoid:
+    - "The main product's own price, tiers of the same product, and taxes."
+
+- id: consent-inferred-from-default-or-inaction
+  name: "Consent to the extra inferred from a default"
+  detect:
+    - "The extra is pre-ticked, preselected, opt-out, or included unless the consumer removes it."
+  avoid:
+    - "An extra the consumer must actively add, with the unticked state as the starting point."
+
+- id: express-opt-in-action-required
+  name: "Express opt-in required for the extra"
+  detect:
+    - "The consumer must take a separate affirmative action to add the extra: an unticked box, an explicit add button, a deliberate choice with no default."
+  avoid:
+    - "A pre-ticked box, a preselected bundle, or an extra included by default."
+
+- id: default-selection-favors-paid-or-costlier-option
+  name: "Default favours the paid or costlier option"
+  detect:
+    - "The costlier plan is preselected, highlighted as 'best value' or 'most popular', visually dominant, or the only one reachable without extra steps, while cheaper options are smaller, greyed or further away."
+  avoid:
+    - "Options presented at equal weight with no preselection."
+
+- id: options-equally-prominent-and-freely-changeable
+  name: "Options equally prominent and freely changeable"
+  detect:
+    - "Every plan or option is shown at comparable size and emphasis, and the consumer can switch between them in one obvious step."
+  avoid:
+    - "A preselected or visually dominant option, or a cheaper option that takes extra steps to reach."
+
+- id: false-or-unverifiable-scarcity-or-time-claim
+  name: "Scarcity or urgency claim false or unverifiable as presented"
+  detect:
+    - "A countdown, stock warning or limited-offer claim with nothing on screen substantiating it, a live demand counter of viewers, installs, purchases or active users, a timer that resets or outlives its deadline, or a perpetual discount."
+  avoid:
+    - "A stated, checkable limit: a named end date, an event date, a specified remaining quantity with a source, or a demand counter sourced to a named analytics platform with a stated update date."
+
+- id: genuine-time-limited-offer-substantiated
+  name: "Time limit genuine and substantiated on screen"
+  detect:
+    - "The offer states a real basis for its limit: a specific end date or time, a named event, or a stated quantity with a source the consumer could check."
+  avoid:
+    - "A bare countdown, a perpetual sale, and urgency wording with no stated basis. A demand counter is not a limit: a sourced install, purchase, viewer or active-user count states no deadline and no quantity remaining."
+
+- id: objective-claim-presented-as-fact
+  name: "Trader's own objective claim presented as fact"
+  detect:
+    - "The trader states a checkable outcome, performance, personalisation, backing or guarantee as fact: a timed result, a success rate, a projected graph, a before-and-after pair, a credential byline, an award or media badge."
+  avoid:
+    - "Visibly hedged or aspirational wording, and a stated opinion. A name beside an image, or beside a badge, is a caption rather than that person's own account of their experience."
+
+- id: claim-substantiation-absent-on-screen
+  name: "No substantiation shown for the claim"
+  detect:
+    - "The claim carries no study, sample, methodology, date, source or named authority anywhere on the screen, including its fine print. A bare badge or masthead naming only the body it invokes states no basis."
+  avoid:
+    - "A cited study, a named institution, a stated sample or methodology, or a dated source next to the claim."
+
+- id: claim-substantiation-or-source-shown
+  name: "Substantiation or source shown for the claim"
+  detect:
+    - "A study, methodology, sample, date, named institution or checkable source appears with the claim. A badge or masthead counts only where it also states the award, article, date or criteria relied on."
+  avoid:
+    - "A logo or badge with no source, a vague 'science-backed' with nothing behind it, and a bare crest, ribbon or masthead whose only content is the name of the body it invokes."
+
+- id: claim-framed-as-individual-experience-or-opinion
+  name: "Claim framed as one person's experience or opinion"
+  detect:
+    - "A quoted statement is attributed to a named individual as their own experience, or the wording is visibly an opinion, with typical-results wording where present. A name or credential beside an image is a caption, not a statement."
+  avoid:
+    - "A claim the trader makes in its own voice, and an aggregate statistic presented as fact."
+
+- id: consumer-review-or-review-information
+  name: "Consumer reviews or review information displayed"
+  detect:
+    - "Reviews, ratings, testimonials, star scores or review counts are shown, whether as a widget, a carousel, quoted text or an aggregate figure."
+  avoid:
+    - "Press logos, awards and certifications, which are their own patterns, and an expert endorsement that is not a consumer review."
+
+- id: trader-submitted-commissioned-or-published-review
+  name: "Trader created, commissioned or published the review"
+  detect:
+    - "On-screen evidence that the reviews are the trader's own doing: hosted entirely by the trader with no platform attribution, identical or templated wording across entries, or a statement that they were solicited or incentivised."
+  avoid:
+    - "Reviews carrying a genuine third-party platform's attribution, and reviews whose origin the screen simply does not say."
+
+- id: local-authoritative-source-establishes-fabrication
+  name: "A source in the supplied material establishes fabrication"
+  detect:
+    - "Something in the supplied material determines the reviews are fake: a platform notice, a regulator finding, or the operator's own statement."
+  avoid:
+    - "Appearance alone. Stock-looking portraits, repetitive phrasing, a missing link or an implausible rating are suspicion, never a determination."
+
+- id: ordinary-rating-or-testimonial-without-fabrication-evidence
+  name: "Ordinary rating or testimonial with no evidence of fabrication"
+  detect:
+    - "Reviews or ratings look like ordinary ones and nothing in the supplied material shows they were fabricated."
+  avoid:
+    - "A platform notice, regulator finding, or operator admission of fabrication."
+
+- id: source-information-absent
+  name: "Review source information missing"
+  detect:
+    - "A review, rating or testimonial appears with no platform name, no author, no date and no link to where it was published."
+  avoid:
+    - "Reviews attributed to a named platform, author or date, even without a working link."
+
+- id: suspicious-but-not-determined
+  name: "Suspicious but not determined"
+  detect:
+    - "Something about the reviews invites doubt, templated phrasing, stock- looking photographs, an implausibly uniform rating, but nothing in the supplied material determines they are fake."
+  avoid:
+    - "An authoritative source in the supplied material that settles the question either way."
+
+- id: covered-live-event-ticket-or-short-term-lodging-offer
+  name: "Live-event ticket or short-term lodging offer"
+  detect:
+    - "The offer is for tickets to a live event, or short-term lodging: a hotel room, a holiday rental, a nightly stay."
+  avoid:
+    - "Every other sector. A processing, delivery, service, booking or platform fee elsewhere does not bring an offer inside this rule."
+
+- id: existing-consumer-cancellation-right
+  name: "The consumer already has a cancellation right"
+  detect:
+    - "The screen concerns a live subscription or contract the consumer may end: a cancel option, a withdrawal right, or a statement of an active plan."
+  avoid:
+    - "A pre-purchase screen where no contract exists yet."
+
+- id: no-consumer-cancellation-right-at-that-stage
+  name: "No cancellation right exists at that stage"
+  detect:
+    - "No contract has been concluded, or the screen concerns a purchase that carries no cancellation or withdrawal right at that point."
+  avoid:
+    - "A live subscription with a cancel path."
+
+- id: onerous-or-disproportionate-action-to-exercise-right
+  name: "Exercising the right demands disproportionate effort"
+  detect:
+    - "Cancelling requires far more than joining did: a phone call or letter where sign-up was a click, repeated confirmations, a retention gauntlet, a justification form, or a delay before the request takes effect."
+  avoid:
+    - "A cancel path of about the same length as the sign-up path."
+
+- id: harassment-coercion-or-undue-influence
+  name: "Pressure amounting to harassment, coercion or undue influence"
+  detect:
+    - "Pressure rather than friction alone stands behind the trader's ask, at the offer or at the exit: guilt or shame wording aimed at this consumer, a warning of loss framed to intimidate, repeated refusals, or an offer declined several times."
+  avoid:
+    - "Ordinary friction, one neutral confirmation, a single retention offer without pressure, and ordinary sales enthusiasm, motivational copy or a long onboarding sequence that demeans nobody."
+
+- id: minor-neutral-confirmation-steps-only
+  name: "Only minor neutral confirmation steps"
+  detect:
+    - "The cancel path adds no more than a neutral confirmation: a single 'are you sure', or one plainly worded summary of what ending the plan means."
+  avoid:
+    - "Repeated confirmations, retention offers the consumer must refuse more than once, and emotionally loaded wording."
+
+- id: material-cancellation-obstruction
+  name: "Material obstruction to cancelling"
+  detect:
+    - "Something on the screen materially impedes cancelling: the option is hidden, several layers deep, in a different channel from sign-up, or the flow ends without confirming the cancellation took effect."
+  avoid:
+    - "A visible cancel option reachable in about as many steps as joining took."
+
+- id: post-purchase-exit-or-refund-obstructed
+  name: "Exit, decline or refund obstructed after purchase"
+  detect:
+    - "Leaving, declining or getting money back is disproportionate to the way in: a hidden or missing exit, a refund behind undisclosed conditions, a retention script, or billing that continues after a cancellation request."
+  avoid:
+    - "An exit as direct as the entry, and clearly disclosed refund limits that are easy to complete."
+
+- id: exit-path-comparable-to-entry-path
+  name: "Exit path comparable to the entry path"
+  detect:
+    - "Cancelling or declining takes about the same channel and effort as buying did: in-app sign-up, in-app cancel; a click in, a click out."
+  avoid:
+    - "A cancellation channel that does not match sign-up, and an exit that takes materially more steps."
+
+- id: cancellation-comparable-to-signup
+  name: "Cancellation as easy as sign-up"
+  detect:
+    - "The cancel path matches the sign-up path in channel and effort, and confirms the outcome."
+  avoid:
+    - "Cancelling by phone or email where joining was a click, and a flow that never confirms the plan ended."
+
+- id: ordinary-identity-or-fraud-check-only
+  name: "Ordinary identity or fraud check only"
+  detect:
+    - "The only obstacle is a routine verification any provider would run: re-entering a password, confirming an email or a one-time code, or a standard identity check."
+  avoid:
+    - "A retention offer, a justification form, repeated confirmations, or a channel change presented as verification."
+
+- id: paid-interaction-with-undisclosed-operator-or-fictitious-profiles
+  name: "Paid conversation with profiles the trader's own material says may not be real people"
+  detect:
+    - "Both halves visible: the flow charges to send, read or unlock messages, matches or profile views, and the trader's own material says some profiles, hosts or messages may be operator-run, staffed or generated, while the chat marks none."
+  avoid:
+    - "Clear marking on the profile or inside the conversation that the account is a bot, assistant, moderator or staff account. A flow where nothing in the supplied material says any interlocutor may be operator-run or generated."
+
+- id: interlocutor-authenticity-suspected-but-not-determined
+  name: "Suspicious matches with nothing establishing they are not real people"
+  detect:
+    - "Unusually fast or idealised matches, a burst of messages near a trial expiry or paywall, typing indicators that never resolve, or chats that never reach video or a meeting, with nothing stating any interlocutor is operator-run."
+  avoid:
+    - "The trader's own terms, fine print or store listing saying profiles, hosts or messages may be operated or generated. A regulator finding or platform notice in the supplied material that settles the question either way."
+
+- id: disclosed-consumer-circumstance-exploited-at-offer
+  name: "The consumer's own disclosed circumstance is used against them at the offer"
+  detect:
+    - "The consumer disclosed the circumstance earlier in this flow, or it is the flow's stated subject: entered symptoms, weight, debt, an age, an uploaded body or face photo. The screen then turns it into demeaning wording beside the offer."
+  avoid:
+    - "A trader-generated score or result presented as a checkable fact, which is a misleading claim, not exploitation. Neutral or hedged wording. Emotional copy not attached to a purchase, or a general claim about nobody in particular."
+
+- id: consumer-vulnerability-visible-on-screen
+  name: "The offer addresses a consumer whose judgement is impaired"
+  detect:
+    - "The screen shows the flow addresses a judgement-impairing condition of this consumer, not a general audience: a named health or diagnosis worry, appearance with body or face photos, loneliness, debt or overdue bills, or an age under 18."
+  avoid:
+    - "A general-audience offer that mentions a sensitive topic while treating the consumer as an ordinary adult buyer. A neutral demographic question the screen never uses against the consumer. A product merely about health, money or dating."
+
+- id: neutral-or-supportive-framing-of-the-consumer-state
+  name: "The consumer's situation is framed neutrally or supportively"
+  detect:
+    - "The screen describes the consumer's situation without demeaning it: neutral or hedged wording, a stated range or uncertainty, or supportive coaching language that names no deficiency in this consumer."
+  avoid:
+    - "One softening word inside otherwise shaming copy. Supportive wording on an earlier screen when the screen carrying the offer is the shaming one. A visible free tier, which goes to severity, not to whether the copy demeans."
+
+- id: stated-price-contradicts-plan-selected-or-amount-charged
+  name: "Two stated prices for the same purchase disagree"
+  detect:
+    - "Two price figures for one purchase disagree where both are visible: a renewal or recurring amount in fine print, an order summary or terms text differs from the price of the plan the consumer selected, or from the amount to be charged."
+  avoid:
+    - "A difference the screen explains beside both figures as a one-time discount, proration, tax or currency conversion; a rounding of a cent or less; a renewal price missing rather than different; a was or savings figure (reference pricing)."
+
+- id: chance-or-exclusivity-representation-unsupported-on-screen
+  name: "Discount presented as won, exclusive or personally selected with nothing on screen supporting it"
+  detect:
+    - "A spin, scratch, game, code or pick whose outcome is the price presents it as won, exclusive or personally selected while the screen states no odds and no prize range; or the operator's own answers say every participant receives it."
+  avoid:
+    - "A promotion the screen labels as open to everyone, and a game whose odds or prize range are stated. A crossed-out, list or comparator price neither establishes nor defeats this fact; it is an anchoring question, not a chance one."
+
+- id: gamified-discount-terms-disclosed
+  name: "Chance or exclusivity terms disclosed on screen"
+  detect:
+    - "The screen itself states the odds, states the prize range, or says the offer is open to everyone."
+  avoid:
+    - "A game or selection presented as luck or personal selection with no odds and no prize range stated. A comparator or crossed-out price is not such a disclosure, and neither is an operator's admission that everyone receives the offer."
+
+- id: us-state-consumer-jurisdiction-established
+  name: "The consumer's US state is established, not assumed"
+  detect:
+    - "The submission establishes which US state the consumer is in: a state selector or field, a state-specific tax or price line, a state named in the terms shown, or the operator's own answers naming the state."
+  avoid:
+    - "A United States offer with nothing naming a state. A currency in dollars. A company address, which is where the trader sits and not where the consumer is."
+
+- id: order-button-states-obligation-to-pay
+  name: "The order button says the order obliges the consumer to pay"
+  detect:
+    - "The control that places the order is labelled with wording that says paying is what happens: 'order with obligation to pay', 'buy now', 'pay', 'subscribe and pay'. The charge and its cadence sit next to it."
+  avoid:
+    - "'Continue', 'Next', 'Get my plan', 'Start', 'Claim', or any label that names a benefit rather than the payment. A button whose only price nearby is a per-day or discounted figure."

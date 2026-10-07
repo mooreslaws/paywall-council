@@ -1,0 +1,740 @@
+schema_version: "1.1"
+research_date: "2026-07-10"
+status: "canonical"
+benchmark_eligibility_values:
+  - "eligible_monetary"
+  - "eligible_non_monetary"
+  - "ineligible_non_final"
+  - "ineligible_no_finding"
+  - "ineligible_source_only"
+availability_default: "full_text"
+amount_type_values:
+  - "civil_penalty_and_consumer_redress"
+  - "consumer_redress"
+  - "refund"
+  - "settlement_payment"
+  - "suspended_judgment"
+  - "equitable_monetary_relief_historical"
+  - "proposed_settlement"
+  - "administrative_penalty"
+  - "refund_under_undertaking"
+  - "aggregate_multi_breach_fine"
+outcomes:
+  - id: "us-ftc-amazon-prime-2025"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. Department of Justice; U.S. District Court"
+    matter_name: "FTC v. Amazon.com, Inc. (Prime)"
+    date: "2025-09-25"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "missing-express-informed-consent", "difficult-cancellation", "asymmetric-cancellation-path"]
+    legal_basis: "ROSCA and FTC Act"
+    monetary_amount:
+      amount: 2500000000
+      currency: "USD"
+      amount_type: "civil_penalty_and_consumer_redress"
+      amount_basis: "$1 billion civil penalty plus $1.5 billion consumer refunds"
+    consumer_redress: "$1.5 billion refund program"
+    non_monetary_relief: "Enrollment and cancellation changes; compliance monitoring and reporting."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazoncom-inc-rosca-ftc-v-timeline-item-2025-09-25"
+    local_staged_source_file: null
+    source_pinpoint: "Entered order dated 2025-09-25 and linked order materials."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Exceptional scale and proof record; separate penalty and refund components; ROSCA-specific."
+    limitations: "Settlement is not judicial precedent and does not predict another matter."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-epic-games-2023"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission"
+    matter_name: "Epic Games, Inc."
+    date: "2023-03-14"
+    posture: "consent order"
+    finality: "final_administrative_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-5n"]
+    linked_patterns_or_practices: ["one-click-upsell", "unauthorized-add-on", "refund-obstruction"]
+    legal_basis: "FTC Act"
+    monetary_amount:
+      amount: 245000000
+      currency: "USD"
+      amount_type: "consumer_redress"
+      amount_basis: "consumer refund fund; separate $275 million COPPA penalty excluded"
+    consumer_redress: "$245 million refund fund"
+    non_monetary_relief: "Affirmative consent; no account lockout for charge disputes; reporting."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/1923203-epic-games-matter"
+    local_staged_source_file: null
+    source_pinpoint: "Final order approved 2023-03-14."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Relevant to unwanted charges and refund obstruction, not recurring subscription disclosures."
+    limitations: "Do not combine with the separate COPPA matter."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-vonage-2022"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Vonage Holdings Corp."
+    date: "2022-11-03"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-5n", "us-rosca-4-1", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["difficult-cancellation", "cancellation-channel-mismatch", "post-cancellation-billing"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 100000000
+      currency: "USD"
+      amount_type: "consumer_redress"
+      amount_basis: "consumer refund fund"
+    consumer_redress: "$100 million fund; FTC later reported nearly $99.4 million distributed to 389,106 consumers"
+    non_monetary_relief: "Simple cancellation; fee disclosures; compliance and reporting."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/vonage-timeline-item-2022-11-03"
+    local_staged_source_file: null
+    source_pinpoint: "Entered order dated 2022-11-03 and FTC refund page."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Strong cancellation-obstruction comparator with large customer base."
+    limitations: "Settlement facts and scale are case-specific."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-grubhub-2024"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; Illinois Attorney General; U.S. District Court"
+    matter_name: "FTC v. Grubhub, Inc."
+    date: "2024-12-31"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-5n", "us-rosca-4-1", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["mandatory-fee-drip-pricing", "difficult-cancellation", "refund-obstruction"]
+    legal_basis: "FTC Act, ROSCA, and Illinois law"
+    monetary_amount:
+      amount: 140000000
+      currency: "USD"
+      amount_type: "suspended_judgment"
+      amount_basis: "$140 million face judgment suspended on payment of $25 million based on ability to pay"
+    consumer_redress: "Nearly all of the required $25 million payment designated for refunds"
+    non_monetary_relief: "Total-price disclosure; subscription cancellation; account-access and business-practice restrictions."
+    source_url: "https://www.ftc.gov/system/files/ftc_gov/pdf/013_2024-12-31_grubhub_stipulated_order.pdf"
+    local_staged_source_file: null
+    source_pinpoint: "Monetary judgment and relief provisions, entered 2024-12-31."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Store face judgment and actual payable amount separately."
+    limitations: "Mixed diner, subscription, worker, and restaurant claims; joint federal/state action."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-stubhub-2026"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. StubHub Holdings, Inc."
+    date: "2026-04-10"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-fees-rule"]
+    linked_patterns_or_practices: ["mandatory-fee-drip-pricing", "fragmented-pricing"]
+    legal_basis: "16 C.F.R. Part 464 and FTC Act"
+    monetary_amount:
+      amount: 10000000
+      currency: "USD"
+      amount_type: "consumer_redress"
+      amount_basis: "monetary relief and refunds"
+    consumer_redress: "$10 million monetary relief for affected consumers"
+    non_monetary_relief: "Total-price and fee-disclosure requirements; reporting."
+    source_url: "https://www.ftc.gov/system/files/ftc_gov/pdf/stubhuborderentered.pdf"
+    local_staged_source_file: null
+    source_pinpoint: "Entered order dated 2026-04-10."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "First observed Unfair or Deceptive Fees Rule outcome."
+    limitations: "Rule is limited to live-event tickets and short-term lodging; this matter is ticket-specific."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-paddle-2025"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Paddle.com Market Ltd."
+    date: "2025-06-20"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-5n"]
+    linked_patterns_or_practices: ["payment-facilitation", "hidden-renewal", "payment-without-clear-material-disclosure"]
+    legal_basis: "FTC Act and Telemarketing Sales Rule"
+    monetary_amount:
+      amount: 5000000
+      currency: "USD"
+      amount_type: "settlement_payment"
+      amount_basis: "settlement payment"
+    consumer_redress: "No separate redress amount identified in the order summary."
+    non_monetary_relief: "Ban on processing for tech-support telemarketers; merchant screening and monitoring."
+    source_url: "https://www.ftc.gov/system/files/ftc_gov/pdf/Paddle-SignedFinalOrder.pdf"
+    local_staged_source_file: "case_law/paddle_final_order.pdf"
+    source_pinpoint: "Final order entered 2025-06-20."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Facilitator-side outcome; useful for payment intermediary controls."
+    limitations: "Not directly comparable to a merchant's own checkout funnel."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-fashion-nova-2022"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission"
+    matter_name: "Fashion Nova, LLC"
+    date: "2022-03"
+    posture: "consent order"
+    finality: "final_administrative_order"
+    linked_norm_ids: ["us-ftc-5a", "us-ftc-reviews-rule"]
+    linked_patterns_or_practices: ["fake-external-reviews", "unverifiable-social-proof", "review-suppression"]
+    legal_basis: "FTC Act"
+    monetary_amount:
+      amount: 4200000
+      currency: "USD"
+      amount_type: "settlement_payment"
+      amount_basis: "administrative settlement payment"
+    consumer_redress: "FTC-administered redress from the payment"
+    non_monetary_relief: "Review-suppression prohibition and publication requirements."
+    source_url: "https://www.ftc.gov/news-events/news/press-releases/2022/03/ftc-finalizes-order-fashion-nova-over-allegations-it-blocked-negative-reviews"
+    local_staged_source_file: null
+    source_pinpoint: "Final order announced March 2022 and linked order."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Relevant to review suppression and social proof."
+    limitations: "Predates 16 C.F.R. Part 465 and is not a subscription or price-disclosure matter."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-nutraclick-2020"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. NutraClick, LLC"
+    date: "2020-09-30"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "misleading-trial-period", "post-cancellation-billing"]
+    legal_basis: "FTC Act, ROSCA, and prior court order"
+    monetary_amount:
+      amount: 1040000
+      currency: "USD"
+      amount_type: "consumer_redress"
+      amount_basis: "amount represented alleged consumer harm and revenue"
+    consumer_redress: "$1.04 million monetary relief"
+    non_monetary_relief: "Negative-option marketing ban."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/x160052-nutraclick-llc-et-al"
+    local_staged_source_file: null
+    source_pinpoint: "Final order entered 2020-09-30."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Shows effect of prior-order violation and negative-option recidivism."
+    limitations: "Prior order is an aggravating predicate; poor baseline for a first-time matter."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-triangle-media-2019"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Triangle Media Corp."
+    date: "2019-05-31"
+    posture: "settlement; entered court orders"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "unauthorized-add-on", "post-cancellation-billing"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 8700000
+      currency: "USD"
+      amount_type: "refund"
+      amount_basis: "more than $8.7 million later refunded by the FTC; not a fine"
+    consumer_redress: "More than $8.7 million refunded"
+    non_monetary_relief: "Injunction and compliance duties."
+    source_url: "https://search.ftc.gov/legal-library/browse/cases-proceedings/172-3108-triangle-media-corporation"
+    local_staged_source_file: null
+    source_pinpoint: "Orders entered 2019-05-31; official refund distribution record."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Redress benchmark only."
+    limitations: "Do not relabel refunds as a fine, damages, or penalty."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-abcmouse-2020"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Age of Learning, Inc. (ABCmouse)"
+    date: "2020-09-08"
+    posture: "settlement; entered court order"
+    finality: "final_entered_order"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "difficult-cancellation", "cancellation-channel-mismatch"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 10000000
+      currency: "USD"
+      amount_type: "equitable_monetary_relief_historical"
+      amount_basis: "pre-AMG equitable monetary relief under FTC Act Section 13(b)"
+    consumer_redress: "$10 million monetary relief"
+    non_monetary_relief: "Disclosure, consent, cancellation, recordkeeping, and reporting requirements."
+    source_url: "https://www.ftc.gov/system/files/documents/cases/1723186abcmouseorder.pdf"
+    local_staged_source_file: null
+    source_pinpoint: "Order entered 2020-09-08, monetary and conduct-relief sections."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Historical outcome for conduct and amount-type taxonomy."
+    limitations: "Section 13(b) is not a current monetary route after AMG Capital."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-chegg-proposed-2025"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission"
+    matter_name: "Chegg, Inc."
+    date: "2025-09-15"
+    posture: "proposed consent order"
+    finality: "non_final_pending_entry"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "difficult-cancellation"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 7500000
+      currency: "USD"
+      amount_type: "proposed_settlement"
+      amount_basis: "proposed settlement amount"
+    consumer_redress: "Proposed refunds"
+    non_monetary_relief: "Proposed cancellation and disclosure changes."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/c4782-chegg-inc"
+    local_staged_source_file: null
+    source_pinpoint: "Official case page listed pending status on verification date."
+    benchmark_eligibility: "ineligible_non_final"
+    comparability_notes: "May support design allegations only."
+    limitations: "Do not use proposed amount as an observed final benchmark."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-shutterstock-proposed-2026"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Shutterstock, Inc."
+    date: "2026-05-13"
+    posture: "proposed settlement and proposed court order"
+    finality: "non_final_pending_entry"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "difficult-cancellation", "asymmetric-cancellation-path"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 35000000
+      currency: "USD"
+      amount_type: "proposed_settlement"
+      amount_basis: "proposed settlement amount"
+    consumer_redress: "Proposed redress"
+    non_monetary_relief: "Proposed cancellation and disclosure obligations."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/shutterstock-inc"
+    local_staged_source_file: null
+    source_pinpoint: "Official case page status pending on 2026-07-10."
+    benchmark_eligibility: "ineligible_non_final"
+    comparability_notes: "May support current design allegation comparison only."
+    limitations: "Proposed amount is not an imposed or entered outcome."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-cleo-proposed-2025"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. District Court"
+    matter_name: "FTC v. Cleo AI, Inc."
+    date: "2025-03-27"
+    posture: "complaint and executed proposed order"
+    finality: "finality_unverified"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "nominal-entry-price-framing", "difficult-cancellation"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount:
+      amount: 17000000
+      currency: "USD"
+      amount_type: "proposed_settlement"
+      amount_basis: "executed proposed order; agency report says amount collected"
+    consumer_redress: "Proposed redress"
+    non_monetary_relief: "Proposed disclosure and cancellation changes."
+    source_url: "https://www.ftc.gov/system/files/ftc_gov/pdf/cleo_order_-_executed_-_for_press_release.pdf"
+    local_staged_source_file: null
+    source_pinpoint: "Executed proposed order; compare FY2025 agency financial report."
+    benchmark_eligibility: "ineligible_non_final"
+    comparability_notes: "Preserves the apparent $17 million amount without treating it as final."
+    limitations: "Entered final court order not verified from official docket materials."
+    verified_date: "2026-07-10"
+
+  - id: "us-ftc-adobe-pending-2024"
+    jurisdiction: "US"
+    sub_jurisdiction: null
+    authority: "Federal Trade Commission; U.S. Department of Justice; U.S. District Court"
+    matter_name: "United States v. Adobe Inc."
+    date: "2024-06-17"
+    posture: "complaint"
+    finality: "non_final_pending"
+    linked_norm_ids: ["us-ftc-5a", "us-rosca-4-1", "us-rosca-4-2", "us-rosca-4-3", "us-rosca-5"]
+    linked_patterns_or_practices: ["hidden-renewal", "small-print-renewal-terms", "difficult-cancellation"]
+    legal_basis: "FTC Act and ROSCA"
+    monetary_amount: null
+    consumer_redress: "Requested only"
+    non_monetary_relief: "Requested injunction only; no remedy imposed."
+    source_url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/222-3055-adobe-inc-us-v"
+    local_staged_source_file: null
+    source_pinpoint: "Complaint and official current case status."
+    benchmark_eligibility: "ineligible_non_final"
+    comparability_notes: "Comparable design allegations only."
+    limitations: "Complaint is not proof of liability, remedy, or monetary amount."
+    verified_date: "2026-07-10"
+
+  - id: "uk-cma-aa-bsm-2026"
+    jurisdiction: "UK"
+    sub_jurisdiction: null
+    authority: "Competition and Markets Authority"
+    matter_name: "Automobile Association Developments Ltd. / BSM driving schools"
+    date: "2026-04-15"
+    posture: "final infringement notice; settlement"
+    finality: "final_no_appeal"
+    linked_norm_ids: ["uk-dmcc-225", "uk-dmcc-230", "uk-dmcc-direct-enforcement"]
+    linked_patterns_or_practices: ["mandatory-fee-drip-pricing", "delayed-price-disclosure"]
+    legal_basis: "DMCC Act sections 225, 227, 230 and 183"
+    monetary_amount:
+      amount: 4200000
+      currency: "GBP"
+      amount_type: "administrative_penalty"
+      amount_basis: "final penalty after 40% settlement discount; undiscounted penalty £7 million"
+    consumer_redress: "More than £760,000 refunds to more than 80,000 consumers"
+    non_monetary_relief: "Total-price correction; compliance obligations and reporting."
+    source_url: "https://www.gov.uk/cma-cases/automobile-association-developments-limited-consumer-protection-enforcement-case"
+    local_staged_source_file: "case_law/uk_aa_bsm_final_infringement_notice.pdf"
+    source_pinpoint: "Final infringement notice dated 2026-04-15; penalty and redress sections."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "First CMA direct-enforcement fine; mandatory £3 fee; admitted and no appeal."
+    limitations: "Discounted penalty and refunds are separate amount types."
+    verified_date: "2026-07-10"
+
+  - id: "uk-cma-marks-electrical-2026"
+    jurisdiction: "UK"
+    sub_jurisdiction: null
+    authority: "Competition and Markets Authority"
+    matter_name: "Marks Electrical consumer protection enforcement case"
+    date: "2026-06-15"
+    posture: "final infringement notice; settlement"
+    finality: "final_no_appeal"
+    linked_norm_ids: ["uk-ccr-40", "uk-dmcc-direct-enforcement"]
+    linked_patterns_or_practices: ["prechecked-paid-option", "unauthorized-add-on"]
+    legal_basis: "Consumer Contracts Regulations 2013 regulation 40; DMCC direct enforcement"
+    monetary_amount:
+      amount: 720000
+      currency: "GBP"
+      amount_type: "administrative_penalty"
+      amount_basis: "final penalty after 40% settlement discount"
+    consumer_redress: "Approximately £579,500 for nearly 40,000 customers"
+    non_monetary_relief: "Removal of preselection and one year of compliance reporting."
+    source_url: "https://www.gov.uk/cma-cases/marks-electrical-consumer-protection-enforcement-case"
+    local_staged_source_file: "case_law/uk_marks_electrical_final_infringement_notice.pdf"
+    source_pinpoint: "Final infringement notice dated 2026-06-15; penalty, redress, and reporting sections."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Direct comparator for preselected paid extras."
+    limitations: "Discounted penalty and approximate redress are separate amount types."
+    verified_date: "2026-07-10"
+
+  - id: "uk-cma-emma-sleep-2026"
+    jurisdiction: "UK"
+    sub_jurisdiction: null
+    authority: "Competition and Markets Authority; High Court"
+    matter_name: "CMA v. Emma Sleep GmbH"
+    date: "2026-05-22"
+    posture: "court-endorsed settlement; court order"
+    finality: "scope_limited_final"
+    linked_norm_ids: ["uk-dmcc-225", "uk-dmcc-226"]
+    linked_patterns_or_practices: ["artificial-urgency-timer", "discount-pressure", "discount-anchoring"]
+    legal_basis: "Consumer Protection from Unfair Trading Regulations 2008 under pre-DMCC powers"
+    monetary_amount: null
+    consumer_redress: "No monetary redress identified for resolved issues"
+    non_monetary_relief: "Binding changes, compliance monitoring and reporting; contempt exposure for breach."
+    source_url: "https://www.gov.uk/government/news/court-endorses-cma-action-as-emma-sleep-agrees-to-change-sales-practices"
+    local_staged_source_file: "case_law/uk_emma_sleep_high_court_order.pdf"
+    source_pinpoint: "High Court order dated 2026-05-22; official announcement paragraphs describing admissions and undertakings."
+    benchmark_eligibility: "eligible_non_monetary"
+    comparability_notes: "Strong final corrective benchmark for false timers, high-demand messages, and specified discount claims."
+    limitations: "Separate reference-pricing issue remained outside the settlement."
+    verified_date: "2026-07-10"
+
+  - id: "uk-cma-wowcher-undertaking-2024"
+    jurisdiction: "UK"
+    sub_jurisdiction: null
+    authority: "Competition and Markets Authority"
+    matter_name: "Wowcher Limited"
+    date: "2024-07"
+    posture: "undertaking"
+    finality: "commitment_no_finding"
+    linked_norm_ids: ["uk-dmcc-225", "uk-ccr-40"]
+    linked_patterns_or_practices: ["artificial-urgency-timer", "prechecked-paid-option"]
+    legal_basis: "Enterprise Act 2002 consumer undertakings"
+    monetary_amount:
+      amount: 4271000
+      currency: "GBP"
+      amount_type: "refund_under_undertaking"
+      amount_basis: "approximately £4.271 million refunds under undertaking"
+    consumer_redress: "Refunds to approximately 870,000 customers"
+    non_monetary_relief: "Accurate timers; removal of pre-ticked VIP; compliance reporting."
+    source_url: "https://www.gov.uk/government/news/cma-secures-over-4-million-in-refunds-for-wowcher-customers"
+    local_staged_source_file: null
+    source_pinpoint: "Official announcement and linked undertakings, July 2024."
+    benchmark_eligibility: "ineligible_no_finding"
+    comparability_notes: "Useful corrective-design and undertaking example."
+    limitations: "No admission or adjudicated infringement; refund is not a fine."
+    verified_date: "2026-07-10"
+
+  - id: "uk-cma-simba-undertaking-2024"
+    jurisdiction: "UK"
+    sub_jurisdiction: null
+    authority: "Competition and Markets Authority"
+    matter_name: "Simba Sleep Limited"
+    date: "2024-07-25"
+    posture: "undertaking"
+    finality: "commitment_no_finding"
+    linked_norm_ids: ["uk-dmcc-225"]
+    linked_patterns_or_practices: ["artificial-urgency-timer", "discount-anchoring"]
+    legal_basis: "Enterprise Act 2002 consumer undertakings"
+    monetary_amount: null
+    consumer_redress: "No consumer payment identified"
+    non_monetary_relief: "Accurate timers; genuine reference prices; six-month compliance report."
+    source_url: "https://www.gov.uk/cma-cases/simba-sleep-limited-consumer-protection-case"
+    local_staged_source_file: null
+    source_pinpoint: "Undertakings signed 2024-07-25."
+    benchmark_eligibility: "ineligible_no_finding"
+    comparability_notes: "Useful corrective-design and reporting example."
+    limitations: "No admission or adjudicated infringement."
+    verified_date: "2026-07-10"
+
+  - id: "eu-nl-acm-epic-2026"
+    jurisdiction: "EU"
+    sub_jurisdiction: "NL"
+    authority: "Netherlands Authority for Consumers and Markets; Rotterdam District Court"
+    matter_name: "ACM v. Epic Games International S.à r.l."
+    date: "2026-01-14"
+    posture: "final administrative decision; judgment dismissing appeal"
+    finality: "final_no_further_appeal"
+    linked_norm_ids: ["eu-ucpd-5-9"]
+    linked_patterns_or_practices: ["artificial-urgency-timer", "discount-pressure", "direct-exhortation-to-children"]
+    legal_basis: "UCPD as implemented in Dutch consumer law"
+    monetary_amount:
+      amount: 1125000
+      currency: "EUR"
+      amount_type: "administrative_penalty"
+      amount_basis: "two fines of €562,500; aggregate €1.125 million"
+    consumer_redress: "No individual redress amount identified"
+    non_monetary_relief: "Binding instruction and implemented Fortnite-shop interface changes."
+    source_url: "https://www.acm.nl/nl/publicaties/uitspraak-rechtbank-beroep-epic-ongegrond"
+    local_staged_source_file: null
+    source_pinpoint: "ACM update 2026-01-14 and ECLI:NL:RBROT:2026:171."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Strong final national outcome for misleading timers and child-directed pressure."
+    limitations: "Child audience, game design, and Dutch penalty law limit broader comparability."
+    verified_date: "2026-07-10"
+
+  - id: "eu-ec-x-dsa-2025"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "European Commission"
+    matter_name: "X DSA non-compliance decision"
+    date: "2025-12-05"
+    posture: "final administrative decision"
+    finality: "final_commission_decision"
+    linked_norm_ids: ["eu-dsa-25"]
+    linked_patterns_or_practices: ["misleading-verification", "unverifiable-social-proof", "deceptive-platform-interface"]
+    legal_basis: "DSA Articles 25, 39, and 40(12)"
+    monetary_amount:
+      amount: 120000000
+      currency: "EUR"
+      amount_type: "aggregate_multi_breach_fine"
+      amount_basis: "aggregate fine for three DSA infringements"
+    consumer_redress: "No consumer redress amount identified"
+    non_monetary_relief: "Remedial measures required; periodic penalties possible for non-compliance."
+    source_url: "https://digital-strategy.ec.europa.eu/en/news/commission-fines-x-eu120-million-under-digital-services-act"
+    local_staged_source_file: null
+    source_pinpoint: "Commission decision announced 2025-12-05; three stated infringement grounds."
+    availability: "press_release_only"
+    benchmark_eligibility: "ineligible_source_only"
+    comparability_notes: "Final DSA outcome that includes Article 25."
+    limitations: "No amount is allocated to Article 25; not a checkout matter; platform status is essential."
+    verified_date: "2026-07-10"
+
+  - id: "eu-fr-cnil-google-2025"
+    jurisdiction: "EU"
+    sub_jurisdiction: "FR"
+    authority: "Commission nationale de l'informatique et des libertés"
+    matter_name: "Google LLC and Google Ireland Ltd., SAN-2025-004"
+    date: "2025-09-01"
+    posture: "final administrative decision"
+    finality: "final_regulator_decision"
+    linked_norm_ids: ["eu-fr-eprivacy-cookie-consent"]
+    linked_patterns_or_practices: ["deceptive-consent-interface", "asymmetric-choice"]
+    legal_basis: "French Data Protection Act Article 82 and CPCE Article L.34-5 implementing ePrivacy rules"
+    monetary_amount:
+      amount: 325000000
+      currency: "EUR"
+      amount_type: "aggregate_multi_breach_fine"
+      amount_basis: "€200 million against Google LLC plus €125 million against Google Ireland; aggregate covers cookie and email-ad breaches"
+    consumer_redress: "No consumer redress amount identified"
+    non_monetary_relief: "Six-month compliance order."
+    source_url: "https://www.cnil.fr/en/cookies-and-advertisements-inserted-between-emails-google-fined-325-million-euros-cnil"
+    local_staged_source_file: null
+    source_pinpoint: "Deliberation SAN-2025-004, breaches and sanction sections."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Consent-interface benchmark under national ePrivacy implementation."
+    limitations: "Not GDPR; aggregate covers two legal bases, cannot be allocated to one breach, and is not checkout-specific."
+    verified_date: "2026-07-10"
+
+  - id: "eu-fr-cnil-shein-2025"
+    jurisdiction: "EU"
+    sub_jurisdiction: "FR"
+    authority: "Commission nationale de l'informatique et des libertés"
+    matter_name: "Infinite Styles Services (SHEIN), SAN-2025-005"
+    date: "2025-09-01"
+    posture: "final administrative decision"
+    finality: "final_regulator_decision"
+    linked_norm_ids: ["eu-fr-eprivacy-cookie-consent"]
+    linked_patterns_or_practices: ["deceptive-consent-interface", "ineffective-refusal"]
+    legal_basis: "French Data Protection Act Article 82 implementing ePrivacy rules"
+    monetary_amount:
+      amount: 150000000
+      currency: "EUR"
+      amount_type: "administrative_penalty"
+      amount_basis: "administrative fine"
+    consumer_redress: "No consumer redress amount identified"
+    non_monetary_relief: "No additional compliance order because changes were made during proceedings."
+    source_url: "https://www.cnil.fr/en/cookies-placed-without-consent-shein-fined-150-million-euros-cnil"
+    local_staged_source_file: null
+    source_pinpoint: "Deliberation SAN-2025-005, breach and sanction sections."
+    benchmark_eligibility: "eligible_monetary"
+    comparability_notes: "Retail-site consent-interface benchmark under national ePrivacy law."
+    limitations: "Not GDPR; cookie consent is adjacent to, not equivalent to, purchase checkout."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cjeu-canal-digital-2016"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "Court of Justice of the European Union"
+    matter_name: "Canal Digital Danmark A/S, C-611/14"
+    date: "2016-10-26"
+    posture: "judgment"
+    finality: "final_judgment"
+    linked_norm_ids: ["eu-ucpd-5-9"]
+    linked_patterns_or_practices: ["fragmented-pricing", "delayed-price-disclosure", "mandatory-fee-drip-pricing"]
+    legal_basis: "UCPD Articles 6 and 7"
+    monetary_amount: null
+    consumer_redress: "National court applies available remedies"
+    non_monetary_relief: "Interpretive rule for prominent total-price presentation."
+    source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62014CJ0611"
+    local_staged_source_file: null
+    source_pinpoint: "Judgment paragraphs 41-50 and operative part."
+    benchmark_eligibility: "eligible_non_monetary"
+    comparability_notes: "Strong precedential price-presentation authority."
+    limitations: "No monetary amount; national court applies facts and remedy."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cjeu-fuhrmann-2022"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "Court of Justice of the European Union"
+    matter_name: "Fuhrmann-2 GmbH, C-249/21"
+    date: "2022-04-07"
+    posture: "judgment"
+    finality: "final_judgment"
+    linked_norm_ids: ["eu-crd-8-2"]
+    linked_patterns_or_practices: ["single-option-cta", "ambiguous-payment-cta"]
+    legal_basis: "Consumer Rights Directive Article 8(2)"
+    monetary_amount: null
+    consumer_redress: "Consumer not bound where the button requirement is not met"
+    non_monetary_relief: "Unambiguous payment-obligation wording required."
+    source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62021CJ0249"
+    local_staged_source_file: null
+    source_pinpoint: "Judgment paragraphs 25-33 and operative part."
+    benchmark_eligibility: "eligible_non_monetary"
+    comparability_notes: "Direct contract-consequence authority for checkout button wording."
+    limitations: "Language and context specific; no fine."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cjeu-ebookers-2012"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "Court of Justice of the European Union"
+    matter_name: "ebookers.com Deutschland GmbH, C-112/11"
+    date: "2012-07-19"
+    posture: "judgment"
+    finality: "final_judgment"
+    linked_norm_ids: ["eu-crd-22"]
+    linked_patterns_or_practices: ["prechecked-paid-option", "unauthorized-add-on"]
+    legal_basis: "Air Services Regulation Article 23(1)"
+    monetary_amount: null
+    consumer_redress: "National law applies opt-in and reimbursement consequences"
+    non_monetary_relief: "Optional flight insurance must be opt-in."
+    source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=celex:62011CJ0112"
+    local_staged_source_file: null
+    source_pinpoint: "Judgment paragraphs 14-20 and operative part."
+    benchmark_eligibility: "eligible_non_monetary"
+    comparability_notes: "Strong opt-in authority and analogue to CRD Article 22."
+    limitations: "Air Services Regulation basis; not identical to CRD Article 22."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cjeu-oesterreichische-post-2023"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "Court of Justice of the European Union"
+    matter_name: "Österreichische Post AG, C-300/21"
+    date: "2023-05-04"
+    posture: "judgment"
+    finality: "final_judgment"
+    linked_norm_ids: ["eu-gdpr-deceptive-design"]
+    linked_patterns_or_practices: ["deceptive-data-consent-interface"]
+    legal_basis: "GDPR Article 82"
+    monetary_amount: null
+    consumer_redress: "Damages require infringement, damage, and causal link; infringement alone is insufficient"
+    non_monetary_relief: "Interpretive damages rule; national court applies facts."
+    source_url: "https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?jur=C&language=en&lgrec=fr&num=C-300%2F21&td=%3BALL"
+    local_staged_source_file: null
+    source_pinpoint: "Judgment paragraphs 28-51 and operative part."
+    benchmark_eligibility: "eligible_non_monetary"
+    comparability_notes: "Binding private-damages gate where GDPR genuinely applies."
+    limitations: "Not a checkout or deceptive-design liability finding."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cpc-amazon-prime-commitment-2022"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "European Commission and CPC Network"
+    matter_name: "Amazon Prime cancellation CPC dialogue"
+    date: "2022-07-01"
+    posture: "commitment"
+    finality: "closed_commitment_no_finding"
+    linked_norm_ids: ["eu-ucpd-5-9", "eu-crd-6"]
+    linked_patterns_or_practices: ["difficult-cancellation", "asymmetric-cancellation-path"]
+    legal_basis: "UCPD and CRD through CPC cooperation"
+    monetary_amount: null
+    consumer_redress: "No monetary redress identified"
+    non_monetary_relief: "Two-click cancellation and clearer cancellation controls across EU/EEA."
+    source_url: "https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/market-places-and-digital-services_en"
+    local_staged_source_file: null
+    source_pinpoint: "Amazon Prime cancellation commitment section."
+    benchmark_eligibility: "ineligible_no_finding"
+    comparability_notes: "Useful corrective-design commitment."
+    limitations: "No infringement decision, fine, or judicial precedent."
+    verified_date: "2026-07-10"
+
+  - id: "eu-cpc-booking-commitment-2020"
+    jurisdiction: "EU"
+    sub_jurisdiction: null
+    authority: "European Commission and CPC Network"
+    matter_name: "Booking.com CPC dialogue"
+    date: "2020-06"
+    posture: "commitment"
+    finality: "closed_commitment_no_finding"
+    linked_norm_ids: ["eu-ucpd-5-9", "eu-crd-6"]
+    linked_patterns_or_practices: ["mandatory-fee-drip-pricing", "discount-pressure", "artificial-urgency-timer", "unverifiable-social-proof"]
+    legal_basis: "UCPD and CRD through CPC cooperation"
+    monetary_amount: null
+    consumer_redress: "No monetary redress identified"
+    non_monetary_relief: "Total-price, discount, ranking, and scarcity-presentation changes."
+    source_url: "https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/accommodation-booking_en"
+    local_staged_source_file: null
+    source_pinpoint: "Booking.com commitments and official factsheet."
+    benchmark_eligibility: "ineligible_no_finding"
+    comparability_notes: "Useful corrective-design commitment."
+    limitations: "No infringement decision, fine, or judicial precedent."
+    verified_date: "2026-07-10"

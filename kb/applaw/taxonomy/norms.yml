@@ -1,0 +1,590 @@
+- id: us-ftc-5a
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "FTC Act Section 5(a)"
+  citation: "15 U.S.C. 45(a)"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions where separately authorized"
+  remedy: "cease-and-desist relief; injunctions; civil penalties or consumer redress only through an applicable statutory route"
+  summary: "Prohibits unfair or deceptive acts or practices in or affecting commerce"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "Not automatic under Section 5(a) alone. FTC Act Section 19 permits rescission, contract reformation, refunds, return of property, damages, and public notice only when its statutory predicates are satisfied."
+  public_enforcement: "FTC administrative cease-and-desist proceedings; temporary, preliminary, and permanent injunctions under FTC Act Section 13(b); civil actions using separately authorized penalty or redress routes."
+  private_enforcement: "The FTC Act does not create a standalone private right of action; private claimants must rely on another federal, state, or common-law cause of action."
+  penalty_basis: "FTC Act Section 5(l) addresses violations of final Commission orders, and Section 5(m) addresses qualifying knowing rule violations or knowing conduct previously determined unlawful. The applicable predicate and inflation-adjusted maximum must be verified for the action."
+  non_monetary_relief: "cease-and-desist orders; temporary, preliminary, or permanent injunctions; compliance, recordkeeping, reporting, and notice obligations when ordered"
+  limitations: "Section 5(a) supplies the substantive prohibition but does not make damages or civil penalties automatic for every violation. A report must identify the separate enforcement predicate and must describe complaint allegations as allegations."
+  who_may_act: "The FTC is the primary federal enforcer. State attorneys general enforce parallel state unfair-and-deceptive-practices statutes. The FTC Act itself creates no private right of action, so a consumer cannot sue under Section 5; a consumer route must be found in state UDAP law, contract, or another statute."
+  adjudicator: "In the administrative route an Administrative Law Judge issues only a recommended decision and certifies the record; the Commission itself decides. A respondent challenges a final cease-and-desist order by petition to a United States court of appeals within sixty days, not by trial de novo. Section 13(b) and Section 19 actions are heard by a federal district court."
+  limitation_period: "Section 19 consumer redress must be brought within three years of the violation, with a narrow one-year alternative after a qualifying cease-and-desist order becomes final. Federal civil penalty actions run five years from accrual absent a more specific statute. State UDAP periods commonly run three to four years and vary by state."
+  collective_route: "Private consumers proceed by federal class action under Rule 23, which requires numerosity, commonality, typicality and adequacy, and for a damages class the additional predominance and superiority findings under Rule 23(b)(3). Predominance is the usual gate for subscription-billing classes."
+  non_binding_forums: "The Better Business Bureau is not a government agency, holds no regulatory power and disclaims policing authority, so a BBB complaint is not legal enforcement and creates no remedy. Arbitration under the merchant's own terms is private contractual adjudication. Neither belongs in a liability estimate."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=(title:15%20section:53%20edition:prelim)", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim"]
+  eligible_outcome_ids: [us-ftc-amazon-prime-2025, us-ftc-epic-games-2023, us-ftc-vonage-2022, us-ftc-grubhub-2024, us-ftc-stubhub-2026, us-ftc-paddle-2025, us-ftc-fashion-nova-2022, us-ftc-nutraclick-2020, us-ftc-triangle-media-2019, us-ftc-abcmouse-2020]
+  verified_as_of: "2026-07-10"
+
+- id: us-ftc-5n
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "FTC Act Section 5(n)"
+  citation: "15 U.S.C. 45(n)"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions where separately authorized"
+  remedy: "the remedies available for an FTC Act Section 5 unfairness violation, subject to the applicable enforcement route"
+  summary: "Defines unfairness as substantial consumer injury that consumers cannot reasonably avoid and that is not outweighed by countervailing benefits"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "Not automatic under Section 5(n). Redress may be available through FTC Act Section 19 or another authorized route only when its separate prerequisites are met."
+  public_enforcement: "FTC enforcement of an unfair practice under Section 5(a), using administrative orders or court relief available under the applicable FTC Act provision."
+  private_enforcement: "Section 5(n) does not create a standalone private right of action."
+  penalty_basis: "Section 5(n) is the statutory unfairness test, not an independent civil-penalty provision. Any penalty requires a separate rule, order, knowledge, or other penalty-authorizing predicate."
+  non_monetary_relief: "cease-and-desist orders; injunctions; compliance, reporting, and notice obligations when authorized and ordered"
+  limitations: "All three unfairness elements must be supported. Consumer injury, reasonable avoidability, and countervailing benefits cannot be inferred from a dark-pattern label alone."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim"]
+  eligible_outcome_ids: [us-ftc-epic-games-2023, us-ftc-vonage-2022, us-ftc-grubhub-2024, us-ftc-paddle-2025]
+  verified_as_of: "2026-07-10"
+
+- id: us-rosca-4-1
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "ROSCA Section 4(1)"
+  citation: "15 U.S.C. 8403(1)"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "injunctions; civil penalties where the FTC Act predicate is satisfied; consumer redress under FTC Act Section 19"
+  summary: "Material negative-option terms must be disclosed clearly and conspicuously before billing information is obtained"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "Because ROSCA Section 5 treats a violation as an FTC rule violation, FTC Act Section 19 may support rescission, refunds, return of property, damages, or other consumer redress."
+  public_enforcement: "FTC enforcement under ROSCA Section 5 using incorporated FTC Act powers; DOJ may litigate referred federal civil actions."
+  private_enforcement: "ROSCA does not create a standalone private right of action; private claimants need another cause of action."
+  penalty_basis: "ROSCA Section 5 incorporates FTC Act penalties. A civil penalty is not automatic; the government must use the applicable FTC Act penalty route and satisfy its predicates."
+  non_monetary_relief: "orders requiring clear and conspicuous disclosure; injunctions against continued negative-option billing; compliance, recordkeeping, reporting, and consumer-notice obligations"
+  limitations: "Applies to covered online negative-option transactions. The report must establish the material term, timing, and lack of clear and conspicuous disclosure before billing information was obtained."
+  who_may_act: "ROSCA's enforcement provisions name only the FTC and state attorneys general. ROSCA supplies the substantive checkout duties but no consumer-initiated cause of action of its own; a consumer must rely on state law."
+  adjudicator: "Federal district court for FTC and state attorney general actions; the FTC administrative route is also available for the underlying Section 5 theory."
+  limitation_period: "Follows the FTC Act routes: three years for Section 19 redress and five years for federal civil penalties absent a more specific statute."
+  collective_route: "No ROSCA class action as such. Consumers aggregate through state UDAP or contract claims under Rule 23."
+  non_binding_forums: "App-store refund policies, card chargebacks and merchant arbitration may return money in practice but are commercial or contractual routes, not enforcement of this norm, and must never be reported as a legal remedy."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8404&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"]
+  eligible_outcome_ids: [us-ftc-amazon-prime-2025, us-ftc-vonage-2022, us-ftc-grubhub-2024, us-ftc-nutraclick-2020, us-ftc-triangle-media-2019, us-ftc-abcmouse-2020]
+  verified_as_of: "2026-07-10"
+
+- id: us-rosca-4-2
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "ROSCA Section 4(2)"
+  citation: "15 U.S.C. 8403(2)"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "injunctions; civil penalties where the FTC Act predicate is satisfied; consumer redress under FTC Act Section 19"
+  summary: "The seller must obtain the consumer's express informed consent before charging through a negative-option feature"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "Because ROSCA Section 5 treats a violation as an FTC rule violation, FTC Act Section 19 may support rescission, refunds, return of property, damages, or other consumer redress."
+  public_enforcement: "FTC enforcement under ROSCA Section 5 using incorporated FTC Act powers; DOJ may litigate referred federal civil actions."
+  private_enforcement: "ROSCA does not create a standalone private right of action; private claimants need another cause of action."
+  penalty_basis: "ROSCA Section 5 incorporates FTC Act penalties. A civil penalty is not automatic; the government must use the applicable FTC Act penalty route and satisfy its predicates."
+  non_monetary_relief: "orders requiring express informed consent; injunctions against unauthorized recurring charges; compliance, recordkeeping, reporting, and consumer-notice obligations"
+  limitations: "Applies to covered online negative-option transactions. A report must identify the affirmative act and the terms to which the consumer allegedly consented; visual suspicion alone is insufficient."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8404&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"]
+  eligible_outcome_ids: [us-ftc-amazon-prime-2025, us-ftc-nutraclick-2020, us-ftc-triangle-media-2019, us-ftc-abcmouse-2020]
+  verified_as_of: "2026-07-10"
+
+- id: us-rosca-4-3
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "ROSCA Section 4(3)"
+  citation: "15 U.S.C. 8403(3)"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "injunctions; civil penalties where the FTC Act predicate is satisfied; consumer redress under FTC Act Section 19"
+  summary: "The seller must provide simple mechanisms for stopping recurring charges"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "Because ROSCA Section 5 treats a violation as an FTC rule violation, FTC Act Section 19 may support rescission, refunds, return of property, damages, or other consumer redress."
+  public_enforcement: "FTC enforcement under ROSCA Section 5 using incorporated FTC Act powers; DOJ may litigate referred federal civil actions."
+  private_enforcement: "ROSCA does not create a standalone private right of action; private claimants need another cause of action."
+  penalty_basis: "ROSCA Section 5 incorporates FTC Act penalties. A civil penalty is not automatic; the government must use the applicable FTC Act penalty route and satisfy its predicates."
+  non_monetary_relief: "orders requiring a simple stop mechanism; injunctions against continued billing; cancellation confirmation, compliance, reporting, and consumer-notice obligations when ordered"
+  limitations: "The complete cancellation mechanism must be reviewed. A single screenshot can raise a concrete risk flag but may not prove that the mechanism as a whole is not simple."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8404&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"]
+  eligible_outcome_ids: [us-ftc-amazon-prime-2025, us-ftc-vonage-2022, us-ftc-grubhub-2024, us-ftc-nutraclick-2020, us-ftc-triangle-media-2019, us-ftc-abcmouse-2020]
+  verified_as_of: "2026-07-10"
+
+- id: us-rosca-5
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "ROSCA Section 5"
+  citation: "15 U.S.C. 8404"
+  type: "procedural"
+  companion_to_material_norm_ids: [us-rosca-4-1, us-rosca-4-2, us-rosca-4-3]
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "incorporates FTC Act enforcement, penalty, privilege, and immunity provisions for ROSCA violations"
+  summary: "Treats a ROSCA violation as an FTC rule violation and directs the FTC to enforce ROSCA using incorporated FTC Act powers"
+  source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8404&num=0&edition=prelim"
+  availability: "full"
+  consumer_redress: "FTC Act Section 19 may authorize rescission, contract reformation, refunds, return of property, damages, public notice, and other relief necessary to redress consumer injury from a ROSCA rule violation."
+  public_enforcement: "The FTC enforces ROSCA in the same manner and by the same means as an FTC rule respecting unfair or deceptive acts or practices; DOJ may litigate referred federal civil actions."
+  private_enforcement: "ROSCA Section 5 assigns federal enforcement to the FTC and does not create a standalone private right of action."
+  penalty_basis: "A person violating ROSCA is subject to FTC Act penalties as incorporated by 15 U.S.C. 8404. The government must still establish the applicable FTC Act penalty predicate; penalties are not automatic from a screenshot finding."
+  non_monetary_relief: "temporary, preliminary, or permanent injunctions; orders stopping billing; mandated disclosure, consent, cancellation, recordkeeping, reporting, and consumer-notice measures"
+  limitations: "This is an enforcement provision, not a separate UI duty. Use it only as the procedural companion to a supported ROSCA Section 4 violation."
+  liability_source_urls: ["https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8404&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57b&num=0&edition=prelim", "https://uscode.house.gov/view.xhtml?req=(title:15%20section:53%20edition:prelim)"]
+  eligible_outcome_ids: [us-ftc-amazon-prime-2025, us-ftc-vonage-2022, us-ftc-grubhub-2024, us-ftc-nutraclick-2020, us-ftc-triangle-media-2019, us-ftc-abcmouse-2020]
+  verified_as_of: "2026-07-10"
+
+- id: uk-ccr-40
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013, Regulation 40"
+  citation: "SI 2013/3134, reg. 40"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "reimbursement of the additional payment; DMCC court or direct-enforcement measures where the statutory conditions are met"
+  summary: "A trader cannot charge an additional payment beyond the main obligation unless the consumer gives express consent; consent is not express if inferred from the consumer not changing a default option such as a pre-ticked box."
+  source_url: "https://www.legislation.gov.uk/uksi/2013/3134/regulation/40"
+  availability: "full"
+  consumer_redress: "Regulation 40 entitles the consumer to reimbursement of an additional payment taken without the required express consent."
+  public_enforcement: "The CMA and other designated enforcers may use the DMCC Act Part 3 court-based or direct-enforcement regimes where Regulation 40 is within the relevant enforcement schedule and the statutory conditions are met."
+  private_enforcement: "The consumer may seek recovery of the reimbursement right through the applicable civil procedure; the precise route and limitation rules depend on the forum."
+  penalty_basis: "Under DMCC Act Part 3, a court enforcement order or CMA final infringement notice may impose up to the higher of GBP 300,000 or 10% of turnover for an established relevant infringement. The maximum is not an automatic tariff."
+  non_monetary_relief: "compliance directions; enhanced consumer measures including redress; undertakings; publication or corrective statements; online-interface measures where authorized"
+  limitations: "Regulation 40 addresses additional payments beyond the main contractual remuneration. It does not by itself govern the adequacy of disclosure of the main price or every renewal term."
+  liability_source_urls: ["https://www.legislation.gov.uk/uksi/2013/3134/regulation/40", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183"]
+  eligible_outcome_ids: [uk-cma-marks-electrical-2026]
+  verified_as_of: "2026-07-10"
+
+- id: uk-dmcc-225
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Section 225"
+  citation: "DMCC Act 2024, s.225"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "public enforcement, enhanced consumer measures, monetary penalties, and qualifying private redress"
+  summary: "Prohibits unfair commercial practices, including specified omissions from invitations to purchase."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/section/225"
+  availability: "full"
+  consumer_redress: "Sections 232-235 provide a qualifying redress framework for misleading actions or aggressive practices when the statutory conditions are met, with the right to unwind, discount, or damages supplied through applicable Section 233 regulations or the transitional rule in Section 252. Not every Section 225 infringement produces private redress."
+  public_enforcement: "Trading Standards and the Department for the Economy in Northern Ireland have enforcement duties, and the CMA may use the DMCC Act Part 3 court-based or direct-enforcement regimes."
+  private_enforcement: "A consumer may enforce an applicable Section 233 or transitional Section 252 redress right for a qualifying misleading action or aggressive practice in civil court; other unfair practices may require a different private cause of action."
+  penalty_basis: "A court enforcement order or CMA final infringement notice may impose up to the higher of GBP 300,000 or 10% of turnover for an established relevant infringement, subject to Part 3 procedures and appeal rights."
+  non_monetary_relief: "enforcement directions; enhanced consumer measures; undertakings; publication or corrective statements; online-interface measures; compliance and reporting requirements"
+  limitations: "Section 225 is a broad prohibition. The report must identify the specific misleading action, omission, aggressive practice, or listed practice and must not imply a private damages remedy for every category."
+  who_may_act: "The CMA, every local weights and measures authority in Great Britain and the Department for the Economy in Northern Ireland are public designated enforcers. Which? is the only private designated enforcer named on the face of the Act. An individual consumer has no standing to bring Part 3 proceedings."
+  adjudicator: "Under direct enforcement the CMA decides at first instance by provisional then final infringement notice. Appeals lie to the High Court, or the Outer House of the Court of Session in Scotland, on judicial-review-style grounds. The court-based route is heard by the ordinary courts."
+  limitation_period: "Six years for the redress route once Section 234 is commenced, the Limitation Act 1980 applying as if the claim were founded on simple contract. General contract and tort claims are six years from accrual."
+  collective_route: "No opt-out collective regime for consumer-protection claims; the Competition Appeal Tribunal opt-out route is limited to competition-law claims. Available routes are the CPR Part 19 representative claim and the opt-in Group Litigation Order."
+  non_binding_forums: "Consumer ADR under DMCC Part 4 Chapter 4 has required provider accreditation since 6 April 2026, but participation is not mandatory for traders outside regulated sectors. Citizens Advice routes consumer reports to Trading Standards without standing of its own. Neither is enforcement."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/231", "https://www.legislation.gov.uk/ukpga/2024/13/section/232", "https://www.legislation.gov.uk/ukpga/2024/13/section/233", "https://www.legislation.gov.uk/ukpga/2024/13/section/252", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183"]
+  eligible_outcome_ids: [uk-cma-aa-bsm-2026, uk-cma-emma-sleep-2026]
+  verified_as_of: "2026-07-10"
+
+- id: uk-dmcc-226
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Section 226"
+  citation: "DMCC Act 2024, s.226"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "public enforcement, enhanced consumer measures, monetary penalties, and the Section 232 right to redress"
+  summary: "Defines a misleading action, including false information and an overall presentation likely to deceive the average consumer even where the information given is factually correct."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/section/226"
+  availability: "full"
+  consumer_redress: "Section 226 is one of only two heads (with Section 228 aggressive practices) that count as a prohibited practice for the Sections 232-235 right to redress, so unlike a pure omission it can carry unwind, discount, or damages. All four Section 232 conditions must be met, including that the practice was a significant factor in the consumer's decision."
+  public_enforcement: "CMA direct enforcement under Part 3 Chapter 4 by provisional then final infringement notice, or the court-based enforcement-order route under Part 3 Chapter 3 available to designated enforcers."
+  private_enforcement: "A consumer may pursue the Section 232 right to redress in civil court once the four statutory conditions are met. Section 235 preserves any parallel claim at law or in equity, so the redress route is additive rather than exclusive."
+  penalty_basis: "A CMA final infringement notice under Section 182, or a court enforcement order under Section 158, may impose up to the higher of GBP 300,000 or 10% of global turnover. Breach of an undertaking carries the lower Section 190 cap of GBP 150,000 or 5% of turnover plus a daily amount."
+  non_monetary_relief: "enforcement directions; enhanced consumer measures; undertakings; publication or corrective statements; online-interface measures; compliance and reporting requirements"
+  limitations: "The overall-presentation limb asks whether the presentation is likely to deceive the average consumer about a matter relevant to a transactional decision. It is not a licence to aggregate unrelated minor practices: the report must identify the presentation complained of and how it deceives. Redress is never automatic on proof of the practice alone."
+  who_may_act: "The CMA, every local weights and measures authority in Great Britain (Trading Standards) and the Department for the Economy in Northern Ireland are public designated enforcers. Which? (the Consumers' Association) is the only private designated enforcer named on the face of the Act. An individual consumer has no standing to bring Part 3 enforcement proceedings and must use the Section 232 redress route instead."
+  adjudicator: "Under direct enforcement the CMA is itself the first-instance decision-maker. Appeals against a final infringement notice or penalty lie to the High Court, or the Outer House of the Court of Session in Scotland, on judicial-review-style grounds. The Section 232 redress claim is heard by the ordinary civil courts."
+  limitation_period: "When Section 234 is commenced the DMCC redress claim carries a six-year period in England and Wales, the Limitation Act 1980 applying as if it were an action founded on simple contract. General contract and tort claims are likewise six years from accrual."
+  collective_route: "There is no opt-out collective regime for consumer-protection claims: the Competition Appeal Tribunal opt-out regime under Section 47B of the Competition Act 1998 covers competition-law claims only. Available routes are the CPR Part 19 representative claim, which requires the same interest, and the opt-in Group Litigation Order."
+  non_binding_forums: "Consumer ADR under DMCC Part 4 Chapter 4, in force since 6 April 2026, requires the provider to be accredited or exempt. Participation is not mandatory for traders outside regulated sectors; Section 308 only obliges a trader to disclose ADR arrangements it is already bound by. Citizens Advice operates the consumer service that routes reports to Trading Standards but has no standing of its own. These are not legal enforcement and must never be reported as a remedy."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/226", "https://www.legislation.gov.uk/ukpga/2024/13/section/232", "https://www.legislation.gov.uk/ukpga/2024/13/section/234", "https://www.legislation.gov.uk/ukpga/2024/13/section/235", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/190", "https://www.legislation.gov.uk/ukpga/2024/13/section/151/enacted"]
+  eligible_outcome_ids: [uk-cma-emma-sleep-2026]
+  verified_as_of: "2026-09-03"
+
+- id: uk-dmcc-230
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Section 230"
+  citation: "DMCC Act 2024, s.230"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "public enforcement, enhanced consumer measures, and monetary penalties under the applicable DMCC Act route"
+  summary: "Defines invitation to purchase and treats omission of required price information, including total price where it can reasonably be calculated, as omission of material information."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/section/230"
+  availability: "full"
+  consumer_redress: "Section 230 does not itself create an automatic reimbursement right. Consumer redress depends on another applicable statutory or common-law route and the facts of the transaction."
+  public_enforcement: "The CMA and other designated enforcers may use court-based or direct enforcement to stop the omission, require compliance or redress measures, and impose a penalty where authorized."
+  private_enforcement: "The DMCC statutory redress route in Sections 232-235 is limited to qualifying misleading actions or aggressive practices; a price omission alone should not be presented as automatically creating that private remedy."
+  penalty_basis: "A court enforcement order or CMA final infringement notice may impose up to the higher of GBP 300,000 or 10% of turnover for an established relevant infringement, subject to Part 3 procedures and appeal rights."
+  non_monetary_relief: "directions to correct total-price presentation; enhanced consumer measures; undertakings; corrective publication; online-interface measures where authorized"
+  limitations: "The information duty depends on an invitation to purchase and on whether the total price can reasonably be calculated. Scope, unavoidable fees, and the exact transaction stage must be established."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/230", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183"]
+  eligible_outcome_ids: [uk-cma-aa-bsm-2026]
+  verified_as_of: "2026-07-10"
+
+- id: uk-dmcc-228
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Sections 225(4)(a)(iii) and (5), 228 and 245"
+  citation: "DMCC Act 2024, ss.225(4)(a)(iii), 225(5), 228 and 245"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "public enforcement, enhanced consumer measures, monetary penalties, and qualifying private redress for an established aggressive practice"
+  summary: "A commercial practice is unfair where harassment, coercion, or undue influence is likely to cause the average consumer to take a different transactional decision. In assessing aggression, requiring onerous or disproportionate action to exercise a consumer right is a statutory factor, and transactional decisions include retention, withdrawal, and exercising contractual rights."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/section/228"
+  availability: "full"
+  consumer_redress: "Sections 232-235 provide redress only for a qualifying aggressive practice that also meets the statutory contract-or-payment and causation conditions. A post-contract cancellation obstacle does not automatically establish a right to unwind, discount, or damages."
+  public_enforcement: "The CMA and other designated enforcers may use the DMCC Act Part 3 court-based or direct-enforcement regimes to stop an established aggressive practice, require compliance or consumer measures, and impose a penalty where authorized."
+  private_enforcement: "A consumer may enforce an applicable Section 233 or transitional Section 252 redress right only if all Section 232 conditions are met; other contractual or statutory cancellation claims require their own cause of action and procedure."
+  penalty_basis: "A court enforcement order or CMA final infringement notice may impose up to the higher of GBP 300,000 or 10% of turnover for an established relevant infringement, subject to Part 3 procedures and appeal rights. This ceiling is not an automatic tariff."
+  non_monetary_relief: "directions to remove coercive or unduly onerous cancellation steps; enhanced consumer measures; undertakings; corrective publication; compliance and reporting requirements"
+  limitations: "Section 228 requires harassment, coercion, or undue influence and a likely different transactional decision. The Section 228(2)(f) onerous-action factor is not a standalone prohibition. CMA207 gives a contract-termination example involving repeated confirmations, unnecessary information demands, and risk messages, but context and material effect must still be proved. The UCP provisions apply to practices from 6 April 2025. This norm does not rely on the separate subscription exit rule in Section 260, which is expected to commence in Spring 2027."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/225", "https://www.legislation.gov.uk/ukpga/2024/13/section/228", "https://www.legislation.gov.uk/ukpga/2024/13/section/245", "https://www.gov.uk/government/publications/unfair-commercial-practices-cma207", "https://www.legislation.gov.uk/uksi/2025/272/contents/made", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183"]
+  eligible_outcome_ids: []
+  verified_as_of: "2026-07-23"
+
+- id: uk-dmcc-sch20-13
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Section 225(4)(c) and Schedule 20, paragraph 13"
+  citation: "DMCC Act 2024, s.225(4)(c), Sch.20 para.13"
+  type: "material"
+  enforcer: "CMA; Trading Standards; Department for the Economy in Northern Ireland; courts"
+  remedy: "public enforcement, enhanced consumer measures, and monetary penalties for an established banned review practice"
+  summary: "Bans submitting or commissioning fake consumer reviews or concealed incentivised reviews, publishing consumer reviews or review information misleadingly, and offering or facilitating those services. Publishers must take necessary, reasonable, and proportionate steps to prevent and remove specified banned review content. A fake review is one that purports to be a consumer review but is not based on a genuine experience."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+  availability: "full"
+  consumer_redress: "Schedule 20 paragraph 13 does not itself create an automatic refund or damages claim. The Sections 232-235 statutory redress route is framed for qualifying misleading actions and aggressive practices, so any individual remedy for review conduct requires a separately supported route."
+  public_enforcement: "The CMA and other designated enforcers may use the DMCC Act Part 3 court-based or direct-enforcement regimes to stop an established paragraph 13 practice, require compliance or consumer measures, and impose a penalty where authorized."
+  private_enforcement: "No automatic private cause of action follows from the paragraph 13 classification alone; a claimant must identify an applicable statutory, contractual, tort, or other route and satisfy its elements and procedure."
+  penalty_basis: "A court enforcement order or CMA final infringement notice may impose up to the higher of GBP 300,000 or 10% of turnover for an established relevant infringement, subject to Part 3 procedures and appeal rights. This ceiling is not an automatic tariff."
+  non_monetary_relief: "directions to remove or correct banned reviews or misleading review information; proportionate prevention systems; enhanced consumer measures; undertakings; corrective publication; compliance and reporting requirements"
+  limitations: "The exact actor and conduct in paragraph 13 must be established. Missing source information, an ordinary rating, or a suspicious review is not proof that a review is fake. CMA208 requires investigation and recognises that a definitive view may be difficult; genuine reviews must not be removed merely because a trader disputes them. Publisher prevention duties are distinct from proof that any particular review was fabricated. Paragraph 13 is excluded from the criminal offences created by Section 237, although public civil enforcement remains available. The UCP provisions apply to practices from 6 April 2025."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/225", "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20", "https://www.legislation.gov.uk/ukpga/2024/13/section/237", "https://www.gov.uk/government/publications/fake-reviews", "https://www.legislation.gov.uk/uksi/2025/272/contents/made", "https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183"]
+  eligible_outcome_ids: []
+  verified_as_of: "2026-07-23"
+
+- id: uk-dmcc-direct-enforcement
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  instrument: "Digital Markets, Competition and Consumers Act 2024, Part 3, Chapter 4"
+  citation: "DMCC Act 2024, Part 3, Ch. 4"
+  type: "procedural"
+  companion_to_material_norm_ids: [uk-ccr-40, uk-dmcc-225, uk-dmcc-228, uk-dmcc-230, uk-dmcc-sch20-13]
+  enforcer: "CMA"
+  remedy: "final infringement notices; compliance directions; enhanced consumer measures; monetary penalties; publication and corrective statements"
+  summary: "Gives the CMA direct consumer-enforcement powers to investigate, issue infringement notices, require compliance or redress measures, and impose monetary penalties for relevant infringements."
+  source_url: "https://www.legislation.gov.uk/ukpga/2024/13/part/3/chapter/4"
+  availability: "full"
+  consumer_redress: "A final infringement notice may direct enhanced consumer measures that provide compensation or other redress to affected consumers when the statutory proportionality conditions are met."
+  public_enforcement: "The CMA may investigate suspected relevant infringements, issue provisional and final notices, accept undertakings, give directions, impose monetary penalties, and seek court enforcement of directions."
+  private_enforcement: "Chapter 4 is a public enforcement route and does not itself create a general private cause of action; private rights depend on the underlying consumer law."
+  penalty_basis: "A final infringement notice under Section 182 may impose up to the higher of GBP 300,000 or 10% of turnover for an established infringement. Separate lower maxima and daily penalties apply to breaches of directions, undertakings, information duties, or false information."
+  non_monetary_relief: "compliance directions; enhanced consumer measures; undertakings; publication of notices or corrective statements; online-interface notices; court orders enforcing directions"
+  limitations: "Use only where the underlying law is within the Part 3 regime and the CMA's direct-enforcement conditions are met. Distinguish alleged, provisional, settled, and final findings."
+  liability_source_urls: ["https://www.legislation.gov.uk/ukpga/2024/13/section/182", "https://www.legislation.gov.uk/ukpga/2024/13/section/183", "https://www.legislation.gov.uk/ukpga/2024/13/section/194", "https://www.legislation.gov.uk/ukpga/2024/13/section/202"]
+  eligible_outcome_ids: [uk-cma-aa-bsm-2026, uk-cma-marks-electrical-2026]
+  verified_as_of: "2026-07-10"
+
+- id: eu-ucpd-5-9
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "Unfair Commercial Practices Directive, Articles 5-9"
+  citation: "Directive 2005/29/EC, Arts. 5-9"
+  type: "material"
+  enforcer: "national consumer authorities and courts; CPC network for cross-border cooperation"
+  remedy: "national injunctions and penalties; proportionate individual redress under Article 11a; coordinated enforcement for widespread infringements"
+  summary: "Prohibits unfair commercial practices, including misleading actions, misleading omissions, and aggressive practices that distort consumers' transactional decisions."
+  source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0029-20220528"
+  availability: "full"
+  consumer_redress: "Article 11a requires access to proportionate and effective remedies for harmed consumers, including compensation, price reduction, or termination where relevant, subject to Member State conditions."
+  public_enforcement: "National authorities and courts enforce national transpositions; Regulation (EU) 2017/2394 supports coordinated investigation, commitments, cessation orders, interface restrictions, and penalties for covered cross-border infringements."
+  private_enforcement: "Private remedies arise through Article 11a as implemented by Member States and through other Union or national law; forum-specific conditions must be verified."
+  penalty_basis: "Article 13 requires effective, proportionate, and dissuasive national penalties. For penalties imposed in coordinated widespread-infringement cases under Regulation (EU) 2017/2394, the available maximum must be at least 4% of annual turnover in the Member State or States concerned, or at least EUR 2 million when turnover information is unavailable."
+  non_monetary_relief: "cessation or prohibition orders; interim measures; commitments; corrective information; removal of or restricted access to an online interface where the CPC conditions are met"
+  limitations: "National transposition controls procedure and many remedies. A dark-pattern label is not enough; the report must identify the misleading action, omission, aggressive practice, or other unfair-practice test and the effect on a transactional decision."
+  who_may_act: "Member States must give persons or organisations with a legitimate interest under national law, expressly including competitors, the ability to challenge unfair practices. Consumer organisations, European Consumer Centres and designated bodies can raise an external alert to competent authorities under the CPC Regulation. Qualified entities designated under the Representative Actions Directive can act for consumers collectively."
+  adjudicator: "There is no single EU forum. The choice between a court route, an administrative-authority route, or both is expressly left to each Member State, and a Member State may require prior recourse to other established means."
+  limitation_period: "EU law fixes no limitation period; limitation is a matter of national law. The Representative Actions Directive requires that a pending representative action suspend or interrupt the applicable periods for the consumers concerned, and the ADR Directive requires that time spent in a non-binding ADR procedure does not cost the consumer their court claim."
+  collective_route: "Directive (EU) 2020/1828 lets designated qualified entities bring representative actions for injunctive and redress measures. For cross-border actions the designation criteria are harmonised and cumulative, including twelve months of prior public consumer-protection activity and a non-profit character."
+  non_binding_forums: "Directive 2013/11/EU lets consumers submit disputes to independent ADR entities on a voluntary basis; it does not compel trader participation. A trader's own in-house complaint handling is expressly outside the Directive. ADR outcomes are not enforcement of this norm."
+  liability_source_urls: ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0029-20220528", "https://eur-lex.europa.eu/eli/reg/2017/2394/oj"]
+  eligible_outcome_ids: [eu-nl-acm-epic-2026, eu-cjeu-canal-digital-2016]
+  verified_as_of: "2026-07-10"
+
+- id: eu-crd-6
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "Consumer Rights Directive, Article 6"
+  citation: "Directive 2011/83/EU, Art. 6"
+  type: "material"
+  enforcer: "national consumer authorities and courts; qualified consumer bodies where national law permits"
+  remedy: "the consumer does not bear undisclosed additional charges or return costs covered by Article 6(6); national penalties and other contract remedies"
+  summary: "Requires traders to give consumers clear pre-contract information before distance or off-premises contracts, including total price, additional charges, contract duration, and termination conditions."
+  source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528"
+  availability: "full"
+  consumer_redress: "Article 6(6) provides that the consumer does not bear additional charges, other costs, or return costs that the trader failed to disclose as required. Other consequences depend on the transposed national law and contract."
+  public_enforcement: "Member States must provide adequate and effective enforcement through public bodies, consumer organisations, professional organisations, courts, or administrative bodies under Article 23."
+  private_enforcement: "Consumers may invoke the no-charge consequence in Article 6(6) and any additional contract or statutory remedies available under the Member State's transposition."
+  penalty_basis: "Article 24 requires effective, proportionate, and dissuasive penalties. In coordinated widespread-infringement cases, the available maximum must be at least 4% of relevant Member State turnover, or at least EUR 2 million where turnover information is unavailable."
+  non_monetary_relief: "orders to correct pre-contract disclosures; cessation orders; undertakings; interface restrictions in qualifying CPC cases; compliance and consumer-information measures"
+  limitations: "Applies to covered distance and off-premises contracts and must be applied through Member State transposition. The report must identify the omitted information and the contract stage."
+  liability_source_urls: ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528", "https://eur-lex.europa.eu/eli/reg/2017/2394/oj"]
+  eligible_outcome_ids: []
+  verified_as_of: "2026-07-10"
+
+- id: eu-crd-8-2
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "Consumer Rights Directive, Article 8(2)"
+  citation: "Directive 2011/83/EU, Art. 8(2)"
+  type: "material"
+  enforcer: "national consumer authorities and courts; qualified consumer bodies where national law permits"
+  remedy: "the consumer is not bound by the contract or order when the payment-obligation button requirement is not met; national penalties and enforcement measures"
+  summary: "For online orders with payment obligations, the trader must make key information clear immediately before the order and ensure the consumer explicitly acknowledges the payment obligation."
+  source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528"
+  availability: "full"
+  consumer_redress: "If the trader does not comply with the payment-obligation acknowledgement and button-labelling rule, the consumer is not bound by the contract or order."
+  public_enforcement: "Member State courts and authorities may order compliance or cessation and impose national penalties; CPC coordination may apply to qualifying widespread cross-border infringements."
+  private_enforcement: "The consumer may invoke the express non-binding consequence through the applicable national procedure."
+  penalty_basis: "Article 24 requires effective, proportionate, and dissuasive penalties. In coordinated widespread-infringement cases, the available maximum must be at least 4% of relevant Member State turnover, or at least EUR 2 million where turnover information is unavailable."
+  non_monetary_relief: "orders to correct the final-order information and button label; cessation orders; undertakings; interface restrictions in qualifying CPC cases"
+  limitations: "The rule applies to distance contracts concluded by electronic means that place the consumer under an obligation to pay. The exact button or function and immediately preceding information must be reviewed."
+  liability_source_urls: ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528", "https://eur-lex.europa.eu/eli/reg/2017/2394/oj"]
+  eligible_outcome_ids: [eu-cjeu-fuhrmann-2022]
+  verified_as_of: "2026-07-10"
+
+- id: eu-crd-22
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "Consumer Rights Directive, Article 22"
+  citation: "Directive 2011/83/EU, Art. 22"
+  type: "material"
+  enforcer: "national consumer authorities and courts; qualified consumer bodies where national law permits"
+  remedy: "reimbursement of an additional payment taken without express consent; national penalties and enforcement measures"
+  summary: "Additional payments beyond the main contractual remuneration require the consumer's express consent; consent cannot be inferred from default options."
+  source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528"
+  availability: "full"
+  consumer_redress: "The consumer is entitled to reimbursement when the trader inferred consent to an additional payment from a default option instead of obtaining express consent."
+  public_enforcement: "Member State courts and authorities may order compliance or cessation and impose national penalties; CPC coordination may apply to qualifying widespread cross-border infringements."
+  private_enforcement: "The consumer may pursue the express reimbursement right through the applicable national procedure."
+  penalty_basis: "Article 24 requires effective, proportionate, and dissuasive penalties. In coordinated widespread-infringement cases, the available maximum must be at least 4% of relevant Member State turnover, or at least EUR 2 million where turnover information is unavailable."
+  non_monetary_relief: "orders to remove default options; cessation orders; undertakings; compliance and redress measures; interface restrictions in qualifying CPC cases"
+  limitations: "Article 22 addresses payments additional to the main contractual remuneration. It does not by itself determine whether the main price or renewal disclosure is adequate."
+  liability_source_urls: ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20220528", "https://eur-lex.europa.eu/eli/reg/2017/2394/oj"]
+  eligible_outcome_ids: [eu-cjeu-ebookers-2012]
+  verified_as_of: "2026-07-10"
+
+- id: eu-dsa-25
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "Digital Services Act, Article 25"
+  citation: "Regulation (EU) 2022/2065, Art. 25"
+  type: "material"
+  enforcer: "Digital Services Coordinators; European Commission for very large online platforms and very large online search engines"
+  remedy: "orders to cease or remedy the infringement; commitments; interim measures; fines; periodic penalty payments; qualifying compensation claims"
+  summary: "Online platforms must not design, organize, or operate interfaces in a way that deceives, manipulates, or materially distorts or impairs users' ability to make free and informed decisions."
+  source_url: "https://eur-lex.europa.eu/eli/reg/2022/2065/oj"
+  availability: "full"
+  consumer_redress: "Article 54 permits recipients of the service to seek compensation from providers for damage or loss suffered due to a provider's infringement, subject to the applicable Union and national law requirements."
+  public_enforcement: "Digital Services Coordinators have investigation and enforcement powers under Article 51; the European Commission has direct powers for very large online platforms and search engines under the DSA supervision regime."
+  private_enforcement: "Recipients may seek Article 54 compensation through the competent court, but must establish the required infringement, damage or loss, and causation."
+  penalty_basis: "Article 52 requires Member States to provide maximum fines of up to 6% of the provider's annual worldwide turnover for failure to comply with a DSA obligation, with separate maxima for information and inspection failures. Commission fines for very large services are governed by the DSA's Commission-enforcement provisions."
+  non_monetary_relief: "cessation and remedy orders; binding commitments; interim measures; management action plans; periodic penalty payments; temporary access restrictions only under the DSA's strict conditions"
+  limitations: "Applies only to providers of online platforms within DSA scope. Article 25(2) excludes practices covered by the UCPD or GDPR from the Article 25 prohibition, so reports must avoid duplicate or out-of-scope mapping."
+  liability_source_urls: ["https://eur-lex.europa.eu/eli/reg/2022/2065/oj"]
+  eligible_outcome_ids: []
+  verified_as_of: "2026-07-10"
+
+- id: eu-gdpr-deceptive-design
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  instrument: "General Data Protection Regulation, Articles 5, 6, 7, 12 and 25"
+  citation: "Regulation (EU) 2016/679, Arts. 5, 6, 7, 12, 25"
+  type: "material"
+  enforcer: "national data protection authorities; courts; EDPB coordination"
+  remedy: "corrective orders; processing restrictions or bans; administrative fines; qualifying compensation for material or non-material damage"
+  summary: "Deceptive design involving personal data can undermine fairness, transparency, lawful basis, valid consent, and data-protection-by-design obligations."
+  source_url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+  availability: "full"
+  consumer_redress: "Article 82 provides a right to compensation for material or non-material damage caused by a GDPR infringement when the applicable infringement, damage, and causal-link requirements are met."
+  public_enforcement: "Data protection authorities may investigate and use Article 58 corrective powers, including warnings, reprimands, compliance orders, processing limitations or bans, rectification or erasure orders, and administrative fines."
+  private_enforcement: "Data subjects may lodge complaints, seek judicial remedies, mandate qualifying non-profit bodies where allowed, and claim Article 82 compensation subject to its requirements."
+  penalty_basis: "Under Article 83, infringements of Articles 5, 6, 7, and 12 may fall within the tier up to EUR 20 million or 4% of total worldwide annual turnover, whichever is higher. Article 25 obligations fall within the tier up to EUR 10 million or 2%. The actual penalty is discretionary and factor-specific."
+  non_monetary_relief: "warnings; reprimands; compliance, consent, transparency, rectification, erasure, and notification orders; temporary or definitive processing restrictions or bans"
+  limitations: "Use only where the challenged design involves processing of personal data and a specific GDPR obligation. A generic dark-pattern allegation or ordinary purchase consent is not enough."
+  liability_source_urls: ["https://eur-lex.europa.eu/eli/reg/2016/679/oj"]
+  eligible_outcome_ids: [eu-cjeu-oesterreichische-post-2023]
+  verified_as_of: "2026-07-10"
+
+- id: us-ftc-fees-rule
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "FTC Rule on Unfair or Deceptive Fees"
+  citation: "16 C.F.R. Part 464"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "total-price disclosure orders; injunctions; civil penalties or consumer redress through an applicable FTC Act route"
+  summary: "Requires covered live-event ticket and short-term lodging offers to display the total price more prominently than other pricing information, subject to permitted exclusions."
+  source_url: "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464"
+  availability: "full"
+  consumer_redress: "Consumer redress is not automatic. It requires an authorized FTC Act route and proof of the relevant statutory predicates."
+  public_enforcement: "The FTC may enforce a qualifying Part 464 violation as a trade-regulation-rule violation and may seek authorized civil penalties, injunctions, and redress."
+  private_enforcement: "Part 464 does not create a standalone private right of action; other federal, state, or contract claims must be analyzed separately."
+  penalty_basis: "A qualifying rule violation may support civil penalties up to the current inflation-adjusted per-violation ceiling in 16 C.F.R. 1.98. The violation unit and penalty predicate must be established."
+  non_monetary_relief: "orders requiring prominent total-price presentation, truthful fee descriptions, recordkeeping, compliance monitoring, and reporting"
+  limitations: "Applies only to live-event tickets and short-term lodging. It does not prohibit a fee merely because the fee exists and must not be generalized to unrelated checkout sectors."
+  liability_source_urls: ["https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464", "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-A/part-1/subpart-L/section-1.98"]
+  eligible_outcome_ids: [us-ftc-stubhub-2026]
+  verified_as_of: "2026-07-10"
+
+- id: us-ftc-reviews-rule
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  instrument: "FTC Rule on the Use of Consumer Reviews and Testimonials"
+  citation: "16 C.F.R. Part 465"
+  type: "material"
+  enforcer: "FTC; DOJ in FTC-referred federal civil actions"
+  remedy: "injunctions and civil penalties through the applicable FTC Act rule-enforcement route"
+  summary: "Prohibits specified fake or false reviews, conditioned review incentives, undisclosed insider reviews, review suppression, and fake social-media indicators, subject to provision-specific knowledge standards."
+  source_url: "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465"
+  availability: "full"
+  consumer_redress: "Consumer redress is not automatic and requires a separately authorized remedial route and proof of injury and statutory predicates."
+  public_enforcement: "The FTC may enforce qualifying Part 465 violations and seek authorized civil penalties, injunctions, compliance, and recordkeeping relief."
+  private_enforcement: "Part 465 does not create a standalone private right of action. Private exposure depends on another applicable cause of action."
+  penalty_basis: "A qualifying rule violation may support civil penalties up to the current inflation-adjusted per-violation ceiling in 16 C.F.R. 1.98; the applicable knowledge standard and violation unit must be established."
+  non_monetary_relief: "orders prohibiting fake reviews, conditioned incentives, undisclosed insider reviews, suppression, or fake indicators; reporting and recordkeeping"
+  limitations: "A generic testimonial concern is insufficient. The report must identify the applicable rule subsection and satisfy its knowledge or other conduct requirements."
+  liability_source_urls: ["https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465", "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-A/part-1/subpart-L/section-1.98"]
+  eligible_outcome_ids: ["us-ftc-fashion-nova-2022"]
+  verified_as_of: "2026-07-10"
+
+- id: eu-fr-eprivacy-cookie-consent
+  jurisdiction: "EU"
+  sub_jurisdiction: "FR"
+  instrument: "French Data Protection Act Article 82 implementing the ePrivacy cookie rule"
+  citation: "Directive 2002/58/EC, Art. 5(3); French Data Protection Act, Art. 82"
+  type: "material"
+  enforcer: "CNIL; French courts"
+  remedy: "administrative fines, compliance orders, and interface changes under the applicable French enforcement route"
+  summary: "Non-essential cookies and similar access or storage operations require valid prior consent and an effective refusal or withdrawal mechanism under the French implementation of the ePrivacy rule."
+  source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219"
+  availability: "full"
+  consumer_redress: "No uniform EU consumer-refund consequence follows from the interface alone; any private claim depends on applicable French and Union law and proof of loss or other required elements."
+  public_enforcement: "The CNIL may investigate, issue corrective orders, and impose administrative fines under French law for cookie-consent infringements within its competence."
+  private_enforcement: "Private exposure must be assessed under the applicable French cause of action and procedure; this norm does not create a standalone EU-wide checkout damages action."
+  penalty_basis: "The applicable French statutory ceiling and CNIL sanction factors control. Observed CNIL amounts are final outcome records, not GDPR tariffs or checkout benchmarks."
+  non_monetary_relief: "orders to stop cookies before consent, provide balanced accept/refuse controls, make withdrawal effective, and document compliance"
+  limitations: "This is a national ePrivacy implementation, not GDPR. Use only where the assessed interface actually performs covered cookie or device-access operations; ordinary purchase consent is outside this norm."
+  liability_source_urls: ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219", "https://www.cnil.fr/en/cookies-and-advertisements-inserted-between-emails-google-fined-325-million-euros-cnil", "https://www.cnil.fr/en/cookies-placed-without-consent-shein-fined-150-million-euros-cnil"]
+  eligible_outcome_ids: [eu-fr-cnil-google-2025, eu-fr-cnil-shein-2025]
+  verified_as_of: "2026-07-10"
+
+- id: us-ca-arl
+  jurisdiction: US
+  sub_jurisdiction: null
+  instrument: California Automatic Renewal Law, Business and Professions Code sections 17600 to 17606
+  citation: Cal. Bus. and Prof. Code sections 17600-17606
+  type: material
+  enforcer: California Attorney General, district attorneys and city attorneys through the Unfair Competition
+    Law; private claimants through the same route
+  remedy: injunctive relief and restitution through the Unfair Competition Law; goods or services sent
+    without affirmative consent are an unconditional gift the consumer may keep without paying
+  summary: A California automatic-renewal or continuous-service offer must present the renewal terms clearly
+    and conspicuously before the agreement is fulfilled, obtain the consumer's affirmative consent before
+    charging, send a retainable acknowledgement carrying the cancellation method, and let a consumer who
+    signed up online cancel exclusively online without obstructing steps.
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=7.&title=&part=3.&chapter=1.&article=9.
+  availability: full
+  consumer_redress: Section 17603 deems goods or services sent without affirmative consent an unconditional
+    gift, so the consumer owes nothing and need not return them. Restitution is available through the Unfair
+    Competition Law.
+  public_enforcement: Enforced by the California Attorney General, district attorneys and city attorneys
+    under the Unfair Competition Law. This is the operative click-to-cancel regime in the United States
+    after the federal Negative Option Rule was vacated in July 2025.
+  private_enforcement: Section 17604 states that all available civil remedies that apply to a violation
+    of this article may be employed, which in practice means the Unfair Competition Law rather than a
+    right of action created by this article itself.
+  penalty_basis: Section 17604 makes the ordinary civil remedies available rather than setting its own
+    penalty, and it grants immunity where the business acted in good faith and made a reasonable effort
+    to comply. Any monetary figure therefore depends on the route chosen and is not established here.
+  non_monetary_relief: injunctions requiring clear and conspicuous renewal disclosure, affirmative consent
+    before charging, a retainable acknowledgement, and an online cancellation path with no obstructing steps
+  limitations: Applies to California consumers. A screenshot does not establish where the consumer is, so
+    a finding must be written under the conditional discipline unless the submission establishes the state.
+    Verified against the article as amended by AB 2863, in force 1 July 2025.
+  liability_source_urls:
+  - https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=7.&title=&part=3.&chapter=1.&article=9.
+  eligible_outcome_ids: []
+  verified_as_of: '2026-09-03'
+
+- id: us-ny-gbl-349
+  jurisdiction: US
+  sub_jurisdiction: null
+  instrument: New York General Business Law Section 349
+  citation: N.Y. Gen. Bus. Law section 349
+  type: material
+  enforcer: New York Attorney General, and any injured person under subsection (h)
+  remedy: injunction, actual damages or fifty dollars whichever is greater, discretionary treble damages
+    capped at one thousand dollars, and reasonable attorney fees to a prevailing plaintiff
+  summary: Deceptive acts or practices in the conduct of any business in New York are unlawful, and
+    subsection (h) gives any person injured by one a private right of action.
+  source_url: https://www.nysenate.gov/legislation/laws/GBS/349
+  availability: full
+  consumer_redress: Subsection (h) lets an injured person recover actual damages or fifty dollars,
+    whichever is greater. The court may increase the award to three times actual damages up to one
+    thousand dollars where the violation was willful or knowing, and may award reasonable attorney fees.
+  public_enforcement: The New York Attorney General may seek an injunction and restitution.
+  private_enforcement: This is the private right of action that the FTC Act and ROSCA do not provide.
+    Any person injured by a deceptive act may sue in their own name.
+  penalty_basis: The statutory floor is fifty dollars per injured consumer, trebled at the court's
+    discretion to a maximum of one thousand dollars for a willful or knowing violation. Exposure scales
+    with the number of injured New York consumers, which the supplied interface never establishes.
+  non_monetary_relief: injunctions against the deceptive practice, and corrective disclosure where ordered
+  limitations: Applies to consumers in New York. A screenshot does not establish where the consumer is,
+    so a finding must be written under the conditional discipline unless the submission establishes the
+    state. The private right requires injury to the consumer, not merely a deceptive presentation.
+  liability_source_urls:
+  - https://www.nysenate.gov/legislation/laws/GBS/349
+  eligible_outcome_ids: []
+  verified_as_of: '2026-09-03'
+
+- id: uk-ccr-14
+  jurisdiction: UK
+  sub_jurisdiction: null
+  instrument: Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013,
+    Regulation 14
+  citation: SI 2013/3134, reg. 14
+  type: material
+  enforcer: Competition and Markets Authority, Trading Standards; the consumer may rely on the regulation
+    directly
+  remedy: the consumer is not bound by the contract or the order where the trader fails to comply
+  summary: On a distance contract concluded by electronic means with an obligation to pay, the trader must
+    make the key information clear and prominent directly before the order is placed, ensure the consumer
+    explicitly acknowledges that the order implies an obligation to pay, and label the order button only
+    with the words order with obligation to pay or a corresponding unambiguous formulation.
+  source_url: https://www.legislation.gov.uk/uksi/2013/3134/regulation/14/made
+  availability: full
+  consumer_redress: Where the trader fails to comply, the consumer is not bound by the contract or the
+    order, which is a direct contractual consequence rather than a claim for damages.
+  public_enforcement: Enforced by the Competition and Markets Authority and by Trading Standards under
+    the general consumer enforcement regime.
+  private_enforcement: The consumer may treat the contract as not binding on them. This is the British
+    counterpart of the button-labelling duty in Article 8(2) of the Consumer Rights Directive.
+  penalty_basis: The regulation carries no monetary penalty of its own. Its consequence is that the
+    consumer is not bound, so the exposure is the value of the affected contracts rather than a fine.
+  non_monetary_relief: orders to correct the ordering step and the button wording
+  limitations: Applies to a distance contract concluded by electronic means that carries an obligation to
+    pay. The chapter of the DMCC Act on subscription contracts is not in force until spring 2027, so this
+    regulation is the operative British regime for the ordering step today.
+  liability_source_urls:
+  - https://www.legislation.gov.uk/uksi/2013/3134/regulation/14/made
+  eligible_outcome_ids: []
+  verified_as_of: '2026-09-03'

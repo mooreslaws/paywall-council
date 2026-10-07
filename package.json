@@ -1,0 +1,28 @@
+{
+  "name": "paywall-council",
+  "version": "0.1.0",
+  "description": "The review engine behind AppLaw: reads a subscription paywall screenshot and writes a consumer-protection review against US, EU and UK rules.",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "verify:parser": "tsc council/skill/parse-report.ts council/interface.ts --outDir .parser-build --rootDir . --module commonjs --target es2022 --skipLibCheck && node scripts/verify_report_parser.mjs",
+    "verify:boundaries": "tsc council/skill/kb.ts council/skill/context.ts council/interface.ts --outDir .boundary-build --rootDir . --module commonjs --target es2022 --moduleResolution node --esModuleInterop --skipLibCheck && node scripts/verify_council_boundaries.mjs",
+    "verify:council": "node scripts/verify_council_orchestration.mjs",
+    "verify:marks": "node scripts/verify_marks.mjs",
+    "verify:kb": "cd kb/applaw && python3 -B scripts/validate_release.py --kb .",
+    "verify": "npm run typecheck && npm run verify:parser && npm run verify:boundaries && npm run verify:council && npm run verify:marks && npm run verify:kb",
+    "review": "node scripts/review.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.8.3"
+  }
+}

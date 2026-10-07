@@ -1,0 +1,1511 @@
+{
+ "artifact_storage": "compact-json-v1",
+ "bundle_path": "cases/genesis.json",
+ "case_id": "genesis-wisey",
+ "records": [
+  {
+   "body": "",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "counts": [
+     "FTC Section 5(a)",
+     "FTC Section 5(n)",
+     "ROSCA Section 4(1)/(2)/(3)"
+    ],
+    "court": "N.D. Cal., Case No. 4:26-cv-05232-HSG",
+    "filed": "2026-06-02",
+    "odds_notes": "Strong regulator posture: the complaint pleads a repeated hide-consent-cancel pattern across five product lines, supported by PayPal volume allegations, consumer complaints, and third-party provider warnings.",
+    "outcome": "pending",
+    "penalty": "not yet applicable",
+    "procedural_posture": "FTC complaint, federal court",
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "title": "FTC v. GM UniverseApps Ltd. et al. (Genesis Tech / Growthmind-Wisey)"
+   },
+   "kind": "case_header",
+   "logical_path": "cases/genesis/_case.md",
+   "semantic_sha256": "15708e507d7bdb855bc3fdaa2b51d8f9fe5555fe24911f261a8d5e17caf476f1"
+  },
+  {
+   "body": "",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "assets": 0,
+    "bundled_asset_count": 0,
+    "card_count": 43,
+    "cards": 43,
+    "case_id": "genesis-wisey",
+    "evidence_anchor_count": 43,
+    "figures": [
+     "A.1",
+     "A.2",
+     "A.3",
+     "A.4",
+     "A.5",
+     "A.6",
+     "A.7",
+     "A.8",
+     "A.9",
+     "B.1",
+     "B.2",
+     "B.3",
+     "B.4",
+     "B.5",
+     "B.6",
+     "C.1",
+     "C.2",
+     "C.3",
+     "C.4",
+     "C.5",
+     "C.6",
+     "C.7",
+     "C.8",
+     "D.1",
+     "D.2",
+     "D.3",
+     "D.4",
+     "D.5",
+     "D.6",
+     "E.1",
+     "E.2",
+     "E.3",
+     "E.4",
+     "E.5",
+     "E.6",
+     "E.7",
+     "E.8",
+     "E.9",
+     "E.10",
+     "E.11",
+     "E.12",
+     "E.13",
+     "E.14"
+    ],
+    "norms": 5,
+    "optional_visual_evidence_count": 43,
+    "pattern_ids_provisional": [
+     "anxiety-trigger",
+     "authority-claim",
+     "below-fold-disclosure",
+     "commitment-escalation",
+     "daily-price-framing",
+     "delayed-price-disclosure",
+     "discount-anchoring",
+     "discount-pressure",
+     "discount-wheel",
+     "email-before-price",
+     "fake-analysis",
+     "false-personalization",
+     "forced-discount",
+     "free-claim",
+     "hard-cancellation",
+     "hard-to-close-upsell",
+     "health-adjacent-claim",
+     "hidden-renewal",
+     "hidden-upsell-subscription",
+     "misleading-trial-period",
+     "missing-express-consent",
+     "money-back-misdirection",
+     "motivation-loop",
+     "name-your-price",
+     "no-price-upsell",
+     "nominal-price-framing",
+     "obstruction-to-decline",
+     "one-click-upsell",
+     "one-time-price-framing",
+     "outcome-promise",
+     "outcome-teaser",
+     "payment-without-clear-disclosure",
+     "payment-without-renewal-disclosure",
+     "personalization-lure",
+     "preselected-plan",
+     "repeated-prompt",
+     "single-option-cta",
+     "small-print-renewal",
+     "tailored-plan-claim",
+     "task-sunk-cost",
+     "trial-framing",
+     "trial-price-framing",
+     "unauthorized-add-on",
+     "urgency-timer"
+    ]
+   },
+   "kind": "case_coverage",
+   "logical_path": "cases/genesis/_coverage.json",
+   "semantic_sha256": "c596ea70feaca51eaae1ff1ee3b253ad1e20846dd6f16a77c061bce490348ad4"
+  },
+  {
+   "body": "EVIDENCE. Ad traffic lands in the ADHD quiz before the consumer sees the material price or renewal terms.\nLEGAL REASONING. The quiz creates engagement and sunk effort before the subscription economics are clear, making the later hidden renewal terms material to the purchase decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "45-47, 55, 158-160",
+    "figure_id": "A.1",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "delayed-price-disclosure",
+     "hidden-renewal"
+    ],
+    "product": "Wisey",
+    "screen_type": "quiz_landing",
+    "source_anchor_ids": [
+     "anc-83cffceab8e7e83a"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "41",
+    "source_ref": "Attachment B, Figure A.1"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.1.md",
+   "semantic_sha256": "529cdbba03de5700f1f38102adb95b2495a59c01fedd6d94d033930813400934"
+  },
+  {
+   "body": "EVIDENCE. The funnel uses cognitive-psychology and plan-effectiveness claims during the quiz.\nLEGAL REASONING. Health-adjacent authority claims strengthen the impression of a personalized product, so undisclosed renewal terms become material to the decision to buy.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "45-47, 56, 158-160",
+    "figure_id": "A.2",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "authority-claim",
+     "personalization-lure",
+     "hidden-renewal"
+    ],
+    "product": "Wisey",
+    "screen_type": "quiz_claim",
+    "source_anchor_ids": [
+     "anc-90b8fa63f88fb859"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "41",
+    "source_ref": "Attachment B, Figure A.2"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.2.md",
+   "semantic_sha256": "70820338efcd22a47d4c7605c1640d4eeb2afd4f624a96aa69dd2d2a66078372"
+  },
+  {
+   "body": "EVIDENCE. According to the complaint, users were told they had ADHD-related problems regardless of their answers.\nLEGAL REASONING. A fixed negative result can be a deceptive material representation because it pushes payment under the appearance of personalization.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "57, 156, 158-160",
+    "figure_id": "A.3",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "false-personalization",
+     "anxiety-trigger",
+     "personalization-lure",
+     "shame-based-pressure"
+    ],
+    "product": "Wisey",
+    "screen_type": "quiz_result",
+    "source_anchor_ids": [
+     "anc-30500fe289613e0b"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "42",
+    "source_ref": "Attachment B, Figure A.3"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.3.md",
+   "semantic_sha256": "859ccb8fce895eddb4c387a7e453ff4c2d0e7dce6552ffe3b9320628b4a3a342"
+  },
+  {
+   "body": "EVIDENCE. The site tells the user that a personal ADHD plan is ready after the user enters an email address.\nLEGAL REASONING. The complaint treats this as part of a low-risk personalized funnel that precedes clear disclosure of recurring billing terms.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "58, 156, 158-160",
+    "figure_id": "A.4",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "commitment-escalation",
+     "hidden-renewal"
+    ],
+    "product": "Wisey",
+    "screen_type": "email_gate",
+    "source_anchor_ids": [
+     "anc-c723404f1331450a"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "42",
+    "source_ref": "Attachment B, Figure A.4"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.4.md",
+   "semantic_sha256": "b47ad5fea188deb1b7ae8b878a880fbc5f4b89faeb5c668dddd39a3c2a6683e8"
+  },
+  {
+   "body": "EVIDENCE. The page predicts improvement if the user follows the Wisey plan for 30 days.\nLEGAL REASONING. The benefit claim supports the purchase decision while the recurring charge and cancellation terms remain hidden or visually subordinated.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "58-59, 156, 158-160",
+    "figure_id": "A.5",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "outcome-promise",
+     "health-adjacent-claim",
+     "hidden-renewal",
+     "fake-predictive-progress-graphs"
+    ],
+    "product": "Wisey",
+    "screen_type": "value_claim",
+    "source_anchor_ids": [
+     "anc-753c1db5bac70777"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "43",
+    "source_ref": "Attachment B, Figure A.5"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.5.md",
+   "semantic_sha256": "7131b75a528c21b283c51c98c0d1ec1a5994b26fc7b1d8ef69d274a5a95868a4"
+  },
+  {
+   "body": "EVIDENCE. Countdown timer, daily prices, a highlighted plan, a money-back guarantee, and fine print disclosing $59.99/month renewal.\nLEGAL REASONING. The legal problem is not that renewal language exists somewhere, but that it is visually subordinated to stronger one-time-price, urgency, and low-risk signals.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "59-64, 170-171",
+    "figure_id": "A.6",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "urgency-timer",
+     "daily-price-framing",
+     "preselected-plan",
+     "money-back-misdirection"
+    ],
+    "product": "Wisey",
+    "screen_type": "plan_selector",
+    "source_anchor_ids": [
+     "anc-46f5ccd1db1d3d66"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "43",
+    "source_ref": "Attachment B, Figure A.6"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.6.md",
+   "semantic_sha256": "db76c7eb5ba340107cbc71fc9a5cb9b2f6150e9a31bfc84260c9d7bdfee9052a"
+  },
+  {
+   "body": "EVIDENCE. The payment overlay shows the selected plan price and payment methods but does not disclose the auto-renewing subscription.\nLEGAL REASONING. Because billing information can be submitted from this window, the complaint frames the missing renewal terms as both a disclosure failure and an informed-consent failure.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "65-67, 170-173",
+    "figure_id": "A.7",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "payment-without-renewal-disclosure",
+     "hidden-renewal",
+     "missing-express-consent"
+    ],
+    "product": "Wisey",
+    "screen_type": "payment_overlay",
+    "source_anchor_ids": [
+     "anc-dee3aed1bb963571"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "44",
+    "source_ref": "Attachment B, Figure A.7"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.7.md",
+   "semantic_sha256": "20c212f04f4786b8b8f94ab3f28f588d5e460bc6c952df3a77fa4536572fbf28"
+  },
+  {
+   "body": "EVIDENCE. The e-book add-on is promoted with discount language while the $45/month renewal term appears in small gray text.\nLEGAL REASONING. The upsell allegedly adds a second recurring charge without a clear and informed purchase decision.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "68-70, 161-163, 172-173",
+    "figure_id": "A.8",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "hidden-upsell-subscription",
+     "discount-anchoring",
+     "small-print-renewal",
+     "missing-express-consent",
+     "renewal-price-mismatch"
+    ],
+    "product": "Wisey",
+    "screen_type": "post_purchase_upsell",
+    "source_anchor_ids": [
+     "anc-31c98492ce7b6151"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "44",
+    "source_ref": "Attachment B, Figure A.8"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.8.md",
+   "semantic_sha256": "ea2a2d80b803ed18f6f18cc68310c63421a2b106673fc344d8a7be21d5237a7a"
+  },
+  {
+   "body": "EVIDENCE. The dashboard promotes another paid feature through an \"Unlock Training\" button.\nLEGAL REASONING. The complaint alleges that users who clicked the button were charged another fee without knowledge or consent and then faced obstacles to cancellation and refunds.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "71-75, 161-163, 174-175",
+    "figure_id": "A.9",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n",
+     "us-rosca-4-2",
+     "us-rosca-4-3"
+    ],
+    "patterns": [
+     "one-click-upsell",
+     "unauthorized-add-on",
+     "hard-cancellation",
+     "bundled-consent"
+    ],
+    "product": "Wisey",
+    "screen_type": "dashboard_upsell",
+    "source_anchor_ids": [
+     "anc-395fa8b3b799f12e"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "45",
+    "source_ref": "Attachment B, Figure A.9"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/A.9.md",
+   "semantic_sha256": "f0ff23902610c5e9845b68876dd066e10e54b636e295b382eb94fe05d032d6e3"
+  },
+  {
+   "body": "EVIDENCE. Search and social ads represent the PDF products as free to use.\nLEGAL REASONING. A free-use claim is material when the later funnel allegedly converts the task into a costly recurring subscription.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "77-78, 158-160",
+    "figure_id": "B.1",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "free-claim",
+     "hidden-renewal",
+     "delayed-price-disclosure"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "ad",
+    "source_anchor_ids": [
+     "anc-6347c6dc3ee9ff13"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "46",
+    "source_ref": "Attachment B, Figure B.1"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.1.md",
+   "semantic_sha256": "32f048f52ed7b95cbbc7fda8db48449853f5644b227ec465807a4e78e805759f"
+  },
+  {
+   "body": "EVIDENCE. The landing page immediately asks the user to upload a PDF without price information.\nLEGAL REASONING. Uploading the file creates task investment before the user sees the recurring subscription economics.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "79-80, 158-160",
+    "figure_id": "B.2",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "task-sunk-cost",
+     "delayed-price-disclosure",
+     "hidden-renewal"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "file_upload",
+    "source_anchor_ids": [
+     "anc-b4fcc8283cddd20c"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "47",
+    "source_ref": "Attachment B, Figure B.2"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.2.md",
+   "semantic_sha256": "2514fd357e379e5219a78a1910ee2d911c469a88af32cfc2e7d8b58e3da642a5"
+  },
+  {
+   "body": "EVIDENCE. The user can edit a document before any price is disclosed on the editor screen.\nLEGAL REASONING. Price and subscription terms appear only after the user has performed the task, reducing the practical effect of later fine print.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "80-81, 158-160",
+    "figure_id": "B.3",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "task-sunk-cost",
+     "delayed-price-disclosure",
+     "hidden-renewal"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "editor",
+    "source_anchor_ids": [
+     "anc-72d3e23607822902"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "47",
+    "source_ref": "Attachment B, Figure B.3"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.3.md",
+   "semantic_sha256": "20a3a50532942cca3df7a137fe5052b58160bab0ec2fef09a7874554dbf0194c"
+  },
+  {
+   "body": "EVIDENCE. The funnel asks the user to select a file format and enter an email address before the first price disclosure.\nLEGAL REASONING. The complaint treats this as another engagement step before price, supporting the allegation that material billing terms were not adequately disclosed.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "81-82, 158-160",
+    "figure_id": "B.4",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "task-sunk-cost",
+     "email-before-price",
+     "hidden-renewal"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "email_gate",
+    "source_anchor_ids": [
+     "anc-b8b369f7d0876146"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "48",
+    "source_ref": "Attachment B, Figure B.4"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.4.md",
+   "semantic_sha256": "5b32b3025b4d588a461e73c04d9717cec0fcc240d93b7513693e30a6de19d4c7"
+  },
+  {
+   "body": "EVIDENCE. The page highlights a nominal one-time access price while the $49.99/month renewal appears in small text below the main content.\nLEGAL REASONING. Under ROSCA, renewal amount, timing, and cancellation deadline must be clear and conspicuous before billing information is collected.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "82-84, 170-171",
+    "figure_id": "B.5",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "nominal-price-framing",
+     "small-print-renewal",
+     "below-fold-disclosure",
+     "renewal-price-mismatch"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "payment_page",
+    "source_anchor_ids": [
+     "anc-e2b750b07a9a5773"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "48",
+    "source_ref": "Attachment B, Figure B.5"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.5.md",
+   "semantic_sha256": "140241cdbe7d8b76479f9cea2628c87f71b1b65e2f0a2bdaed3dfa9ebd34bbf6"
+  },
+  {
+   "body": "EVIDENCE. The payment page repeats fine print below colorful express-checkout fields and other payment options.\nLEGAL REASONING. The complaint alleges that the fine print contradicts the one-document purchase framing and that consumers later discovered recurring charges and cancellation problems.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "85-91, 170-175",
+    "figure_id": "B.6",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2",
+     "us-rosca-4-3"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "payment-without-clear-disclosure",
+     "missing-express-consent",
+     "hard-cancellation"
+    ],
+    "product": "PDF Guru / PDF Master",
+    "screen_type": "checkout",
+    "source_anchor_ids": [
+     "anc-444e99abcc1162b4"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "49",
+    "source_ref": "Attachment B, Figure B.6"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/B.6.md",
+   "semantic_sha256": "dac411c38cb77dd7c775982379b73179096b822fa047095196b2517ade71f4e8"
+  },
+  {
+   "body": "EVIDENCE. The Lumi funnel begins with a style quiz promising personalized fashion recommendations.\nLEGAL REASONING. The quiz creates an expectation of personalized service before the consumer sees the subscription economics.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "95-97, 158-160",
+    "figure_id": "C.1",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "delayed-price-disclosure",
+     "hidden-renewal"
+    ],
+    "product": "Lumi",
+    "screen_type": "quiz_landing",
+    "source_anchor_ids": [
+     "anc-4204b9e4b8a0145e"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "50",
+    "source_ref": "Attachment B, Figure C.1"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.1.md",
+   "semantic_sha256": "62b48151e3ffc28fa1eb2743ebda178ffbad10b1867b4f0804cad0fed161ee5d"
+  },
+  {
+   "body": "EVIDENCE. The quiz collects demographic information and fashion preferences.\nLEGAL REASONING. The complaint uses these screens as personalization-lure evidence that deepens engagement before renewal terms are shown.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "95-97, 158-160",
+    "figure_id": "C.2",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "commitment-escalation",
+     "hidden-renewal"
+    ],
+    "product": "Lumi",
+    "screen_type": "quiz_question",
+    "source_anchor_ids": [
+     "anc-5f77eff082fc21a6"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "50",
+    "source_ref": "Attachment B, Figure C.2"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.2.md",
+   "semantic_sha256": "de0ff9fa609e3650bf925eaa52d0194a845d5218afec5d81c41a394ee73195b2"
+  },
+  {
+   "body": "EVIDENCE. Progress bars tell the user that Lumi is analyzing the profile, style, and lifestyle information.\nLEGAL REASONING. This reinforces the impression of individualized recommendations, making hidden subscription terms material.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "98, 156, 158-160",
+    "figure_id": "C.3",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "fake-analysis",
+     "personalization-lure",
+     "hidden-renewal",
+     "fake-predictive-progress-graphs"
+    ],
+    "product": "Lumi",
+    "screen_type": "analysis_progress",
+    "source_anchor_ids": [
+     "anc-cf5fcac4795910fc"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "51",
+    "source_ref": "Attachment B, Figure C.3"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.3.md",
+   "semantic_sha256": "d455f5ca597b3bb9d9b2018a498838756719a239ad09989847c70f5e9ea5e7e4"
+  },
+  {
+   "body": "EVIDENCE. The user is asked to enter an email address to receive weekly outfit selections.\nLEGAL REASONING. The funnel moves the user toward payment without clearly presenting the negative-option terms described in the complaint.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "99, 158-160",
+    "figure_id": "C.4",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "email-before-price",
+     "personalization-lure",
+     "hidden-renewal"
+    ],
+    "product": "Lumi",
+    "screen_type": "email_gate",
+    "source_anchor_ids": [
+     "anc-b60291cd7e8ed3bb"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "51",
+    "source_ref": "Attachment B, Figure C.4"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.4.md",
+   "semantic_sha256": "21d8962dd77d60942b259a9c8858b2264454f9c2b604cc4789bd4ce83c327656"
+  },
+  {
+   "body": "EVIDENCE. The user sees an exclusive-discount offer with a single claim button.\nLEGAL REASONING. The discount interstitial pushes the user toward payment and may bypass a complete review of the pricing page.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "100-102, 170-173",
+    "figure_id": "C.5",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "discount-pressure",
+     "single-option-cta",
+     "hidden-renewal"
+    ],
+    "product": "Lumi",
+    "screen_type": "discount_modal",
+    "source_anchor_ids": [
+     "anc-c7dcfae5b55de384"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "52",
+    "source_ref": "Attachment B, Figure C.5"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.5.md",
+   "semantic_sha256": "7b9bc1f81c4bd448ffd2d0c9dd60207601c75256d8fefd33f0f8245cab8bf73f"
+  },
+  {
+   "body": "EVIDENCE. A 10-minute countdown timer and a \"GET MY OUTFITS\" call to action appear before payment.\nLEGAL REASONING. Urgency and a dominant CTA allegedly distract from subscription terms and interfere with informed consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "100-102, 170-173",
+    "figure_id": "C.6",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "urgency-timer",
+     "single-option-cta",
+     "hidden-renewal",
+     "missing-express-consent",
+     "fake-promo-code-countdown"
+    ],
+    "product": "Lumi",
+    "screen_type": "urgency_offer",
+    "source_anchor_ids": [
+     "anc-726d8abfed57168d"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "52",
+    "source_ref": "Attachment B, Figure C.6"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.6.md",
+   "semantic_sha256": "b32d38fa4833767e85f1376dd4b60afdab9825f5b52014b7e914eab87d9d1b25"
+  },
+  {
+   "body": "EVIDENCE. Clicking the CTA opens a payment popup with a single price and no subscription disclosure.\nLEGAL REASONING. The complaint alleges that consumers could enter payment information without subscription terms ever appearing on screen.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "100-101, 170-173",
+    "figure_id": "C.7",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "payment-without-renewal-disclosure",
+     "hidden-renewal",
+     "missing-express-consent"
+    ],
+    "product": "Lumi",
+    "screen_type": "payment_popup",
+    "source_anchor_ids": [
+     "anc-30c0083dbccd16a2"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "53",
+    "source_ref": "Attachment B, Figure C.7"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.7.md",
+   "semantic_sha256": "cc63f6694a92c650a7bc2afd276d636b94036c5567502110d468fbcc5bf4d6d5"
+  },
+  {
+   "body": "EVIDENCE. Daily prices appear above the button while renewal terms appear lower on the page and require scrolling.\nLEGAL REASONING. The FTC alleges the terms are not clear and conspicuous and that the 28-day framing is misleading because cancellation is required 24 hours earlier.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "103-106, 170-171",
+    "figure_id": "C.8",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "daily-price-framing",
+     "below-fold-disclosure",
+     "misleading-trial-period"
+    ],
+    "product": "Lumi",
+    "screen_type": "plan_selector",
+    "source_anchor_ids": [
+     "anc-12d5bab85cbd96ef"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "53",
+    "source_ref": "Attachment B, Figure C.8"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/C.8.md",
+   "semantic_sha256": "342f04c4971c54205857a780e016ecfdd7ea70277619b62ea4496fd43ebd9f82"
+  },
+  {
+   "body": "EVIDENCE. Nebula invites the user into a quiz and reading experience.\nLEGAL REASONING. The complaint alleges that trial or one-off reading framing later masks a recurring subscription.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "114-116, 158-160",
+    "figure_id": "D.1",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "trial-framing",
+     "hidden-renewal"
+    ],
+    "product": "Nebula",
+    "screen_type": "quiz_landing",
+    "source_anchor_ids": [
+     "anc-5e84b4c918f08789"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "54",
+    "source_ref": "Attachment B, Figure D.1"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.1.md",
+   "semantic_sha256": "e04c5d3b5e6e0bac56aa07b88ca288b052f0ce013c0fc3c76c54441d81ee2119"
+  },
+  {
+   "body": "EVIDENCE. The user answers personality and archetype questions before payment.\nLEGAL REASONING. As with the other product lines, the quiz deepens engagement and supports the promise of a personal reading.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "115-116, 158-160",
+    "figure_id": "D.2",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "commitment-escalation",
+     "hidden-renewal"
+    ],
+    "product": "Nebula",
+    "screen_type": "quiz_question",
+    "source_anchor_ids": [
+     "anc-47a4bc5829f8d93c"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "54",
+    "source_ref": "Attachment B, Figure D.2"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.2.md",
+   "semantic_sha256": "d428fe8e762d64a19ede88c7658708af5690f4c7f112e238f9ec09c61040eb74"
+  },
+  {
+   "body": "EVIDENCE. The page promises to reveal the user's dominant archetype energy.\nLEGAL REASONING. The promised personal result is the hook; the recurring payment is not the main consumer-facing message.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "116, 156, 158-160",
+    "figure_id": "D.3",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "outcome-teaser",
+     "hidden-renewal"
+    ],
+    "product": "Nebula",
+    "screen_type": "quiz_result_teaser",
+    "source_anchor_ids": [
+     "anc-7d8950dc0f01c408"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "55",
+    "source_ref": "Attachment B, Figure D.3"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.3.md",
+   "semantic_sha256": "17c6d4a1e0d8b658f7b7c70b6f25312b4b4d01293161ae534f05113ed10e6a0b"
+  },
+  {
+   "body": "EVIDENCE. The page lets the user choose a comfortable trial price.\nLEGAL REASONING. According to the complaint, the chosen-price framing conceals a negative-option feature that continues billing unless canceled.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "117, 170-171",
+    "figure_id": "D.4",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "name-your-price",
+     "trial-price-framing",
+     "hidden-renewal"
+    ],
+    "product": "Nebula",
+    "screen_type": "trial_price_selector",
+    "source_anchor_ids": [
+     "anc-369d847620063f3d"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "55",
+    "source_ref": "Attachment B, Figure D.4"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.4.md",
+   "semantic_sha256": "fdd66f1326f121695075ed6e29d6c3483f4ed1dc8c618f500d37c4dfe6179eb1"
+  },
+  {
+   "body": "EVIDENCE. The purchase page offers a personalized reading for the chosen price while subscription terms sit in fine print.\nLEGAL REASONING. Large price and urgency signals allegedly conflict with small disclosures and undermine clear disclosure and informed consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "118-119, 170-173",
+    "figure_id": "D.5",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "urgency-timer",
+     "small-print-renewal",
+     "missing-express-consent"
+    ],
+    "product": "Nebula",
+    "screen_type": "payment_page",
+    "source_anchor_ids": [
+     "anc-6bfec17699905a66"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "56",
+    "source_ref": "Attachment B, Figure D.5"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.5.md",
+   "semantic_sha256": "66aea990ea4c93798c3c426e1ed6208cc48be72416447a55c938d4a20b17610b"
+  },
+  {
+   "body": "EVIDENCE. The payment form mentions only the amount selected by the consumer and not recurring fees.\nLEGAL REASONING. The complaint alleges that this confirms the consumer's belief in a one-time purchase and supports the hidden-billing theory.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "120-123, 170-173",
+    "figure_id": "D.6",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "one-time-price-framing",
+     "payment-without-renewal-disclosure",
+     "hidden-renewal",
+     "missing-express-consent"
+    ],
+    "product": "Nebula",
+    "screen_type": "payment_confirmation",
+    "source_anchor_ids": [
+     "anc-983cd1f454d9b5af"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "56",
+    "source_ref": "Attachment B, Figure D.6"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/D.6.md",
+   "semantic_sha256": "1ef145b3052d9c29fefba8ed216af6b7807ffa34665f90389125f544191bce0f"
+  },
+  {
+   "body": "EVIDENCE. MadMuscles asks about age, gender, weight, workout experience, health concerns, and fitness goals.\nLEGAL REASONING. The data collection creates the promise of a personal fitness plan before subscription terms appear.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "132-135, 158-160",
+    "figure_id": "E.1",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "health-adjacent-claim",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "quiz_landing",
+    "source_anchor_ids": [
+     "anc-21c2e7b3cc0ca8f8"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "57",
+    "source_ref": "Attachment B, Figure E.1"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.1.md",
+   "semantic_sha256": "955b4ac38cac27dcc86ceb77e4514b5b8c3c9264508568109a749d05b418fdc6"
+  },
+  {
+   "body": "EVIDENCE. The payment form shows the selected-term price and payment methods without the auto-renewing subscription term.\nLEGAL REASONING. This maps directly to ROSCA: material terms must appear before billing information, and consent must be informed.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "142-143, 170-173",
+    "figure_id": "E.10",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "payment-without-renewal-disclosure",
+     "hidden-renewal",
+     "missing-express-consent"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "payment_form",
+    "source_anchor_ids": [
+     "anc-9527eaec1b2253a8"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "61",
+    "source_ref": "Attachment B, Figure E.10"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.10.md",
+   "semantic_sha256": "2c86d081284dd8c1bdb87154d1dbcabe910c87e58713aede60fb770919c796a3"
+  },
+  {
+   "body": "EVIDENCE. After payment for the base plan, a meal-plan upsell appears with a prominent add button and a small close control.\nLEGAL REASONING. The complaint alleges that users could mistake the upsell for a confirmation step and receive a second subscription without consent.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "144-145, 161-163, 172-173",
+    "figure_id": "E.11",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "hidden-upsell-subscription",
+     "hard-to-close-upsell",
+     "missing-express-consent",
+     "unauthorized-add-on"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "post_purchase_upsell",
+    "source_anchor_ids": [
+     "anc-10d9e17abbf103c2"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "62",
+    "source_ref": "Attachment B, Figure E.11"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.11.md",
+   "semantic_sha256": "255fac9aa23ce4dadec6281856c0d700b8119056b17627b2135468589cbfaa59"
+  },
+  {
+   "body": "EVIDENCE. Rejecting the upsell triggers another popup with an additional discount.\nLEGAL REASONING. The FTC describes this as friction against rejection and part of the path toward unauthorized add-on charges.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "145-146, 161-163",
+    "figure_id": "E.12",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n"
+    ],
+    "patterns": [
+     "obstruction-to-decline",
+     "discount-pressure",
+     "unauthorized-add-on"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "reconsideration_modal",
+    "source_anchor_ids": [
+     "anc-d8ec763b85735d1a"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "62",
+    "source_ref": "Attachment B, Figure E.12"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.12.md",
+   "semantic_sha256": "6541d8116406f23fa54a986d3a8e9f0f78a3f7b70820a465c7eafa989b8c5a3e"
+  },
+  {
+   "body": "EVIDENCE. Closing the reconsideration popup returns the user to the meal-plan upsell at a lower price.\nLEGAL REASONING. The repeated refusal path allegedly makes mistaken acceptance easy and clear rejection hard.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "146, 161-163",
+    "figure_id": "E.13",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n"
+    ],
+    "patterns": [
+     "obstruction-to-decline",
+     "repeated-prompt",
+     "unauthorized-add-on"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "repeated_upsell",
+    "source_anchor_ids": [
+     "anc-040daf19c3371d96"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "63",
+    "source_ref": "Attachment B, Figure E.13"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.13.md",
+   "semantic_sha256": "172e9fc30c0425704b74f959ee98d05f1abfc9dc657f6ee1f9412d572097a20c"
+  },
+  {
+   "body": "EVIDENCE. A later upsell screen contains no pricing terms even though the complaint alleges it is another recurring subscription.\nLEGAL REASONING. The absence of pricing terms defeats informed consent and supports the unauthorized add-on charge theory.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "147-148, 161-163, 172-173",
+    "figure_id": "E.14",
+    "norms": [
+     "us-ftc-5a",
+     "us-ftc-5n",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "no-price-upsell",
+     "hidden-upsell-subscription",
+     "missing-express-consent",
+     "unauthorized-add-on"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "no_price_upsell",
+    "source_anchor_ids": [
+     "anc-049c50e302721406"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "63",
+    "source_ref": "Attachment B, Figure E.14"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.14.md",
+   "semantic_sha256": "d828372f2dcf1a8d66eca5580c7a66fa8e58840c5a9b37188aa152ea21f655ba"
+  },
+  {
+   "body": "EVIDENCE. The quiz is interspersed with motivational images and progress content.\nLEGAL REASONING. The complaint treats these screens as part of an engagement loop that increases pressure to continue.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "134-135, 158-160",
+    "figure_id": "E.2",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "motivation-loop",
+     "commitment-escalation",
+     "hidden-renewal",
+     "fake-predictive-progress-graphs"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "quiz_motivation",
+    "source_anchor_ids": [
+     "anc-d99d7be5b77e771e"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "57",
+    "source_ref": "Attachment B, Figure E.2"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.2.md",
+   "semantic_sha256": "10825c1674cf61170594d8d9344f700eeb6d08659f84c4ad046cf78f43eb918d"
+  },
+  {
+   "body": "EVIDENCE. A loading bar says the site is suggesting a workout program.\nLEGAL REASONING. The screen strengthens the impression of an individualized and valuable result, making hidden renewal terms material.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "136-137, 156, 158-160",
+    "figure_id": "E.3",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "fake-analysis",
+     "personalization-lure",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "analysis_progress",
+    "source_anchor_ids": [
+     "anc-e6b08b3c910e485b"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "58",
+    "source_ref": "Attachment B, Figure E.3"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.3.md",
+   "semantic_sha256": "969bf08a4b16f4c5820ca998178f1e5e382bb724a0ba3aacf6d41d69e01ed185"
+  },
+  {
+   "body": "EVIDENCE. The site announces that a personalized Tai Chi plan is ready.\nLEGAL REASONING. The complaint alleges that this leads the consumer toward payment for a supposedly tailored product before renewal terms are clearly disclosed.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "136-137, 158-160",
+    "figure_id": "E.4",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "personalization-lure",
+     "commitment-escalation",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "plan_ready",
+    "source_anchor_ids": [
+     "anc-98945a9adf103cd2"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "58",
+    "source_ref": "Attachment B, Figure E.4"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.4.md",
+   "semantic_sha256": "bf651980b779a0f50997dee21583784f79fb20a1f737f4169dca77d2aa495469"
+  },
+  {
+   "body": "EVIDENCE. The page shows a personal summary based on the user's answers.\nLEGAL REASONING. The personal summary supports the alleged deception because the later product is described as generic or not tailored.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "137, 156, 158-160",
+    "figure_id": "E.5",
+    "norms": [
+     "us-ftc-5a"
+    ],
+    "patterns": [
+     "false-personalization",
+     "personalization-lure",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "personal_summary",
+    "source_anchor_ids": [
+     "anc-daae98a11227150b"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "59",
+    "source_ref": "Attachment B, Figure E.5"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.5.md",
+   "semantic_sha256": "a294b7d1b3f086e4f0006f1aa33904dff6ba899b50030dfb4700c8746fe4a4db"
+  },
+  {
+   "body": "EVIDENCE. The funnel promises a Tai Chi program tailored to age, body type, and wellness goals.\nLEGAL REASONING. The tailored-plan promise affects the purchase decision while, according to the complaint, subscription terms remain hidden below the fold.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "137-138, 158-160",
+    "figure_id": "E.6",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "tailored-plan-claim",
+     "health-adjacent-claim",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "tailored_plan_claim",
+    "source_anchor_ids": [
+     "anc-369166d117e4a88d"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "59",
+    "source_ref": "Attachment B, Figure E.6"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.6.md",
+   "semantic_sha256": "ee7da53e34af6ceba785ad43bfc66a5f5409634603ef2bdd36bc8073be86e944"
+  },
+  {
+   "body": "EVIDENCE. The discount wheel allegedly always lands on the biggest extra discount.\nLEGAL REASONING. The wheel creates urgency and deal pressure before the user understands the full negative-option economics.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "139-141, 170-171",
+    "figure_id": "E.7",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "discount-wheel",
+     "forced-discount",
+     "hidden-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "discount_wheel",
+    "source_anchor_ids": [
+     "anc-267b71faf2d24247"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "60",
+    "source_ref": "Attachment B, Figure E.7"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.7.md",
+   "semantic_sha256": "97db02795b3c7dedbd3afe1e3a5aaf185a273751ecd577df3a4b2cf8ec40e3df"
+  },
+  {
+   "body": "EVIDENCE. Displayed prices are reduced and a countdown timer appears.\nLEGAL REASONING. The complaint alleges that urgency and daily prices distract from the monthly renewal language below the fold.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1); ROSCA Section 4(2), 15 U.S.C. 8403(2).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "140-143, 170-173",
+    "figure_id": "E.8",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1",
+     "us-rosca-4-2"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "urgency-timer",
+     "daily-price-framing",
+     "missing-express-consent"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "plan_selector",
+    "source_anchor_ids": [
+     "anc-3b74ca6c664e7f62"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "60",
+    "source_ref": "Attachment B, Figure E.8"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.8.md",
+   "semantic_sha256": "9ffac75da8281390f607d00d63364d3ab36068989843d1482a8ed00bbc2d7a19"
+  },
+  {
+   "body": "EVIDENCE. Fine print states that the plan auto-renews at $39.99 per month unless canceled in settings.\nLEGAL REASONING. The subscription term appears in the smallest text below the price; the complaint alleges that consumers believed they were buying one plan for the displayed price.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+   "container_path": "cases/genesis.json",
+   "frontmatter": {
+    "availability": "full",
+    "case_id": "genesis-wisey",
+    "complaint_paras": "141-143, 170-171",
+    "figure_id": "E.9",
+    "norms": [
+     "us-ftc-5a",
+     "us-rosca-4-1"
+    ],
+    "patterns": [
+     "hidden-renewal",
+     "below-fold-disclosure",
+     "small-print-renewal"
+    ],
+    "product": "MadMuscles / Amo Products",
+    "screen_type": "renewal_terms",
+    "source_anchor_ids": [
+     "anc-6fbff9de82b71028"
+    ],
+    "source_file": "Growthmind-Wisey-Complaint.pdf",
+    "source_id": "src-6285f7d23d866c20",
+    "source_page": "61",
+    "source_ref": "Attachment B, Figure E.9"
+   },
+   "kind": "case",
+   "logical_path": "cases/genesis/E.9.md",
+   "semantic_sha256": "5eeb73c67aba9b5315be1e7cc092dbe7667d5bd9c1fceb8e8449507be937cca1"
+  }
+ ],
+ "release_version": "0.5.0",
+ "schema_version": "1.0",
+ "summary": {
+  "anchor_count": 43,
+  "anchor_reference_count": 43,
+  "case_cards": 43,
+  "case_headers": 1,
+  "coverage_records": 1,
+  "semantic_records": 45,
+  "semantic_sha256": "5b5496ac0e85fce77aa6d49c3680061cb722b2bc608c9772a1017dea438b182f"
+ }
+}

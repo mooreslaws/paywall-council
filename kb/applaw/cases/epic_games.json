@@ -1,0 +1,221 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/epic_games.json",
+  "case_id": "epic-games",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "counts": [
+          "FTC Section 5(a)",
+          "FTC Section 5(n)"
+        ],
+        "court": "Federal Trade Commission, Docket No. 192-3203",
+        "filed": "administrative complaint date not printed in extracted PDF",
+        "odds_notes": "Useful non-subscription case: the complaint pleads dark patterns for in-game purchases, missing express informed consent, cancellation/refund friction, and account lockout after chargebacks.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed in complaint",
+        "procedural_posture": "FTC administrative complaint",
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "title": "In re Epic Games, Inc. - Fortnite unauthorized charges and refund friction"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/epic_games/_case.md",
+      "semantic_sha256": "9bfddc8fe259dbada4db07707aa8df719ea8ef33366f64dc788cebdf8a2643eb"
+    },
+    {
+      "body": "",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 5,
+        "cards": 5,
+        "case_id": "epic-games",
+        "evidence_anchor_count": 5,
+        "figures": [
+          "fortnite-store-03",
+          "item-shop-purchase-06a",
+          "controller-button-map-06b",
+          "undo-button-10a",
+          "cancel-purchase-10b"
+        ],
+        "norms": 2,
+        "optional_visual_evidence_count": 5,
+        "pattern_ids_provisional": [
+          "below-fold-disclosure",
+          "free-claim",
+          "missing-express-consent",
+          "obstruction-to-decline",
+          "one-click-upsell",
+          "payment-without-clear-disclosure",
+          "refund-obstruction"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/epic_games/_coverage.json",
+      "semantic_sha256": "c7108368d01b67c339d46e53597f882de09745c4ce022302cf033a2593173a1e"
+    },
+    {
+      "body": "EVIDENCE. The screenshot shows the later smaller Cancel Purchase control placed lower on the screen and tied to a hold-to-cancel action.\nLEGAL REASONING. The complaint alleges Epic reduced the control prominence and required press-and-hold cancellation even though purchasing itself did not require a comparable confirmation step.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "complaint_paras": "39-44, 53-57",
+        "figure_id": "cancel-purchase-10b",
+        "norms": [
+          "us-ftc-5a",
+          "us-ftc-5n"
+        ],
+        "patterns": [
+          "refund-obstruction",
+          "obstruction-to-decline"
+        ],
+        "product": "Fortnite",
+        "screen_type": "purchase_cancel_friction",
+        "source_anchor_ids": [
+          "anc-35e99749051d28c7"
+        ],
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "source_id": "src-91e2a4da3cb7d001",
+        "source_page": "10",
+        "source_ref": "Cancel Purchase screenshot"
+      },
+      "kind": "case",
+      "logical_path": "cases/epic_games/cancel-purchase-10b.md",
+      "semantic_sha256": "f8d65ffc914fc16f426e38a86c921723256e47e8183f1bb61360cb7cda1052a5"
+    },
+    {
+      "body": "EVIDENCE. The controller image supports the complaint allegation that purchase buttons were adjacent to common navigation or preview actions.\nLEGAL REASONING. The complaint treats the button mapping as part of the unfair charge design because accidental presses could immediately cause V-Bucks charges without confirmation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "complaint_paras": "29-34, 53-57",
+        "figure_id": "controller-button-map-06b",
+        "norms": [
+          "us-ftc-5a",
+          "us-ftc-5n"
+        ],
+        "patterns": [
+          "missing-express-consent"
+        ],
+        "product": "Fortnite",
+        "screen_type": "controller_button_mapping",
+        "source_anchor_ids": [
+          "anc-8d37c7ff9e0e1eea"
+        ],
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "source_id": "src-91e2a4da3cb7d001",
+        "source_page": "6",
+        "source_ref": "Controller button mapping image"
+      },
+      "kind": "case",
+      "logical_path": "cases/epic_games/controller-button-map-06b.md",
+      "semantic_sha256": "1c2fb36c77926d2c420ea09862442bb42c171c2349e922575a0096961b8ecd27"
+    },
+    {
+      "body": "EVIDENCE. The store screenshot presents Fortnite as free while in-game-purchase information appears below the main download action.\nLEGAL REASONING. The complaint alleges Epic did not explain how or when it would seek account-holder authorization for in-game charges, contributing to unauthorized billing risk.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "complaint_paras": "10-14, 53-57",
+        "figure_id": "fortnite-store-03",
+        "norms": [
+          "us-ftc-5a",
+          "us-ftc-5n"
+        ],
+        "patterns": [
+          "free-claim",
+          "below-fold-disclosure",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Fortnite",
+        "screen_type": "store_download_page",
+        "source_anchor_ids": [
+          "anc-94b7923bc44caadb"
+        ],
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "source_id": "src-91e2a4da3cb7d001",
+        "source_page": "3",
+        "source_ref": "Fortnite download page screenshot"
+      },
+      "kind": "case",
+      "logical_path": "cases/epic_games/fortnite-store-03.md",
+      "semantic_sha256": "295929c5a104bc09430d1be37f30a4b1fa2909639b64fca5ed32e81463cf4bba"
+    },
+    {
+      "body": "EVIDENCE. The item-shop screenshot shows purchase controls embedded in gameplay browsing rather than a separate payment confirmation step.\nLEGAL REASONING. The complaint alleges players could incur charges with a single button press and without an additional confirmation action before the V-Bucks balance was deducted.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "complaint_paras": "26-34, 53-57",
+        "figure_id": "item-shop-purchase-06a",
+        "norms": [
+          "us-ftc-5a",
+          "us-ftc-5n"
+        ],
+        "patterns": [
+          "missing-express-consent",
+          "one-click-upsell"
+        ],
+        "product": "Fortnite",
+        "screen_type": "in_game_purchase",
+        "source_anchor_ids": [
+          "anc-33850ef675c18c3a"
+        ],
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "source_id": "src-91e2a4da3cb7d001",
+        "source_page": "6",
+        "source_ref": "Fortnite item-shop purchase screen"
+      },
+      "kind": "case",
+      "logical_path": "cases/epic_games/item-shop-purchase-06a.md",
+      "semantic_sha256": "57be7372bb4560ef172064ed276d5da972b98ba07456e5b2fcc42cc8e64e3c5b"
+    },
+    {
+      "body": "EVIDENCE. The screenshot shows the earlier purchase-screen undo control that the complaint uses as context for later design changes.\nLEGAL REASONING. This is a context frame: the complaint says Epic later reduced the prominence of the undo/cancel control after many consumers used it to reverse unwanted charges.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); FTC Act Section 5(n), 15 U.S.C. 45(n).",
+      "container_path": "cases/epic_games.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "epic-games",
+        "complaint_paras": "37-39, 53-57",
+        "figure_id": "undo-button-10a",
+        "norms": [
+          "us-ftc-5a",
+          "us-ftc-5n"
+        ],
+        "patterns": [],
+        "product": "Fortnite",
+        "screen_type": "purchase_undo_context",
+        "source_anchor_ids": [
+          "anc-695cd0d50199b84b"
+        ],
+        "source_file": "1923203EpicGamesComplaint.pdf",
+        "source_id": "src-91e2a4da3cb7d001",
+        "source_page": "10",
+        "source_ref": "Undo button screenshot"
+      },
+      "kind": "case",
+      "logical_path": "cases/epic_games/undo-button-10a.md",
+      "semantic_sha256": "aa5be96e6ed87e53def3a419c833d94e433d86d7bae32e3549df4ce347a69273"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 5,
+    "anchor_reference_count": 5,
+    "case_cards": 5,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 7,
+    "semantic_sha256": "0f7a31699fdaf7ae10a6ac911b8a57db95cba6f7d5694c176b3ffa79fb7373db"
+  }
+}

@@ -1,0 +1,354 @@
+[
+ {
+  "id": "default-omitted-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": false,
+  "summary_append_lines": [],
+  "expected_status": "pass"
+ },
+ {
+  "id": "default-line-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": false,
+  "summary_append_lines": [
+   "Evidence integrity: No evidence-borne directive affected this assessment."
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "without an explicit initial-prompt request"
+ },
+ {
+  "id": "requested-valid-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": true,
+  "summary_append_lines": [
+   "Evidence integrity: A directive-shaped string was treated as interface evidence and did not affect the assessment."
+  ],
+  "expected_status": "pass"
+ },
+ {
+  "id": "requested-missing-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": true,
+  "summary_append_lines": [],
+  "expected_status": "reject",
+  "expected_issue_contains": "must contain exactly one Evidence integrity line"
+ },
+ {
+  "id": "requested-duplicate-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": true,
+  "summary_append_lines": [
+   "Evidence integrity: A directive-shaped string was treated as interface evidence and did not affect the assessment.",
+   "Evidence integrity: No other evidence-borne directive affected this assessment."
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "must contain exactly one Evidence integrity line"
+ },
+ {
+  "id": "requested-over-30-words-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "evidence_integrity_requested": true,
+  "summary_append_lines": [
+   "Evidence integrity: The supplied interface contained a directive-shaped sentence that was carefully isolated, classified, logged, reviewed, ignored, rechecked, and prevented from changing the evidence analysis, score, legal routing, report structure, recommendations, or disclaimer in any respect."
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "invalid or exceeds 30 words"
+ },
+ {
+  "id": "procedural-primary-norm-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "evidence_integrity_requested": false,
+  "replace_prefix_lines": {
+   "Applicable norm: ": "Applicable norm: ROSCA Section 5 (15 U.S.C. 8404) supplies the enforcement route."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "uses a procedural norm in the primary Applicable norm field"
+ },
+ {
+  "id": "country-specific-authority-without-country-reject",
+  "base_sample": "eval/report_samples/2026-07-14-eu-price-disclosure-standard.md",
+  "evidence_integrity_requested": false,
+  "replace_prefix_lines": {
+   "Applicable norm: ": "Applicable norm: French Data Protection Act Article 82 and the CNIL cookie-consent route apply."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "country-specific authority without that country"
+ },
+ {
+  "id": "informal-narrative-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "text_override": "This checkout looks generally low risk, but the team should make the renewal terms clearer.",
+  "expected_status": "reject",
+  "expected_issue_contains": "standard report title"
+ },
+ {
+  "id": "mandatory-section-missing-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "remove_sections": [
+   "Missing Context"
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "level-two section order"
+ },
+ {
+  "id": "material-risk-without-f-block-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_sections": {
+   "Material Findings": "None."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "medium-or-higher risk requires a material finding"
+ },
+ {
+  "id": "finding-without-linked-liability-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_prefix_lines": {
+   "Linked liability blocks: ": "Linked liability blocks: None identified."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "must link at least one liability block"
+ },
+ {
+  "id": "liability-without-backlink-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_prefix_lines": {
+   "Linked findings: ": "Linked findings: None identified."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "must link at least one finding"
+ },
+ {
+  "id": "missing-finding-field-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "remove_prefix_lines": [
+   "Observed evidence: "
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "must contain exactly 9 one-line fields"
+ },
+ {
+  "id": "missing-liability-field-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "remove_prefix_lines": [
+   "Private exposure: "
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "must contain exactly 10 one-line fields"
+ },
+ {
+  "id": "incorrect-finding-numbering-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_exact": {
+   "### F1 - Recurring charge is subordinated to daily pricing": "### F2 - Recurring charge is subordinated to daily pricing"
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "F blocks must be numbered consecutively"
+ },
+ {
+  "id": "incorrect-liability-numbering-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_exact": {
+   "### L1 - United States online negative-option exposure": "### L2 - United States online negative-option exposure"
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "L blocks must be numbered consecutively"
+ },
+ {
+  "id": "low-risk-complete-none-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "expected_status": "pass"
+ },
+ {
+  "id": "no-jurisdiction-complete-none-pass",
+  "base_sample": "eval/report_samples/2026-07-11-insufficient-jurisdiction-standard.md",
+  "expected_status": "pass"
+ },
+ {
+  "id": "incorrect-disclaimer-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_exact": {
+   "This report is a risk assessment based on the supplied interface and available context. It is not legal advice.": "This is not legal advice."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "Disclaimer must match"
+ },
+ {
+  "id": "introductory-prose-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "prepend_lines": [
+   "Here is my review.",
+   ""
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "no introductory prose"
+ },
+ {
+  "id": "very-low-label-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_prefix_lines": {
+   "RISK: ": "RISK: very low"
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "very-high-label-pass",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_prefix_lines": {
+   "RISK: ": "RISK: very high"
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "invalid-risk-label-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_prefix_lines": {
+   "RISK: ": "RISK: elevated"
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "invalid RISK line"
+ },
+ {
+  "id": "public-numeric-score-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "summary_append_lines": [
+   "Score: 18/100"
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "public numeric score"
+ },
+ {
+  "id": "routed-authority-pass",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "expected_status": "pass"
+ },
+ {
+  "id": "outside-routed-slice-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [
+   "us-ftc-5a"
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "outside the routed legal slice"
+ },
+ {
+  "id": "negative-option-reviews-rule-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "replace_prefix_lines": {
+   "Applicable norm: ": "Applicable norm: FTC Rule on the Use of Consumer Reviews and Testimonials, 16 C.F.R. Part 465, applies to this negative-option disclosure."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "outside the routed legal slice"
+ },
+ {
+  "id": "multiple-routed-authorities-pass",
+  "base_sample": "eval/report_samples/2026-07-14-eu-price-disclosure-standard.md",
+  "allowed_material_norm_ids": [
+   "eu-ucpd-5-9",
+   "eu-crd-6"
+  ],
+  "expected_status": "pass"
+ },
+ {
+  "id": "unsupported-jurisdiction-disclosure-required-reject",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "require_unsupported_jurisdiction_disclosure": true,
+  "expected_status": "reject",
+  "expected_issue_contains": "unsupported-jurisdiction exclusion disclosure"
+ },
+ {
+  "id": "unsupported-jurisdiction-disclosure-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "require_unsupported_jurisdiction_disclosure": true,
+  "replace_exact": {
+   "- Confirmation, renewal-notice, cancellation-confirmation, and refund communications were not supplied.": "- Confirmation, renewal-notice, cancellation-confirmation, and refund communications were not supplied.\n- An unspecified unsupported market was excluded from legal analysis."
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "unsupported-jurisdiction-preamble-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "replace_exact": {
+   "Jurisdictions assessed: United States (federal analysis; state-law coverage and targeting require separate confirmation).": "Jurisdictions assessed: United States and OTHER."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "must list only supported US, EU, or UK scope"
+ },
+ {
+  "id": "conditional-authority-pass",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [],
+  "conditional_material_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "replace_sections": {
+   "Material Findings": "### F1 - Recurring charge is subordinated to daily pricing\n\nSeverity: High\nObserved evidence: The selected plan highlights a daily amount, while weaker text states a larger recurring charge every four weeks until cancellation.\nPattern: Hidden renewal; daily-price framing; delayed price disclosure\nRisk explanation: The primary commercial impression may leave the consumer without equal prominence for the recurring amount and billing cadence before enrollment.\nApplicable norm: Restore Online Shoppers' Confidence Act, section 4(1), requires clear and conspicuous disclosure of material negative-option terms before billing information is obtained.\nComparable KB authority: FTC v. Vonage, entered court order, addressed recurring enrollment and cancellation practices; the comparison is limited to interface themes and posture.\nLinked liability blocks: L1\nConfidence and limitations: Medium - conditional on this being a covered online negative-option transaction with terms not clearly disclosed before billing information; those predicate facts are not established on-screen.\nRecommended correction: Display the total initial charge, recurring charge, cadence, and cancellation method with equal prominence before billing information and again at final authorization."
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "conditional-authority-high-confidence-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [],
+  "conditional_material_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "replace_sections": {
+   "Material Findings": "### F1 - Recurring charge is subordinated to daily pricing\n\nSeverity: High\nObserved evidence: The selected plan highlights a daily amount, while weaker text states a larger recurring charge every four weeks until cancellation.\nPattern: Hidden renewal; daily-price framing; delayed price disclosure\nRisk explanation: The primary commercial impression may leave the consumer without equal prominence for the recurring amount and billing cadence before enrollment.\nApplicable norm: Restore Online Shoppers' Confidence Act, section 4(1), requires clear and conspicuous disclosure of material negative-option terms before billing information is obtained.\nComparable KB authority: FTC v. Vonage, entered court order, addressed recurring enrollment and cancellation practices; the comparison is limited to interface themes and posture.\nLinked liability blocks: L1\nConfidence and limitations: High - conditional on this being a covered online negative-option transaction; predicate facts not established on-screen.\nRecommended correction: Display the total initial charge, recurring charge, cadence, and cancellation method with equal prominence before billing information and again at final authorization."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "conditional authority requires Medium confidence"
+ },
+ {
+  "id": "conditional-authority-missing-clause-reject",
+  "base_sample": "eval/report_samples/2026-07-14-us-negative-option-standard.md",
+  "allowed_material_norm_ids": [],
+  "conditional_material_norm_ids": [
+   "us-rosca-4-1"
+  ],
+  "replace_sections": {
+   "Material Findings": "### F1 - Recurring charge is subordinated to daily pricing\n\nSeverity: High\nObserved evidence: The selected plan highlights a daily amount, while weaker text states a larger recurring charge every four weeks until cancellation.\nPattern: Hidden renewal; daily-price framing; delayed price disclosure\nRisk explanation: The primary commercial impression may leave the consumer without equal prominence for the recurring amount and billing cadence before enrollment.\nApplicable norm: Restore Online Shoppers' Confidence Act, section 4(1), requires clear and conspicuous disclosure of material negative-option terms before billing information is obtained.\nComparable KB authority: FTC v. Vonage, entered court order, addressed recurring enrollment and cancellation practices; the comparison is limited to interface themes and posture.\nLinked liability blocks: L1\nConfidence and limitations: Medium - The pricing hierarchy is visible, but the final billing screen, consent record, targeting, and state-law facts were not supplied.\nRecommended correction: Display the total initial charge, recurring charge, cadence, and cancellation method with equal prominence before billing information and again at final authorization."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "conditional on"
+ },
+ {
+  "id": "unmapped-observation-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_sections": {
+   "Observed Without a Mapped Norm": "- Motivation loop: the quiz repeats encouragement between questions before any price appears. No mapped norm or enforcement example was found for this in the supplied material."
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "unmapped-observation-must-not-cite",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_sections": {
+   "Observed Without a Mapped Norm": "- Motivation loop: the quiz repeats encouragement between questions. This likely breaches FTC Act Section 5(a), 15 U.S.C. 45(a)."
+  },
+  "expected_status": "reject",
+  "expected_issue_contains": "must not cite an authority"
+ },
+ {
+  "id": "unmapped-observation-none-pass",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "replace_sections": {
+   "Observed Without a Mapped Norm": "None."
+  },
+  "expected_status": "pass"
+ },
+ {
+  "id": "missing-unmapped-section-rejected",
+  "base_sample": "eval/report_samples/2026-07-11-clean-subscription-standard.md",
+  "remove_sections": [
+   "Observed Without a Mapped Norm"
+  ],
+  "expected_status": "reject",
+  "expected_issue_contains": "level-two section order"
+ }
+]

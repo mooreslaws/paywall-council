@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release_version": "0.5.0",
+  "core_max_checks": 10,
+  "core_checks": [
+    {"name": "resource limits", "module": "validate_resource_limits", "args": []},
+    {"name": "references and source capsules", "module": "validate_refs", "args": []},
+    {"name": "jurisdiction routing", "module": "validate_routing", "args": []},
+    {"name": "enforcement outcomes", "module": "validate_enforcement_outcomes", "args": []},
+    {"name": "public report contract", "module": "validate_report", "args": []},
+    {"name": "public output safety", "module": "validate_output_safety", "args": []},
+    {"name": "policy fixtures and runtime parity", "module": "validate_policy_fixtures", "args": []},
+    {"name": "validation-contract consistency", "module": "validate_validation_contract", "args": []},
+    {"name": "adversarial fixtures", "module": "validate_adversarial", "args": []},
+    {"name": "adversarial replay", "module": "run_adversarial_replay", "args": []}
+  ],
+  "release_checks": [
+    {"name": "resource limits", "module": "validate_resource_limits", "args": []},
+    {"name": "references, capsules, and PDF-free packaging", "module": "validate_refs", "args": ["--require-pdf-free"]},
+    {"name": "case cards", "module": "validate_case_cards", "args": []},
+    {"name": "gold fixtures", "module": "validate_gold", "args": ["--strict-review"]},
+    {"name": "jurisdiction routing", "module": "validate_routing", "args": []},
+    {"name": "enforcement outcomes", "module": "validate_enforcement_outcomes", "args": []},
+    {"name": "public report contract", "module": "validate_report", "args": []},
+    {"name": "public output safety", "module": "validate_output_safety", "args": []},
+    {"name": "policy fixtures and runtime parity", "module": "validate_policy_fixtures", "args": []},
+    {"name": "scope gate", "module": "validate_scope_gate", "args": []},
+    {"name": "validation-contract consistency", "module": "validate_validation_contract", "args": []},
+    {"name": "adversarial fixtures", "module": "validate_adversarial", "args": []},
+    {"name": "adversarial replay", "module": "run_adversarial_replay", "args": []},
+    {"name": "clean benchmarks", "module": "validate_benchmarks", "args": []},
+    {"name": "package checksums", "module": "verify_checksums", "args": []}
+  ]
+}

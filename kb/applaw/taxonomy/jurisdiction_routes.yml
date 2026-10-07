@@ -1,0 +1,421 @@
+- id: us-online-negative-option-disclosure
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [hidden-renewal, delayed-price-disclosure, small-print-renewal, renewal-price-mismatch, below-fold-disclosure, daily-price-framing, nominal-price-framing, one-time-price-framing, trial-framing, trial-price-framing, misleading-trial-period, payment-without-renewal-disclosure, payment-without-clear-disclosure, email-before-price, hidden-upsell-subscription, no-price-upsell, personalization-lure, name-your-price]
+  candidate_norms: [us-rosca-4-1]
+  required_facts: [covered-online-negative-option-transaction, billing-information-requested-in-flow, negative-option-terms-omitted-or-subordinated-at-billing-point]
+  disqualifying_facts: [negative-option-terms-clearly-and-conspicuously-disclosed-before-billing]
+  source_anchor_ids: [norm:us-rosca-4-1]
+  condition: "Use ROSCA Section 4(1) only for a covered online negative-option transaction where the reviewed flow requests billing information and the material negative-option terms (renewal price, billing cadence, or trial-conversion timing) are absent, below the fold, or materially less prominent than the purchase action at or before that point. Each element is observed separately; the disclosure conclusion is composed from them, never demanded as a single input. A recurring-looking visual cue alone is insufficient. A personalisation quiz, assessment, profile, or reading placed ahead of the price, and a step inviting the consumer to name a comfortable starting amount, reach this route only through the same test: what matters is not that effort or a chosen figure came first, but that the renewal price, cadence, or conversion timing is still absent or subordinated when billing information is requested. The amount the consumer names is not itself the disclosure of what will be charged later. A quiz or chosen-price step that ends on a screen stating the recurring charge and its cadence in prominence comparable to the promoted figure does not activate this route."
+
+- id: us-covered-ticket-or-lodging-fee
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [mandatory-fee-drip-pricing]
+  candidate_norms: [us-ftc-fees-rule]
+  required_facts: [covered-live-event-ticket-or-short-term-lodging-offer]
+  source_anchor_ids: [norm:us-ftc-fees-rule]
+  condition: "Use Part 464 only for covered live-event ticket or short-term lodging offers. A processing, delivery, service, booking, or platform fee in any other sector does not activate this rule."
+
+- id: us-supported-review-rule-conduct
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [fake-external-reviews, fake-social-media-reviews]
+  candidate_norms: [us-ftc-reviews-rule]
+  required_facts: [consumer-review-or-review-information, trader-submitted-commissioned-or-published-review, local-authoritative-source-establishes-fabrication]
+  disqualifying_facts: [source-information-absent, suspicious-but-not-determined, ordinary-rating-or-testimonial-without-fabrication-evidence]
+  source_anchor_ids: [norm:us-ftc-reviews-rule]
+  condition: "Use Part 465 only when the reviewed evidence supports covered review or testimonial conduct and the applicable conduct elements. A generic testimonial concern, missing source, or suspicious screenshot appearance is insufficient."
+
+- id: uk-disclosure-price
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [hidden-renewal, delayed-price-disclosure, small-print-renewal, below-fold-disclosure, one-time-price-framing, trial-framing, trial-price-framing, misleading-trial-period, personalization-lure, hidden-upsell-subscription]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-230]
+  required_facts: [invitation-to-purchase, material-pricing-term-omitted-or-subordinated-at-invitation]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-230, outcome:uk-cma-aa-bsm-2026]
+  condition: "Use only for an invitation to purchase where a material pricing term (total price, renewal price, billing cadence, or trial-conversion terms) is omitted, below the fold, or materially less prominent than the promoted price, and the omission is likely to affect a transactional decision. The omission is assessed on the invitation to purchase itself: an upstream screen that carries no offer does not engage Section 230, and a funnel is not caught because an earlier step withheld a price that the paywall then states in full. So an email gate or other price-deferral screen is not reached on this route, and nothing in this knowledge base reaches a UK price-deferral screen at all: the limb that would reach a funnel-level omission is not in norms.yml and may not be substituted for Section 230. The AA/BSM final notice anchors delayed price disclosure; it does not make every layout choice unlawful. The route reaches an add-on offered as a one-off whose recurring price, cadence or cancellation terms are smaller, fainter or further away than the control that adds it, including a post-purchase add-on, because that screen itself names a product and a price and offers a way to buy it and is therefore its own invitation to purchase. A personalisation quiz, assessment, profile, or reading reaches this route only through the invitation to purchase it leads to: a quiz screen that names no price is not itself an invitation to purchase, so the test is whether the total price, renewal price, or cadence is still omitted or subordinated at the offer that follows. Effort invested in answering questions is not by itself an omission, and a quiz that opens onto a paywall showing the charge and cadence at equal prominence does not activate this route. An add-on whose price, cadence and cancellation terms are legible before acceptance does not activate it either. A stated renewal price that contradicts the plan the consumer selected is a misleading action under Section 226 rather than a Section 230 omission and does not belong on this route."
+
+- id: eu-disclosure-price
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [hidden-renewal, delayed-price-disclosure, small-print-renewal, below-fold-disclosure, one-time-price-framing, trial-framing, trial-price-framing, misleading-trial-period, personalization-lure]
+  candidate_norms: [eu-ucpd-5-9, eu-crd-6]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, material-pricing-term-omitted-or-subordinated-at-invitation]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:eu-ucpd-5-9, norm:eu-crd-6, outcome:eu-cjeu-canal-digital-2016]
+  condition: "Use only for a covered distance or off-premises contract, before the contract is concluded, where a material pricing term is omitted or materially subordinated and the omission is likely to cause the average consumer to take a transactional decision they would not otherwise have taken. Canal Digital anchors prominent total-price presentation; Member State transposition and remedy limits are preserved. A personalisation quiz, assessment, profile, or reading reaches this route only through the offer it leads to: the question is whether the total price, renewal price, or cadence is still omitted or subordinated when the contract is proposed, not that the consumer answered questions first. A quiz that opens onto a screen showing the charge and its cadence at equal prominence does not activate this route. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-price-framing
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [daily-price-framing, nominal-price-framing]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-230]
+  required_facts: [invitation-to-purchase, recurring-or-total-price-less-prominent]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-230, outcome:uk-cma-aa-bsm-2026, case:uk_aa_bsm/lesson-package-selection-40]
+  condition: "Use only when a UK invitation to purchase subordinates a reasonably calculable total or recurring price. The AA/BSM final notice is a total-price presentation anchor, not proof that every daily or introductory price is unlawful. Section 225 requires the practice to be likely to cause the average consumer to take a different transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: eu-price-framing
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [daily-price-framing, nominal-price-framing]
+  candidate_norms: [eu-ucpd-5-9, eu-crd-6]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, recurring-or-total-price-less-prominent]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:eu-ucpd-5-9, norm:eu-crd-6, outcome:eu-cjeu-canal-digital-2016]
+  condition: "Use only when material total or recurring price information is subordinated before a covered contract. Canal Digital supports prominent total-price analysis; Member State implementation and remedies remain separate. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-payment-disclosure
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [payment-without-renewal-disclosure, payment-without-clear-disclosure, no-price-upsell]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-230]
+  required_facts: [invitation-to-purchase, payment-commitment-requested, material-pricing-term-omitted-or-subordinated-at-invitation]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-230]
+  condition: "Use only where an invitation to purchase requests a payment commitment (billing details, a pay-now or subscribe action) while a material pricing term is omitted or materially subordinated at that point. Section 225 requires the practice to be likely to cause the average consumer to take a different transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: eu-payment-disclosure
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [payment-without-renewal-disclosure, payment-without-clear-disclosure, no-price-upsell]
+  candidate_norms: [eu-ucpd-5-9, eu-crd-6, eu-crd-8-2]
+  required_facts: [covered-distance-or-off-premises-contract, payment-commitment-requested, material-pricing-term-omitted-or-subordinated-at-invitation]
+  disqualifying_facts: [full-charge-and-cadence-equally-prominent]
+  source_anchor_ids: [norm:eu-ucpd-5-9, norm:eu-crd-6, norm:eu-crd-8-2, outcome:eu-cjeu-fuhrmann-2022]
+  condition: "Use only for a covered distance contract where a payment commitment is requested while a material pricing term is omitted or subordinated. CRD Article 8(2) applies specifically to the ordering step and its payment-obligation labeling; Fuhrmann-2 anchors the button-wording consequence. Member State implementation limits are preserved. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-additional-payment
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [bundled-consent, unauthorized-add-on, prechecked-paid-option]
+  candidate_norms: [uk-ccr-40]
+  required_facts: [trader-to-consumer-contract, additional-charge-beyond-main-obligation, consent-inferred-from-default-or-inaction]
+  disqualifying_facts: [express-opt-in-action-required]
+  source_anchor_ids: [norm:uk-ccr-40, outcome:uk-cma-marks-electrical-2026]
+  condition: "Use only where a charge is additional to the main obligation and consent to it is inferred from a preselected option, a default, or consumer inaction rather than an affirmative opt-in. The Marks Electrical final notice is the direct preselected-extras comparator."
+
+- id: eu-additional-payment
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [bundled-consent, unauthorized-add-on, prechecked-paid-option]
+  candidate_norms: [eu-crd-22]
+  required_facts: [covered-distance-or-off-premises-contract, additional-charge-beyond-main-obligation, consent-inferred-from-default-or-inaction]
+  disqualifying_facts: [express-opt-in-action-required]
+  source_anchor_ids: [norm:eu-crd-22, outcome:eu-cjeu-ebookers-2012]
+  condition: "Use only where a charge is additional to the main contractual remuneration and express consent is not established because it is inferred from a preselected option or inaction. ebookers anchors the opt-in requirement by analogy; its Air Services Regulation basis is not identical to CRD Article 22."
+
+- id: uk-mandatory-fee
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [mandatory-fee-drip-pricing]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-230]
+  required_facts: [invitation-to-purchase, mandatory-fee-revealed-after-headline-price, total-price-reasonably-calculable-upfront]
+  disqualifying_facts: [headline-price-already-includes-mandatory-fee]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-230, outcome:uk-cma-aa-bsm-2026]
+  condition: "Use only where a mandatory fee is revealed after the headline price although the total was reasonably calculable at the invitation-to-purchase stage. The AA/BSM final notice (mandatory GBP 3 fee) is the direct drip-pricing comparator."
+
+- id: eu-mandatory-fee
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [mandatory-fee-drip-pricing]
+  candidate_norms: [eu-ucpd-5-9, eu-crd-6]
+  required_facts: [covered-distance-or-off-premises-contract, mandatory-fee-revealed-after-headline-price, total-price-reasonably-calculable-upfront]
+  disqualifying_facts: [headline-price-already-includes-mandatory-fee]
+  source_anchor_ids: [norm:eu-ucpd-5-9, norm:eu-crd-6, outcome:eu-cjeu-canal-digital-2016]
+  condition: "Use only for a covered distance or off-premises contract where a mandatory fee is revealed after the headline price although the total was reasonably calculable upfront. Canal Digital anchors fragmented-price analysis; national implementation limits are preserved."
+
+- id: uk-pressure
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [urgency-timer, discount-pressure, discount-wheel, discount-anchoring, task-sunk-cost, pseudo-gifts, fake-promo-code-countdown, fake-installs-purchases]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-226]
+  required_facts: [uk-directed-consumer-commercial-practice, false-or-unverifiable-scarcity-or-time-claim]
+  disqualifying_facts: [genuine-time-limited-offer-substantiated]
+  source_anchor_ids: [norm:uk-dmcc-225, outcome:uk-cma-emma-sleep-2026]
+  condition: "Use only when the pressure representation is false or unverifiable as presented (a countdown that resets or outlives its deadline, a perpetual discount, an unsubstantiated scarcity claim, a live install, purchase, viewer or active-user counter presented as real demand) and is likely to affect a transactional decision. Emma Sleep anchors false timers, specified discount claims and false high-demand messaging. A timer alone, a counter sourced to a named analytics platform with a stated update date, or pressure that reflects a genuine substantiated limit, is insufficient. A claim about what the product will do for the consumer belongs to uk-unsubstantiated-objective-claim. A discount presented as won, exclusive, or personally selected carries no time or quantity claim, so this route's required fact can never be established on it; that representation belongs to no route yet in this knowledge base, and any Section 226 overall-presentation reasoning about a forced winning discount must be run there and never from this route, whose facts cannot support it."
+
+- id: eu-pressure
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [urgency-timer, discount-pressure, discount-wheel, discount-anchoring, task-sunk-cost, pseudo-gifts, fake-promo-code-countdown, fake-installs-purchases]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [pre-contract-stage, false-or-unverifiable-scarcity-or-time-claim]
+  disqualifying_facts: [genuine-time-limited-offer-substantiated]
+  source_anchor_ids: [norm:eu-ucpd-5-9, outcome:eu-cpc-booking-commitment-2020]
+  condition: "Use only when the pressure representation is false or unverifiable as presented and materially affects a transactional decision. A live install, purchase, viewer or active-user counter presented as real demand is such a representation; a counter sourced to a named analytics platform with a stated update date is not, and a claim about what the product will do for the consumer belongs to eu-unsubstantiated-objective-claim. The Booking.com CPC matter is a no-finding commitment and corrective-design example for scarcity and urgency presentation, never an enforcement benchmark or finding of infringement. A discount presented as won, exclusive, or personally selected is a representation about chance or exclusivity, not a countdown, stock warning, demand counter or limited-offer claim, so this route's required fact can never be established on it; it belongs to no route yet in this knowledge base."
+
+- id: eu-cancellation-obstruction
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [hard-cancellation, asymmetric-cancellation-path]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [consumer-subscription, post-contract-cancellation, material-cancellation-obstruction]
+  disqualifying_facts: [cancellation-comparable-to-signup, ordinary-identity-or-fraud-check-only]
+  source_anchor_ids: [norm:eu-ucpd-5-9, outcome:eu-cpc-amazon-prime-commitment-2022]
+  condition: "Use only for material obstruction affecting a consumer's cancellation decision. The Amazon Prime CPC matter is a no-finding commitment and corrective-design example, never an enforcement benchmark or finding of infringement. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-cancellation-obstruction
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [hard-cancellation, asymmetric-cancellation-path]
+  candidate_norms: [uk-dmcc-228]
+  required_facts: [uk-directed-consumer-commercial-practice, trader-to-consumer-contract, existing-consumer-cancellation-right, post-contract-cancellation-stage, onerous-or-disproportionate-action-to-exercise-right, harassment-coercion-or-undue-influence, likely-different-transactional-decision]
+  disqualifying_facts: [cancellation-comparable-to-signup, ordinary-identity-or-fraud-check-only, minor-neutral-confirmation-steps-only, no-consumer-cancellation-right-at-that-stage, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-228]
+  condition: "Use only for a UK-directed consumer practice where a trader subjects an existing cancellation right to onerous or disproportionate action that, in context, amounts to harassment, coercion, or undue influence and is likely to alter retention, withdrawal, or exercise of a contractual right. Section 228(2)(f) is a factor, not a standalone prohibition. CMA207's repeated-confirmation termination example supplies the reasoning anchor. Do not rely on generic friction, ordinary checks, or the uncommenced Section 260 subscription rule."
+
+- id: uk-confirmed-fabricated-reviews
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [fake-social-media-reviews]
+  candidate_norms: [uk-dmcc-sch20-13]
+  required_facts: [uk-directed-consumer-commercial-practice, consumer-review-or-review-information, trader-submitted-commissioned-or-published-review, local-authoritative-source-establishes-fabrication]
+  disqualifying_facts: [source-information-absent, suspicious-but-not-determined, ordinary-rating-or-testimonial-without-fabrication-evidence, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-sch20-13]
+  condition: "Use only when reviewed evidence establishes both fabrication and the trader's paragraph 13 conduct. A missing review link, an ordinary rating, duplicated-looking language, a static screenshot of a platform widget, or other suspicion does not establish a fake review. CMA208's investigation guidance supplies the reasoning boundary: suspicious content remains unconfirmed until evidence supports a determination, and genuine reviews must not be treated as fake because their presentation invites doubt. Paragraph 13 is a listed practice under Section 225(4)(c) and is unfair in all circumstances, so no separate proof that the display affected a transactional decision is required; that absence is not a licence to reach the fabrication conclusion on weaker evidence. Reviews carrying a third-party platform's attribution, and reviews whose origin the screen does not state, fall outside the trader-conduct gate as it is written and reach no finding on this route; unresolved authenticity is Unverified social proof, never a paragraph 13 accusation. Publisher-system duties require their own facts and are not inferred from one suspicious review."
+
+# --- First-party claims, defaults and post-purchase obstruction -------------
+# Thirty-seven of the taxonomy's sixty-eight patterns reached no route at all,
+# and every one of them mapped only to US norms, so a claim-heavy funnel sold
+# into the EU and the UK produced a US-only slice. Across the traced waves that
+# was 52% of everything the Examiner selected, and Counsel either hedged or
+# reached for the obvious European instrument and lost the whole report to the
+# validator.
+#
+# These routes cover only the trader's OWN claims. Third-party attributions -
+# reviews, ratings, awards, media features, endorsements, install counts - stay
+# with the existing reviews routes and their deliberate abstention: suspicion
+# about someone else's words is not a determination that they are fabricated,
+# and nothing here may be used to reach that conclusion.
+
+- id: us-unsubstantiated-objective-claim
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [outcome-promise, outcome-teaser, tailored-plan-claim, health-adjacent-claim, misused-scientific-evidence, free-claim, money-back-misdirection, fake-analysis, false-personalization, fake-predictive-progress-graphs, fake-awards, fake-media-features, fake-university-endorsement, authority-claim, before-after-social-proof]
+  candidate_norms: [us-ftc-5a]
+  required_facts: [objective-claim-presented-as-fact, claim-substantiation-absent-on-screen]
+  disqualifying_facts: [claim-substantiation-or-source-shown, claim-framed-as-individual-experience-or-opinion]
+  source_anchor_ids: [norm:us-ftc-5a, outcome:us-ftc-nutraclick-2020]
+  condition: "Use Section 5(a) for the trader's own objective performance, personalization, or guarantee claim presented as fact where the screen shows no substantiation and the claim can affect a purchase decision. A visibly qualified claim, an opinion, or an individually framed testimonial is not covered. This is the general deception prohibition and never establishes that a third party's review or endorsement is fabricated."
+
+- id: eu-unsubstantiated-objective-claim
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [outcome-promise, outcome-teaser, tailored-plan-claim, health-adjacent-claim, misused-scientific-evidence, free-claim, money-back-misdirection, fake-analysis, false-personalization, fake-predictive-progress-graphs, fake-awards, fake-media-features, fake-university-endorsement, authority-claim, before-after-social-proof]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, objective-claim-presented-as-fact, claim-substantiation-absent-on-screen]
+  disqualifying_facts: [claim-substantiation-or-source-shown, claim-framed-as-individual-experience-or-opinion]
+  source_anchor_ids: [norm:eu-ucpd-5-9]
+  condition: "Use the misleading-actions limb for the trader's own objective claim presented as fact before a covered contract, where the screen shows no substantiation and the claim is likely to distort a transactional decision. Member State transposition still controls procedure and remedies, and a dark-pattern label alone is never the test."
+
+- id: uk-unsubstantiated-objective-claim
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [outcome-promise, outcome-teaser, tailored-plan-claim, health-adjacent-claim, misused-scientific-evidence, free-claim, money-back-misdirection, fake-analysis, false-personalization, fake-predictive-progress-graphs, fake-awards, fake-media-features, fake-university-endorsement, authority-claim, before-after-social-proof]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-226]
+  required_facts: [uk-directed-consumer-commercial-practice, objective-claim-presented-as-fact, claim-substantiation-absent-on-screen]
+  disqualifying_facts: [claim-substantiation-or-source-shown, claim-framed-as-individual-experience-or-opinion, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-225, outcome:uk-cma-emma-sleep-2026]
+  condition: "Use Section 225's misleading-action limb for the trader's own objective claim presented as fact with no substantiation on screen, where the practice is UK-directed and likely to alter a transactional decision. Emma Sleep anchors unsubstantiated claim presentation. Schedule 20 paragraph 13 remains the only route for fabricated reviews and requires its own established facts."
+
+- id: eu-default-selection-consent
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [preselected-plan, missing-express-consent, single-option-cta, one-click-upsell]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, default-selection-favors-paid-or-costlier-option]
+  disqualifying_facts: [options-equally-prominent-and-freely-changeable, express-opt-in-action-required]
+  source_anchor_ids: [norm:eu-ucpd-5-9]
+  condition: "Use only where a paid or costlier option is preselected or structurally favoured before a covered contract and the arrangement is likely to distort the choice. An equally prominent, freely changeable set of options is not covered. Article 22 governs additional payments beyond the main obligation and keeps its own route."
+
+- id: uk-default-selection-consent
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [preselected-plan, missing-express-consent, single-option-cta, one-click-upsell]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-226]
+  required_facts: [uk-directed-consumer-commercial-practice, default-selection-favors-paid-or-costlier-option]
+  disqualifying_facts: [options-equally-prominent-and-freely-changeable, express-opt-in-action-required, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-225, outcome:uk-cma-aa-bsm-2026, case:uk_aa_bsm/lesson-package-selection-40]
+  condition: "Use only where a UK-directed practice preselects or structurally favours a paid or costlier option and that arrangement is likely to alter the transactional decision. The AA/BSM final notice anchors package-selection presentation. Regulation 40 governs additional charges beyond the main obligation and keeps its own route."
+
+- id: eu-post-purchase-obstruction
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [refund-obstruction, cancellation-contact-channel-mismatch, post-cancellation-billing, obstruction-to-decline, hard-to-close-upsell, repeated-prompt]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [consumer-subscription, post-purchase-exit-or-refund-obstructed]
+  disqualifying_facts: [exit-path-comparable-to-entry-path, ordinary-identity-or-fraud-check-only]
+  source_anchor_ids: [norm:eu-ucpd-5-9, outcome:eu-cpc-amazon-prime-commitment-2022]
+  condition: "Use only where the screen shows a material obstruction to exiting, declining, or obtaining a refund that is disproportionate to the path used to buy. The Amazon Prime CPC matter is a no-finding commitment and a corrective-design example, never an enforcement benchmark. An exit comparable to the entry path, or an ordinary identity check, is not covered. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-post-purchase-obstruction
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [refund-obstruction, cancellation-contact-channel-mismatch, post-cancellation-billing, obstruction-to-decline, hard-to-close-upsell, repeated-prompt]
+  candidate_norms: [uk-dmcc-225]
+  required_facts: [uk-directed-consumer-commercial-practice, consumer-subscription, post-purchase-exit-or-refund-obstructed]
+  disqualifying_facts: [exit-path-comparable-to-entry-path, ordinary-identity-or-fraud-check-only, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-225]
+  condition: "Use Section 225 where a UK-directed practice materially obstructs exit, decline, or refund out of proportion to the purchase path. Section 228 keeps its own stricter routes, one for aggressive practices against an existing cancellation right and one for pre-purchase exploitation of a consumer whose judgement is impaired; do not use this route to reach either conclusion. Section 225 requires the practice to be likely to cause the average consumer to take a different transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+# --- US parity for pressure, defaults and exit --------------------------------
+# The US side had 4 routes covering 29 patterns against the EU's 10/46 and the
+# UK's 11/47, so twelve pattern families reached a European and a British norm
+# but no American one. Those twelve are the most frequent findings on the live
+# bench: discount anchoring 23 times, preselected plans 21, urgency timers 15.
+# The norms were always there (ROSCA 4(2) for express informed consent, 4(3)
+# for a simple cancellation mechanism, Section 5(a) for deception); only the
+# routes were missing, which is why the American half of a report reads thinner
+# than the European half on exactly the screens that deserve both.
+
+- id: us-pressure-and-reference-pricing
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [urgency-timer, discount-pressure, discount-anchoring, discount-wheel, fake-promo-code-countdown, pseudo-gifts, task-sunk-cost, fake-installs-purchases]
+  candidate_norms: [us-ftc-5a]
+  required_facts: [false-or-unverifiable-scarcity-or-time-claim]
+  disqualifying_facts: [genuine-time-limited-offer-substantiated]
+  source_anchor_ids: [norm:us-ftc-5a]
+  condition: "Use Section 5(a) where a countdown, scarcity message, reference price or live demand counter is false or unverifiable as presented (a timer that resets or outlives its deadline, a perpetual discount, an anchor with no genuine prior price, an install, purchase, viewer or active-user counter with nothing behind it) and is likely to affect a purchase decision. Pressure that reflects a real, substantiated limit is not deceptive, and a timer alone is never enough. A counter sourced to a named analytics platform with a stated update date is not covered. A claim about what the product will do for the consumer belongs to us-unsubstantiated-objective-claim. A discount presented as won, exclusive, or personally selected is not a scarcity or time claim: it carries no deadline and no quantity, this route's required fact can never be established on it, and it belongs to us-forced-win-discount. Where one component is both a wheel and a forced win, the element yields one Section 5(a) finding, taken on that route and not stacked here."
+
+- id: us-default-selection-consent
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [preselected-plan, prechecked-paid-option, missing-express-consent, bundled-consent, single-option-cta, one-click-upsell, unauthorized-add-on]
+  candidate_norms: [us-rosca-4-2]
+  required_facts: [covered-online-negative-option-transaction, default-selection-favors-paid-or-costlier-option]
+  disqualifying_facts: [express-opt-in-action-required, options-equally-prominent-and-freely-changeable]
+  source_anchor_ids: [norm:us-rosca-4-2, outcome:us-ftc-amazon-prime-2025]
+  condition: "Use ROSCA Section 4(2) where a covered online negative-option charge rests on a preselected, bundled, or single-path default rather than the consumer's express informed consent. The Prime matter anchors enrollment defaults. A separate, affirmative opt-in action, or an equally prominent and freely changeable choice, defeats the route."
+
+- id: us-cancellation-and-refund-obstruction
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [hard-cancellation, asymmetric-cancellation-path, cancellation-contact-channel-mismatch, refund-obstruction, post-cancellation-billing, obstruction-to-decline, hard-to-close-upsell, repeated-prompt]
+  candidate_norms: [us-rosca-4-3]
+  required_facts: [covered-online-negative-option-transaction, post-purchase-exit-or-refund-obstructed]
+  disqualifying_facts: [exit-path-comparable-to-entry-path, ordinary-identity-or-fraud-check-only]
+  source_anchor_ids: [norm:us-rosca-4-3, outcome:us-ftc-amazon-prime-2025, outcome:us-ftc-vonage-2022]
+  condition: "Use ROSCA Section 4(3) where stopping a covered recurring charge is materially harder than starting it, including a cancellation channel that does not match the signup channel or billing that continues after a cancellation request. Prime and Vonage anchor cancellation-mechanism analysis. An exit comparable to the entry path, or an ordinary identity check, is not covered."
+
+- id: us-fabricated-interlocutors
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [fake-dating-interlocutors]
+  candidate_norms: [us-ftc-5a]
+  required_facts: [paid-interaction-with-undisclosed-operator-or-fictitious-profiles]
+  disqualifying_facts: [interlocutor-authenticity-suspected-but-not-determined]
+  source_anchor_ids: [norm:us-ftc-5a]
+  condition: "Use Section 5(a) where the flow charges for messages, matches, gifts or unlocks and presents the interlocutor as an ordinary user while the trader's own material states that profiles, hosts or messages may be operated by the trader or its staff or generated. The representation is likely to mislead a consumer acting reasonably in the circumstances and it is material, because who the consumer is paying to talk to is the very thing being bought. Deception is judged on the net impression the interface conveys, so a disclosure buried in terms of service does not cure a chat surface that presents the account as a real person. This is deception and not unfairness: Section 5(n) requires substantial injury the consumer could not reasonably avoid and is the route for pressure applied to a vulnerable consumer, not for a misrepresented counterparty. The route never rests on inference - fast matches, idealised photographs, a burst of messages timed to trial expiry, or conversations that never move to video are suspicion, never a determination. No FTC matter in this knowledge base is a dating-interlocutor case, so the finding is reasoned from the deception standard itself and Section 5(a) supplies the prohibition only; the report must still identify the separate enforcement predicate and describe complaint allegations as allegations."
+
+- id: eu-fabricated-interlocutors
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [fake-dating-interlocutors]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, paid-interaction-with-undisclosed-operator-or-fictitious-profiles]
+  disqualifying_facts: [interlocutor-authenticity-suspected-but-not-determined]
+  source_anchor_ids: [norm:eu-ucpd-5-9]
+  condition: "Use the misleading-actions limb of Article 6 where a covered distance contract charges for messages, matches, gifts or unlocks and the presentation leads the average consumer to believe they are paying to reach a real user, while the trader's own material states that profiles, hosts or messages may be operated by the trader or its staff or generated. Article 6 covers false information and also a presentation that deceives even where the information given is factually correct, and Article 7(2) treats material information supplied in an unclear or untimely manner - a disclosure that lives only in the terms of service - as a misleading omission. The identity of the counterparty is a main characteristic of a dating service, so the deception is capable of causing a transactional decision the consumer would not otherwise take, namely paying to reply. This is a misleading action and not an aggressive practice: nothing here impairs freedom of choice by harassment, coercion or undue influence, so Articles 8 and 9 are not the route and must not be reached for. The route never rests on inference: unusually fast matches, idealised photographs, a burst of messages timed to trial expiry, or conversations that never move to video or a meeting are suspicion, never a determination that an interlocutor is not a real person. Member State transposition controls procedure and remedies."
+
+- id: uk-fabricated-interlocutors
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [fake-dating-interlocutors]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-226]
+  required_facts: [uk-directed-consumer-commercial-practice, paid-interaction-with-undisclosed-operator-or-fictitious-profiles]
+  disqualifying_facts: [interlocutor-authenticity-suspected-but-not-determined, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-226]
+  condition: "Use Section 225's misleading-action limb through Section 226 where a UK-directed flow charges for messages, matches, gifts or unlocks and the overall presentation leads the average consumer to believe they are paying to reach a real user, while the trader's own material states that profiles, hosts or messages may be operated by the trader or its staff or generated. Section 226 expressly reaches a presentation likely to deceive the average consumer even where the information given is factually correct, which is precisely the case of a disclosure that appears only in the terms while the chat surface marks nothing, and the deception must be likely to cause a different transactional decision - here, paying to reply. Schedule 20 paragraph 13 is confined to consumer reviews and review information and is not available for interlocutors, and its evidential discipline nonetheless applies by analogy: fast matches, idealised photographs or a burst of messages near the paywall are suspicion, never a determination. Emma Sleep anchors unsubstantiated claims and false countdowns, not counterparty identity, and must not be cited here; no UK outcome in this knowledge base concerns fabricated interlocutors, so the finding is reasoned from Section 226 itself."
+
+- id: uk-aggressive-pressure-vulnerable-consumer
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [anxiety-trigger, shame-based-pressure, sensitive-photo-negative-feedback]
+  candidate_norms: [uk-dmcc-228]
+  required_facts: [uk-directed-consumer-commercial-practice, invitation-to-purchase, disclosed-consumer-circumstance-exploited-at-offer, consumer-vulnerability-visible-on-screen, harassment-coercion-or-undue-influence]
+  disqualifying_facts: [neutral-or-supportive-framing-of-the-consumer-state, post-contract-cancellation-stage, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-228]
+  condition: "Section 228 is a general aggressive-practices prohibition and is not confined to cancellation, so it carries a second route with its own pre-purchase facts; what is cancellation-scoped is the uk-cancellation-obstruction route, not the norm. Use this route only at an invitation to purchase, where the trader exploits a circumstance of this consumer grave enough to impair judgement - health, appearance, loneliness, debt, or a recorded age under 18 - through alarming or demeaning framing placed against the purchase action, where that pressure amounts to harassment, coercion or undue influence, and where it is likely to cause the average consumer to take a different transactional decision. Section 228(2) mirrors UCPD Article 9: its paragraphs are factors, not standalone prohibitions, and the misfortune factor requires a circumstance that already exists and of which the trader is aware, which is why the route requires that the consumer disclosed it earlier in this flow or that the flow is about it. At the pre-purchase stage the different-transactional-decision element is reasoned in the finding from what the screen shows, not gated by a fact; the cancellation-stage test belongs to uk-cancellation-obstruction. Where the pressure stands between the consumer and cancelling an existing plan, uk-cancellation-obstruction governs and this route does not apply. Where the alarming assessment is itself presented as a checkable fact, uk-unsubstantiated-objective-claim governs that claim and this route addresses only the exploitation of the consumer's own disclosed condition; do not report the same observation under both. Persuasion is not aggression: motivational copy, an escalating onboarding sequence, ordinary sales enthusiasm and sexualised imagery do not activate this route. The Section 228(2)(f) onerous-action factor is not in play before purchase, no CMA outcome in this knowledge base concerns pre-purchase aggression so a finding is reasoned from the statutory test alone, and the uncommenced Section 260 subscription rule is never a basis. Section 228 requires the practice to be likely to cause a different transactional decision, including retention or the exercise of a contractual right, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: eu-contradictory-price-information
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [renewal-price-mismatch]
+  candidate_norms: [eu-ucpd-5-9, eu-crd-6]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, stated-price-contradicts-plan-selected-or-amount-charged]
+  source_anchor_ids: [norm:eu-ucpd-5-9, norm:eu-crd-6, outcome:eu-cjeu-canal-digital-2016]
+  condition: "Use only for a covered distance or off-premises contract, before the contract is concluded, where a renewal, recurring or charged amount for the same purchase contradicts the price of the plan, tier or duration the consumer selected on a screen passed to buy, and the contradiction is likely to cause the average consumer to take a transactional decision they would not otherwise have taken. This is the misleading-actions limb, which reaches a price presentation that deceives the average consumer even where each figure taken alone is factually correct. Canal Digital (C-611/14) is decided on Articles 6 and 7 together and anchors fragmented and subordinated price presentation in a subscription, but its facts are a split price rather than two conflicting figures, so it is not authority on a mismatched renewal price and must not be described as one. Article 6 of the Consumer Rights Directive is cited only for the separate proposition that the total price and the arrangements for payment and duration must be given in a clear and comprehensible manner before the consumer is bound. A renewal price that is simply absent is an omission and belongs to eu-disclosure-price, not here. A 'was', savings or comparison figure is reference pricing: it stays with eu-pressure and this route does not reach it. A difference the screen itself explains next to both figures as a stated one-time discount, proration, tax or currency conversion does not activate this route, nor does a rounding difference of a cent or less, nor a mismatch first visible after the purchase completes on a receipt or billing history. Member State transposition and remedy limits are preserved. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: uk-contradictory-price-information
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [renewal-price-mismatch]
+  candidate_norms: [uk-dmcc-225, uk-dmcc-226]
+  required_facts: [uk-directed-consumer-commercial-practice, invitation-to-purchase, stated-price-contradicts-plan-selected-or-amount-charged]
+  disqualifying_facts: [business-to-business-transaction]
+  source_anchor_ids: [norm:uk-dmcc-225, norm:uk-dmcc-226, outcome:uk-cma-emma-sleep-2026]
+  condition: "Use only for a UK-directed consumer practice at an invitation to purchase where a renewal, recurring or charged amount for the same purchase contradicts the price of the plan, tier or duration the consumer selected, and the presentation is likely to affect a transactional decision. Section 226 is the operative limb: it treats as a misleading action an overall presentation likely to deceive the average consumer even where the information given is factually correct, which is exactly the case of two figures for one purchase that disagree. Section 225 is cited as the prohibition Section 226 defines. Emma Sleep is a court-endorsed settlement and High Court order of 22 May 2026, decided under the Consumer Protection from Unfair Trading Regulations 2008 with pre-DMCC powers but eligible for Sections 225 and 226; it anchors false timers and specified discount claims, a separate reference-pricing issue remained outside it, and it is not a decision on a mismatched renewal price. A renewal price that is simply absent is a Section 230 omission and belongs to uk-disclosure-price, not here. A 'was', savings or comparison figure is reference pricing: it stays with uk-pressure and this route does not reach it. A difference the screen itself explains beside both figures as a one-time discount, proration, tax or currency conversion does not activate this route, nor does a rounding difference of a cent or less, nor a mismatch first visible after the purchase completes, which is outside an invitation to purchase. The Sections 232-235 redress route applies only where all four Section 232 conditions are met, including that the practice was a significant factor in the consumer's decision."
+
+- id: eu-aggressive-pressure-vulnerable-consumer
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [anxiety-trigger, shame-based-pressure, sensitive-photo-negative-feedback]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [covered-distance-or-off-premises-contract, pre-contract-stage, disclosed-consumer-circumstance-exploited-at-offer, consumer-vulnerability-visible-on-screen, harassment-coercion-or-undue-influence]
+  disqualifying_facts: [neutral-or-supportive-framing-of-the-consumer-state, post-contract-cancellation]
+  source_anchor_ids: [norm:eu-ucpd-5-9]
+  condition: "Use the aggressive-practices limb of Articles 8 and 9 only where, before a covered distance or off-premises contract is concluded, the trader exploits a circumstance of this consumer grave enough to impair judgement - a health or appearance worry, loneliness, money trouble, or an age the flow has recorded as under 18 - by abusive framing that significantly impairs the average consumer's freedom of choice and is likely to cause a transactional decision they would not otherwise have taken. Article 9 lists factors for deciding whether a practice uses harassment, coercion or undue influence; its paragraphs are not standalone prohibitions, and paragraph (c) reaches only the exploitation of a misfortune or circumstance that already exists and of which the trader is aware. That awareness element is why the route requires that the consumer disclosed the circumstance earlier in this same flow or that the flow is about it: a trader who never learned the condition cannot exploit it. Where the impairment is age, infirmity or credulity, Article 5(3) sets the benchmark consumer and those three are its only grounds; appearance worry, loneliness and debt are not Article 5(3) grounds and are reached, if at all, as an Article 9(c) circumstance measured against the Article 5(2)(b) average consumer. Where the alarming assessment is itself presented as a checkable fact - a score, a body age, a projected result - the misleading-actions route eu-unsubstantiated-objective-claim governs that claim and this route addresses only the exploitation of the consumer's own disclosed condition; do not report the same observation under both. Persuasion is not aggression: a motivational interstitial, an escalating onboarding sequence, an encouraging quiz and sexualised imagery are none of harassment, coercion or undue influence, and this route does not reach them. Where the pressure stands between the consumer and cancelling an existing plan, eu-cancellation-obstruction governs and this route does not apply. No outcome in this knowledge base was decided on the Article 8 aggression test, so a finding here is reasoned from the statutory test alone and must be written as such. Member State transposition still controls procedure and remedies, and a dark-pattern label is never the test."
+
+- id: us-forced-win-discount
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [forced-discount]
+  candidate_norms: [us-ftc-5a]
+  required_facts: [chance-or-exclusivity-representation-unsupported-on-screen]
+  disqualifying_facts: [gamified-discount-terms-disclosed]
+  source_anchor_ids: [norm:us-ftc-5a, case:genesis/E.7]
+  condition: "Use Section 5(a) where a spin, scratch, game, code or pick presents a discount as won, exclusive, or personally selected while the screen states no odds and no prize range, and the representation is likely to affect a purchase decision. What is deceptive is the representation of chance or exclusivity, judged on the net impression the interface conveys, not the size of the discount. A crossed-out list price beside the won price neither establishes nor cures it: whether a reference price is genuine is an anchoring question for us-pressure-and-reference-pricing, so a comparator price must never be read as disclosure here. Outside this route: a promotion the screen labels as open to everyone, and a game whose odds and prize range are stated. The finding may not rest on an assertion that every spin, scratch or selection is predetermined, because that is the trader's internal prize configuration and no screenshot shows it; that limb is available only where the operator's own answers state that every participant receives the same outcome, and such an answer is an admission, never the on-screen disclosure that defeats the route. Genesis E.7 is the anchor exhibit, a wheel that always lands on the biggest extra discount. Where the same element also presents itself as a wheel, lottery or scratch card, it yields one Section 5(a) finding, not two: do not stack a discount-wheel finding from us-pressure-and-reference-pricing on top of this one for the same component. This is the general deception prohibition and never establishes that any third party's endorsement, award or review is fabricated."
+
+- id: eu-fabricated-reviews
+  jurisdiction: "EU"
+  sub_jurisdiction: null
+  pattern_ids: [fake-social-media-reviews]
+  candidate_norms: [eu-ucpd-5-9]
+  required_facts: [pre-contract-stage, consumer-review-or-review-information, trader-submitted-commissioned-or-published-review, local-authoritative-source-establishes-fabrication]
+  disqualifying_facts: [source-information-absent, suspicious-but-not-determined, ordinary-rating-or-testimonial-without-fabrication-evidence]
+  source_anchor_ids: [norm:eu-ucpd-5-9]
+  condition: "Use the misleading-actions limb only where the supplied material both shows consumer reviews, ratings, testimonials or engagement indicators presented to the consumer before the contract and contains a source that determines they are fabricated, and where displaying them is likely to cause the average consumer to take a transactional decision they would not otherwise have taken. Reviews that are not based on a genuine consumer experience are false information about the product and about the endorsement it carries, which is what the misleading-actions limb prohibits. Unlike the UK route this one has no listed-practice shortcut: the per-se blacklist is not available in this knowledge base, so the transactional-decision element must be reasoned in the finding on the screen actually reviewed and never assumed from the presence of a review block. A missing review link, an ordinary rating, templated-looking wording, stock-looking photographs, an implausibly uniform score, or any other appearance-based suspicion is not a determination that a review is fake and does not activate this route. Reviews carrying a third-party platform's attribution, and reviews whose origin the screen does not state, fall outside the trader-conduct gate and reach no finding here. The likely-fabricated pattern, where authenticity is contested but not determined, has no EU route in this knowledge base and reaches no finding anywhere in it outside the United States. The knowledge base holds no EU review-enforcement outcome, so this route carries no anchor case and none may be asserted: the authority is Articles 5-9 themselves. Member State transposition controls procedure and remedies. Article 5(2)(b) requires the practice to materially distort the average consumer's transactional decision, and the finding must reason that element from what is on the screen rather than assume it."
+
+- id: us-california-automatic-renewal
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [hidden-renewal, small-print-renewal, renewal-price-mismatch, preselected-plan, missing-express-consent, hard-cancellation, asymmetric-cancellation-path, cancellation-contact-channel-mismatch]
+  candidate_norms: [us-ca-arl]
+  required_facts: [covered-online-negative-option-transaction, us-state-consumer-jurisdiction-established]
+  disqualifying_facts: [negative-option-terms-clearly-and-conspicuously-disclosed-before-billing]
+  source_anchor_ids: [norm:us-ca-arl]
+  condition: "Use the California Automatic Renewal Law only where the flow is a covered automatic-renewal or continuous-service offer and the renewal terms are absent or subordinated before the agreement is fulfilled, or affirmative consent is taken by a preselected default, or an online signup offers no online cancellation. Section 17603 makes goods or services sent without affirmative consent an unconditional gift, which is the sharpest consequence in the article. This is the operative click-to-cancel regime in the United States after the federal Negative Option Rule was vacated in July 2025, so it must not be described as superseded. The article reaches California consumers only: a screenshot does not establish the state, so unless the submission establishes it the finding is written under the conditional discipline and says which consumers it would reach. Section 17604 grants immunity where the business acted in good faith and made a reasonable effort to comply, and it sets no penalty of its own, so no monetary figure may be stated."
+
+- id: us-new-york-deceptive-practice
+  jurisdiction: "US"
+  sub_jurisdiction: null
+  pattern_ids: [hidden-renewal, daily-price-framing, discount-anchoring, urgency-timer, outcome-promise, tailored-plan-claim, fake-analysis, false-personalization]
+  candidate_norms: [us-ny-gbl-349]
+  required_facts: [objective-claim-presented-as-fact, claim-substantiation-absent-on-screen, us-state-consumer-jurisdiction-established]
+  disqualifying_facts: [claim-substantiation-or-source-shown, genuine-time-limited-offer-substantiated]
+  source_anchor_ids: [norm:us-ny-gbl-349]
+  condition: "Use New York General Business Law Section 349 where a deceptive act or practice in the conduct of business is visible on the screen and a consumer acting reasonably could be injured by it. Its value here is subsection (h), the private right of action that neither the FTC Act nor ROSCA provides: an injured person recovers actual damages or fifty dollars, whichever is greater, trebled at the court's discretion to a maximum of one thousand dollars for a willful or knowing violation, plus reasonable attorney fees. The section reaches New York consumers only: a screenshot does not establish the state, so unless the submission establishes it the finding is written under the conditional discipline. The private right requires injury to a consumer, not merely a deceptive presentation, and the exposure scales with the number of injured New York consumers, which the supplied interface never establishes."
+
+- id: uk-order-button-obligation-to-pay
+  jurisdiction: "UK"
+  sub_jurisdiction: null
+  pattern_ids: [payment-without-clear-disclosure, payment-without-renewal-disclosure, no-price-upsell]
+  candidate_norms: [uk-ccr-14]
+  required_facts: [uk-directed-consumer-commercial-practice, invitation-to-purchase, payment-commitment-requested]
+  disqualifying_facts: [order-button-states-obligation-to-pay, business-to-business-transaction]
+  source_anchor_ids: [norm:uk-ccr-14]
+  condition: "Use Regulation 14 only for a distance contract concluded by electronic means that carries an obligation to pay, where the control placing the order does not say that ordering obliges the consumer to pay, or the key information is not clear and prominent directly before the order. The consequence is contractual rather than monetary: the consumer is not bound by the contract or the order, so the exposure is the value of the affected contracts and no fine may be stated. This is the British counterpart of Article 8(2) of the Consumer Rights Directive, and it is the operative British regime for the ordering step because the subscription chapter of the DMCC Act is not in force until spring 2027. A button that says pay, buy or subscribe with the charge beside it satisfies the duty and takes the screen outside this route."

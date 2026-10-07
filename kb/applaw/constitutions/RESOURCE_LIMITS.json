@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "release_version": "0.5.0",
+  "scope": "agent-side post-ingestion evidence processing",
+  "accounting_contract": {
+    "context_window_tokens_source": "host-supplied; no package default",
+    "occupied_input_tokens_definition": "The exact sum of host/system instruction, project instruction, task instruction, and existing conversation tokens already occupying the deployed context. It excludes retrieved KB tokens and candidate evidence tokens.",
+    "occupied_input_component_fields": [
+      "host_system_instruction_tokens",
+      "project_instruction_tokens",
+      "task_instruction_tokens",
+      "existing_conversation_tokens"
+    ],
+    "cached_input_tokens_definition": "An informational subset of occupied_input_tokens. Cached tokens still occupy context and are never subtracted from occupancy.",
+    "retrieved_kb_tokens_definition": "Retrieved KB tokens already occupying context and excluded from occupied_input_tokens so they are subtracted exactly once.",
+    "tool_output_reserve_tokens_definition": "Context reserved for expected tool outputs that may arrive before the public response.",
+    "response_reserve_tokens_definition": "Context reserved for the expected public response or other required output.",
+    "safety_margin_tokens_definition": "Additional non-overlapping context headroom reserved for tokenizer variance and orchestration overhead.",
+    "candidate_evidence_tokens_definition": "Post-ingestion evidence proposed for one evaluation or the complete screenshot batch before work begins. It is not part of occupied_input_tokens.",
+    "available_evidence_formula": "context_window_tokens - occupied_input_tokens - retrieved_kb_tokens - tool_output_reserve_tokens - response_reserve_tokens - safety_margin_tokens",
+    "effective_hard_formula": "min(absolute_evidence_hard_ceiling_tokens, available_evidence_tokens)",
+    "effective_warning_formula": "min(absolute_evidence_warning_ceiling_tokens, floor(effective_hard_limit_tokens * absolute_warning / absolute_hard))",
+    "overlap_policy": "The occupied-input components must sum exactly to occupied_input_tokens. Retrieved KB and candidate evidence must remain separate. Any declared overlap, mismatch, negative or non-finite value, or reservation total above the context window is rejected."
+  },
+  "budgets": {
+    "ocr_characters": {
+      "warning": 100000,
+      "hard": 200000,
+      "unit": "characters"
+    },
+    "evidence_tokens": {
+      "warning": 24000,
+      "hard": 32000,
+      "unit": "tokens",
+      "role": "absolute post-ingestion evidence ceilings; runtime-effective thresholds may be lower"
+    },
+    "processing_seconds": {
+      "warning": 120,
+      "hard": 180,
+      "unit": "seconds"
+    }
+  },
+  "warning_action": "Continue only if the admitted evidence can be processed without reducing evaluation quality and all response and tool reserves remain intact; otherwise sequence the work and report what remains.",
+  "hard_limit_action": "Reject admission or stop before processing more evidence, preserve completed results, and report every measured component, the effective hard limit, and the unprocessed remainder. Never silently truncate evidence.",
+  "invalid_accounting_action": "Reject admission until the host supplies a complete, finite, non-negative, non-overlapping accounting record for the deployed context window. Do not guess missing metadata.",
+  "host_webapp_responsibility": [
+    "attachment count",
+    "aggregate and per-file upload bytes",
+    "image dimensions and pixel count",
+    "PDF page count",
+    "archive expansion and decompression limits",
+    "MIME and file-signature validation",
+    "authentication, authorization, quotas, and rate limits"
+  ],
+  "notes": [
+    "These budgets apply only after the host has accepted and exposed evidence to the agent.",
+    "This file does not validate uploads, attachments, images, PDFs, archives, or transport-level payloads.",
+    "The 24000/32000 token values are absolute evidence ceilings, not claims that either amount fits the deployed runtime.",
+    "Token counts supplied by the host are authoritative. A byte-derived estimate is a scheduling signal and cannot authorize evidence admission.",
+    "The same context-aware calculation applies to a complete screenshot batch before the batch begins."
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/cleo_ai.json",
+  "case_id": "cleo-ai",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "counts": [
+          "FTC Section 5(a)",
+          "ROSCA Section 4"
+        ],
+        "court": "S.D.N.Y.",
+        "filed": "2025-03-27",
+        "odds_notes": "The complaint pleads cash-advance amount and timing misrepresentations, paid subscription enrollment before eligibility is revealed, express-fee disclosures, and cancellation friction.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed",
+        "procedural_posture": "FTC complaint, federal court",
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "title": "FTC v. Cleo AI, Inc."
+      },
+      "kind": "case_header",
+      "logical_path": "cases/cleo_ai/_case.md",
+      "semantic_sha256": "a3778d267f5cb9464dcbc1f4cf586cb9496aba088f1f3b5cd1c2183765308787"
+    },
+    {
+      "body": "",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 5,
+        "cards": 5,
+        "case_id": "cleo-ai",
+        "evidence_anchor_count": 5,
+        "figures": [
+          "screen-1",
+          "screen-3",
+          "screen-4",
+          "screen-7a",
+          "screen-8b"
+        ],
+        "norms": 3,
+        "optional_visual_evidence_count": 5,
+        "pattern_ids_provisional": [
+          "bundled-consent",
+          "delayed-price-disclosure",
+          "outcome-promise",
+          "outcome-teaser",
+          "payment-without-clear-disclosure",
+          "preselected-plan"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/cleo_ai/_coverage.json",
+      "semantic_sha256": "a078140f6e4a7ae8947e794b9b60be8f908a09e97997a11e477b1de2915feadc"
+    },
+    {
+      "body": "EVIDENCE. The advertisement promotes quick access to a cash advance, including an up-to-$250 framing, before the subscription, eligibility, and fee limits are known to the consumer.\nLEGAL REASONING. The complaint alleges Cleo represented that consumers would receive specific advance amounts or instant/today cash, when those representations were false, misleading, or unsubstantiated.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "complaint_paras": "14-15, 51-53",
+        "figure_id": "screen-1",
+        "norms": [
+          "us-ftc-5a"
+        ],
+        "patterns": [
+          "outcome-promise",
+          "delayed-price-disclosure"
+        ],
+        "product": "Cleo",
+        "screen_type": "cash_advance_ad",
+        "source_anchor_ids": [
+          "anc-8590f91537226680"
+        ],
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_page": "4",
+        "source_ref": "Screen 1"
+      },
+      "kind": "case",
+      "logical_path": "cases/cleo_ai/screen-1.md",
+      "semantic_sha256": "0f1a6153fa893bca1604e59560fc2a185ce75765e6af6aee4388796ece3e744f"
+    },
+    {
+      "body": "EVIDENCE. The plan screen presents paid Plus and Builder subscriptions and preselects Plus, while cash-advance eligibility and amount remain unresolved.\nLEGAL REASONING. The complaint alleges Cleo generally withheld the actual advance amount until after consumers subscribed and paid, so the plan-selection screen is material to both subscription consent and the cash-advance representation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "complaint_paras": "21-22, 35",
+        "figure_id": "screen-3",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "preselected-plan",
+          "payment-without-clear-disclosure",
+          "delayed-price-disclosure"
+        ],
+        "product": "Cleo",
+        "screen_type": "subscription_plan_selection",
+        "source_anchor_ids": [
+          "anc-0027cafced2ac855"
+        ],
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_page": "7",
+        "source_ref": "Screen 3"
+      },
+      "kind": "case",
+      "logical_path": "cases/cleo_ai/screen-3.md",
+      "semantic_sha256": "77a80029b7e20895e9d097326c8db18bde1cf7a5fb7d87616d12d187277a96a5"
+    },
+    {
+      "body": "EVIDENCE. The payment-review screens require subscription payment setup before Cleo reveals the actual advance amount the consumer can receive.\nLEGAL REASONING. The complaint alleges the flow collects subscription payment commitment first, then later discloses a materially lower advance amount, making the withheld eligibility information material to the subscription purchase.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1)-(2), 15 U.S.C. 8403(1)-(2).",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "complaint_paras": "23-26, 35",
+        "figure_id": "screen-4",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1",
+          "us-rosca-4-2"
+        ],
+        "patterns": [
+          "payment-without-clear-disclosure",
+          "bundled-consent",
+          "delayed-price-disclosure"
+        ],
+        "product": "Cleo",
+        "screen_type": "subscription_payment_review",
+        "source_anchor_ids": [
+          "anc-6e6271a76237a88e"
+        ],
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_page": "9",
+        "source_ref": "Screen 4"
+      },
+      "kind": "case",
+      "logical_path": "cases/cleo_ai/screen-4.md",
+      "semantic_sha256": "a5fe2c7c3b973c49fb804bc03de130f31de99aa64d3d85f6776635e47b88746f"
+    },
+    {
+      "body": "EVIDENCE. The advance screen reveals eligibility for a lower amount after the consumer has already moved through subscription and payment setup.\nLEGAL REASONING. The complaint alleges almost all consumers received substantially less than the advertised amounts and that Cleo did not disclose the actual advance amount before subscription payment.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "complaint_paras": "26, 30-37",
+        "figure_id": "screen-7a",
+        "norms": [
+          "us-ftc-5a"
+        ],
+        "patterns": [
+          "outcome-teaser",
+          "delayed-price-disclosure"
+        ],
+        "product": "Cleo",
+        "screen_type": "advance_amount_reveal",
+        "source_anchor_ids": [
+          "anc-0d31b2b44133545d"
+        ],
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_page": "10",
+        "source_ref": "Screen 7A"
+      },
+      "kind": "case",
+      "logical_path": "cases/cleo_ai/screen-7a.md",
+      "semantic_sha256": "19a3b5ea0814c554b24ed4c4625018de2e5e913aed0d977084affb2241a04c95"
+    },
+    {
+      "body": "EVIDENCE. The advance screen offers \"Today\" or \"Super fast\" receipt options with express-fee language after the user has subscribed and applied for the advance.\nLEGAL REASONING. The complaint alleges Cleo advertised instant or same-day cash but disclosed only later that same-day or next-day receipt required an extra fee and might still take longer.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a).",
+      "container_path": "cases/cleo_ai.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "cleo-ai",
+        "complaint_paras": "38-42",
+        "figure_id": "screen-8b",
+        "norms": [
+          "us-ftc-5a"
+        ],
+        "patterns": [
+          "delayed-price-disclosure",
+          "payment-without-clear-disclosure"
+        ],
+        "product": "Cleo",
+        "screen_type": "advance_timing_and_fee",
+        "source_anchor_ids": [
+          "anc-2d488bf63e4a10d7"
+        ],
+        "source_file": "cleo_ai_redacted_complaint_2025.03.27.pdf",
+        "source_id": "src-83ad80e17c9a3cc5",
+        "source_page": "11",
+        "source_ref": "Screen 8B"
+      },
+      "kind": "case",
+      "logical_path": "cases/cleo_ai/screen-8b.md",
+      "semantic_sha256": "9ac135c05fd7708e35b3e904c5571960d1abaf1cb47db2e50b6bf354226a95ef"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 5,
+    "anchor_reference_count": 5,
+    "case_cards": 5,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 7,
+    "semantic_sha256": "54d367f1185239fe8898a0ee87f0865e9a6e6ddab370c0bc728eefd44c6f14ad"
+  }
+}

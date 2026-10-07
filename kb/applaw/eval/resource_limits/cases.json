@@ -1,0 +1,152 @@
+[
+  {
+    "id": "evidence-below-effective-capacity",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 23999, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "pass",
+    "expected_available_evidence_tokens": 37536,
+    "expected_effective_warning": 24000,
+    "expected_effective_hard": 32000,
+    "expected_remaining_capacity": 8001
+  },
+  {
+    "id": "evidence-warning-exact",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 24000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn",
+    "expected_effective_warning": 24000,
+    "expected_effective_hard": 32000,
+    "expected_remaining_capacity": 8000
+  },
+  {
+    "id": "evidence-hard-exact",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 32000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn",
+    "expected_effective_warning": 24000,
+    "expected_effective_hard": 32000,
+    "expected_remaining_capacity": 0
+  },
+  {
+    "id": "evidence-above-hard",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 32001, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_effective_hard": 32000,
+    "expected_overage": 1
+  },
+  {
+    "id": "evidence-24k-does-not-fit-32k-context",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 24000, "processing_seconds": 0, "context_window_tokens": 32000, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 2000, "tool_output_reserve_tokens": 3000, "response_reserve_tokens": 6000, "safety_margin_tokens": 3000},
+    "expected_status": "reject",
+    "expected_available_evidence_tokens": 10000,
+    "expected_effective_warning": 7500,
+    "expected_effective_hard": 10000,
+    "expected_overage": 14000
+  },
+  {
+    "id": "evidence-fits-64k-with-reserves",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 23999, "processing_seconds": 0, "context_window_tokens": 64000, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "pass",
+    "expected_available_evidence_tokens": 36000,
+    "expected_effective_hard": 32000
+  },
+  {
+    "id": "cached-input-still-occupies-context",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 13000, "processing_seconds": 0, "context_window_tokens": 40000, "occupied_input_tokens": 12000, "host_system_instruction_tokens": 3000, "project_instruction_tokens": 3000, "task_instruction_tokens": 3000, "existing_conversation_tokens": 3000, "cached_input_tokens": 6000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 6000, "safety_margin_tokens": 2000},
+    "expected_status": "reject",
+    "expected_available_evidence_tokens": 12000,
+    "expected_effective_warning": 9000,
+    "expected_effective_hard": 12000
+  },
+  {
+    "id": "zero-remaining-evidence-capacity",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 0, "processing_seconds": 0, "context_window_tokens": 32000, "occupied_input_tokens": 10000, "host_system_instruction_tokens": 2500, "project_instruction_tokens": 2500, "task_instruction_tokens": 2500, "existing_conversation_tokens": 2500, "cached_input_tokens": 5000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 6000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn",
+    "expected_available_evidence_tokens": 0,
+    "expected_effective_warning": 0,
+    "expected_effective_hard": 0,
+    "expected_remaining_capacity": 0
+  },
+  {
+    "id": "missing-context-window-metadata",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_error_contains": "missing required counter: context_window_tokens"
+  },
+  {
+    "id": "inconsistent-occupied-input-components",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 9000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_error_contains": "occupied_input_tokens must equal"
+  },
+  {
+    "id": "declared-retrieved-kb-overlap",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000, "occupied_input_includes_retrieved_kb": true},
+    "expected_status": "reject",
+    "expected_error_contains": "must exclude retrieved_kb_tokens"
+  },
+  {
+    "id": "declared-evidence-overlap",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000, "occupied_input_includes_candidate_evidence": true},
+    "expected_status": "reject",
+    "expected_error_contains": "must exclude candidate evidence tokens"
+  },
+  {
+    "id": "over-window-reservations",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 0, "processing_seconds": 0, "context_window_tokens": 20000, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_error_contains": "exceed the context window"
+  },
+  {
+    "id": "negative-counter-rejected",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": -1, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_error_contains": "retrieved_kb_tokens must be a non-negative finite integer"
+  },
+  {
+    "id": "non-finite-counter-rejected",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": "NaN", "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_error_contains": "processing_seconds must be a non-negative finite number"
+  },
+  {
+    "id": "byte-estimate-cannot-authorize-admission",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 1000, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000, "evidence_token_count_exact": false},
+    "expected_status": "reject",
+    "expected_error_contains": "byte-derived estimate cannot authorize admission"
+  },
+  {
+    "id": "screenshot-batch-admission-pass",
+    "admission_scope": "screenshot_batch",
+    "batch_item_count": 8,
+    "counters": {"ocr_characters": 100000, "evidence_tokens": 23999, "processing_seconds": 119, "context_window_tokens": 64000, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn",
+    "expected_effective_hard": 32000,
+    "expected_remaining_capacity": 8001
+  },
+  {
+    "id": "screenshot-batch-admission-reject",
+    "admission_scope": "screenshot_batch",
+    "batch_item_count": 8,
+    "counters": {"ocr_characters": 0, "evidence_tokens": 32001, "processing_seconds": 0, "context_window_tokens": 64000, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject",
+    "expected_overage": 1
+  },
+  {
+    "id": "ocr-warning-exact",
+    "counters": {"ocr_characters": 100000, "evidence_tokens": 0, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn"
+  },
+  {
+    "id": "ocr-above-hard",
+    "counters": {"ocr_characters": 200001, "evidence_tokens": 0, "processing_seconds": 0, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject"
+  },
+  {
+    "id": "processing-time-warning-exact",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 0, "processing_seconds": 120, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "warn"
+  },
+  {
+    "id": "processing-time-above-hard",
+    "counters": {"ocr_characters": 0, "evidence_tokens": 0, "processing_seconds": 180.1, "context_window_tokens": 65536, "occupied_input_tokens": 8000, "host_system_instruction_tokens": 2000, "project_instruction_tokens": 2000, "task_instruction_tokens": 2000, "existing_conversation_tokens": 2000, "cached_input_tokens": 2000, "retrieved_kb_tokens": 4000, "tool_output_reserve_tokens": 4000, "response_reserve_tokens": 8000, "safety_margin_tokens": 4000},
+    "expected_status": "reject"
+  }
+]

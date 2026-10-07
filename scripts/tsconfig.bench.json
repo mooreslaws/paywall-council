@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "outDir": "../.bench",
+    "baseUrl": "..",
+    "paths": { "@/*": ["./*"] },
+    "types": ["node"]
+  },
+  "include": ["../council/**/*.ts", "../config/**/*.ts", "../lib/images.ts"]
+}

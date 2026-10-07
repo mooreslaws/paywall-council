@@ -1,0 +1,28 @@
+{
+  "description": "Portable AppLaw evaluation skill, source-backed KB, and validation harness.",
+  "name": "applaw-kb",
+  "private": true,
+  "scripts": {
+    "inventory": "python -B scripts/inventory_kb.py --kb .",
+    "readiness:benchmarks": "python -B scripts/validate_benchmarks.py --kb . --min-count 15",
+    "validate": "python -B scripts/validate_release.py --kb .",
+    "validate:adversarial": "python -B scripts/validate_adversarial_suite.py --kb .",
+    "validate:benchmarks": "python -B scripts/validate_benchmarks.py --kb .",
+    "validate:cases": "python -B scripts/validate_case_cards.py --kb .",
+    "validate:checksums": "python -B scripts/verify_checksums.py --kb .",
+    "validate:contract": "python -B scripts/validate_validation_contract.py --kb .",
+    "validate:core": "python -B scripts/validate_core.py --kb .",
+    "validate:gold": "python -B scripts/validate_gold.py --kb .",
+    "validate:limits": "python -B scripts/validate_resource_limits.py --kb .",
+    "validate:live": "python -B scripts/validate_live_report.py --kb .",
+    "validate:outcomes": "python -B scripts/validate_enforcement_outcomes.py --kb .",
+    "validate:output": "python -B scripts/validate_output_safety.py --kb .",
+    "validate:policy": "python -B scripts/validate_policy_fixtures.py --kb .",
+    "validate:refs": "python -B scripts/validate_refs.py --kb .",
+    "validate:replay": "python -B scripts/run_adversarial_replay.py --kb .",
+    "validate:reports": "python -B scripts/validate_reports_and_output.py --kb .",
+    "validate:routing": "python -B scripts/validate_routing.py --kb .",
+    "validate:scope": "python -B scripts/validate_scope_gate.py --kb ."
+  },
+  "version": "0.5.0"
+}

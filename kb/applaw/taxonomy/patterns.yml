@@ -1,0 +1,914 @@
+- id: hidden-renewal
+  name: "Hidden auto-renewal"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "The renewal price, renewal cadence, cancellation deadline, or post-trial charge is in fine print, muted color, a tooltip, a collapsed block, or below the main price."
+    - "The screen frames the offer as a one-time, daily, trial, discounted, or short-term price while the recurring charge is visually weaker."
+    - "The user can reach billing entry before the recurring terms are presented with comparable prominence to the purchase price."
+  false_positive_traps:
+    - "Do not flag when price, renewal cadence, billing date, and cancellation deadline are proximate to the CTA or payment controls in clear, readable, plain language before billing data is entered."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/A.6, genesis/B.5, genesis/E.9]
+
+- id: delayed-price-disclosure
+  name: "Delayed price disclosure"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "The funnel asks the user to answer a quiz, upload a file, edit content, or provide contact information before showing any price."
+    - "Material price or subscription terms first appear only after the user has invested effort in the task or personalized result."
+  false_positive_traps:
+    - "Do not flag a free exploratory step when the next commercial step clearly announces the price and subscription terms before collecting payment data."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/A.1, genesis/B.2, genesis/C.1]
+
+- id: mandatory-fee-drip-pricing
+  name: "Mandatory-fee drip pricing"
+  family: disclosure
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "A mandatory service, booking, processing, delivery, platform, or similar fee is omitted from the initial headline price or first invitation to purchase."
+    - "The total unavoidable price appears only after the user has selected items, entered details, or reached a later checkout or payment step."
+    - "The fee is technically shown somewhere, but it is separated from the initial price or included in the total only after prior commitment steps."
+    - "VAT, sales tax, or another mandatory government levy is added only at a later total or receipt, while the headline or plan-card price does not state that it is tax-exclusive."
+  false_positive_traps:
+    - "Do not flag optional extras that are not preselected and are clearly priced before acceptance."
+    - "Do not flag unavoidable fees when the headline price or first purchase invitation already includes the total amount payable."
+  maps_to_norms: [us-ftc-fees-rule, uk-dmcc-225, uk-dmcc-230, eu-ucpd-5-9, eu-crd-6]
+  example_cases: [uk_aa_bsm/A1.4-40, uk_aa_bsm/A1.7-42, uk_aa_bsm/A3.1-50]
+
+- id: small-print-renewal
+  name: "Small-print renewal terms"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "Renewal terms appear in the smallest text on the screen or materially lower visual weight than the price, discount, or CTA."
+    - "Recurring-charge language is placed in legal copy, footer text, or a narrow line that is easy to miss during payment."
+    - "Material renewal, fee, or subscription text is low contrast, such as gray text on a gray background, below WCAG AA normal-text contrast of 4.5:1, or materially lower contrast than the headline price or CTA."
+  false_positive_traps:
+    - "Do not flag merely because legal terms are smaller if the core renewal price, cadence, and cancellation deadline are also repeated prominently near the purchase action."
+    - "Do not treat contrast ratio alone as enough when the material terms are proximate, readable, and visually comparable to the purchase action."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/A.8, genesis/B.5, genesis/E.9, adobe/tooltip-disclosure-09, nutraclick/customer-info-07]
+
+- id: renewal-price-mismatch
+  name: "Renewal price mismatched to purchased plan"
+  family: disclosure
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "A renewal, recurring, or total price stated in fine print, a confirmation step, terms text, or a separate disclosure block does not equal the price of the plan, tier, or duration the user actually selected or that is shown on the plan card."
+    - "A savings, comparison, or 'was' price used to justify a discount does not correspond to any price actually charged or offered elsewhere on the screen."
+  false_positive_traps:
+    - "Do not flag when the discrepancy is fully explained by a disclosed one-time discount, proration, tax, or currency conversion stated clearly next to both figures."
+    - "Do not flag rounding differences of a cent or less, or a renewal price that is simply absent (use hidden-renewal or small-print-renewal for that instead)."
+  maps_to_norms: [us-ftc-5a, us-rosca-4-1]
+  example_cases: []
+
+- id: below-fold-disclosure
+  name: "Below-fold disclosure"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "Material subscription, renewal, cancellation, or fee information is located below the visible viewport while the CTA is above it."
+    - "The user can submit or proceed to payment without scrolling to the disclosure block."
+  false_positive_traps:
+    - "Do not flag when the page forces the disclosure into view, requires active acknowledgment after it is visible, or repeats the material terms above the fold."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/B.5, genesis/C.8, genesis/E.9, epic_games/fortnite-store-03, chegg/mobile-perks-09a]
+
+- id: daily-price-framing
+  name: "Daily price framing"
+  family: disclosure
+  stage: hide
+  severity_default: medium
+  detection_cues:
+    - "The screen emphasizes a per-day amount while the actual billing period and total recurring charge are less prominent."
+    - "The user sees a low daily price near the CTA but must inspect smaller text to understand the monthly, quarterly, or annual charge."
+  false_positive_traps:
+    - "Do not flag when the daily equivalent is secondary and the real charge amount, billing period, and renewal cadence are equally or more prominent."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/A.6, genesis/C.8, genesis/E.8]
+
+- id: nominal-price-framing
+  name: "Nominal entry-price framing"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "A very low access price is presented as the primary price while a later recurring subscription price is less prominent."
+    - "The copy suggests a small one-time task fee even though accepting the offer starts a higher recurring charge."
+  false_positive_traps:
+    - "Do not flag when the nominal price is explicitly labeled as an introductory subscription price and the following renewal amount is displayed next to it."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/B.5]
+
+- id: one-time-price-framing
+  name: "One-time price framing"
+  family: disclosure
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "The payment confirmation or form highlights only the immediate charge, creating a one-time-purchase impression."
+    - "Recurring billing terms are absent or visually separated from the final payment action."
+  false_positive_traps:
+    - "Do not flag a genuinely one-time product, or a subscription checkout that clearly labels the immediate charge as part of an auto-renewing plan."
+  maps_to_norms: [us-rosca-4-1, us-rosca-4-2, us-ftc-5a]
+  example_cases: [genesis/D.6]
+
+- id: trial-framing
+  name: "Trial-first subscription framing"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "A trial, reading, or short initial experience is presented as the main purchase while paid renewal is de-emphasized."
+    - "The screen encourages the user to start now without giving equal prominence to what happens after the trial."
+  false_positive_traps:
+    - "Do not flag when the trial automatically ends without billing or when conversion terms are clear and conspicuous before signup."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/D.1, adobe/plan-selection-08, nutraclick/customer-info-07]
+
+- id: trial-price-framing
+  name: "Trial price framing"
+  family: disclosure
+  stage: commit
+  severity_default: high
+  detection_cues:
+    - "The user chooses or sees a trial price while the later regular price is weaker, hidden, or separated from the choice."
+    - "The page makes the trial price feel like the complete economic decision despite an automatic paid conversion."
+  false_positive_traps:
+    - "Do not flag when the regular post-trial price and cancellation deadline are adjacent to each trial price option."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/D.4]
+
+- id: misleading-trial-period
+  name: "Misleading trial period"
+  family: disclosure
+  stage: hide
+  severity_default: high
+  detection_cues:
+    - "The visible trial length is longer or simpler than the actual cancellation deadline or billing trigger."
+    - "The screen says the user has a stated number of days, but fine print requires cancellation earlier to avoid the charge."
+  false_positive_traps:
+    - "Do not flag when the trial length, charge date, and last cancellation date are stated together in plain language."
+  maps_to_norms: [us-rosca-4-1, us-ftc-5a]
+  example_cases: [genesis/C.8, nutraclick/customer-info-07, nutraclick/checkout-page-08]
+
+- id: payment-without-renewal-disclosure
+  name: "Payment step without renewal disclosure"
+  family: disclosure
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "A payment overlay, wallet sheet, or card form can be submitted without showing the auto-renewing subscription terms."
+    - "The payment surface shows only the selected price or product name while omitting renewal cadence, amount, or cancellation terms."
+  false_positive_traps:
+    - "Do not flag when the payment surface itself or a mandatory immediately preceding review step clearly shows the recurring terms before payment is authorized."
+  maps_to_norms: [us-rosca-4-1, us-rosca-4-2, us-ftc-5a]
+  example_cases: [genesis/A.7, genesis/C.7, genesis/E.10, adobe/payment-entry-10]
+
+- id: payment-without-clear-disclosure
+  name: "Payment without clear material disclosure"
+  family: consent
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "The user can pay while material terms are only in weak, distant, conflicting, or hard-to-read disclosure text."
+    - "Express checkout, card, or payment buttons dominate the screen while key billing terms are not presented as part of the payment decision."
+    - "Legally material terms are distinguished mostly by color or fine print while the payment controls use stronger size, contrast, color, or motion."
+  false_positive_traps:
+    - "Do not flag when the user must review material terms in a clear summary and affirmatively consent before payment can be submitted."
+  maps_to_norms: [us-rosca-4-1, us-rosca-4-2, us-ftc-5a, eu-crd-8-2]
+  example_cases: [genesis/B.6, adobe/payment-entry-10, nutraclick/checkout-page-08]
+
+- id: email-before-price
+  name: "Email gate before price"
+  family: disclosure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "The funnel asks for an email address to receive results, files, or recommendations before showing the price."
+    - "The email gate appears after task effort, making the next paid step feel like a continuation rather than a separate purchase decision."
+  false_positive_traps:
+    - "Do not flag a standalone newsletter, account creation step, or saved-progress feature when no hidden purchase pressure follows."
+  maps_to_norms: [us-ftc-5a, us-rosca-4-1]
+  example_cases: [genesis/B.4, genesis/C.4]
+
+- id: free-claim
+  name: "Free claim contradicted by paid funnel"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Ad or landing copy says the product, task, or download is free but the funnel later requires payment or starts a subscription."
+    - "The user invests effort under a free-use impression before price or subscription terms appear."
+  false_positive_traps:
+    - "Do not flag when the screen clearly distinguishes free features from paid features before the user starts the paid task."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/B.1, epic_games/fortnite-store-03]
+
+- id: money-back-misdirection
+  name: "Money-back guarantee misdirection"
+  family: disclosure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "A guarantee, refund badge, or risk-free claim receives stronger visual treatment than renewal, cancellation, or eligibility limits."
+    - "The refund promise is placed near the CTA while qualifying conditions are small, distant, missing, or deferred."
+  false_positive_traps:
+    - "Do not flag when refund scope, deadline, exclusions, and claim process are stated clearly before purchase."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.6]
+
+- id: health-adjacent-claim
+  name: "Health-adjacent benefit claim"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The funnel uses wellness, mental health, fitness, medical, cognitive, or body-improvement claims to increase perceived need."
+    - "Health-related promises appear before clear pricing or renewal terms and influence the purchase decision."
+  false_positive_traps:
+    - "Do not flag neutral category descriptions or substantiated claims that include material limitations and are not tied to hidden billing."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.5, genesis/E.1, genesis/E.6]
+
+- id: authority-claim
+  name: "Authority-based claim"
+  family: disclosure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "The screen invokes experts, science, psychology, institutions, or professional authority to validate the product."
+    - "Authority language supports the purchase decision while support, qualifications, or limits are absent or weak."
+  false_positive_traps:
+    - "Do not flag when the authority claim is specific, verifiable, properly qualified, and not used to distract from material terms."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.2]
+
+- id: outcome-promise
+  name: "Outcome promise"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The page predicts a concrete improvement, transformation, or result if the user buys or follows the plan."
+    - "The promised outcome is used as a purchase driver while material limits, evidence, or typicality are missing."
+  false_positive_traps:
+    - "Do not flag when the statement is clearly aspirational or supported with conspicuous limitations and evidence."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.5]
+
+- id: outcome-teaser
+  name: "Outcome teaser"
+  family: disclosure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "The user is told a personal result, score, archetype, or answer is ready but cannot see the meaningful output without continuing toward payment."
+    - "The teaser implies a uniquely personal insight while withholding the commercial terms."
+  false_positive_traps:
+    - "Do not flag when the teaser is clearly non-personal entertainment or the price is disclosed before the user invests significant effort."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/D.3]
+
+- id: tailored-plan-claim
+  name: "Tailored-plan claim"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The screen claims a plan is tailored to personal answers, body data, age, goals, or preferences."
+    - "The tailoring claim is central to the value proposition but the basis, limits, or generic nature of the plan is not explained."
+  false_positive_traps:
+    - "Do not flag when the customization is real, specific, and not used to delay or weaken price and renewal disclosures."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/E.6]
+
+- id: fake-analysis
+  name: "Simulated analysis"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "A loading bar, analysis animation, or processing screen claims to analyze answers, files, profile data, or lifestyle data."
+    - "The analysis appears generic, fixed, or unverifiable while increasing perceived personalization before payment."
+  false_positive_traps:
+    - "Do not flag when the system actually performs a disclosed analysis and does not use the animation to obscure commercial terms."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/C.3, genesis/E.3]
+
+- id: false-personalization
+  name: "False personalization"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The result or recommendation is presented as personal even though the same negative or purchase-driving output appears regardless of inputs."
+    - "User answers, photos, or profile details are reflected back mainly to create trust or urgency, not meaningful customization."
+  false_positive_traps:
+    - "Do not flag real personalization that is explained, limited, and not paired with hidden commercial terms."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.3, genesis/E.5]
+
+- id: missing-express-consent
+  name: "Missing express informed consent"
+  family: consent
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "The user can be charged through a subscription, trial conversion, add-on, or recurring feature without a separate affirmative consent signal."
+    - "The payment action does not clearly say that clicking authorizes recurring billing or an additional paid product."
+  false_positive_traps:
+    - "Do not flag when the user actively selects the recurring feature and confirms it after clear disclosure of price, cadence, and cancellation terms."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a]
+  example_cases: [genesis/A.7, genesis/C.6, genesis/E.10, epic_games/item-shop-purchase-06a]
+
+- id: preselected-plan
+  name: "Preselected plan"
+  family: consent
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "A subscription plan is selected by default before the user makes an active choice."
+    - "The default option is visually marked as best, popular, or discounted while more neutral alternatives are weaker."
+  false_positive_traps:
+    - "Do not flag when the preselection is clearly labeled, easy to change, and does not hide a materially worse renewal or commitment."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a]
+  example_cases: [genesis/A.6, adobe/plan-selection-08, chegg/pause-retention-06b]
+
+- id: single-option-cta
+  name: "Single-option CTA"
+  family: consent
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "A modal or offer gives only one dominant action to accept, claim, or continue while refusal is missing, hidden, or delayed."
+    - "The user is pushed into the commercial path without a comparable neutral way to decline or review alternatives."
+  false_positive_traps:
+    - "Do not flag when the screen is an ordinary next-step flow with no material paid consequence and back/close options are visible."
+  maps_to_norms: [us-ftc-5a, us-rosca-4-2]
+  example_cases: [genesis/C.5, genesis/C.6]
+
+- id: bundled-consent
+  name: "Bundled consent"
+  family: consent
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "One click is treated as consent to several distinct terms, products, subscriptions, or data uses without separate choices."
+    - "Agreement text is broad or buried, so the user cannot tell which charge or renewal feature they are authorizing."
+  false_positive_traps:
+    - "Do not flag when each material charge or recurring feature is separately disclosed and the user can accept or reject it independently."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a]
+  example_cases: []
+
+- id: prechecked-paid-option
+  name: "Prechecked paid option"
+  family: consent
+  stage: commit
+  severity_default: high
+  detection_cues:
+    - "A paid add-on, donation, insurance product, warranty, support plan, or subscription is selected by default."
+    - "The total price increases unless the user notices and unchecks the option."
+  false_positive_traps:
+    - "Do not flag when the option is free, required for the product, or actively selected by the user after clear pricing."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a, us-ftc-5n, uk-ccr-40, eu-crd-22]
+  example_cases: [uk_marks_electrical/2-37, uk_marks_electrical/3-38]
+
+- id: urgency-timer
+  name: "Artificial urgency timer"
+  family: pressure
+  stage: commit
+  severity_default: high
+  detection_cues:
+    - "A countdown timer, clock icon, ending-soon message, or dynamic CTA suggests the offer will expire imminently."
+    - "The urgency signal appears next to the price, discount, or CTA and competes with subscription or cancellation disclosures."
+    - "The timer resets, extends, or appears generic rather than tied to a real inventory or promotion deadline."
+    - "A shrinking progress bar, calendar marked for today, fire or hot-deal icon, or animated timer reinforces imminent expiry without a substantiated deadline."
+    - "A toast or inline message extends the discount, restarts the timer, or says the offer was restored after the user waits or hesitates."
+  false_positive_traps:
+    - "Do not flag a real deadline or expiring inventory when the basis is accurate and material terms remain clear despite the timer."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.6, genesis/C.6, genesis/E.8]
+
+- id: discount-pressure
+  name: "Discount pressure"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "The interface presents a sudden exclusive discount, rescue offer, or last chance price to accelerate acceptance."
+    - "Discount messaging is stronger than the total price, renewal terms, or cancellation consequences."
+  false_positive_traps:
+    - "Do not flag ordinary discounting when the regular price, renewal price, and offer conditions are clear before purchase."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/C.5, genesis/E.12]
+
+- id: discount-wheel
+  name: "Discount wheel"
+  family: pressure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "A wheel, lottery, scratch card, or game-like component invites the user to win a discount or prize."
+    - "The game implies chance, scarcity, or a special reward while steering the user toward a preplanned purchase path."
+    - "The interface advertises large jackpot or prize-range outcomes, but actual outcomes are limited to ordinary coupons or undisclosed predetermined discounts."
+  false_positive_traps:
+    - "Do not flag transparent gamified discounts when odds, prize range, and offer terms are clear and the game is not tied to hidden billing."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/E.7]
+
+- id: forced-discount
+  name: "Forced winning discount"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The user appears to win a discount regardless of input or chance."
+    - "The interface presents the discount as an exceptional personal outcome without disclosing that it is standard or predetermined."
+    - "Every spin, scratch, or selection lands on the claimed best discount while still being framed as luck or personal selection."
+  false_positive_traps:
+    - "Do not flag a universal promotion that is clearly labeled as available to everyone."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/E.7]
+
+- id: discount-anchoring
+  name: "Discount anchoring"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "A high crossed-out price, large percentage discount, or savings badge anchors the user on a deal before they understand recurring costs."
+    - "The discount is visually dominant while subscription, renewal, or add-on terms are weaker."
+  false_positive_traps:
+    - "Do not flag genuine price comparison when the reference price is supportable and the recurring economics are equally visible."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.8]
+
+- id: personalization-lure
+  name: "Personalization lure"
+  family: pressure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "The funnel invites the user into a personalized quiz, assessment, profile, reading, or plan before commercial terms are visible."
+    - "The promise of a custom result increases commitment before price, renewal, or cancellation terms are presented."
+  false_positive_traps:
+    - "Do not flag a transparent quiz or configurator when price and subscription terms are visible before meaningful commitment."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.1, genesis/C.1, genesis/E.1]
+
+- id: commitment-escalation
+  name: "Commitment escalation"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "The flow asks for repeated small commitments before the first clear commercial decision."
+    - "Each step implies progress toward a result, making it harder for the user to abandon the funnel when price finally appears."
+  false_positive_traps:
+    - "Do not flag normal onboarding when the commercial offer is clear and the user can exit without losing a paid or time-sensitive benefit."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.4, genesis/C.2, genesis/E.4]
+
+- id: task-sunk-cost
+  name: "Task sunk-cost pressure"
+  family: pressure
+  stage: commit
+  severity_default: high
+  detection_cues:
+    - "The user performs the core task, such as uploading or editing a file, before seeing the price."
+    - "Payment appears after work has been completed or the output is ready, exploiting the user's reluctance to lose effort."
+  false_positive_traps:
+    - "Do not flag when the user is told before starting the task that payment or subscription will be required to export, save, or continue."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/B.2, genesis/B.3, genesis/B.4]
+
+- id: anxiety-trigger
+  name: "Anxiety trigger"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The page gives the user a negative, alarming, or stigmatizing assessment that creates fear or urgency to buy."
+    - "The diagnosis-like or risk-like result appears before clear evidence, qualification, or pricing terms."
+  false_positive_traps:
+    - "Do not flag balanced risk education that avoids overstating certainty and is not used to push hidden billing."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/A.3]
+
+- id: motivation-loop
+  name: "Motivation loop"
+  family: pressure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "Motivational interstitials, progress content, or encouragement screens keep the user moving before the offer is fully disclosed."
+    - "The flow alternates questions and emotional reinforcement to increase commitment before price appears."
+  false_positive_traps:
+    - "Do not flag ordinary educational or motivational content that is not tied to delayed commercial disclosure."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/E.2]
+
+- id: name-your-price
+  name: "Name-your-price pressure"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "The user is invited to choose a comfortable initial price, increasing ownership of the purchase decision."
+    - "The chosen amount is not the full recurring economic commitment, or the later subscription price is less visible."
+  false_positive_traps:
+    - "Do not flag genuine pay-what-you-want pricing with no hidden renewal or mandatory future charge."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: [genesis/D.4]
+
+- id: fake-social-proof
+  name: "Unverified social proof"
+  family: pressure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "A checkout or sales-funnel surface presents reviews, testimonials, ratings, comments, or endorsements as coming from Facebook, Instagram, LinkedIn, Trustpilot, Google Reviews, Yelp, Reddit, X, TikTok, an app store, or another social or review platform, but authenticity evidence was not supplied with the screenshot."
+    - "The review module appears near an offer, price, CTA, plan selector, registration control, or payment step and materially supports the conversion decision."
+    - "Record the whole review block and its source cues even when they are small or low-prominence: platform logos or marks, stars, reviewer names, dates, likes, replies, review counts, platform styling, badges, and nearby source text. Treat a carousel or testimonial section as one review module."
+    - "Customer logos, company-client strips, celebrity images, or creator endorsements imply real users or brand relationships without a source, date, permission signal, or verification link."
+    - "Large numeric claims such as review counts, five-star totals, members served, or success rates appear without methodology, source platform, sample size, or update date."
+  false_positive_traps:
+    - "Do not flag ordinary footer social-media icons; share, follow, or login buttons; or platform logos that are not attached to a review or endorsement."
+    - "Do not flag clearly illustrative or reconstructed testimonials, or a supplied official widget or directly traceable source whose visible details match the displayed module."
+    - "Do not flag ordinary customer reviews that are not materially used to influence the purchase decision."
+    - "A missing visibly printed URL in a screenshot does not prove that a widget is not clickable and does not establish fabrication."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-awards
+  name: "Fake awards and badges"
+  family: pressure
+  stage: lure
+  severity_default: medium
+  detection_cues:
+    - "Award badges, ranking ribbons, trust seals, or best-product claims are displayed without a source, date, or issuing body."
+    - "The badge suggests independent validation but is not clickable or cannot be verified from the cited authority."
+  false_positive_traps:
+    - "Do not flag a real award or certification when the source, date, criteria, and limitations are easy to verify."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: before-after-social-proof
+  name: "Extreme before-after social proof"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Before-after images imply dramatic transformation without typicality, timeframe, conditions, or evidence."
+    - "The before state is visually shamed while the after state is idealized and placed near the purchase action."
+  false_positive_traps:
+    - "Do not flag realistic before-after material that is substantiated, representative, qualified, and not tied to hidden billing."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: pseudo-gifts
+  name: "Pseudo gifts and free bonuses"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "The screen calls a bonus, gift, or extra free while it is conditioned on buying, subscribing, or accepting recurring billing."
+    - "The gift framing distracts from the total price, renewal amount, or cancellation terms."
+  false_positive_traps:
+    - "Do not flag a genuinely free bonus whose conditions and recurring effects are clear before purchase."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-promo-code-countdown
+  name: "Fake promo code countdown"
+  family: pressure
+  stage: commit
+  severity_default: medium
+  detection_cues:
+    - "A promo code appears automatically while a timer suggests it will expire soon."
+    - "The code, discount, or expiry behaves like a standard offer but is presented as a personal or limited opportunity."
+  false_positive_traps:
+    - "Do not flag a real limited promo when the expiry, eligibility, and recurring terms are accurate and visible."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-installs-purchases
+  name: "Fake installs or purchases"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The screen claims live installs, purchases, viewers, or active users without a verifiable source."
+    - "Counters are static, rounded, or suspiciously timed but are presented as real demand or popularity."
+  false_positive_traps:
+    - "Do not flag real analytics counters when their basis is truthful, updated, and not used to imply false scarcity."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-predictive-progress-graphs
+  name: "Fake predictive progress graphs"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The screen shows a predicted future improvement curve, forecast, or guaranteed progress line without evidence or qualifications."
+    - "The graph implies certainty or personalization and is used to motivate purchase."
+  false_positive_traps:
+    - "Do not flag a clearly labeled illustrative forecast that includes assumptions, uncertainty, and substantiation."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: misused-scientific-evidence
+  name: "Misused scientific evidence"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The funnel cites science, studies, clinical language, or research logos without a clear source or with an irrelevant source."
+    - "Scientific framing is used to validate the product while limitations, typicality, or evidentiary support are missing."
+    - "Claims such as clinically proven, scientifically validated, or peer-reviewed appear without study title, journal, DOI, author, date, or a clear explanation of relevance."
+  false_positive_traps:
+    - "Do not flag accurate, relevant, and accessible references that are not overstated and are not used to hide material terms."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-media-features
+  name: "Fake media features"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Known media logos or as-seen-in claims imply coverage without links to the actual articles."
+    - "The feature claim is unverifiable or refers to paid placement while appearing editorial."
+  false_positive_traps:
+    - "Do not flag real press mentions when the cited article or segment is accessible and accurately represented."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-university-endorsement
+  name: "Fake university endorsement"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "University, medical school, lab, or academic logos imply approval without authorization or a clear relationship."
+    - "Academic affiliation is used as a trust signal for a paid plan, diagnosis-like result, or health-adjacent product."
+  false_positive_traps:
+    - "Do not flag truthful education, employment, or research credentials when they do not imply institutional endorsement."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-external-reviews
+  name: "Likely fabricated external reviews"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Supplied source or official-widget evidence materially conflicts with the displayed platform review, rating, count, reviewer details, date, or badge, creating a concrete fabrication concern without conclusively establishing it."
+    - "Supplied comparison evidence shows the same or highly similar review content presented as distinct platform feedback across pages, locales, or campaigns, but independent confirmation is incomplete."
+    - "Do not assign this pattern from appearance alone, platform styling, a static screenshot, a small logo, or the absence of a visibly printed or testable link."
+  false_positive_traps:
+    - "Do not use this pattern when authenticity is merely unresolved; use Unverified social proof instead."
+    - "Do not flag a supplied official widget or directly traceable source whose visible text, rating, date, reviewer details, platform identifier, and other material cues match."
+  maps_to_norms: [us-ftc-5a, us-ftc-reviews-rule]
+  example_cases: []
+
+- id: fake-social-media-reviews
+  name: "Confirmed or operator-confirmed fabricated platform reviews"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Authenticity evidence supplied with the screenshot establishes that platform-attributed reviews, testimonials, ratings, comments, endorsements, or engagement indicators are fake, fabricated, purchased, or presented without a genuine underlying customer experience."
+    - "The operator answers Yes to the grouped authenticity question; record the fact exactly as operator-confirmed fake or fabricated social proof and state that it was not independently verified."
+    - "When the confirmed or operator-confirmed module materially supports conversion near the offer, price, CTA, plan selector, registration control, or payment step, classify the finding as High severity and re-run the normal scoring rubric."
+  false_positive_traps:
+    - "Appearance, platform styling, a static block, a missing visibly printed URL, or unresolved authenticity is not confirmation of fabrication."
+    - "A No or Unknown answer does not activate this pattern. A No answer without supporting source information is merchant-asserted genuine; not independently verified and remains Unverified social proof when material."
+    - "Do not flag clearly illustrative or reconstructed testimonials or a matching supplied official widget or directly traceable source."
+  maps_to_norms: [us-ftc-5a, us-ftc-reviews-rule, uk-dmcc-sch20-13]
+  example_cases: []
+
+- id: sexualized-attention-hook
+  name: "Sexualized attention hook"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "Sexualized imagery or copy is used to attract attention for a product where that content is not materially relevant."
+    - "The imagery is placed near price, discount, or payment controls and functions as an emotional distraction."
+  false_positive_traps:
+    - "Do not flag sexual content that is intrinsic to the product category, age-gated where appropriate, and not used to hide commercial terms."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: fake-dating-interlocutors
+  name: "Fake dating interlocutors"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The user receives unusually fast or idealized matches, messages, or typing indicators that encourage paid replies."
+    - "Chat access, gifts, message viewing, or reply functions are monetized while operator, bot, or test-account use is not clearly disclosed."
+    - "A burst of matches or messages appears near trial expiry, after inactivity, or immediately before a paid chat action."
+    - "Attempts to move to video, phone, or a real meeting repeatedly fail while the in-app paid conversation continues."
+  false_positive_traps:
+    - "Do not flag real dating activity when bot, moderation, promotional, or operator accounts are clearly disclosed and not used to trigger payment."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: shame-based-pressure
+  name: "Shame-based pressure"
+  family: pressure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The screen depicts the user's current state as lazy, unattractive, lonely, unhealthy, or socially unacceptable."
+    - "The product is framed as the path from a shamed current self to an approved future self, immediately before the CTA."
+    - "Quiz results, onboarding copy, or illustrations use derogatory second-person labels, social-rejection scenarios, or norm-enforcing language to make the user feel deficient before purchase."
+    - "The flow offers no balanced or supportive framing of the user's current state and presents the paid product as the only path back to normal or acceptable."
+  false_positive_traps:
+    - "Do not flag supportive coaching or balanced problem framing that avoids humiliation and does not pressure hidden billing."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: sensitive-photo-negative-feedback
+  name: "Sensitive photo collection with negative feedback"
+  family: disclosure
+  stage: lure
+  severity_default: high
+  detection_cues:
+    - "The flow asks for body, face, skin, hand, health, or other sensitive photos before explaining storage, access, deletion, and use."
+    - "The photo analysis output is consistently negative or anxiety-inducing and is followed by a paid plan or subscription CTA."
+    - "The upload prompt implies the user cannot see the truth, full result, or meaningful diagnosis without sharing sensitive images."
+    - "The service combines photos with age, weight, health, or profile answers to produce personalized messages that emphasize flaws, risk, or urgency."
+  false_positive_traps:
+    - "Do not flag when photo use is clearly explained, optional, privacy controls are visible, deletion is easy, and feedback is balanced."
+  maps_to_norms: [us-ftc-5a]
+  example_cases: []
+
+- id: hidden-upsell-subscription
+  name: "Hidden upsell subscription"
+  family: upsell
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "A post-purchase or checkout add-on is presented as a one-time extra but creates a separate subscription or recurring charge."
+    - "The add-on renewal terms are smaller, lower contrast, or more distant than the add button."
+  false_positive_traps:
+    - "Do not flag an add-on when the price, billing cadence, renewal, and cancellation terms are clear before acceptance."
+  maps_to_norms: [us-rosca-4-1, us-rosca-4-2, us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/A.8, genesis/E.11, genesis/E.14]
+
+- id: one-click-upsell
+  name: "One-click upsell"
+  family: upsell
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "A single button after purchase immediately adds another paid product, feature, or subscription."
+    - "The button copy emphasizes unlocking, continuing, or improving results rather than clearly stating a new charge."
+  false_positive_traps:
+    - "Do not flag when the one-click action is preceded by a clear purchase summary and undo/cancel path."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/A.9]
+
+- id: unauthorized-add-on
+  name: "Unauthorized add-on"
+  family: upsell
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "The user is charged for an add-on they did not clearly select or understand as a separate paid product."
+    - "The add-on path relies on ambiguous copy, accidental clicks, repeated prompts, or missing price disclosure."
+  false_positive_traps:
+    - "Do not flag when the user makes an explicit, informed, separately confirmed selection for the add-on."
+  maps_to_norms: [us-rosca-4-2, us-ftc-5a, us-ftc-5n, uk-ccr-40]
+  example_cases: [genesis/A.9, genesis/E.11, genesis/E.14, uk_marks_electrical/2-37, uk_marks_electrical/3-38]
+
+- id: hard-to-close-upsell
+  name: "Hard-to-close upsell"
+  family: upsell
+  stage: block
+  severity_default: medium
+  detection_cues:
+    - "The close, skip, or decline control for an upsell is tiny, low contrast, delayed, or placed away from the main action."
+    - "The accept button is visually dominant while rejection requires more precision or attention."
+  false_positive_traps:
+    - "Do not flag when accept and decline controls are both visible, readable, and easy to use."
+  maps_to_norms: [us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/E.11]
+
+- id: obstruction-to-decline
+  name: "Obstruction to decline"
+  family: upsell
+  stage: block
+  severity_default: high
+  detection_cues:
+    - "Rejecting an upsell opens another modal, discount, warning, or reconsideration step instead of honoring the refusal."
+    - "The decline path is longer, more confusing, or more emotionally loaded than the accept path."
+  false_positive_traps:
+    - "Do not flag one neutral confirmation step when the user can still decline clearly and without repeated pressure."
+  maps_to_norms: [us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/E.12, genesis/E.13, chegg/coupon-retention-06a, epic_games/cancel-purchase-10b]
+
+- id: repeated-prompt
+  name: "Repeated upsell prompt"
+  family: upsell
+  stage: block
+  severity_default: medium
+  detection_cues:
+    - "The same paid offer or add-on returns after the user closes or rejects it."
+    - "Each refusal leads to another prompt, lower price, or reshuffled modal before the user reaches the expected destination."
+  false_positive_traps:
+    - "Do not flag a later offer in a materially different context after a reasonable interval."
+  maps_to_norms: [us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/E.13, chegg/mathway-second-confirm-13]
+
+- id: no-price-upsell
+  name: "No-price upsell"
+  family: upsell
+  stage: charge
+  severity_default: high
+  detection_cues:
+    - "An upsell screen asks the user to accept, unlock, or continue without stating the price."
+    - "The offer appears after purchase, when the user may assume it is part of confirmation or onboarding."
+  false_positive_traps:
+    - "Do not flag free onboarding steps or add-ons whose price is clearly displayed before the accept action."
+  maps_to_norms: [us-rosca-4-1, us-rosca-4-2, us-ftc-5a, us-ftc-5n]
+  example_cases: [genesis/E.14]
+
+- id: hard-cancellation
+  name: "Difficult cancellation"
+  family: cancellation
+  stage: block
+  severity_default: high
+  detection_cues:
+    - "The cancellation path is materially harder to find, complete, or confirm than the signup path."
+    - "The flow relies on extra account layers, support contact, retention prompts, unclear status, or post-cancellation charges."
+  false_positive_traps:
+    - "Do not flag ordinary identity or fraud-prevention checks when cancellation remains simple, online, and comparable to enrollment."
+  maps_to_norms: [us-rosca-4-3, us-ftc-5n, us-ftc-5a, uk-dmcc-228]
+  example_cases: [genesis/A.9, genesis/B.6, chegg/account-overview-04]
+
+- id: asymmetric-cancellation-path
+  name: "Asymmetric cancellation path"
+  family: cancellation
+  stage: block
+  severity_default: high
+  detection_cues:
+    - "Signup or upgrade takes one or two clicks, but cancellation requires many screens, contacts, delays, or separate channels."
+    - "The cancel option is visually weaker or harder to locate than renew, keep, or upgrade controls."
+  false_positive_traps:
+    - "Do not flag when cancellation is no more burdensome than enrollment and the final status is clear immediately."
+  maps_to_norms: [us-rosca-4-3, us-ftc-5n, uk-dmcc-228]
+  example_cases: [chegg/account-overview-04]
+
+- id: cancellation-contact-channel-mismatch
+  name: "Cancellation channel mismatch"
+  family: cancellation
+  stage: block
+  severity_default: high
+  detection_cues:
+    - "The user can subscribe online but must call, email, chat with support, or use a different platform to cancel."
+    - "The cancellation channel is not disclosed before purchase or is buried in account settings or support documentation."
+  false_positive_traps:
+    - "Do not flag when the same channel used to subscribe offers a clear, effective cancellation mechanism."
+  maps_to_norms: [us-rosca-4-3, us-ftc-5n]
+  example_cases: [chegg/bibme-go-to-chegg-10]
+
+- id: refund-obstruction
+  name: "Refund obstruction"
+  family: cancellation
+  stage: block
+  severity_default: medium
+  detection_cues:
+    - "The refund path is hidden, confusing, conditional, or routed through retention scripts despite a prominent money-back claim."
+    - "The user is told cancellation is possible but the practical refund or stop-billing mechanism is unclear."
+  false_positive_traps:
+    - "Do not flag clearly disclosed refund limits or ordinary eligibility checks that are easy to complete."
+  maps_to_norms: [us-ftc-5a, us-ftc-5n, us-rosca-4-3]
+  example_cases: [epic_games/cancel-purchase-10b]
+
+- id: post-cancellation-billing
+  name: "Post-cancellation billing"
+  family: cancellation
+  stage: block
+  severity_default: high
+  detection_cues:
+    - "The interface does not clearly confirm cancellation, renewal stop date, or future billing status."
+    - "Users may remain enrolled, be billed again, or be routed to another paid plan after attempting to cancel."
+  false_positive_traps:
+    - "Do not flag when cancellation status, final access date, and no-future-charge confirmation are clear and reliable."
+  maps_to_norms: [us-rosca-4-3, us-ftc-5n, us-ftc-5a]
+  example_cases: []

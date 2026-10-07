@@ -1,0 +1,130 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/nutraclick.json",
+  "case_id": "nutraclick",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/nutraclick.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "nutraclick",
+        "counts": [
+          "ROSCA Section 4(1)",
+          "FTC Section 5(a)",
+          "Telemarketing Sales Rule"
+        ],
+        "court": "C.D. Cal., Case No. 2:20-cv-08612",
+        "filed": "2020-09-21",
+        "odds_notes": "Focused checkout-disclosure case: the complaint pleads online free-trial pages that failed to clearly disclose the billing date for the monthly membership charge.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed in complaint",
+        "procedural_posture": "FTC complaint, federal court",
+        "source_file": "nutraclick-1_-_complaint_-_de_novo.pdf",
+        "title": "FTC v. NutraClick, LLC - free-trial negative option and early billing"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/nutraclick/_case.md",
+      "semantic_sha256": "d0523a4c570571595afaaad830950d9adb02dc22267389fa05bf324f0e50bf64"
+    },
+    {
+      "body": "",
+      "container_path": "cases/nutraclick.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 2,
+        "cards": 2,
+        "case_id": "nutraclick",
+        "evidence_anchor_count": 2,
+        "figures": [
+          "customer-info-07",
+          "checkout-page-08"
+        ],
+        "norms": 2,
+        "optional_visual_evidence_count": 2,
+        "pattern_ids_provisional": [
+          "misleading-trial-period",
+          "payment-without-clear-disclosure",
+          "small-print-renewal",
+          "trial-framing"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/nutraclick/_coverage.json",
+      "semantic_sha256": "d621b3b897346dcd058babfdf2ec33e9db6db29a4aa69ee3951b8ed293315f81"
+    },
+    {
+      "body": "EVIDENCE. The checkout screenshot states an 18-day free trial and a future product shipment while the operative early billing deadline remains unclear.\nLEGAL REASONING. The complaint alleges the checkout page did not clearly and conspicuously disclose that consumers had to call before the last day of the advertised trial to avoid the monthly membership charge.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/nutraclick.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "nutraclick",
+        "complaint_paras": "29-31, 44-50",
+        "figure_id": "checkout-page-08",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "payment-without-clear-disclosure",
+          "misleading-trial-period"
+        ],
+        "product": "ProbioSlim / NutraClick",
+        "screen_type": "checkout_page",
+        "source_anchor_ids": [
+          "anc-969e543ab2083bd5"
+        ],
+        "source_file": "nutraclick-1_-_complaint_-_de_novo.pdf",
+        "source_id": "src-81edca8eb0b0ac92",
+        "source_page": "8",
+        "source_ref": "Figure 2 - Desktop Checkout Page"
+      },
+      "kind": "case",
+      "logical_path": "cases/nutraclick/checkout-page-08.md",
+      "semantic_sha256": "0702396cd4bff5cfa258a2d526d2fe43ab773562442cc7863358b5003fc12daf"
+    },
+    {
+      "body": "EVIDENCE. The customer-information screenshot frames the offer as a free trial with a membership note in much smaller text.\nLEGAL REASONING. The complaint alleges the visible statement that the monthly VIP fee would be charged after the free-trial period was false because consumers were charged on the last day of the trial unless they called earlier.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(1), 15 U.S.C. 8403(1).",
+      "container_path": "cases/nutraclick.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "nutraclick",
+        "complaint_paras": "27-28, 44-50",
+        "figure_id": "customer-info-07",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-1"
+        ],
+        "patterns": [
+          "trial-framing",
+          "misleading-trial-period",
+          "small-print-renewal"
+        ],
+        "product": "ProbioSlim / NutraClick",
+        "screen_type": "customer_information_page",
+        "source_anchor_ids": [
+          "anc-109bf542b0b12fb8"
+        ],
+        "source_file": "nutraclick-1_-_complaint_-_de_novo.pdf",
+        "source_id": "src-81edca8eb0b0ac92",
+        "source_page": "7",
+        "source_ref": "Figure 1 - Desktop Customer Information Page"
+      },
+      "kind": "case",
+      "logical_path": "cases/nutraclick/customer-info-07.md",
+      "semantic_sha256": "a6ff8f63f4277800901a18e23721c9c9eacfcecc4e4cfb8a9505b14db7ce55f4"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 2,
+    "anchor_reference_count": 2,
+    "case_cards": 2,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 4,
+    "semantic_sha256": "592fd13511be1b9cb3883f9ad97ec7db09c7fa661a84071c8728e2553ac756ee"
+  }
+}

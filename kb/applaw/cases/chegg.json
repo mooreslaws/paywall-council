@@ -1,0 +1,474 @@
+{
+  "artifact_storage": "compact-json-v1",
+  "bundle_path": "cases/chegg.json",
+  "case_id": "chegg",
+  "records": [
+    {
+      "body": "",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "counts": [
+          "ROSCA Section 4(3)",
+          "FTC Section 5(a)"
+        ],
+        "court": "N.D. Cal., Case No. 5:25-cv-07827",
+        "filed": "2025-09-15",
+        "odds_notes": "Strong cancellation case: the complaint pleads multi-screen self-cancellation flows, buried links, retention prompts, and continued charges after attempted cancellation.",
+        "outcome": "source complaint card set",
+        "penalty": "not assessed in complaint",
+        "procedural_posture": "FTC complaint, federal court",
+        "source_file": "Chegg-Complaint_0.pdf",
+        "title": "FTC v. Chegg, Inc. - subscription cancellation mechanisms"
+      },
+      "kind": "case_header",
+      "logical_path": "cases/chegg/_case.md",
+      "semantic_sha256": "78073c60f98a9890c83f2917ade729b38efb5dd502b96059b5eb915453f129cf"
+    },
+    {
+      "body": "",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "assets": 0,
+        "bundled_asset_count": 0,
+        "card_count": 13,
+        "cards": 13,
+        "case_id": "chegg",
+        "evidence_anchor_count": 12,
+        "figures": [
+          "account-overview-04",
+          "orders-cancel-link-05",
+          "coupon-retention-06a",
+          "pause-retention-06b",
+          "mandatory-survey-07",
+          "perks-loss-08",
+          "mobile-perks-09a",
+          "mobile-perks-09b",
+          "bibme-go-to-chegg-10",
+          "mathway-billing-11",
+          "mathway-cancel-button-12a",
+          "mathway-confirm-modal-12b",
+          "mathway-second-confirm-13"
+        ],
+        "norms": 2,
+        "optional_visual_evidence_count": 13,
+        "pattern_ids_provisional": [
+          "asymmetric-cancellation-path",
+          "below-fold-disclosure",
+          "cancellation-contact-channel-mismatch",
+          "hard-cancellation",
+          "obstruction-to-decline",
+          "preselected-plan",
+          "repeated-prompt"
+        ]
+      },
+      "kind": "case_coverage",
+      "logical_path": "cases/chegg/_coverage.json",
+      "semantic_sha256": "70eae02ded7b876a6230d5160f31c82b45e126167d321cac3288288f0ca4e6ef"
+    },
+    {
+      "body": "EVIDENCE. The account overview screenshot shows account controls without a cancellation button or cancellation guidance.\nLEGAL REASONING. The complaint alleges consumers first had to locate the cancellation path through account layers, making cancellation materially harder than enrollment.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "17-22, 91-97",
+        "figure_id": "account-overview-04",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path"
+        ],
+        "product": "Chegg",
+        "screen_type": "account_overview",
+        "source_anchor_ids": [
+          "anc-0d05b08fcf9b9560"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "4",
+        "source_ref": "Chegg My Account overview"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/account-overview-04.md",
+      "semantic_sha256": "9f4b8671a4545bcccba8d2965888fc40351cb9a52d0fc293b9fe1b6a5b617377"
+    },
+    {
+      "body": "EVIDENCE. The BibMe account screenshot sends subscribers to Chegg rather than completing cancellation on the site where the account is managed.\nLEGAL REASONING. The complaint alleges several Chegg Writing Tools sites required consumers to leave that site and navigate to chegg.com to complete cancellation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "42-45, 91-97",
+        "figure_id": "bibme-go-to-chegg-10",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "cancellation-contact-channel-mismatch"
+        ],
+        "product": "Chegg",
+        "screen_type": "cross_site_cancel_redirect",
+        "source_anchor_ids": [
+          "anc-fb43465121859442"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "10",
+        "source_ref": "BibMe account page"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/bibme-go-to-chegg-10.md",
+      "semantic_sha256": "41a92550b29bb6d3fda5abce2aaad7ec3953b4ec10aad75f8eab6a5a9ab79c04"
+    },
+    {
+      "body": "EVIDENCE. The cancellation flow screenshot presents a discount offer with a dominant keep-subscription button and a weaker continue-cancellation link.\nLEGAL REASONING. The complaint characterizes this as an interruption of cancellation designed to reduce cancellations rather than a simple stop-recurring-charges mechanism.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "27-28, 83-87, 91-97",
+        "figure_id": "coupon-retention-06a",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "product": "Chegg",
+        "screen_type": "cancel_save_coupon",
+        "source_anchor_ids": [
+          "anc-afaabbf3a4634fda"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "6",
+        "source_ref": "Chegg coupon page"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/coupon-retention-06a.md",
+      "semantic_sha256": "8aafd1d270420152e337345f7436cba3c801e569579ed912bc8d1e417d10547e"
+    },
+    {
+      "body": "EVIDENCE. The survey screenshot requires a cancellation reason before the consumer can continue.\nLEGAL REASONING. The complaint states the continue button was disabled until a reason was selected, adding a mandatory step before cancellation could proceed.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "31-34, 88, 91-97",
+        "figure_id": "mandatory-survey-07",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "product": "Chegg",
+        "screen_type": "cancel_survey",
+        "source_anchor_ids": [
+          "anc-61edc52423905e88"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "7",
+        "source_ref": "Chegg cancellation survey"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mandatory-survey-07.md",
+      "semantic_sha256": "f0bd5b29603b7b392d29e8a37752f9eec42ef7c42f43725807ed8fcdd3c3c0e1"
+    },
+    {
+      "body": "EVIDENCE. The Mathway screenshot places cancellation inside account billing controls rather than presenting it as a direct stop-renewal action.\nLEGAL REASONING. The complaint alleges Mathway cancellation required several steps starting with sign-in, account management, and expansion of the billing section.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "51-52, 91-97",
+        "figure_id": "mathway-billing-11",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path"
+        ],
+        "product": "Chegg",
+        "screen_type": "billing_accordion",
+        "source_anchor_ids": [
+          "anc-f1ed7a3deda8aa85"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "11",
+        "source_ref": "Mathway billing accordion"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mathway-billing-11.md",
+      "semantic_sha256": "cbcc66ce0e0ac4cec4763a6806415e968ee4937436787ad2c9a624b11d6eb19c"
+    },
+    {
+      "body": "EVIDENCE. The Mathway billing screenshot requires the consumer to pass upgrade and pause options before reaching the cancellation button.\nLEGAL REASONING. The complaint alleges consumers may have to scroll past upgrade and pause options before reaching the cancellation control.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "53-54, 91-97",
+        "figure_id": "mathway-cancel-button-12a",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "product": "Chegg",
+        "screen_type": "billing_cancel_controls",
+        "source_anchor_ids": [
+          "anc-26f88e9aff7c15db"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "12",
+        "source_ref": "Mathway cancellation options"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mathway-cancel-button-12a.md",
+      "semantic_sha256": "28717b952d4436348c9b1a1f1e82e6251dfcefe089e60bebe7b18598b9134049"
+    },
+    {
+      "body": "EVIDENCE. The first confirmation modal adds a support-contact message before the consumer can confirm cancellation.\nLEGAL REASONING. The complaint alleges clicking cancel did not complete cancellation, but instead opened a modal requiring another confirmation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "54-56, 91-97",
+        "figure_id": "mathway-confirm-modal-12b",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "product": "Chegg",
+        "screen_type": "cancel_confirm_modal",
+        "source_anchor_ids": [
+          "anc-f2d08986573011ce"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "12",
+        "source_ref": "Mathway first confirmation modal"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mathway-confirm-modal-12b.md",
+      "semantic_sha256": "04d90855c7da6fd1d4a019b776a6cad0f3784a9972411c5c4d1aa776d62839ae"
+    },
+    {
+      "body": "EVIDENCE. The second confirmation modal repeats a cancellation confirmation after the first confirmation step.\nLEGAL REASONING. The complaint alleges that even clicking Confirm Cancellation did not complete cancellation until consumers passed another pop-up and clicked a second confirmation button.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "55-59, 91-98",
+        "figure_id": "mathway-second-confirm-13",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline",
+          "repeated-prompt"
+        ],
+        "product": "Chegg",
+        "screen_type": "second_cancel_confirm_modal",
+        "source_anchor_ids": [
+          "anc-c4b741d755f75e80"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "13",
+        "source_ref": "Mathway second confirmation modal"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mathway-second-confirm-13.md",
+      "semantic_sha256": "e52fd36df36d1aa71cb567b6c6101f0d3e0eb782cd7296f7943e7852091b740d"
+    },
+    {
+      "body": "EVIDENCE. The mobile screenshot shows a narrow cancellation view where the cancellation action is not immediately visible in the same way as the retained perks.\nLEGAL REASONING. The complaint alleges mobile users could not see the cancel button on the perks page without scrolling, adding friction to a recurring-charge stop mechanism.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "37-41, 91-97",
+        "figure_id": "mobile-perks-09a",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "below-fold-disclosure"
+        ],
+        "product": "Chegg",
+        "screen_type": "mobile_cancel_perks",
+        "source_anchor_ids": [
+          "anc-032167b9e88e3b3a"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "9",
+        "source_ref": "Chegg mobile cancellation flow"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mobile-perks-09a.md",
+      "semantic_sha256": "07acfc2c7bb83ad12883f51936e6aff7042112ce5c7e85eed39c7aff1e628279"
+    },
+    {
+      "body": "EVIDENCE. The second mobile screenshot shows the cancellation action only after the consumer has moved through the mobile perks screen.\nLEGAL REASONING. The complaint uses this mobile behavior as part of its allegation that Chegg failed to provide a simple mechanism to stop recurring charges.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "37-41, 91-97",
+        "figure_id": "mobile-perks-09b",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "below-fold-disclosure"
+        ],
+        "product": "Chegg",
+        "screen_type": "mobile_cancel_perks_scrolled",
+        "source_anchor_ids": [
+          "anc-032167b9e88e3b3a"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "9",
+        "source_ref": "Chegg mobile cancellation flow"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/mobile-perks-09b.md",
+      "semantic_sha256": "478d7249e48500ebf606b8a1ab32f67d9a9bd2fa511e54f43000f908490a8d34"
+    },
+    {
+      "body": "EVIDENCE. The Orders screenshot shows prominent non-cancellation buttons while cancellation appears as a less prominent hyperlink.\nLEGAL REASONING. The complaint says clicking the cancellation hyperlink did not cancel the subscription, but instead started a multi-step flow.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "23-27, 91-97",
+        "figure_id": "orders-cancel-link-05",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "asymmetric-cancellation-path"
+        ],
+        "product": "Chegg",
+        "screen_type": "orders_tab",
+        "source_anchor_ids": [
+          "anc-7f9512c012e37976"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "5",
+        "source_ref": "Chegg Orders tab"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/orders-cancel-link-05.md",
+      "semantic_sha256": "340f9c1e316a5804c813cac9a7079ba303584b1b3b91725cff3cc9e4822fe634"
+    },
+    {
+      "body": "EVIDENCE. The pause-offer screenshot routes cancellation into a pause option, with a default pause duration and a stronger pause-subscription action.\nLEGAL REASONING. The complaint alleges Chegg inserted pause and coupon screens into cancellation flows, requiring additional action before a consumer could continue cancellation.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "29-30, 83-87, 91-97",
+        "figure_id": "pause-retention-06b",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline",
+          "preselected-plan"
+        ],
+        "product": "Chegg",
+        "screen_type": "cancel_pause_offer",
+        "source_anchor_ids": [
+          "anc-7a321a34b9d9acc9"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "6",
+        "source_ref": "Chegg pause page"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/pause-retention-06b.md",
+      "semantic_sha256": "4f94c61b0b3cab95fb16bb92fdc0e9301799869ce6276ef991b55c119d858982"
+    },
+    {
+      "body": "EVIDENCE. The perks screenshot emphasizes lost features and benefits before presenting the final cancellation action.\nLEGAL REASONING. The complaint alleges the perks page was added as a retention lever, and mobile consumers could not see the cancel button without scrolling until July 2024.\nSTATED LAW. FTC Act Section 5(a), 15 U.S.C. 45(a); ROSCA Section 4(3), 15 U.S.C. 8403(3).",
+      "container_path": "cases/chegg.json",
+      "frontmatter": {
+        "availability": "full",
+        "case_id": "chegg",
+        "complaint_paras": "34-37, 83-87, 91-97",
+        "figure_id": "perks-loss-08",
+        "norms": [
+          "us-ftc-5a",
+          "us-rosca-4-3"
+        ],
+        "patterns": [
+          "hard-cancellation",
+          "obstruction-to-decline"
+        ],
+        "product": "Chegg",
+        "screen_type": "cancel_loss_aversion",
+        "source_anchor_ids": [
+          "anc-6a15f4e4f869ed5e"
+        ],
+        "source_file": "Chegg-Complaint_0.pdf",
+        "source_id": "src-0c648714ba0b6979",
+        "source_page": "8",
+        "source_ref": "Chegg perks page"
+      },
+      "kind": "case",
+      "logical_path": "cases/chegg/perks-loss-08.md",
+      "semantic_sha256": "c23cf8af542068140b5c13f2974d7375a1bd27fac1be7b4ea43b4f273c82f372"
+    }
+  ],
+  "release_version": "0.5.0",
+  "schema_version": "1.0",
+  "summary": {
+    "anchor_count": 12,
+    "anchor_reference_count": 13,
+    "case_cards": 13,
+    "case_headers": 1,
+    "coverage_records": 1,
+    "semantic_records": 15,
+    "semantic_sha256": "0c8781511a50b81eaae2b904ecd0fa3f8035756473eacee351e5987872427f1f"
+  }
+}
